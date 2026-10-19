@@ -1,0 +1,147 @@
+{
+  "duplicates": [
+    {
+      "firstFile": {
+        "end": 34,
+        "endLoc": {
+          "column": 19,
+          "line": 34,
+          "position": 726
+        },
+        "name": "auto-close-duplicates.ts",
+        "start": 25,
+        "startLoc": {
+          "column": 17,
+          "line": 25,
+          "position": 402
+        }
+      },
+      "format": "typescript",
+      "fragment": "  content: string;\n}\n\nasync function githubRequest<T>(endpoint: string, token: string, method: string = 'GET', body?: any): Promise<T> {\n  const response = await fetch(`https://api.github.com${endpoint}`, {\n    method,\n    headers: {\n      Authorization: `Bearer ${token}`,\n      Accept: \"application/vnd.github.v3+json\",\n      \"User-Agent\": \"auto-close-duplicates-script\",",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 32,
+        "endLoc": {
+          "column": 19,
+          "line": 32,
+          "position": 717
+        },
+        "name": "backfill-duplicate-comments.ts",
+        "start": 23,
+        "startLoc": {
+          "column": 36,
+          "line": 23,
+          "position": 393
+        }
+      },
+      "tokens": 62
+    },
+    {
+      "firstFile": {
+        "end": 47,
+        "endLoc": {
+          "column": 1,
+          "line": 47,
+          "position": 1040
+        },
+        "name": "auto-close-duplicates.ts",
+        "start": 34,
+        "startLoc": {
+          "column": 50,
+          "line": 34,
+          "position": 757
+        }
+      },
+      "format": "typescript",
+      "fragment": "      \"User-Agent\": \"auto-close-duplicates-script\",\n      ...(body && { \"Content-Type\": \"application/json\" }),\n    },\n    ...(body && { body: JSON.stringify(body) }),\n  });\n\n  if (!response.ok) {\n    throw new Error(\n      `GitHub API request failed: ${response.status} ${response.statusText}`\n    );\n  }\n\n  return response.json();\n}",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 14,
+      "secondFile": {
+        "end": 45,
+        "endLoc": {
+          "column": 1,
+          "line": 45,
+          "position": 1037
+        },
+        "name": "backfill-duplicate-comments.ts",
+        "start": 32,
+        "startLoc": {
+          "column": 56,
+          "line": 32,
+          "position": 754
+        }
+      },
+      "tokens": 65
+    },
+    {
+      "firstFile": {
+        "end": 164,
+        "endLoc": {
+          "column": 9,
+          "line": 164,
+          "position": 4231
+        },
+        "name": "auto-close-duplicates.ts",
+        "start": 152,
+        "startLoc": {
+          "column": 76,
+          "line": 152,
+          "position": 3872
+        }
+      },
+      "format": "typescript",
+      "fragment": "      `[DEBUG] Processing issue #${issue.number} (${processedCount}/${issues.length}): ${issue.title}`\n    );\n\n    console.log(`[DEBUG] Fetching comments for issue #${issue.number}...`);\n    const comments: GitHubComment[] = await githubRequest(\n      `/repos/${owner}/${repo}/issues/${issue.number}/comments`,\n      token\n    );\n    console.log(\n      `[DEBUG] Issue #${issue.number} has ${comments.length} comments`\n    );\n\n    const dupeComments = comments.filter(",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 13,
+      "secondFile": {
+        "end": 161,
+        "endLoc": {
+          "column": 9,
+          "line": 161,
+          "position": 5144
+        },
+        "name": "backfill-duplicate-comments.ts",
+        "start": 148,
+        "startLoc": {
+          "column": 79,
+          "line": 148,
+          "position": 4709
+        }
+      },
+      "tokens": 59
+    }
+  ],
+  "statistics": {
+    "detectionDate": "2026-10-15T09:09:41.523Z",
+    "formats": {
+      "typescript": {
+        "clones": 3,
+        "duplicatedLines": 37,
+        "duplicatedTokens": 186,
+        "lines": 749,
+        "newClones": 0,
+        "newDuplicatedLines": 0,
+        "percentage": 4.939919893190922,
+        "percentageTokens": 5.152354570637119,
+        "sources": 5,
+        "tokens": 3610
+      }
+    },
+    "total": {
+      "clones": 3,
+      "duplicatedLines": 37,
+      "duplicatedTokens": 186,
+      "lines": 749,
+      "newClones": 0,
+      "newDuplicatedLines": 0,
+      "percentage": 4.939919893190922,
+      "percentageTokens": 5.152354570637119,
+      "sources": 5,
+      "tokens": 3610
+    }
+  }
+}

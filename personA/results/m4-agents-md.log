@@ -1,0 +1,11 @@
+
+tests\register.test.ts:
+(pass) register > by default a project with AGENTS.md alone gets it [1252.95ms]
+(pass) register > by default a project with a CLAUDE.md is left to the engine [145.27ms]
+(pass) register > a failed walk leaves the context as handed [152.13ms]
+(pass) register > the start sends the mode row alone: no walk, no toast [413.68ms]
+(pass) register > with no telemetry noun the start goes on untouched [142.52ms]
+
+ 5 pass
+ 0 fail
+Ran 5 tests across 1 file. [10.57s]

@@ -1,0 +1,369 @@
+% ---------------------------------------------------------------------------
+% Project quality (45 points) -- Person A: structure and static quality
+% (Maintainability: modularity, analysability, modifiability, testability).
+% Person B's parts are marked "% >>> PERSON B" and are left as placeholders.
+% Source of all numbers: personA/draft.md, raw output in personA/results/,
+% reproducible with personA/measure/run.sh.
+%
+% Assignment brief (kept for reference, not typeset):
+%   1. quality of the project as-is  2. concrete improvements
+%   3. quality after the changes     4. trade-offs
+%   Steps: (1) ISO 25010 selection (2) >=5 metrics, reproducible
+%   (3) qualitative a.--e. with permalinks and UML (4) improvements traceable
+%   to findings (5) re-assessment with before/after numbers.   Length: 3000 words.
+% ---------------------------------------------------------------------------
+
+\providecommand{\repocommit}{bf2323b}
+\providecommand{\repocommitfull}{bf2323b3021c9d3db7a31e1e7d61068c3f704497}
+\providecommand{\code}[1]{\texttt{\detokenize{#1}}}
+\providecommand{\permalink}[2]{\href{https://github.com/anthropics/claude-code/blob/\repocommitfull/#1\##2}{\code{#1}}}
+\providecommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
+
+\section{Project quality (45 points)}
+\label{sec:quality}
+
+All measurements and file references in this section were taken at commit \texttt{\repocommit} (13 October 2026,
+\href{https://github.com/anthropics/claude-code/tree/\repocommitfull}{permalink}). Line numbers from the interim report
+were re-verified at this commit; where they had drifted they are corrected here.
+
+%---------------------------------------------------------------------------
+\subsection{Quality characteristics}
+\label{sec:quality:characteristics}
+
+% >>> PERSON B: Security, Compatibility, Reliability (fault tolerance), Flexibility (installability).
+
+Under \textbf{Maintainability} we keep the interim report's \emph{modularity}, \emph{analysability} and \emph{testability}
+and add \emph{modifiability}. The interim report argued that \code{mods/diff/} is modular because its code is spread
+over hundreds of single-export files, but file count is evidence of modularity only if coupling is low, so we measure
+it (M2). Modifiability is added because the DRY findings of the interim report and the concentration of change in one
+file (37 of the 62 commits touching \code{mods/diff/hooks} since 9 September also touched \code{register.ts}) concern
+the cost of change rather than structure. \emph{Reusability} is folded into modifiability: in this repository it appears
+only as duplication (M3), and a separate heading would yield no separate proposal.
+
+%---------------------------------------------------------------------------
+\subsection{Metrics}
+\label{sec:quality:metrics}
+
+\paragraph{Scope.} We measure the TypeScript of \code{mods/{agents-md,diff,sec-default,telemetry}/hooks}, the tests in
+\code{mods/*/tests}, \code{scripts/*.ts} and the Python of \code{plugins/}. We exclude \code{mods/types/claude-code.d.ts}
+(13\,440 generated lines, which would dominate every number), Markdown plugin assets and JSON manifests.
+
+% >>> PERSON B: M5--M7 (conformance, CI supply chain, fail-open rate)
+
+\paragraph{M1: cyclomatic complexity and function length.}
+\emph{Indicates} analysability, modifiability and testability: the number of paths a reader must understand and a test
+must reach per unit. We used \texttt{lizard} for Python and, for TypeScript, \code{personA/measure/ccn.mjs}, a 60-line
+McCabe counter on the TypeScript compiler AST. Lizard 1.24.1 ends a function early at a multi-line signature with a
+generic return type (\texttt{): Promise<boolean> \{}); it silently drops \code{fetchBodies} in \code{register.ts}. CCN is
+$1$ plus the number of \code{if}, \code{?:}, \code{case}, loops, \code{catch}, \code{&&}, \code{||} and \code{??}.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Corpus & Functions & Mean CCN & p90 & Max & CCN $>10$ & CCN $>15$ \\
+\midrule
+\code{mods/diff}       & 450 & 2.42 & 5  & 23 & 10 & 3  \\
+\code{mods/sec-default}& 104 & 1.88 & 4  & 8  & 0  & 0  \\
+\code{mods/telemetry}  & 125 & 2.43 & 5  & 16 & 2  & 1  \\
+\code{mods/agents-md}  & 65  & 2.25 & 5  & 22 & 2  & 1  \\
+\code{scripts/}        & 24  & 4.21 & 13 & 19 & 4  & 1  \\
+\code{plugins/} (Py)   & 159 & 7.65 & 14 & 80 & 28 & 15 \\
+\bottomrule
+\end{tabular}
+\caption{M1: function-level cyclomatic complexity per corpus at \texttt{\repocommit}.}
+\label{tab:m1}
+\end{table}
+
+The worst functions are in \code{plugins/}: \code{handle_commit_review_posttooluse} (CCN 80, 476 lines,
+\permalink{plugins/security-guidance/hooks/security_reminder_hook.py}{L901}), \code{handle_push_sweep_posttooluse} (62)
+and \code{agentic_review} (61). In TypeScript the worst are \code{dockPlanOf} (23) and \code{autoCloseDuplicates}
+(14, 174 lines, \permalink{scripts/auto-close-duplicates.ts}{L99}). The more important result is not in
+\cref{tab:m1}: no function in \permalink{mods/diff/hooks/register.ts}{L1} exceeds CCN 14, yet the file defines 116
+closures with \textbf{155 decision points}, against a median of 2 and a p90 of 9 for the other files of \code{mods/diff}
+that contain functions, and is 3.4$\times$ the next most complex TypeScript file. Function-level CCN hides this because the
+complexity is spread over closures sharing 25 pieces of mutable state, so we report the file-level figure next to it.
+Complexity also splits along a governance boundary: \code{mods/} has mean CCN around 2.3, \code{plugins/} 7.65.
+
+\paragraph{M2: coupling (fan-in / fan-out).}
+\emph{Indicates} modularity and analysability. We ran \texttt{madge} 8.0.0 with \code{--ts-config mods/tsconfig.json}
+over each mod's \code{hooks/} and computed fan-in and fan-out per file and per package with \code{personA/measure/fan.py}.
+Every barrel file does \code{export * as default from '.'}, which madge reports as 267 ``circular dependencies''; these
+are one-node self-loops and are removed first.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+Mod & Files & Edges & Mean fan-out & \code{register} fan-out & Multi-file cycles \\
+\midrule
+\code{diff}        & 594 & 1\,141 & 1.92 & 21 of 27 pkgs & 4 \\
+\code{sec-default} & 83  & 130    & 1.57 & 8 of 9        & 0 \\
+\code{telemetry}   & 210 & 365    & 1.74 & 6 of 16       & 1 \\
+\code{agents-md}   & 56  & 103    & 1.84 & 6 of 7        & 0 \\
+\bottomrule
+\end{tabular}
+\caption{M2: import coupling per mod (self-loops removed).}
+\label{tab:m2}
+\end{table}
+
+The interim report's modularity claim survives for the leaves: mean fan-out is below 2, 11 of the 28 packages in
+\code{diff} import nothing else, and the highest package fan-in is only 9 (\code{git}). A high fan-out for
+\code{register} is not itself a defect, because a composition root imports everything. The defect is the combination
+found only in \code{diff}: \code{register.ts} is a composition root, a stateful controller and a change hotspot at once
+(1\,062 lines, 155 decision points = 24\,\% of the mod's total, 20 mutable \code{let}s). \code{telemetry} is the in-repo
+counter-example: its \code{register} (6 decision points) only wires events to an object built by \code{telemetryOf}.
+The four cycles in \code{diff} are \code{import type} edges erased at runtime, so they cost analysability, not correctness.
+
+\paragraph{M3: duplication ratio.}
+\emph{Indicates} modifiability. We used \texttt{jscpd} 5.4.1 with \code{--min-tokens 50} on TypeScript, TSX and Python.
+\code{plugins/} has 2.98\,\% duplicated lines (11 clones), \code{scripts/} 4.94\,\% (3 clones) and \code{mods/} 4.02\,\%
+(89 clones), but all 940 duplicated lines in \code{mods/} are repeated setup in test files; the production code of
+\code{mods/} has \textbf{zero} clones, the strongest quantitative support for the interim report's DRY praise. The two
+DRY violations found earlier are confirmed: the 27--28-line bootstrap block in four \code{hookify} entry scripts, and
+\code{githubRequest<T>()}. jscpd finds only token-identical clones, so it misses the third copy of \code{githubRequest}
+in \code{sweep.ts}, which has diverged (different signature, returns \code{{}} on a 404 where the others throw);
+a divergent copy is worse than an identical one because a fix no longer applies mechanically.
+
+\paragraph{M4: test distribution and effectiveness.}
+\emph{Indicates} testability. We ran \code{claude plugin test mods/<mod>} (Claude Code 2.1.300, with
+\code{CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1}). The runner has no coverage option, so we report structural proxies
+instead of line coverage.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+Corpus & Source LOC & Test LOC & Test:source & Test cases & Pkgs with own test \\
+\midrule
+\code{mods/diff}        & 9\,512 & 7\,910 & 0.83 & 217 & 10 of 27 \\
+\code{mods/sec-default} & 1\,320 & 4\,498 & 3.41 & 162 & 2 of 8 \\
+\code{mods/telemetry}   & 3\,061 & 1\,952 & 0.64 & 34  & 1 of 14 \\
+\code{mods/agents-md}   & 1\,071 & 370    & 0.35 & 5   & 0 of 6 \\
+\code{plugins/} (Py, sh)& 9\,088 & 0      & 0    & 0   & 0 of 13 \\
+\code{scripts/}         & 748    & 0      & 0    & 0   & --- \\
+\bottomrule
+\end{tabular}
+\caption{M4: test volume and distribution at \texttt{\repocommit}. Test LOC includes fixtures.}
+\label{tab:m4}
+\end{table}
+
+A package without its own test file is not necessarily untested, since each mod's \code{register.test.ts} drives the whole
+mod through the engine; the last column counts only direct, isolatable tests. On Windows 11, \code{sec-default}
+(162/162) and \code{agents-md} (5/5) pass, but \code{diff} failed 57/217 and then 31/217 in two identical runs, nearly
+all by \code{timed out after 5000 ms}, plus three recurring assertion failures in \code{register}; \code{telemetry}
+failed 8/34, including a Linux-only test. Failures that change between identical runs are environmental, so
+\todo{replace with a Linux run (WSL or the CI run of \texttt{\repocommit}) before submission}. The metric also carries an
+effectiveness caveat: \permalink{.github/workflows/mod-tests.yml}{L29-L32} exits 0 when the installed CLI lacks the test
+command. With 2.1.300 the command exists, but a regression would turn the gate green without running anything, so a
+pass rate is evidence only together with this caveat.
+
+\paragraph{Reproducibility.}
+\cref{tab:repro} gives tool, version and command for each metric; \code{personA/measure/run.sh} runs them all and
+refuses to run unless \code{HEAD} is \texttt{\repocommit}.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{llX}
+\toprule
+Metric & Tool (version) & Command \\
+\midrule
+M1 Python & lizard 1.24.1 & \code{lizard --csv plugins -l python} \\
+M1 TypeScript & \code{ccn.mjs}, typescript 5.9, Node 25 & \code{node personA/measure/ccn.mjs mods/*/hooks scripts} \\
+M2 & madge 8.0.0 & \code{madge --extensions ts --ts-config mods/tsconfig.json --json mods/<mod>/hooks} \\
+M3 & jscpd 5.4.1 & \code{jscpd <dir> --format typescript,tsx,python --min-tokens 50} \\
+M4 & Claude Code 2.1.300 & \code{claude plugin test mods/<mod>} \\
+\bottomrule
+\end{tabularx}
+\caption{Tools and commands for M1--M4 (all at commit \texttt{\repocommit}, run on 13--19 October 2026).}
+\label{tab:repro}
+\end{table}
+
+%---------------------------------------------------------------------------
+\subsection{Qualitative assessment}
+\label{sec:quality:qualitative}
+
+\paragraph{(a) Architectural style.}
+The interim report identified a microkernel (a closed core with extensions) and a tiered interceptor chain. The style suits a
+product whose core is closed and whose extensions are developed in the open. The contract between them is one typed
+declaration file, \code{mods/types/claude-code.d.ts}, against which every mod type-checks in CI
+(\permalink{.github/workflows/mod-tests.yml}{L24-L25}). The style moves risk onto the extension boundary, and the repository
+governs that boundary unevenly: \code{mods/} gets a typed contract, a test kit running each mod through the engine's real
+hook chain, 418 test cases and no production duplication (M3), while \code{plugins/} gets a prose specification, no types and
+no tests (M4), and holds the 15 functions with CCN $>15$ (M1). The style is well chosen, but its quality guarantee covers
+only one of the two extension mechanisms the repository ships. The five-tier order is visible in the contract
+(\code{TIERS = ["prepend","user","append","builtin","core"]}) and partly testable, since the test kit's \code{tier(...)}
+seats a mod in a tier, but that the closed runtime \emph{enforces} the order cannot be verified from this repository.
+
+% >>> PERSON B: (b) design principles, (c) role stereotypes, (e) documentation half
+
+\paragraph{(d) Design patterns.}
+\cref{tab:patterns} summarises the patterns carried over from the interim report. The central one is Model--View--Update (MVU),
+applied correctly for three of its four roles. The \textbf{Model} is an immutable record
+(\permalink{mods/diff/hooks/pane-state/pane-model/pane-model.ts}{L16}); \textbf{Update} is a set of pure reducers such as
+\code{afterFetch}, each unit-tested without the engine; the \textbf{View}, \code{paneView}, is a pure function of the model.
+The fourth role, the runtime that owns the model, sequences effects and feeds messages to Update, is not a component: it
+is the body of \code{register(on)}, with 20 mutable \code{let}s plus 5 mutable containers, 10 hook registrations and 116
+closures that reassign \code{model} directly in 22 places, 6 of them inside the View's own action callbacks
+(\code{actionsOf}, L553--631), which mutate the model instead of dispatching a message. The pattern is three-quarters
+applied, and the missing quarter is where M1 finds 155 decision points and where most recent changes land.
+\cref{fig:lifecycle} shows that every step of a \code{/diff} lifecycle between the engine and the pure modules passes
+through closure-local state.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{llX}
+\toprule
+Pattern & Where & Verdict \\
+\midrule
+MVU & \code{mods/diff} & Model, Update, View clean; Controller absent (above) \\
+Chain of Responsibility & tiered hook chain & Effective; order verifiable only at the contract \\
+Decorator & hook wrappers in \code{mods/} & Effective, small and single-purpose \\
+Strategy / Factory Method & \code{INSTALLED_BACKEND_PROBES} & Effective; a backend is added without editing the caller \\
+Adapter & \code{$} $\rightarrow$ \code{Host} (21 members) & Effective; enables plain-fake unit tests \\
+\bottomrule
+\end{tabularx}
+\caption{Design patterns and our judgement of their application.}
+\label{tab:patterns}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\IfFileExists{figures/diff-lifecycle-sequence.pdf}{\includegraphics[width=\textwidth]{figures/diff-lifecycle-sequence.pdf}}{\fbox{\todo{render personA/diagrams/diff-lifecycle-sequence.puml}}}
+\caption{Sequence of one \code{/diff} lifecycle (session start, probe, fetch, reducer, view). Produced by manual static analysis of
+\code{mods/diff/hooks/register.ts} and the packages it calls at \texttt{\repocommit}, rendered with PlantUML \todo{version}.}
+\label{fig:lifecycle}
+\end{figure}
+
+\paragraph{(e) Test strategy.}
+The suite mirrors the source (\code{tests/git/parse/parse-numstat.test.ts} $\leftrightarrow$ \code{hooks/git/parse/}), keeps
+shared setup in \code{tests/fixtures/}, one export per file, and mixes two levels deliberately. Pure modules get unit tests
+with no engine (\code{header-totals-of.test.ts}: 3 tests, 0 mocks). Each mod's \code{register.test.ts} is an integration test
+through the real hook chain: every hook of the mod runs as shipped and anything the test leaves unanswered throws (in
+\code{diff}, 45 such tests make 134 calls on \code{$.session/command/tool/ui}). This answers the interim report's open
+question: the hook--engine contract \emph{is} tested, at integration level. The defects are elsewhere. \code{plugins/} (9\,088
+LOC) and \code{scripts/} (748 LOC) have no tests (M4), and the CI gate can pass without running tests. In \code{diff}, 17 of
+27 packages carry no direct test and depend on the integration tests, which are the slowest and most timing-sensitive; on our
+machine every failure in three runs fell in 6 of the 30 test files.
+
+%---------------------------------------------------------------------------
+\subsection{Proposed improvements}
+\label{sec:quality:improvements}
+
+% >>> PERSON B: P4--P8
+
+\paragraph{P1: complete MVU in \code{mods/diff} by decomposing \code{register.ts}.}
+\emph{Motivated by} M1, M2, (a) and (d); \emph{targets} modularity, analysability, modifiability, testability.
+\code{register.ts} becomes wiring only, as \code{telemetry}'s already is. A \code{PaneController} owns \code{model} and
+dispatches each hook to one of five coordinators, each owning the closure variables that belong to it
+(\cref{tab:p1}); View actions return messages to the controller instead of reassigning \code{model}
+(\cref{fig:p1}). Trade-off: coordinators must read and write \code{model} across a boundary, and the
+\code{isRefreshing} $\leftrightarrow$ \code{loadBodies} interleaving becomes a cross-object protocol that needs its own
+test; the debounce and coalesce timers that keep \code{/diff} non-intrusive move intact into \code{RefreshScheduler}, so
+their timing is unchanged.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{lX}
+\toprule
+Coordinator & Closure state taken over (\code{register.ts} L43--71) \\
+\midrule
+\code{BodyLoader} (prototyped) & \code{bodyStamp}, \code{bodyBase}, \code{bodyLoads} \\
+\code{RefreshScheduler} & \code{isRefreshing}, \code{isRefreshQueued}, \code{generation}, \code{landed}, \code{polled}, \code{timers} \\
+\code{BackendPin} & \code{backend}, \code{probing}, \code{pin}, \code{loggedBaseKinds} \\
+\code{PaneLifecycle} & \code{isPaneOpen}, \code{awaited}, \code{dialogRows}, \code{hasAutoOpened}, \code{hasRestoredEdits}, \code{columns}, \code{shownSessionId}, \code{sessionStartMs} \\
+\code{AskComposer} & \code{armed}, \code{carrying} \\
+\bottomrule
+\end{tabularx}
+\caption{P1: the five coordinators and the state each takes over.}
+\label{tab:p1}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\IfFileExists{figures/p1-after-component.pdf}{\includegraphics[width=\textwidth]{figures/p1-after-component.pdf}}{\fbox{\todo{render personA/diagrams/p1-after-component.puml}}}
+\caption{Component view of \code{mods/diff} before and after P1; the shaded box is prototyped. Drawn manually from the
+closure-variable assignments in \code{register.ts} at \texttt{\repocommit}, rendered with PlantUML \todo{version}.}
+\label{fig:p1}
+\end{figure}
+
+\paragraph{P2: make \code{autoCloseDuplicates} testable.}
+\emph{Motivated by} M1 and the interim report's testability finding; \emph{targets} testability and analysability. The
+closure's decision logic is extracted into pure predicates (\code{isDupeDetectionComment}, \code{hasActivityAfter},
+\code{hasAuthorDisagreed}, and two verdict functions). The comment-only verdict decides before reactions are fetched, so no
+API call is added; the I/O loop keeps only fetching and acting.
+
+\paragraph{P3: make test results trustworthy, then extend them to \code{plugins/}.}
+\emph{Motivated by} M4 and (e); \emph{targets} testability. (1) Delete the \code{exit 0} branch in
+\code{mod-tests.yml} L29--32 and pin the CLI version at L22, so a green gate implies the tests ran. (2) Raise the per-test
+timeout or fix the timing-sensitive tests, since two identical runs differed by 26 failures. (3) Add \texttt{pytest}
+suites for the two highest-risk plugin units: \code{hookify}'s rule engine (frontmatter extraction has CCN 32) and the
+dispatch of \code{security_reminder_hook.py}, which needs a P2-style extraction first. (4) Add unit tests for the
+\code{scripts/} predicates P2 creates. Trade-off: mandatory tests raise the bar for third-party plugin authors, a gain for
+repository maintainability against a cost for ecosystem extensibility; we recommend requiring them for first-party
+\code{plugins/} only.
+
+%---------------------------------------------------------------------------
+\subsection{Quality after the changes}
+\label{sec:quality:reassessment}
+
+P1 and P2 were applied to scratch copies, never to the repository, and measured with the commands of
+\cref{tab:repro}. P3 and the B-owned proposals are discussed in the trade-off analysis below.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{lrr}
+\toprule
+\code{scripts/auto-close-duplicates.ts} (P2) & Before & After \\
+\midrule
+Functions & 8 & 15 \\
+Max CCN & 14 & 8 \\
+Mean CCN & 3.62 & 2.47 \\
+Functions with CCN $>10$ & 1 & 0 \\
+Longest function (lines) & 174 & 49 \\
+Total decision points & 21 & 22 \\
+Unit tests possible without mocking the GitHub API & 0 & 6 (6 pass) \\
+\bottomrule
+\end{tabular}
+\caption{P2 re-assessment, same counting rule as M1; the result type-checks under \code{tsc --strict}.}
+\label{tab:p2}
+\end{table}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{lrr}
+\toprule
+\code{mods/diff/hooks/register.ts} (P1, \code{BodyLoader} only) & Before & After \\
+\midrule
+LOC (non-blank, lizard NLOC) & 735 & 701 \\
+Decision points & 155 & 148 \\
+Mutable \code{let} & 20 & 18 \\
+Mutable containers & 5 & 4 \\
+Package fan-out & 21 & 21 \\
+\bottomrule
+\end{tabular}
+\caption{P1 re-assessment with one extracted coordinator (patch and module in \code{personA/prototypes/p1-body-loader/});
+\code{tsc -p mods/tsconfig.json} passes.}
+\label{tab:p1after}
+\end{table}
+
+P2 does not reduce total decision points (21 to 22); it relocates complexity into units that can be tested, which is the
+honest claim: the longest function drops from 174 to 49 lines and the six new tests need no GitHub mock. For P1, extracting
+one coordinator removes 7 decision points for 3 mutable items. \textbf{This is an estimate for the full refactor:} the
+five coordinators take over 22 of the 25 mutable items, and at the same per-item ratio \code{register.ts} falls to roughly
+100 decision points or fewer, a lower bound on the reduction since the hook bodies would also shrink to one-line
+dispatches. Package fan-out should \emph{not} move: P1 improves state-per-unit, not coupling. As a behaviour check,
+\code{claude plugin test diff} on the modified copy gave 165 pass and 52 fail, i.e.\ 49 timeouts plus the same three
+assertion failures as both baseline runs and no new one. This is evidence, not proof, because a timed-out test never
+reached its assertions; \todo{re-run on Linux before claiming unchanged behaviour}.
+
+% >>> JOINT (S7): trade-off matrix of proposals x characteristics, covering P1 (performance, co-existence),
+% >>> P3 (ecosystem extensibility) against B's P5 and P6.

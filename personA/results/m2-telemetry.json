@@ -1,0 +1,836 @@
+{
+  "../types/index.d.ts": [],
+  "answer-of/answer-of.ts": [
+    "entries/index.ts"
+  ],
+  "answer-of/index.ts": [
+    "answer-of/answer-of.ts",
+    "answer-of/index.ts"
+  ],
+  "batching/batch-rows/batch-rows.ts": [],
+  "batching/batch-rows/index.ts": [
+    "batching/batch-rows/batch-rows.ts",
+    "batching/batch-rows/index.ts"
+  ],
+  "batching/batch-window-ms/batch-window-ms.ts": [],
+  "batching/batch-window-ms/index.ts": [
+    "batching/batch-window-ms/batch-window-ms.ts",
+    "batching/batch-window-ms/index.ts"
+  ],
+  "batching/index.ts": [
+    "batching/batch-rows/index.ts",
+    "batching/batch-window-ms/index.ts",
+    "batching/index.ts",
+    "batching/is-retriable/index.ts",
+    "batching/message-of/index.ts",
+    "batching/pending-row/index.ts",
+    "batching/retry-delay-ms/index.ts"
+  ],
+  "batching/is-retriable/index.ts": [
+    "batching/is-retriable/index.ts",
+    "batching/is-retriable/is-retriable.ts",
+    "batching/is-retriable/status-request-timeout/index.ts",
+    "batching/is-retriable/status-server-error/index.ts",
+    "batching/is-retriable/status-too-many-requests/index.ts"
+  ],
+  "batching/is-retriable/is-retriable.ts": [
+    "batching/is-retriable/status-request-timeout/index.ts",
+    "batching/is-retriable/status-server-error/index.ts",
+    "batching/is-retriable/status-too-many-requests/index.ts"
+  ],
+  "batching/is-retriable/status-request-timeout/index.ts": [
+    "batching/is-retriable/status-request-timeout/index.ts",
+    "batching/is-retriable/status-request-timeout/status-request-timeout.ts"
+  ],
+  "batching/is-retriable/status-request-timeout/status-request-timeout.ts": [],
+  "batching/is-retriable/status-server-error/index.ts": [
+    "batching/is-retriable/status-server-error/index.ts",
+    "batching/is-retriable/status-server-error/status-server-error.ts"
+  ],
+  "batching/is-retriable/status-server-error/status-server-error.ts": [],
+  "batching/is-retriable/status-too-many-requests/index.ts": [
+    "batching/is-retriable/status-too-many-requests/index.ts",
+    "batching/is-retriable/status-too-many-requests/status-too-many-requests.ts"
+  ],
+  "batching/is-retriable/status-too-many-requests/status-too-many-requests.ts": [],
+  "batching/message-of/index.ts": [
+    "batching/message-of/index.ts",
+    "batching/message-of/message-of.ts"
+  ],
+  "batching/message-of/message-of.ts": [],
+  "batching/pending-row/index.ts": [
+    "batching/pending-row/index.ts",
+    "batching/pending-row/pending-row.ts"
+  ],
+  "batching/pending-row/pending-row.ts": [
+    "entries/index.ts"
+  ],
+  "batching/retry-delay-ms/index.ts": [
+    "batching/retry-delay-ms/index.ts",
+    "batching/retry-delay-ms/retry-delay-ms.ts"
+  ],
+  "batching/retry-delay-ms/retry-delay-ms.ts": [],
+  "config-location/config-location.ts": [],
+  "config-location/index.ts": [
+    "config-location/config-location.ts",
+    "config-location/index.ts"
+  ],
+  "context/client-type-of/client-type-by-entrypoint/client-type-by-entrypoint.ts": [],
+  "context/client-type-of/client-type-by-entrypoint/index.ts": [
+    "context/client-type-of/client-type-by-entrypoint/client-type-by-entrypoint.ts",
+    "context/client-type-of/client-type-by-entrypoint/index.ts"
+  ],
+  "context/client-type-of/client-type-of.ts": [
+    "context/client-type-of/client-type-by-entrypoint/index.ts",
+    "facts/index.ts",
+    "is-analytics-off/index.ts"
+  ],
+  "context/client-type-of/index.ts": [
+    "context/client-type-of/client-type-by-entrypoint/index.ts",
+    "context/client-type-of/client-type-of.ts",
+    "context/client-type-of/index.ts"
+  ],
+  "context/context-of.ts": [
+    "context/context/index.ts",
+    "context/environment-fields-of/index.ts",
+    "context/probe-of/index.ts",
+    "context/session-fields-of/index.ts",
+    "telemetry-deps/index.ts"
+  ],
+  "context/context/context.ts": [
+    "context/environment-fields/index.ts",
+    "context/identity/index.ts",
+    "context/session-fields/index.ts"
+  ],
+  "context/context/index.ts": [
+    "context/context/context.ts",
+    "context/context/index.ts"
+  ],
+  "context/entrypoint-of/entrypoint-of.ts": [],
+  "context/entrypoint-of/index.ts": [
+    "context/entrypoint-of/entrypoint-of.ts",
+    "context/entrypoint-of/index.ts"
+  ],
+  "context/environment-fields-of/action-ref-of/action-ref-of.ts": [],
+  "context/environment-fields-of/action-ref-of/index.ts": [
+    "context/environment-fields-of/action-ref-of/action-ref-of.ts",
+    "context/environment-fields-of/action-ref-of/index.ts"
+  ],
+  "context/environment-fields-of/environment-fields-of.ts": [
+    "context/environment-fields-of/action-ref-of/index.ts",
+    "context/environment-fields-of/github-actions-fields-of/index.ts",
+    "context/environment-fields-of/tags-of/index.ts",
+    "context/environment-fields/index.ts",
+    "context/probe/index.ts",
+    "context/shell-of/index.ts",
+    "context/terminal-of/index.ts",
+    "deployment/index.ts",
+    "is-analytics-off/index.ts"
+  ],
+  "context/environment-fields-of/github-actions-fields-of/github-actions-fields-of.ts": [
+    "context/environment-fields/index.ts",
+    "facts/index.ts"
+  ],
+  "context/environment-fields-of/github-actions-fields-of/index.ts": [
+    "context/environment-fields-of/github-actions-fields-of/github-actions-fields-of.ts",
+    "context/environment-fields-of/github-actions-fields-of/index.ts"
+  ],
+  "context/environment-fields-of/index.ts": [
+    "context/environment-fields-of/action-ref-of/index.ts",
+    "context/environment-fields-of/environment-fields-of.ts",
+    "context/environment-fields-of/github-actions-fields-of/index.ts",
+    "context/environment-fields-of/index.ts",
+    "context/environment-fields-of/tags-of/index.ts"
+  ],
+  "context/environment-fields-of/tags-of/index.ts": [
+    "context/environment-fields-of/tags-of/index.ts",
+    "context/environment-fields-of/tags-of/tags-of.ts"
+  ],
+  "context/environment-fields-of/tags-of/tags-of.ts": [],
+  "context/environment-fields/environment-fields.ts": [
+    "context/environment-fields/github-actions-fields/index.ts"
+  ],
+  "context/environment-fields/github-actions-fields/github-actions-fields.ts": [],
+  "context/environment-fields/github-actions-fields/index.ts": [
+    "context/environment-fields/github-actions-fields/github-actions-fields.ts",
+    "context/environment-fields/github-actions-fields/index.ts"
+  ],
+  "context/environment-fields/index.ts": [
+    "context/environment-fields/environment-fields.ts",
+    "context/environment-fields/github-actions-fields/index.ts",
+    "context/environment-fields/index.ts"
+  ],
+  "context/identity/global-config-path/global-config-path.ts": [
+    "config-location/index.ts"
+  ],
+  "context/identity/global-config-path/index.ts": [
+    "context/identity/global-config-path/global-config-path.ts",
+    "context/identity/global-config-path/index.ts"
+  ],
+  "context/identity/identity-of.ts": [
+    "config-location/index.ts",
+    "context/identity/global-config-path/index.ts",
+    "context/identity/identity/index.ts",
+    "context/identity/plausible-uuid/index.ts",
+    "entries/index.ts"
+  ],
+  "context/identity/identity/identity.ts": [],
+  "context/identity/identity/index.ts": [
+    "context/identity/identity/identity.ts",
+    "context/identity/identity/index.ts"
+  ],
+  "context/identity/index.ts": [
+    "context/identity/global-config-path/index.ts",
+    "context/identity/identity-of.ts",
+    "context/identity/identity/index.ts",
+    "context/identity/index.ts",
+    "context/identity/plausible-uuid/index.ts"
+  ],
+  "context/identity/plausible-uuid/index.ts": [
+    "context/identity/plausible-uuid/index.ts",
+    "context/identity/plausible-uuid/plausible-uuid.ts",
+    "context/identity/plausible-uuid/uuid-length-floor/index.ts",
+    "context/identity/plausible-uuid/uuid-length-limit/index.ts"
+  ],
+  "context/identity/plausible-uuid/plausible-uuid.ts": [
+    "context/identity/plausible-uuid/uuid-length-floor/index.ts",
+    "context/identity/plausible-uuid/uuid-length-limit/index.ts"
+  ],
+  "context/identity/plausible-uuid/uuid-length-floor/index.ts": [
+    "context/identity/plausible-uuid/uuid-length-floor/index.ts",
+    "context/identity/plausible-uuid/uuid-length-floor/uuid-length-floor.ts"
+  ],
+  "context/identity/plausible-uuid/uuid-length-floor/uuid-length-floor.ts": [],
+  "context/identity/plausible-uuid/uuid-length-limit/index.ts": [
+    "context/identity/plausible-uuid/uuid-length-limit/index.ts",
+    "context/identity/plausible-uuid/uuid-length-limit/uuid-length-limit.ts"
+  ],
+  "context/identity/plausible-uuid/uuid-length-limit/uuid-length-limit.ts": [],
+  "context/index.ts": [
+    "context/client-type-of/index.ts",
+    "context/context-of.ts",
+    "context/context/index.ts",
+    "context/entrypoint-of/index.ts",
+    "context/environment-fields-of/index.ts",
+    "context/environment-fields/index.ts",
+    "context/identity/index.ts",
+    "context/index.ts",
+    "context/linux-distro-of/index.ts",
+    "context/machine/index.ts",
+    "context/probe-of/index.ts",
+    "context/probe/index.ts",
+    "context/remote-hash-of/index.ts",
+    "context/session-fields-of/index.ts",
+    "context/session-fields/index.ts",
+    "context/shell-of/index.ts",
+    "context/terminal-of/index.ts",
+    "context/vcs-of/index.ts",
+    "context/version-of/index.ts",
+    "context/wsl-version-of/index.ts"
+  ],
+  "context/linux-distro-of/index.ts": [
+    "context/linux-distro-of/index.ts",
+    "context/linux-distro-of/linux-distro-of.ts",
+    "context/linux-distro-of/linux-distro/index.ts",
+    "context/linux-distro-of/os-release-value/index.ts"
+  ],
+  "context/linux-distro-of/linux-distro-of.ts": [
+    "context/linux-distro-of/linux-distro/index.ts",
+    "context/linux-distro-of/os-release-value/index.ts"
+  ],
+  "context/linux-distro-of/linux-distro/index.ts": [
+    "context/linux-distro-of/linux-distro/index.ts",
+    "context/linux-distro-of/linux-distro/linux-distro.ts"
+  ],
+  "context/linux-distro-of/linux-distro/linux-distro.ts": [],
+  "context/linux-distro-of/os-release-value/index.ts": [
+    "context/linux-distro-of/os-release-value/index.ts",
+    "context/linux-distro-of/os-release-value/os-release-value.ts"
+  ],
+  "context/linux-distro-of/os-release-value/os-release-value.ts": [],
+  "context/machine/arch-of/arch-of.ts": [],
+  "context/machine/arch-of/index.ts": [
+    "context/machine/arch-of/arch-of.ts",
+    "context/machine/arch-of/index.ts"
+  ],
+  "context/machine/index.ts": [
+    "context/machine/arch-of/index.ts",
+    "context/machine/index.ts",
+    "context/machine/machine-of.ts",
+    "context/machine/machine/index.ts",
+    "context/machine/platform-of/index.ts",
+    "context/machine/probe-script/index.ts",
+    "context/machine/probe-timeout-ms/index.ts"
+  ],
+  "context/machine/machine-of.ts": [
+    "context/machine/arch-of/index.ts",
+    "context/machine/machine/index.ts",
+    "context/machine/probe-script/index.ts",
+    "facts/index.ts"
+  ],
+  "context/machine/machine/index.ts": [
+    "context/machine/machine/index.ts",
+    "context/machine/machine/machine.ts"
+  ],
+  "context/machine/machine/machine.ts": [],
+  "context/machine/platform-of/index.ts": [
+    "context/machine/platform-of/index.ts",
+    "context/machine/platform-of/platform-of.ts"
+  ],
+  "context/machine/platform-of/platform-of.ts": [],
+  "context/machine/probe-script/index.ts": [
+    "context/machine/probe-script/index.ts",
+    "context/machine/probe-script/probe-script.ts"
+  ],
+  "context/machine/probe-script/probe-script.ts": [],
+  "context/machine/probe-timeout-ms/index.ts": [
+    "context/machine/probe-timeout-ms/index.ts",
+    "context/machine/probe-timeout-ms/probe-timeout-ms.ts"
+  ],
+  "context/machine/probe-timeout-ms/probe-timeout-ms.ts": [],
+  "context/probe-of/index.ts": [
+    "context/probe-of/index.ts",
+    "context/probe-of/linux-files-of/index.ts",
+    "context/probe-of/linux-files/index.ts",
+    "context/probe-of/probe-of.ts"
+  ],
+  "context/probe-of/linux-files-of/index.ts": [
+    "context/probe-of/linux-files-of/index.ts",
+    "context/probe-of/linux-files-of/linux-files-of.ts"
+  ],
+  "context/probe-of/linux-files-of/linux-files-of.ts": [
+    "context/linux-distro-of/index.ts",
+    "context/probe-of/linux-files/index.ts",
+    "context/wsl-version-of/index.ts",
+    "telemetry-deps/index.ts"
+  ],
+  "context/probe-of/linux-files/index.ts": [
+    "context/probe-of/linux-files/index.ts",
+    "context/probe-of/linux-files/linux-files.ts"
+  ],
+  "context/probe-of/linux-files/linux-files.ts": [
+    "context/linux-distro-of/index.ts",
+    "deployment/index.ts"
+  ],
+  "context/probe-of/probe-of.ts": [
+    "batching/index.ts",
+    "context/identity/index.ts",
+    "context/machine/index.ts",
+    "context/probe-of/linux-files-of/index.ts",
+    "context/probe/index.ts",
+    "context/remote-hash-of/index.ts",
+    "context/vcs-of/index.ts",
+    "telemetry-deps/index.ts"
+  ],
+  "context/probe/index.ts": [
+    "context/probe/index.ts",
+    "context/probe/probe.ts"
+  ],
+  "context/probe/probe.ts": [
+    "context/identity/index.ts",
+    "context/linux-distro-of/index.ts",
+    "context/machine/index.ts",
+    "deployment/index.ts",
+    "facts/index.ts"
+  ],
+  "context/remote-hash-of/hex-of/hex-of.ts": [
+    "context/remote-hash-of/hex-of/hex-radix/index.ts"
+  ],
+  "context/remote-hash-of/hex-of/hex-radix/hex-radix.ts": [],
+  "context/remote-hash-of/hex-of/hex-radix/index.ts": [
+    "context/remote-hash-of/hex-of/hex-radix/hex-radix.ts",
+    "context/remote-hash-of/hex-of/hex-radix/index.ts"
+  ],
+  "context/remote-hash-of/hex-of/index.ts": [
+    "context/remote-hash-of/hex-of/hex-of.ts",
+    "context/remote-hash-of/hex-of/hex-radix/index.ts",
+    "context/remote-hash-of/hex-of/index.ts"
+  ],
+  "context/remote-hash-of/index.ts": [
+    "context/remote-hash-of/hex-of/index.ts",
+    "context/remote-hash-of/index.ts",
+    "context/remote-hash-of/normalized-remote-of/index.ts",
+    "context/remote-hash-of/remote-hash-length/index.ts",
+    "context/remote-hash-of/remote-hash-of.ts"
+  ],
+  "context/remote-hash-of/normalized-remote-of/index.ts": [
+    "context/remote-hash-of/normalized-remote-of/index.ts",
+    "context/remote-hash-of/normalized-remote-of/normalized-remote-of.ts"
+  ],
+  "context/remote-hash-of/normalized-remote-of/normalized-remote-of.ts": [],
+  "context/remote-hash-of/remote-hash-length/index.ts": [
+    "context/remote-hash-of/remote-hash-length/index.ts",
+    "context/remote-hash-of/remote-hash-length/remote-hash-length.ts"
+  ],
+  "context/remote-hash-of/remote-hash-length/remote-hash-length.ts": [],
+  "context/remote-hash-of/remote-hash-of.ts": [
+    "context/remote-hash-of/hex-of/index.ts",
+    "context/remote-hash-of/normalized-remote-of/index.ts",
+    "context/remote-hash-of/remote-hash-length/index.ts"
+  ],
+  "context/session-fields-of/index.ts": [
+    "context/session-fields-of/index.ts",
+    "context/session-fields-of/session-fields-of.ts"
+  ],
+  "context/session-fields-of/session-fields-of.ts": [
+    "context/client-type-of/index.ts",
+    "context/entrypoint-of/index.ts",
+    "context/session-fields/index.ts",
+    "context/version-of/index.ts",
+    "facts/index.ts"
+  ],
+  "context/session-fields/index.ts": [
+    "context/session-fields/index.ts",
+    "context/session-fields/session-fields.ts"
+  ],
+  "context/session-fields/session-fields.ts": [],
+  "context/shell-of/index.ts": [
+    "context/shell-of/index.ts",
+    "context/shell-of/known-shells/index.ts",
+    "context/shell-of/shell-of.ts"
+  ],
+  "context/shell-of/known-shells/index.ts": [
+    "context/shell-of/known-shells/index.ts",
+    "context/shell-of/known-shells/known-shells.ts"
+  ],
+  "context/shell-of/known-shells/known-shells.ts": [],
+  "context/shell-of/shell-of.ts": [
+    "context/shell-of/known-shells/index.ts"
+  ],
+  "context/terminal-of/index.ts": [
+    "context/terminal-of/index.ts",
+    "context/terminal-of/jetbrains-ides/index.ts",
+    "context/terminal-of/terminal-of.ts"
+  ],
+  "context/terminal-of/jetbrains-ides/index.ts": [
+    "context/terminal-of/jetbrains-ides/index.ts",
+    "context/terminal-of/jetbrains-ides/jetbrains-ides.ts"
+  ],
+  "context/terminal-of/jetbrains-ides/jetbrains-ides.ts": [],
+  "context/terminal-of/terminal-of.ts": [
+    "context/terminal-of/jetbrains-ides/index.ts",
+    "facts/index.ts"
+  ],
+  "context/vcs-of/distinct/distinct.ts": [],
+  "context/vcs-of/distinct/index.ts": [
+    "context/vcs-of/distinct/distinct.ts",
+    "context/vcs-of/distinct/index.ts"
+  ],
+  "context/vcs-of/index.ts": [
+    "context/vcs-of/distinct/index.ts",
+    "context/vcs-of/index.ts",
+    "context/vcs-of/vcs-markers/index.ts",
+    "context/vcs-of/vcs-of.ts"
+  ],
+  "context/vcs-of/vcs-markers/index.ts": [
+    "context/vcs-of/vcs-markers/index.ts",
+    "context/vcs-of/vcs-markers/vcs-markers.ts"
+  ],
+  "context/vcs-of/vcs-markers/vcs-markers.ts": [],
+  "context/vcs-of/vcs-of.ts": [
+    "context/vcs-of/distinct/index.ts",
+    "context/vcs-of/vcs-markers/index.ts"
+  ],
+  "context/version-of/index.ts": [
+    "context/version-of/index.ts",
+    "context/version-of/version-of.ts"
+  ],
+  "context/version-of/version-of.ts": [],
+  "context/wsl-version-of/index.ts": [
+    "context/wsl-version-of/index.ts",
+    "context/wsl-version-of/wsl-version-of.ts"
+  ],
+  "context/wsl-version-of/wsl-version-of.ts": [],
+  "deployment/deployment-name/deployment-name.ts": [
+    "deployment/deployments/index.ts"
+  ],
+  "deployment/deployment-name/index.ts": [
+    "deployment/deployment-name/deployment-name.ts",
+    "deployment/deployment-name/index.ts"
+  ],
+  "deployment/deployment-of.ts": [
+    "deployment/deployment-signal/index.ts",
+    "deployment/deployments/index.ts"
+  ],
+  "deployment/deployment-signal/deployment-signal.ts": [
+    "deployment/deployment-name/index.ts"
+  ],
+  "deployment/deployment-signal/index.ts": [
+    "deployment/deployment-signal/deployment-signal.ts",
+    "deployment/deployment-signal/index.ts"
+  ],
+  "deployment/deployments/deployments.ts": [],
+  "deployment/deployments/index.ts": [
+    "deployment/deployments/deployments.ts",
+    "deployment/deployments/index.ts"
+  ],
+  "deployment/index.ts": [
+    "deployment/deployment-name/index.ts",
+    "deployment/deployment-of.ts",
+    "deployment/deployment-signal/index.ts",
+    "deployment/deployments/index.ts",
+    "deployment/index.ts"
+  ],
+  "entries/batch-of.ts": [
+    "batching/index.ts",
+    "entries/batch-stamp/index.ts",
+    "entries/event-data-of/index.ts",
+    "entries/wire-of/index.ts"
+  ],
+  "entries/batch-stamp/batch-stamp.ts": [
+    "context/index.ts"
+  ],
+  "entries/batch-stamp/index.ts": [
+    "entries/batch-stamp/batch-stamp.ts",
+    "entries/batch-stamp/index.ts"
+  ],
+  "entries/checked-fields.ts": [
+    "entries/checked-props/index.ts",
+    "entries/fields-of/index.ts",
+    "entries/fields/index.ts",
+    "entries/is-record/index.ts",
+    "entries/refusal/index.ts",
+    "entries/token/index.ts"
+  ],
+  "entries/checked-mark.ts": [
+    "entries/checked-props/index.ts",
+    "entries/fields/index.ts",
+    "entries/is-mark-kind/index.ts",
+    "entries/is-record/index.ts",
+    "entries/mark-fields-of/index.ts",
+    "entries/refusal/index.ts",
+    "entries/token/index.ts"
+  ],
+  "entries/checked-props/checked-props.ts": [
+    "entries/checked-value/index.ts",
+    "entries/is-record/index.ts",
+    "entries/method/index.ts",
+    "entries/prop-limit/index.ts",
+    "entries/refusal/index.ts",
+    "entries/token/index.ts"
+  ],
+  "entries/checked-props/index.ts": [
+    "entries/checked-props/checked-props.ts",
+    "entries/checked-props/index.ts"
+  ],
+  "entries/checked-value/checked-value.ts": [
+    "entries/choice-token/index.ts",
+    "entries/choices-limit/index.ts",
+    "entries/is-record/index.ts",
+    "entries/method/index.ts",
+    "entries/refusal/index.ts"
+  ],
+  "entries/checked-value/index.ts": [
+    "entries/checked-value/checked-value.ts",
+    "entries/checked-value/index.ts"
+  ],
+  "entries/choice-token/choice-token.ts": [],
+  "entries/choice-token/index.ts": [
+    "entries/choice-token/choice-token.ts",
+    "entries/choice-token/index.ts"
+  ],
+  "entries/choices-limit/choices-limit.ts": [],
+  "entries/choices-limit/index.ts": [
+    "entries/choices-limit/choices-limit.ts",
+    "entries/choices-limit/index.ts"
+  ],
+  "entries/core-event-prefix/core-event-prefix.ts": [],
+  "entries/core-event-prefix/index.ts": [
+    "entries/core-event-prefix/core-event-prefix.ts",
+    "entries/core-event-prefix/index.ts"
+  ],
+  "entries/event-data-of/auth-of/auth-of.ts": [
+    "context/index.ts"
+  ],
+  "entries/event-data-of/auth-of/index.ts": [
+    "entries/event-data-of/auth-of/auth-of.ts",
+    "entries/event-data-of/auth-of/index.ts"
+  ],
+  "entries/event-data-of/event-data-of.ts": [
+    "batching/index.ts",
+    "entries/batch-stamp/index.ts",
+    "entries/event-data-of/auth-of/index.ts",
+    "entries/event-data-of/metadata-of/index.ts"
+  ],
+  "entries/event-data-of/index.ts": [
+    "entries/event-data-of/auth-of/index.ts",
+    "entries/event-data-of/event-data-of.ts",
+    "entries/event-data-of/index.ts",
+    "entries/event-data-of/metadata-of/index.ts"
+  ],
+  "entries/event-data-of/metadata-of/index.ts": [
+    "entries/event-data-of/metadata-of/index.ts",
+    "entries/event-data-of/metadata-of/metadata-of.ts"
+  ],
+  "entries/event-data-of/metadata-of/metadata-of.ts": [
+    "batching/index.ts"
+  ],
+  "entries/event-prefix/event-prefix.ts": [],
+  "entries/event-prefix/index.ts": [
+    "entries/event-prefix/event-prefix.ts",
+    "entries/event-prefix/index.ts"
+  ],
+  "entries/feature-prefix/feature-prefix.ts": [],
+  "entries/feature-prefix/index.ts": [
+    "entries/feature-prefix/feature-prefix.ts",
+    "entries/feature-prefix/index.ts"
+  ],
+  "entries/fields-of/fields-of.ts": [
+    "entries/core-event-prefix/index.ts",
+    "entries/event-prefix/index.ts",
+    "entries/fields/index.ts"
+  ],
+  "entries/fields-of/index.ts": [
+    "entries/fields-of/fields-of.ts",
+    "entries/fields-of/index.ts"
+  ],
+  "entries/fields/fields.ts": [],
+  "entries/fields/index.ts": [
+    "entries/fields/fields.ts",
+    "entries/fields/index.ts"
+  ],
+  "entries/index.ts": [
+    "entries/batch-of.ts",
+    "entries/batch-stamp/index.ts",
+    "entries/checked-fields.ts",
+    "entries/checked-mark.ts",
+    "entries/checked-props/index.ts",
+    "entries/checked-value/index.ts",
+    "entries/choice-token/index.ts",
+    "entries/choices-limit/index.ts",
+    "entries/core-event-prefix/index.ts",
+    "entries/event-data-of/index.ts",
+    "entries/event-prefix/index.ts",
+    "entries/feature-prefix/index.ts",
+    "entries/fields-of/index.ts",
+    "entries/fields/index.ts",
+    "entries/index.ts",
+    "entries/ingest-url.ts",
+    "entries/is-mark-kind/index.ts",
+    "entries/is-record/index.ts",
+    "entries/is-refused-entry/index.ts",
+    "entries/mark-fields-of/index.ts",
+    "entries/mark-kinds/index.ts",
+    "entries/mark/index.ts",
+    "entries/method/index.ts",
+    "entries/prop-limit/index.ts",
+    "entries/refusal/index.ts",
+    "entries/refused-entry/index.ts",
+    "entries/token/index.ts",
+    "entries/wire-of/index.ts"
+  ],
+  "entries/ingest-url.ts": [],
+  "entries/is-mark-kind/index.ts": [
+    "entries/is-mark-kind/index.ts",
+    "entries/is-mark-kind/is-mark-kind.ts"
+  ],
+  "entries/is-mark-kind/is-mark-kind.ts": [
+    "../types/index.d.ts",
+    "entries/mark-kinds/index.ts"
+  ],
+  "entries/is-record/index.ts": [
+    "entries/is-record/index.ts",
+    "entries/is-record/is-record.ts"
+  ],
+  "entries/is-record/is-record.ts": [],
+  "entries/is-refused-entry/index.ts": [
+    "entries/is-refused-entry/index.ts",
+    "entries/is-refused-entry/is-refused-entry.ts"
+  ],
+  "entries/is-refused-entry/is-refused-entry.ts": [
+    "entries/refused-entry/index.ts"
+  ],
+  "entries/mark-fields-of/index.ts": [
+    "entries/mark-fields-of/index.ts",
+    "entries/mark-fields-of/mark-fields-of.ts"
+  ],
+  "entries/mark-fields-of/mark-fields-of.ts": [
+    "entries/feature-prefix/index.ts",
+    "entries/fields/index.ts",
+    "entries/mark/index.ts"
+  ],
+  "entries/mark-kinds/index.ts": [
+    "entries/mark-kinds/index.ts",
+    "entries/mark-kinds/mark-kinds.ts"
+  ],
+  "entries/mark-kinds/mark-kinds.ts": [
+    "../types/index.d.ts"
+  ],
+  "entries/mark/index.ts": [
+    "entries/mark/index.ts",
+    "entries/mark/mark.ts"
+  ],
+  "entries/mark/mark.ts": [
+    "../types/index.d.ts",
+    "entries/fields/index.ts"
+  ],
+  "entries/method/index.ts": [
+    "entries/method/index.ts",
+    "entries/method/method.ts"
+  ],
+  "entries/method/method.ts": [],
+  "entries/prop-limit/index.ts": [
+    "entries/prop-limit/index.ts",
+    "entries/prop-limit/prop-limit.ts"
+  ],
+  "entries/prop-limit/prop-limit.ts": [],
+  "entries/refusal/index.ts": [
+    "entries/refusal/index.ts",
+    "entries/refusal/refusal.ts"
+  ],
+  "entries/refusal/refusal.ts": [
+    "entries/method/index.ts",
+    "entries/refused-entry/index.ts"
+  ],
+  "entries/refused-entry/index.ts": [
+    "entries/refused-entry/index.ts",
+    "entries/refused-entry/refused-entry.ts"
+  ],
+  "entries/refused-entry/refused-entry.ts": [],
+  "entries/token/index.ts": [
+    "entries/token/index.ts",
+    "entries/token/token.ts"
+  ],
+  "entries/token/token.ts": [],
+  "entries/wire-of/index.ts": [
+    "entries/wire-of/index.ts",
+    "entries/wire-of/wire-of.ts"
+  ],
+  "entries/wire-of/wire-of.ts": [
+    "entries/is-record/index.ts"
+  ],
+  "environment/environment.ts": [],
+  "environment/index.ts": [
+    "environment/environment.ts",
+    "environment/index.ts"
+  ],
+  "facts/facts.ts": [],
+  "facts/index.ts": [
+    "facts/facts.ts",
+    "facts/index.ts"
+  ],
+  "gate/caught/caught.ts": [
+    "gate/refused/index.ts"
+  ],
+  "gate/caught/index.ts": [
+    "gate/caught/caught.ts",
+    "gate/caught/index.ts"
+  ],
+  "gate/gate-next/gate-next.ts": [],
+  "gate/gate-next/index.ts": [
+    "gate/gate-next/gate-next.ts",
+    "gate/gate-next/index.ts"
+  ],
+  "gate/index.ts": [
+    "gate/caught/index.ts",
+    "gate/gate-next/index.ts",
+    "gate/index.ts",
+    "gate/refused/index.ts",
+    "gate/served-tiers/index.ts",
+    "gate/served/index.ts"
+  ],
+  "gate/refused/index.ts": [
+    "gate/refused/index.ts",
+    "gate/refused/refused.ts"
+  ],
+  "gate/refused/refused.ts": [],
+  "gate/served-tiers/index.ts": [
+    "gate/served-tiers/index.ts",
+    "gate/served-tiers/served-tiers.ts"
+  ],
+  "gate/served-tiers/served-tiers.ts": [],
+  "gate/served/index.ts": [
+    "gate/served/index.ts",
+    "gate/served/served.ts"
+  ],
+  "gate/served/served.ts": [
+    "gate/gate-next/index.ts",
+    "gate/refused/index.ts",
+    "gate/served-tiers/index.ts"
+  ],
+  "index.ts": [
+    "answer-of/index.ts",
+    "batching/index.ts",
+    "config-location/index.ts",
+    "context/index.ts",
+    "deployment/index.ts",
+    "entries/index.ts",
+    "environment/index.ts",
+    "facts/index.ts",
+    "gate/index.ts",
+    "index.ts",
+    "is-analytics-off/index.ts",
+    "policy-pins/index.ts",
+    "register.ts",
+    "sender/index.ts",
+    "telemetry-deps/index.ts",
+    "telemetry-of/index.ts"
+  ],
+  "is-analytics-off/index.ts": [
+    "is-analytics-off/index.ts",
+    "is-analytics-off/is-analytics-off.ts",
+    "is-analytics-off/is-env-set/index.ts",
+    "is-analytics-off/is-env-truthy/index.ts"
+  ],
+  "is-analytics-off/is-analytics-off.ts": [
+    "environment/index.ts",
+    "is-analytics-off/is-env-set/index.ts",
+    "is-analytics-off/is-env-truthy/index.ts",
+    "policy-pins/index.ts"
+  ],
+  "is-analytics-off/is-env-set/index.ts": [
+    "is-analytics-off/is-env-set/index.ts",
+    "is-analytics-off/is-env-set/is-env-set.ts"
+  ],
+  "is-analytics-off/is-env-set/is-env-set.ts": [],
+  "is-analytics-off/is-env-truthy/index.ts": [
+    "is-analytics-off/is-env-truthy/index.ts",
+    "is-analytics-off/is-env-truthy/is-env-truthy.ts"
+  ],
+  "is-analytics-off/is-env-truthy/is-env-truthy.ts": [],
+  "policy-pins/index.ts": [
+    "policy-pins/index.ts",
+    "policy-pins/policy-pins.ts"
+  ],
+  "policy-pins/policy-pins.ts": [],
+  "register.ts": [
+    "answer-of/index.ts",
+    "context/index.ts",
+    "gate/index.ts",
+    "is-analytics-off/index.ts",
+    "sender/index.ts",
+    "telemetry-of/index.ts"
+  ],
+  "sender/index.ts": [
+    "sender/index.ts",
+    "sender/sender.ts"
+  ],
+  "sender/sender.ts": [
+    "../types/index.d.ts"
+  ],
+  "telemetry-deps/index.ts": [
+    "telemetry-deps/index.ts",
+    "telemetry-deps/telemetry-deps.ts"
+  ],
+  "telemetry-deps/telemetry-deps.ts": [
+    "config-location/index.ts",
+    "deployment/index.ts",
+    "environment/index.ts",
+    "facts/index.ts",
+    "policy-pins/index.ts"
+  ],
+  "telemetry-of/index.ts": [
+    "telemetry-of/index.ts",
+    "telemetry-of/telemetry-of.ts"
+  ],
+  "telemetry-of/telemetry-of.ts": [
+    "../types/index.d.ts",
+    "batching/index.ts",
+    "context/index.ts",
+    "entries/index.ts",
+    "environment/index.ts",
+    "is-analytics-off/index.ts",
+    "sender/index.ts",
+    "telemetry-deps/index.ts"
+  ]
+}

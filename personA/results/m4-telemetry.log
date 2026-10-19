@@ -1,0 +1,617 @@
+
+tests\gate.test.ts:
+(pass) gate > the table an engine.create step is handed serves no one above either [611.96ms]
+(pass) gate > a module that keeps the table to call later never loads [919.67ms]
+(pass) gate > a hook above on the collector's stream renames no row, sends none [1360.82ms]
+(pass) gate > a hook above that swallows the collector's stream stops no row [2293.69ms]
+(pass) gate > a step above cannot hand up its own telemetry in place of this one [2293.72ms]
+(fail) gate > a hook on every event cannot turn a row to the other destination [2497.34ms]
+  AssertionError: expect(received).toEqual()
+  
+  Expected: {
+    answer: "queued",
+    posts: 1,
+    rows: [
+      {
+        event_type: "ClaudeCodeInternalEvent",
+        hasEventId: true,
+        hasTimestamp: true,
+        event_name: "tengu_plugin_survey_answered",
+        device_id: "ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01",
+        email: "person@example.invalid",
+        auth: {
+          account_uuid: "acc-1111-2222",
+          organization_uuid: "org-3333-4444"
+        },
+        session_id: "the-session",
+        model: "the-model",
+        user_type: "ant",
+        is_interactive: true,
+        client_type: "cli",
+        entrypoint: "cli",
+        env: {
+          platform: "darwin",
+          platform_raw: "darwin",
+          arch: "arm64",
+          terminal: "ghostty",
+          shell: "zsh",
+          package_managers: "npm,pnpm",
+          runtimes: "bun,node",
+          is_ci: false,
+          is_claubbit: false,
+          is_github_action: false,
+          is_claude_code_action: false,
+          is_claude_code_remote: false,
+          is_local_agent_mode: false,
+          is_conductor: false,
+          deployment_environment: "unknown-darwin",
+          vcs: "git",
+          version: "2.1.300-dev.20260920.t101500.sha1a2b3c4",
+          version_base: "2.1.300-dev",
+          build_time: "2026-09-20T10:15:00Z",
+          is_claude_ai_auth: true
+        },
+        metadata: {
+          rh: "d900cba35dcd6960",
+          answer: 2,
+          page: "ready",
+          seen: true
+        }
+      }
+    ]
+  }
+  Received: {
+    answer: "queued",
+    posts: 1,
+    rows: [
+      {
+        event_type: "ClaudeCodeInternalEvent",
+        hasEventId: true,
+        hasTimestamp: true,
+        event_name: "tengu_plugin_survey_answered",
+        session_id: "the-session",
+        model: "the-model",
+        user_type: "ant",
+        is_interactive: true,
+        client_type: "cli",
+        entrypoint: "cli",
+        env: {
+          platform: "darwin",
+          platform_raw: "darwin",
+          arch: "arm64",
+          terminal: "ghostty",
+          shell: "zsh",
+          package_managers: "npm,pnpm",
+          runtimes: "bun,node",
+          is_ci: false,
+          is_claubbit: false,
+          is_github_action: false,
+          is_claude_code_action: false,
+          is_claude_code_remote: false,
+          is_local_agent_mode: false,
+          is_conductor: false,
+          deployment_environment: "unknown-darwin",
+          vcs: "git",
+          version: "2.1.300-dev.20260920.t101500.sha1a2b3c4",
+          version_base: "2.1.300-dev",
+          build_time: "2026-09-20T10:15:00Z",
+          is_claude_ai_auth: false
+        },
+        metadata: {
+          rh: "d900cba35dcd6960",
+          answer: 2,
+          page: "ready",
+          seen: true
+        }
+      }
+    ]
+  }
+(fail) gate > what a hook on every event adds beside a row never leaves in it [2516.09ms]
+  AssertionError: expect(received).toEqual()
+  
+  Expected: {
+    answer: "queued",
+    posts: 1,
+    rows: [
+      {
+        event_type: "ClaudeCodeInternalEvent",
+        hasEventId: true,
+        hasTimestamp: true,
+        event_name: "tengu_plugin_survey_answered",
+        device_id: "ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01",
+        email: "person@example.invalid",
+        auth: {
+          account_uuid: "acc-1111-2222",
+          organization_uuid: "org-3333-4444"
+        },
+        session_id: "the-session",
+        model: "the-model",
+        user_type: "ant",
+        is_interactive: true,
+        client_type: "cli",
+        entrypoint: "cli",
+        env: {
+          platform: "darwin",
+          platform_raw: "darwin",
+          arch: "arm64",
+          terminal: "ghostty",
+          shell: "zsh",
+          package_managers: "npm,pnpm",
+          runtimes: "bun,node",
+          is_ci: false,
+          is_claubbit: false,
+          is_github_action: false,
+          is_claude_code_action: false,
+          is_claude_code_remote: false,
+          is_local_agent_mode: false,
+          is_conductor: false,
+          deployment_environment: "unknown-darwin",
+          vcs: "git",
+          version: "2.1.300-dev.20260920.t101500.sha1a2b3c4",
+          version_base: "2.1.300-dev",
+          build_time: "2026-09-20T10:15:00Z",
+          is_claude_ai_auth: true
+        },
+        metadata: {
+          rh: "d900cba35dcd6960",
+          answer: 2,
+          page: "ready",
+          seen: true
+        }
+      }
+    ]
+  }
+  Received: {
+    answer: "queued",
+    posts: 1,
+    rows: [
+      {
+        event_type: "ClaudeCodeInternalEvent",
+        hasEventId: true,
+        hasTimestamp: true,
+        event_name: "tengu_plugin_survey_answered",
+        session_id: "the-session",
+        model: "the-model",
+        user_type: "ant",
+        is_interactive: true,
+        client_type: "cli",
+        entrypoint: "cli",
+        env: {
+          platform: "darwin",
+          platform_raw: "darwin",
+          arch: "arm64",
+          terminal: "ghostty",
+          shell: "zsh",
+          package_managers: "npm,pnpm",
+          runtimes: "bun,node",
+          is_ci: false,
+          is_claubbit: false,
+          is_github_action: false,
+          is_claude_code_action: false,
+          is_claude_code_remote: false,
+          is_local_agent_mode: false,
+          is_conductor: false,
+          deployment_environment: "unknown-darwin",
+          vcs: "git",
+          version: "2.1.300-dev.20260920.t101500.sha1a2b3c4",
+          version_base: "2.1.300-dev",
+          build_time: "2026-09-20T10:15:00Z",
+          is_claude_ai_auth: false
+        },
+        metadata: {
+          rh: "d900cba35dcd6960",
+          answer: 2,
+          page: "ready",
+          seen: true
+        }
+      }
+    ]
+  }
+
+tests\register.test.ts:
+(fail) register > rows queued through $.telemetry.log go out as one complete batch [582.57ms]
+  AssertionError: expect(received).toEqual()
+  
+  Expected: {
+    event_type: "ClaudeCodeInternalEvent",
+    hasEventId: true,
+    hasTimestamp: true,
+    event_name: "tengu_plugin_survey_answered",
+    device_id: "ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01",
+    email: "person@example.invalid",
+    auth: {
+      account_uuid: "acc-1111-2222",
+      organization_uuid: "org-3333-4444"
+    },
+    session_id: "the-session",
+    model: "the-model",
+    user_type: "ant",
+    is_interactive: true,
+    client_type: "cli",
+    entrypoint: "cli",
+    env: {
+      platform: "darwin",
+      platform_raw: "darwin",
+      arch: "arm64",
+      terminal: "ghostty",
+      shell: "zsh",
+      package_managers: "npm,pnpm",
+      runtimes: "bun,node",
+      is_ci: false,
+      is_claubbit: false,
+      is_github_action: false,
+      is_claude_code_action: false,
+      is_claude_code_remote: false,
+      is_local_agent_mode: false,
+      is_conductor: false,
+      deployment_environment: "unknown-darwin",
+      vcs: "git",
+      version: "2.1.300-dev.20260920.t101500.sha1a2b3c4",
+      version_base: "2.1.300-dev",
+      build_time: "2026-09-20T10:15:00Z",
+      is_claude_ai_auth: true
+    },
+    metadata: {
+      rh: "d900cba35dcd6960",
+      answer: 2,
+      page: "ready",
+      seen: true
+    }
+  }
+  Received: {
+    event_type: "ClaudeCodeInternalEvent",
+    hasEventId: true,
+    hasTimestamp: true,
+    event_name: "tengu_plugin_survey_answered",
+    session_id: "the-session",
+    model: "the-model",
+    user_type: "ant",
+    is_interactive: true,
+    client_type: "cli",
+    entrypoint: "cli",
+    env: {
+      platform: "darwin",
+      platform_raw: "darwin",
+      arch: "arm64",
+      terminal: "ghostty",
+      shell: "zsh",
+      package_managers: "npm,pnpm",
+      runtimes: "bun,node",
+      is_ci: false,
+      is_claubbit: false,
+      is_github_action: false,
+      is_claude_code_action: false,
+      is_claude_code_remote: false,
+      is_local_agent_mode: false,
+      is_conductor: false,
+      deployment_environment: "unknown-darwin",
+      vcs: "git",
+      version: "2.1.300-dev.20260920.t101500.sha1a2b3c4",
+      version_base: "2.1.300-dev",
+      build_time: "2026-09-20T10:15:00Z",
+      is_claude_ai_auth: false
+    },
+    metadata: {
+      rh: "d900cba35dcd6960",
+      answer: 2,
+      page: "ready",
+      seen: true
+    }
+  }
+(fail) register > an engine without the version read leaves those three columns empty [1022.63ms]
+  AssertionError: expect(received).toEqual()
+  
+  Expected: [
+    {
+      event_type: "ClaudeCodeInternalEvent",
+      hasEventId: true,
+      hasTimestamp: true,
+      event_name: "tengu_plugin_survey_answered",
+      device_id: "ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01",
+      email: "person@example.invalid",
+      auth: {
+        account_uuid: "acc-1111-2222",
+        organization_uuid: "org-3333-4444"
+      },
+      session_id: "the-session",
+      model: "the-model",
+      user_type: "ant",
+      is_interactive: true,
+      client_type: "cli",
+      entrypoint: "cli",
+      env: {
+        platform: "darwin",
+        platform_raw: "darwin",
+        arch: "arm64",
+        terminal: "ghostty",
+        shell: "zsh",
+        package_managers: "npm,pnpm",
+        runtimes: "bun,node",
+        is_ci: false,
+        is_claubbit: false,
+        is_github_action: false,
+        is_claude_code_action: false,
+        is_claude_code_remote: false,
+        is_local_agent_mode: false,
+        is_conductor: false,
+        deployment_environment: "unknown-darwin",
+        vcs: "git",
+        is_claude_ai_auth: true
+      },
+      metadata: {
+        rh: "d900cba35dcd6960",
+        answer: 2,
+        page: "ready",
+        seen: true
+      }
+    }
+  ]
+  Received: [
+    {
+      event_type: "ClaudeCodeInternalEvent",
+      hasEventId: true,
+      hasTimestamp: true,
+      event_name: "tengu_plugin_survey_answered",
+      session_id: "the-session",
+      model: "the-model",
+      user_type: "ant",
+      is_interactive: true,
+      client_type: "cli",
+      entrypoint: "cli",
+      env: {
+        platform: "darwin",
+        platform_raw: "darwin",
+        arch: "arm64",
+        terminal: "ghostty",
+        shell: "zsh",
+        package_managers: "npm,pnpm",
+        runtimes: "bun,node",
+        is_ci: false,
+        is_claubbit: false,
+        is_github_action: false,
+        is_claude_code_action: false,
+        is_claude_code_remote: false,
+        is_local_agent_mode: false,
+        is_conductor: false,
+        deployment_environment: "unknown-darwin",
+        vcs: "git",
+        is_claude_ai_auth: false
+      },
+      metadata: {
+        rh: "d900cba35dcd6960",
+        answer: 2,
+        page: "ready",
+        seen: true
+      }
+    }
+  ]
+(pass) register > a full queue goes out at once, before the window [2228.29ms]
+(fail) register > the end of the session sends what still waits [2083.71ms]
+  AssertionError: expect(received).toEqual()
+  
+  Expected: [
+    {
+      event_type: "ClaudeCodeInternalEvent",
+      hasEventId: true,
+      hasTimestamp: true,
+      event_name: "tengu_plugin_survey_answered",
+      device_id: "ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01",
+      email: "person@example.invalid",
+      auth: {
+        account_uuid: "acc-1111-2222",
+        organization_uuid: "org-3333-4444"
+      },
+      session_id: "the-session",
+      model: "the-model",
+      user_type: "ant",
+      is_interactive: true,
+      client_type: "cli",
+      entrypoint: "cli",
+      env: {
+        platform: "darwin",
+        platform_raw: "darwin",
+        arch: "arm64",
+        terminal: "ghostty",
+        shell: "zsh",
+        package_managers: "npm,pnpm",
+        runtimes: "bun,node",
+        is_ci: false,
+        is_claubbit: false,
+        is_github_action: false,
+        is_claude_code_action: false,
+        is_claude_code_remote: false,
+        is_local_agent_mode: false,
+        is_conductor: false,
+        deployment_environment: "unknown-darwin",
+        vcs: "git",
+        version: "2.1.300-dev.20260920.t101500.sha1a2b3c4",
+        version_base: "2.1.300-dev",
+        build_time: "2026-09-20T10:15:00Z",
+        is_claude_ai_auth: true
+      },
+      metadata: {
+        rh: "d900cba35dcd6960",
+        answer: 2,
+        page: "ready",
+        seen: true
+      }
+    }
+  ]
+  Received: [
+    {
+      event_type: "ClaudeCodeInternalEvent",
+      hasEventId: true,
+      hasTimestamp: true,
+      event_name: "tengu_plugin_survey_answered",
+      session_id: "the-session",
+      model: "the-model",
+      user_type: "ant",
+      is_interactive: true,
+      client_type: "cli",
+      entrypoint: "cli",
+      env: {
+        platform: "darwin",
+        platform_raw: "darwin",
+        arch: "arm64",
+        terminal: "ghostty",
+        shell: "zsh",
+        package_managers: "npm,pnpm",
+        runtimes: "bun,node",
+        is_ci: false,
+        is_claubbit: false,
+        is_github_action: false,
+        is_claude_code_action: false,
+        is_claude_code_remote: false,
+        is_local_agent_mode: false,
+        is_conductor: false,
+        deployment_environment: "unknown-darwin",
+        vcs: "git",
+        version: "2.1.300-dev.20260920.t101500.sha1a2b3c4",
+        version_base: "2.1.300-dev",
+        build_time: "2026-09-20T10:15:00Z",
+        is_claude_ai_auth: false
+      },
+      metadata: {
+        rh: "d900cba35dcd6960",
+        answer: 2,
+        page: "ready",
+        seen: true
+      }
+    }
+  ]
+(fail) register > a tengu_ name is kept; an external build sends no address [2278.26ms]
+  AssertionError: expect(received).toMatchObject()
+  
+  Expected: {
+    event_name: "tengu_repl_diff_panel_shown",
+    user_type: "external",
+    device_id: "ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01"
+  }
+  Received: {
+    event_type: "ClaudeCodeInternalEvent",
+    hasEventId: true,
+    hasTimestamp: true,
+    event_name: "tengu_repl_diff_panel_shown",
+    session_id: "the-session",
+    model: "the-model",
+    user_type: "external",
+    is_interactive: true,
+    client_type: "cli",
+    entrypoint: "cli",
+    env: {
+      platform: "darwin",
+      platform_raw: "darwin",
+      arch: "arm64",
+      terminal: "ghostty",
+      shell: "zsh",
+      package_managers: "npm,pnpm",
+      runtimes: "bun,node",
+      is_ci: false,
+      is_claubbit: false,
+      is_github_action: false,
+      is_claude_code_action: false,
+      is_claude_code_remote: false,
+      is_local_agent_mode: false,
+      is_conductor: false,
+      deployment_environment: "unknown-darwin",
+      vcs: "git",
+      version: "2.1.300-dev.20260920.t101500.sha1a2b3c4",
+      version_base: "2.1.300-dev",
+      build_time: "2026-09-20T10:15:00Z",
+      is_claude_ai_auth: false
+    },
+    metadata: {
+      rh: "d900cba35dcd6960",
+      answer: 2,
+      page: "ready",
+      seen: true
+    }
+  }
+(pass) register > nothing is sent where any switch has analytics off [2648.25ms]
+(pass) register > a gateway the managed policy pins sends nothing [1688.88ms]
+(pass) register > unreadable switches send nothing, and the debug log says why [1682.20ms]
+(pass) register > a host-managed third-party provider follows DISABLE_TELEMETRY [1684.28ms]
+(pass) register > marks go out as the feature events, by their own names [1595.57ms]
+(pass) register > a mark with a bad kind or a wrong reason is refused, nothing queued [1514.66ms]
+(pass) register > with no first-party credential nothing is sent, and the debug log says so [1615.90ms]
+(pass) register > a server error is tried once more; a second one drops the batch [1682.61ms]
+(pass) register > a server error then an acceptance sends the batch [1591.09ms]
+(pass) register > a client error is not retried [1591.75ms]
+(pass) register > free text and a malformed entry are refused, nothing queued [1535.91ms]
+(pass) register > a refused entry is denied by the hook, naming the caller and the reason [1447.54ms]
+(pass) register > a number that is not finite is refused, nothing queued [1404.19ms]
+(fail) register > the config, the machine and the variables are read once a session [1516.31ms]
+  AssertionError: expect(received).toEqual()
+  
+  Expected: { posts: 2, configReads: 1, runs: [["sh", "-c"]] }
+  Received: { posts: 2, configReads: 0, runs: [["sh", "-c"]] }
+(pass) register > on Windows the platform is read off the environment and no program runs [1595.47ms]
+(fail) register > on Linux the distribution, kernel, WSL and EC2 come from their files [1606.37ms]
+  AssertionError: expect(received).toMatchObject()
+  
+  Expected: {
+    env: {
+      platform: "linux",
+      platform_raw: "linux",
+      arch: "x64",
+      terminal: "ghostty",
+      package_managers: "npm",
+      runtimes: "node",
+      linux_distro_id: "ubuntu",
+      linux_distro_version: "24.04",
+      linux_kernel: "6.6.87.2-microsoft-standard-WSL2",
+      wsl_version: "2",
+      deployment_environment: "aws-ec2"
+    }
+  }
+  Received: {
+    event_type: "ClaudeCodeInternalEvent",
+    hasEventId: true,
+    hasTimestamp: true,
+    event_name: "tengu_plugin_survey_answered",
+    session_id: "the-session",
+    model: "the-model",
+    user_type: "ant",
+    is_interactive: true,
+    client_type: "cli",
+    entrypoint: "cli",
+    env: {
+      platform: "linux",
+      platform_raw: "linux",
+      arch: "x64",
+      terminal: "ghostty",
+      shell: "zsh",
+      package_managers: "npm",
+      runtimes: "node",
+      is_ci: false,
+      is_claubbit: false,
+      is_github_action: false,
+      is_claude_code_action: false,
+      is_claude_code_remote: false,
+      is_local_agent_mode: false,
+      is_conductor: false,
+      deployment_environment: "unknown-linux",
+      linux_kernel: "6.6.87.2-microsoft-standard-WSL2",
+      vcs: "git",
+      version: "2.1.300-dev.20260920.t101500.sha1a2b3c4",
+      version_base: "2.1.300-dev",
+      build_time: "2026-09-20T10:15:00Z",
+      is_claude_ai_auth: false
+    },
+    metadata: {
+      rh: "d900cba35dcd6960",
+      answer: 2,
+      page: "ready",
+      seen: true
+    }
+  }
+(pass) register > in a GitHub Actions run the client and the workflow ids ride along [2080.98ms]
+(pass) register > a failed authorize is not held against the next batch [1379.60ms]
+(pass) register > a plugin a person installed is refused, and its own hook carries on [1251.70ms]
+(pass) register > a plugin an administrator prepended is refused too [1166.76ms]
+(pass) register > the gate serves built-ins and core, throws on no origin [2.96ms]
+(pass) register > a gate that threw refuses; a refusal from beneath passes up [1.68ms]
+
+ 26 pass
+ 8 fail
+Ran 34 tests across 2 files. [41.43s]

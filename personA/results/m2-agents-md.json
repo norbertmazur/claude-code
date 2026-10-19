@@ -1,0 +1,209 @@
+{
+  "files/chain-root-of.ts": [],
+  "files/dropped-kinds.ts": [],
+  "files/files-of.ts": [],
+  "files/index.ts": [
+    "files/chain-root-of.ts",
+    "files/dropped-kinds.ts",
+    "files/files-of.ts",
+    "files/index.ts",
+    "files/insertion-index.ts",
+    "files/is-claude-file-on-walk.ts",
+    "files/is-kept-without-instructions.ts",
+    "files/is-project-own.ts",
+    "files/project-dir-of.ts",
+    "files/unseen-files.ts",
+    "files/with-project-files.ts"
+  ],
+  "files/insertion-index.ts": [
+    "files/chain-root-of.ts",
+    "files/is-project-own.ts",
+    "files/project-dir-of.ts",
+    "frames/index.ts"
+  ],
+  "files/is-claude-file-on-walk.ts": [
+    "files/is-project-own.ts",
+    "files/project-dir-of.ts",
+    "frames/index.ts",
+    "names/index.ts"
+  ],
+  "files/is-kept-without-instructions.ts": [
+    "files/dropped-kinds.ts"
+  ],
+  "files/is-project-own.ts": [],
+  "files/project-dir-of.ts": [
+    "frames/index.ts"
+  ],
+  "files/unseen-files.ts": [
+    "files/is-project-own.ts",
+    "frames/index.ts"
+  ],
+  "files/with-project-files.ts": [
+    "files/chain-root-of.ts",
+    "files/insertion-index.ts",
+    "files/project-dir-of.ts"
+  ],
+  "frames/absolute-of.ts": [],
+  "frames/index.ts": [
+    "frames/absolute-of.ts",
+    "frames/index.ts",
+    "frames/is-below.ts",
+    "frames/is-file-at.ts",
+    "frames/nested-frame.ts",
+    "frames/normal-spelling-of.ts",
+    "frames/outside-claude-dirs.ts"
+  ],
+  "frames/is-below.ts": [
+    "frames/normal-spelling-of.ts"
+  ],
+  "frames/is-file-at.ts": [
+    "frames/normal-spelling-of.ts"
+  ],
+  "frames/nested-frame.ts": [],
+  "frames/normal-spelling-of.ts": [],
+  "frames/outside-claude-dirs.ts": [],
+  "index.ts": [
+    "files/index.ts",
+    "frames/index.ts",
+    "index.ts",
+    "modes/index.ts",
+    "names/index.ts",
+    "register.ts",
+    "switches/index.ts",
+    "telemetry/index.ts"
+  ],
+  "modes/default-mode.ts": [
+    "modes/types/index.ts"
+  ],
+  "modes/index.ts": [
+    "modes/default-mode.ts",
+    "modes/index.ts",
+    "modes/legacy-mode-of.ts",
+    "modes/mode-of.ts",
+    "modes/modes.ts",
+    "modes/types/index.ts"
+  ],
+  "modes/legacy-mode-of.ts": [
+    "modes/types/index.ts"
+  ],
+  "modes/mode-of.ts": [
+    "modes/default-mode.ts",
+    "modes/modes.ts",
+    "modes/types/index.ts"
+  ],
+  "modes/modes.ts": [
+    "modes/types/index.ts"
+  ],
+  "modes/types/index.ts": [
+    "modes/types/index.ts",
+    "modes/types/mode/index.ts"
+  ],
+  "modes/types/mode/index.ts": [
+    "modes/types/mode/index.ts",
+    "modes/types/mode/mode.ts"
+  ],
+  "modes/types/mode/mode.ts": [],
+  "names/agents-names.ts": [],
+  "names/claude-names.ts": [],
+  "names/index.ts": [
+    "names/agents-names.ts",
+    "names/claude-names.ts",
+    "names/index.ts",
+    "names/main-loop.ts"
+  ],
+  "names/main-loop.ts": [],
+  "register.ts": [
+    "files/index.ts",
+    "frames/index.ts",
+    "modes/index.ts",
+    "names/index.ts",
+    "switches/index.ts",
+    "telemetry/index.ts"
+  ],
+  "switches/index.ts": [
+    "switches/index.ts",
+    "switches/is-switched-on.ts"
+  ],
+  "switches/is-switched-on.ts": [],
+  "telemetry/feature-name.ts": [],
+  "telemetry/index.ts": [
+    "telemetry/feature-name.ts",
+    "telemetry/index.ts",
+    "telemetry/load-counts-of.ts",
+    "telemetry/load-event.ts",
+    "telemetry/load-mark-of.ts",
+    "telemetry/load-row-of.ts",
+    "telemetry/mode-choice-of.ts",
+    "telemetry/mode-event.ts",
+    "telemetry/mode-row-of.ts",
+    "telemetry/nested-event.ts",
+    "telemetry/nested-row-of.ts",
+    "telemetry/quietly.ts",
+    "telemetry/types/index.ts",
+    "telemetry/walk-failed-reason.ts"
+  ],
+  "telemetry/load-counts-of.ts": [
+    "telemetry/types/index.ts"
+  ],
+  "telemetry/load-event.ts": [],
+  "telemetry/load-mark-of.ts": [
+    "telemetry/feature-name.ts",
+    "telemetry/types/index.ts",
+    "telemetry/walk-failed-reason.ts"
+  ],
+  "telemetry/load-row-of.ts": [
+    "modes/index.ts",
+    "telemetry/load-event.ts",
+    "telemetry/mode-choice-of.ts",
+    "telemetry/types/index.ts"
+  ],
+  "telemetry/mode-choice-of.ts": [
+    "modes/index.ts",
+    "telemetry/types/index.ts"
+  ],
+  "telemetry/mode-event.ts": [],
+  "telemetry/mode-row-of.ts": [
+    "modes/index.ts",
+    "telemetry/mode-choice-of.ts",
+    "telemetry/mode-event.ts",
+    "telemetry/types/index.ts"
+  ],
+  "telemetry/nested-event.ts": [],
+  "telemetry/nested-row-of.ts": [
+    "modes/index.ts",
+    "telemetry/mode-choice-of.ts",
+    "telemetry/nested-event.ts",
+    "telemetry/types/index.ts"
+  ],
+  "telemetry/quietly.ts": [],
+  "telemetry/types/index.ts": [
+    "telemetry/types/index.ts",
+    "telemetry/types/load-counts/index.ts",
+    "telemetry/types/telemetry-mark/index.ts",
+    "telemetry/types/telemetry-prop/index.ts",
+    "telemetry/types/telemetry-row/index.ts"
+  ],
+  "telemetry/types/load-counts/index.ts": [
+    "telemetry/types/load-counts/index.ts",
+    "telemetry/types/load-counts/load-counts.ts"
+  ],
+  "telemetry/types/load-counts/load-counts.ts": [],
+  "telemetry/types/telemetry-mark/index.ts": [
+    "telemetry/types/telemetry-mark/index.ts",
+    "telemetry/types/telemetry-mark/telemetry-mark.ts"
+  ],
+  "telemetry/types/telemetry-mark/telemetry-mark.ts": [],
+  "telemetry/types/telemetry-prop/index.ts": [
+    "telemetry/types/telemetry-prop/index.ts",
+    "telemetry/types/telemetry-prop/telemetry-prop.ts"
+  ],
+  "telemetry/types/telemetry-prop/telemetry-prop.ts": [
+    "telemetry/types/telemetry-row/index.ts"
+  ],
+  "telemetry/types/telemetry-row/index.ts": [
+    "telemetry/types/telemetry-row/index.ts",
+    "telemetry/types/telemetry-row/telemetry-row.ts"
+  ],
+  "telemetry/types/telemetry-row/telemetry-row.ts": [],
+  "telemetry/walk-failed-reason.ts": []
+}

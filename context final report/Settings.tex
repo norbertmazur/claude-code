@@ -1,0 +1,85 @@
+% Title
+\newcommand\reporttitle{Capstone Software Development: Final report}
+
+% Subtitle
+\newcommand\reportsubtitle{2IRR80 - Q1 (2026 - 2027)}
+
+% Project team
+\newcommand\projectteam{
+[TEAM NUMBER] % CHANGE TEAM NUMBER
+}
+
+% Authors
+\newcommand\reportauthors{
+Hriday Sen & 2148420 & h.sen@student.tue.nl\\ % CHANGE STUDENT DETAILS
+Victor Nicholas Gurgu & 1952234 & v.gurgu@student.tue.nl\\ % CHANGE STUDENT DETAILS
+John Doe & 1234567 & john.doe@student.tue.nl\\ % CHANGE STUDENT DETAILS
+}
+
+% Count all words in sections of the document
+\newcommand{\wordcount}{%
+    \immediate\write18{texcount -0 -sum -sub=section -merge -template=SUM -q main.tex output.bbl > main-words.sum }%
+    \noindent \textbf{Words:} \makebox[1em][l]{\input{main-words.sum}}%
+}
+
+% Date and location
+\newcommand\placeanddate{
+\today \ - Eindhoven
+}
+
+% Define Tue-red (color of the TU/e logo). Can be changed to drastically change the look of the template
+\definecolor{Tue-red}{RGB}{199, 25, 24}
+
+% Sets up hyperlinks in the document to be colored
+\hypersetup{
+    colorlinks=true,
+    linkcolor=Tue-red,
+    urlcolor=Tue-red,
+    citecolor = Tue-red
+    }
+\urlstyle{same} % Defines settings for link and reference formatting
+
+% Change bullet style for level 1, 2 and 3 respectively for itemize
+\renewcommand{\labelitemi}{\scriptsize\textcolor{Tue-red}{$\blacksquare$}}% level 1
+\renewcommand{\labelitemii}{\scriptsize\textcolor{Tue-red}{$\square$}}% level 2
+\renewcommand{\labelitemiii}{\textcolor{Tue-red}{$\circ$}}% level 3
+
+% Change bullet style for level 1, 2 and 3 respectively for enumerate
+\renewcommand{\labelenumi}{\textbf{\textcolor{Tue-red}{\arabic*.}}}% level 1
+\renewcommand{\labelenumii}{\textbf{\textcolor{Tue-red}{[\alph*]}}}% level 2
+\renewcommand{\labelenumiii}{\textbf{\textcolor{Tue-red}{\roman*.}}}% level 3
+
+% Have reference labels be linked to section (section 3 will have fig. 3.1 etc.)
+\counterwithin{equation}{section} % For equations
+\counterwithin{figure}{section} % For figures
+\counterwithin{table}{section} % For tables
+
+% Creates a beautiful header/footer
+\pagestyle{fancy}
+\lhead{\includegraphics[height = 8pt]{Figures/0. General/tue_logo_red_small.pdf}}
+\rhead{\reporttitle}
+\renewcommand{\footrulewidth}{0.4pt}
+\cfoot{Page \thepage}
+
+% Formats section, subsection and subsubsection titles respectively 
+\titleformat{\section}[block]
+  {\sffamily\color{Tue-red}\Large\bfseries\centering}
+  {\thesection\enskip\color{gray}\textbar\enskip}
+  {0cm}{} % Formats section titles
+
+\titleformat{\subsection}[block]
+  {\sffamily\color{Tue-red}\large\bfseries\centering}
+  {\thesubsection\enskip\color{gray}\textbar\enskip}
+  {0cm}{} % Formats subsection titles
+
+\titleformat{\subsubsection}[block]
+  {\sffamily\color{Tue-red}\bfseries\centering}
+  {\thesubsubsection\enskip\color{gray}\textbar\enskip}
+  {0cm}{} % Formats subsubsection titles
+
+% Formats captions
+\DeclareCaptionFont{Tue-red}{\color{Tue-red}}
+\captionsetup{labelfont={Tue-red,bf}}
+
+% Removes indent when starting a new paragraph
+\setlength\parindent{0pt}

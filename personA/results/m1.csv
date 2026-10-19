@@ -1,0 +1,784 @@
+14,4,84,2,16,"chainRootOf@13-28@mods/agents-md/hooks\files\chain-root-of.ts","mods/agents-md/hooks\files\chain-root-of.ts","chainRootOf","chainRootOf ( file InstructionFile , byPath ReadonlyMap , )",13,28
+2,1,14,1,2,"filesOf@12-13@mods/agents-md/hooks\files\files-of.ts","mods/agents-md/hooks\files\files-of.ts","filesOf","filesOf ( found readonly FsAncestor )",12,13
+1,1,1,0,1,"(anonymous)@14-14@mods/agents-md/hooks\files\files-of.ts","mods/agents-md/hooks\files\files-of.ts","(anonymous)","(anonymous)",14,14
+6,1,25,0,6,"(anonymous)@14-19@mods/agents-md/hooks\files\files-of.ts","mods/agents-md/hooks\files\files-of.ts","(anonymous)","(anonymous)",14,19
+1,1,8,0,1,"(anonymous)@24-24@mods/agents-md/hooks\files\insertion-index.ts","mods/agents-md/hooks\files\insertion-index.ts","(anonymous)","(anonymous)",24,24
+1,1,1,0,1,"(anonymous)@27-27@mods/agents-md/hooks\files\insertion-index.ts","mods/agents-md/hooks\files\insertion-index.ts","(anonymous)","(anonymous)",27,27
+1,1,6,0,1,"(anonymous)@41-41@mods/agents-md/hooks\files\insertion-index.ts","mods/agents-md/hooks\files\insertion-index.ts","(anonymous)","(anonymous)",41,41
+20,5,117,2,25,"insertionIndex@20-44@mods/agents-md/hooks\files\insertion-index.ts","mods/agents-md/hooks\files\insertion-index.ts","insertionIndex","insertionIndex ( files readonly InstructionFile , dir , )",20,44
+1,1,1,0,1,"(anonymous)@28-28@mods/agents-md/hooks\files\is-claude-file-on-walk.ts","mods/agents-md/hooks\files\is-claude-file-on-walk.ts","(anonymous)","(anonymous)",28,28
+17,5,96,2,20,"isClaudeFileOnWalk@20-39@mods/agents-md/hooks\files\is-claude-file-on-walk.ts","mods/agents-md/hooks\files\is-claude-file-on-walk.ts","isClaudeFileOnWalk","isClaudeFileOnWalk ( file InstructionFile , root , )",20,39
+2,1,9,1,2,"isKeptWithoutInstructions@12-13@mods/agents-md/hooks\files\is-kept-without-instructions.ts","mods/agents-md/hooks\files\is-kept-without-instructions.ts","isKeptWithoutInstructions","isKeptWithoutInstructions ( file InstructionFile )",12,13
+2,1,9,1,2,"isProjectOwn@10-11@mods/agents-md/hooks\files\is-project-own.ts","mods/agents-md/hooks\files\is-project-own.ts","isProjectOwn","isProjectOwn ( file InstructionFile )",10,11
+6,3,58,1,7,"projectDirOf@10-16@mods/agents-md/hooks\files\project-dir-of.ts","mods/agents-md/hooks\files\project-dir-of.ts","projectDirOf","projectDirOf ( path )",10,16
+1,1,9,0,1,"(anonymous)@22-22@mods/agents-md/hooks\files\unseen-files.ts","mods/agents-md/hooks\files\unseen-files.ts","(anonymous)","(anonymous)",22,22
+1,1,8,0,1,"(anonymous)@24-24@mods/agents-md/hooks\files\unseen-files.ts","mods/agents-md/hooks\files\unseen-files.ts","(anonymous)","(anonymous)",24,24
+20,5,138,2,23,"unseenFiles@18-40@mods/agents-md/hooks\files\unseen-files.ts","mods/agents-md/hooks\files\unseen-files.ts","unseenFiles","unseenFiles ( candidates readonly InstructionFile , handed readonly InstructionFile , )",18,40
+1,1,8,0,1,"(anonymous)@24-24@mods/agents-md/hooks\files\with-project-files.ts","mods/agents-md/hooks\files\with-project-files.ts","(anonymous)","(anonymous)",24,24
+19,6,146,2,23,"withProjectFiles@15-37@mods/agents-md/hooks\files\with-project-files.ts","mods/agents-md/hooks\files\with-project-files.ts","withProjectFiles","withProjectFiles ( handed readonly InstructionFile , added readonly InstructionFile , )",15,37
+1,2,20,1,1,"path@33-33@mods/agents-md/hooks\frames\absolute-of.ts","mods/agents-md/hooks\frames\absolute-of.ts","path","path ( dir )",33,33
+2,1,13,2,2,"isBelow@11-12@mods/agents-md/hooks\frames\is-below.ts","mods/agents-md/hooks\frames\is-below.ts","isBelow","isBelow ( path , dir )",11,12
+2,1,13,2,2,"isFileAt@13-14@mods/agents-md/hooks\frames\is-file-at.ts","mods/agents-md/hooks\frames\is-file-at.ts","isFileAt","isFileAt ( file InstructionFile , path )",13,14
+2,1,9,1,2,"nestedFrame@10-11@mods/agents-md/hooks\frames\nested-frame.ts","mods/agents-md/hooks\frames\nested-frame.ts","nestedFrame","nestedFrame ( file InstructionFile )",10,11
+2,1,9,1,2,"normalSpellingOf@8-9@mods/agents-md/hooks\frames\normal-spelling-of.ts","mods/agents-md/hooks\frames\normal-spelling-of.ts","normalSpellingOf","normalSpellingOf ( path )",8,9
+1,1,4,0,1,"(anonymous)@18-18@mods/agents-md/hooks\frames\outside-claude-dirs.ts","mods/agents-md/hooks\frames\outside-claude-dirs.ts","(anonymous)","(anonymous)",18,18
+1,1,10,0,1,"(anonymous)@20-20@mods/agents-md/hooks\frames\outside-claude-dirs.ts","mods/agents-md/hooks\frames\outside-claude-dirs.ts","(anonymous)","(anonymous)",20,20
+7,1,45,2,8,"outsideClaudeDirs@14-21@mods/agents-md/hooks\frames\outside-claude-dirs.ts","mods/agents-md/hooks\frames\outside-claude-dirs.ts","outsideClaudeDirs","outsideClaudeDirs ( agents readonly FsAncestor , claude readonly FsAncestor , )",14,21
+8,5,40,1,9,"legacyModeOf@25-33@mods/agents-md/hooks\modes\legacy-mode-of.ts","mods/agents-md/hooks\modes\legacy-mode-of.ts","legacyModeOf","legacyModeOf ( value )",25,33
+2,1,9,1,2,"modeOf@12-13@mods/agents-md/hooks\modes\mode-of.ts","mods/agents-md/hooks\modes\mode-of.ts","modeOf","modeOf ( value )",12,13
+1,1,4,0,1,"(anonymous)@13-13@mods/agents-md/hooks\modes\mode-of.ts","mods/agents-md/hooks\modes\mode-of.ts","(anonymous)","(anonymous)",13,13
+2,1,11,1,2,"isSwitchedOn@13-14@mods/agents-md/hooks\switches\is-switched-on.ts","mods/agents-md/hooks\switches\is-switched-on.ts","isSwitchedOn","isSwitchedOn ( value undefined )",13,14
+2,2,15,0,2,"(anonymous)@21-22@mods/agents-md/hooks\telemetry\load-counts-of.ts","mods/agents-md/hooks\telemetry\load-counts-of.ts","(anonymous)","(anonymous)",21,22
+2,1,9,0,2,"(anonymous)@29-30@mods/agents-md/hooks\telemetry\load-counts-of.ts","mods/agents-md/hooks\telemetry\load-counts-of.ts","(anonymous)","(anonymous)",29,30
+18,1,70,3,21,"loadCountsOf@15-35@mods/agents-md/hooks\telemetry\load-counts-of.ts","mods/agents-md/hooks\telemetry\load-counts-of.ts","loadCountsOf","loadCountsOf ( added readonly InstructionFile , isYielded , isWalkFailed , )",15,35
+2,1,9,1,2,"loadMarkOf@12-13@mods/agents-md/hooks\telemetry\load-mark-of.ts","mods/agents-md/hooks\telemetry\load-mark-of.ts","loadMarkOf","loadMarkOf ( counts LoadCounts )",12,13
+11,1,50,0,11,"(anonymous)@17-27@mods/agents-md/hooks\telemetry\load-row-of.ts","mods/agents-md/hooks\telemetry\load-row-of.ts","(anonymous)","(anonymous)",17,27
+4,1,24,1,4,"modeChoiceOf@10-13@mods/agents-md/hooks\telemetry\mode-choice-of.ts","mods/agents-md/hooks\telemetry\mode-choice-of.ts","modeChoiceOf","modeChoiceOf ( mode Modes Mode )",10,13
+4,1,23,0,4,"(anonymous)@17-20@mods/agents-md/hooks\telemetry\mode-row-of.ts","mods/agents-md/hooks\telemetry\mode-row-of.ts","(anonymous)","(anonymous)",17,20
+4,1,23,0,4,"(anonymous)@17-20@mods/agents-md/hooks\telemetry\nested-row-of.ts","mods/agents-md/hooks\telemetry\nested-row-of.ts","(anonymous)","(anonymous)",17,20
+1,1,11,1,1,"quietly@9-9@mods/agents-md/hooks\telemetry\quietly.ts","mods/agents-md/hooks\telemetry\quietly.ts","quietly","quietly ( send ( )",9,9
+1,1,2,0,1,"(anonymous)@12-12@mods/agents-md/hooks\telemetry\quietly.ts","mods/agents-md/hooks\telemetry\quietly.ts","(anonymous)","(anonymous)",12,12
+5,2,20,0,5,"(anonymous)@9-13@mods/agents-md/hooks\telemetry\quietly.ts","mods/agents-md/hooks\telemetry\quietly.ts","(anonymous)","(anonymous)",9,13
+1,1,1,0,1,"(anonymous)@52-52@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",52,52
+17,3,81,0,19,"(anonymous)@50-68@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",50,68
+1,1,1,0,1,"(anonymous)@79-79@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",79,79
+3,1,7,0,3,"(anonymous)@103-105@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",103,105
+1,1,9,0,1,"(anonymous)@115-115@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",115,115
+5,1,16,0,6,"(anonymous)@117-122@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",117,122
+4,1,7,0,5,"(anonymous)@126-130@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",126,130
+1,1,1,0,1,"(anonymous)@141-141@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",141,141
+1,1,14,0,1,"(anonymous)@143-143@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",143,143
+1,1,6,0,1,"(anonymous)@154-154@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",154,154
+1,1,4,0,1,"(anonymous)@155-155@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",155,155
+4,1,10,0,4,"(anonymous)@163-166@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",163,166
+46,14,288,0,69,"(anonymous)@99-167@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",99,167
+8,5,59,0,11,"(anonymous)@169-179@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",169,179
+1,1,6,0,1,"(anonymous)@216-216@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",216,216
+3,2,14,2,3,"nested@220-222@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","nested","nested ( isFallback Frames outsideClaudeDirs ( stack , claude )",220,222
+33,18,291,0,40,"(anonymous)@181-220@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",181,220
+1,1,11,0,1,"(anonymous)@222-222@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",222,222
+1,1,10,0,1,"(anonymous)@226-226@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",226,226
+1,1,10,0,1,"(anonymous)@227-227@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",227,227
+1,1,1,0,1,"(anonymous)@243-243@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","(anonymous)","(anonymous)",243,243
+65,14,443,2,218,"register@40-257@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","register","register ( on On , options PluginOptions )",40,257
+9,2,63,1,10,"attachesOnRead@273-282@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","attachesOnRead","attachesOnRead ( EngineInterface )",273,282
+11,6,77,2,12,"homeOf@295-306@mods/agents-md/hooks\register.ts","mods/agents-md/hooks\register.ts","homeOf","homeOf ( EngineInterface , cwd , )",295,306
+2,1,12,1,2,"arrayOf@8-9@mods/diff/hooks\array-of\array-of.ts","mods/diff/hooks\array-of\array-of.ts","arrayOf","arrayOf ( value )",8,9
+2,1,2,0,2,"(anonymous)@18-19@mods/diff/hooks\ask\armed-ask-of.ts","mods/diff/hooks\ask\armed-ask-of.ts","(anonymous)","(anonymous)",18,19
+20,5,107,2,27,"fittedAskTextOf@11-37@mods/diff/hooks\ask\fitted-ask-text-of.ts","mods/diff/hooks\ask\fitted-ask-text-of.ts","fittedAskTextOf","fittedAskTextOf ( text , room , )",11,37
+2,1,8,0,6,"nowMs@17-22@mods/diff/hooks\backend\types\backend-host\backend-host.ts","mods/diff/hooks\backend\types\backend-host\backend-host.ts","nowMs","nowMs ( )",17,22
+2,1,5,0,2,"sessionStartMsOf@22-23@mods/diff/hooks\backend\types\backend-host\backend-host.ts","mods/diff/hooks\backend\types\backend-host\backend-host.ts","sessionStartMsOf","sessionStartMsOf ( )",22,23
+12,3,54,2,14,"backendOf@17-30@mods/diff/hooks\backend\backend-of.ts","mods/diff/hooks\backend\backend-of.ts","backendOf","backendOf ( host BackendHost , probes Iterable , )",17,30
+1,3,21,1,1,"baseNameOf@7-7@mods/diff/hooks\classify\base-name-of\base-name-of.ts","mods/diff/hooks\classify\base-name-of\base-name-of.ts","baseNameOf","baseNameOf ( path )",7,7
+1,1,1,0,1,"(anonymous)@20-20@mods/diff/hooks\classify\is-generated-file\is-generated-file.ts","mods/diff/hooks\classify\is-generated-file\is-generated-file.ts","(anonymous)","(anonymous)",20,20
+1,1,7,0,1,"(anonymous)@26-26@mods/diff/hooks\classify\is-generated-file\is-generated-file.ts","mods/diff/hooks\classify\is-generated-file\is-generated-file.ts","(anonymous)","(anonymous)",26,26
+1,1,7,0,1,"(anonymous)@27-27@mods/diff/hooks\classify\is-generated-file\is-generated-file.ts","mods/diff/hooks\classify\is-generated-file\is-generated-file.ts","(anonymous)","(anonymous)",27,27
+13,4,69,1,15,"isGeneratedFile@15-29@mods/diff/hooks\classify\is-generated-file\is-generated-file.ts","mods/diff/hooks\classify\is-generated-file\is-generated-file.ts","isGeneratedFile","isGeneratedFile ( path )",15,29
+1,1,7,0,1,"(anonymous)@18-18@mods/diff/hooks\classify\is-test-file\is-test-file.ts","mods/diff/hooks\classify\is-test-file\is-test-file.ts","(anonymous)","(anonymous)",18,18
+1,1,7,0,1,"(anonymous)@19-19@mods/diff/hooks\classify\is-test-file\is-test-file.ts","mods/diff/hooks\classify\is-test-file\is-test-file.ts","(anonymous)","(anonymous)",19,19
+8,2,39,1,9,"isTestFile@13-21@mods/diff/hooks\classify\is-test-file\is-test-file.ts","mods/diff/hooks\classify\is-test-file\is-test-file.ts","isTestFile","isTestFile ( path )",13,21
+1,1,12,1,1,"rootedPathOf@8-8@mods/diff/hooks\classify\rooted-path-of\rooted-path-of.ts","mods/diff/hooks\classify\rooted-path-of\rooted-path-of.ts","rootedPathOf","rootedPathOf ( path )",8,8
+2,1,7,1,2,"isNoiseFile@11-12@mods/diff/hooks\classify\is-noise-file.ts","mods/diff/hooks\classify\is-noise-file.ts","isNoiseFile","isNoiseFile ( path )",11,12
+1,1,18,2,1,"countOf@9-9@mods/diff/hooks\count-of\count-of.ts","mods/diff/hooks\count-of\count-of.ts","countOf","countOf ( items readonly T , passes ( item T )",9,9
+1,1,1,0,1,"(anonymous)@10-10@mods/diff/hooks\count-of\count-of.ts","mods/diff/hooks\count-of\count-of.ts","(anonymous)","(anonymous)",10,10
+1,2,15,0,1,"(anonymous)@10-10@mods/diff/hooks\count-of\count-of.ts","mods/diff/hooks\count-of\count-of.ts","(anonymous)","(anonymous)",10,10
+1,1,4,0,1,"(anonymous)@24-24@mods/diff/hooks\drawn-files-of\drawn-files-of.ts","mods/diff/hooks\drawn-files-of\drawn-files-of.ts","(anonymous)","(anonymous)",24,24
+1,2,12,0,1,"(anonymous)@28-28@mods/diff/hooks\drawn-files-of\drawn-files-of.ts","mods/diff/hooks\drawn-files-of\drawn-files-of.ts","(anonymous)","(anonymous)",28,28
+2,1,21,0,2,"(anonymous)@13-14@mods/diff/hooks\entry-kinds-of\entry-kinds-of.ts","mods/diff/hooks\entry-kinds-of\entry-kinds-of.ts","(anonymous)","(anonymous)",13,14
+1,1,10,0,1,"(anonymous)@15-15@mods/diff/hooks\entry-kinds-of\entry-kinds-of.ts","mods/diff/hooks\entry-kinds-of\entry-kinds-of.ts","(anonymous)","(anonymous)",15,15
+3,1,18,0,3,"(anonymous)@15-17@mods/diff/hooks\entry-kinds-of\entry-kinds-of.ts","mods/diff/hooks\entry-kinds-of\entry-kinds-of.ts","(anonymous)","(anonymous)",15,17
+2,1,2,0,2,"(anonymous)@15-16@mods/diff/hooks\git\argv\pinned-lead-of\pinned-lead-of.ts","mods/diff/hooks\git\argv\pinned-lead-of\pinned-lead-of.ts","(anonymous)","(anonymous)",15,16
+6,1,34,0,7,"(anonymous)@21-27@mods/diff/hooks\git\cut-hunks\cut-hunks.ts","mods/diff/hooks\git\cut-hunks\cut-hunks.ts","(anonymous)","(anonymous)",21,27
+1,1,1,0,1,"(anonymous)@18-18@mods/diff/hooks\git\fetch-hunks\is-last-of-diff\is-last-of-diff.ts","mods/diff/hooks\git\fetch-hunks\is-last-of-diff\is-last-of-diff.ts","(anonymous)","(anonymous)",18,18
+1,1,5,0,1,"(anonymous)@18-18@mods/diff/hooks\git\fetch-hunks\is-last-of-diff\is-last-of-diff.ts","mods/diff/hooks\git\fetch-hunks\is-last-of-diff\is-last-of-diff.ts","(anonymous)","(anonymous)",18,18
+1,1,1,0,1,"(anonymous)@29-29@mods/diff/hooks\git\fetch-hunks\fetch-hunks.ts","mods/diff/hooks\git\fetch-hunks\fetch-hunks.ts","(anonymous)","(anonymous)",29,29
+1,1,8,0,1,"(anonymous)@36-36@mods/diff/hooks\git\fetch-hunks\fetch-hunks.ts","mods/diff/hooks\git\fetch-hunks\fetch-hunks.ts","(anonymous)","(anonymous)",36,36
+1,1,10,0,1,"(anonymous)@37-37@mods/diff/hooks\git\fetch-hunks\fetch-hunks.ts","mods/diff/hooks\git\fetch-hunks\fetch-hunks.ts","(anonymous)","(anonymous)",37,37
+1,1,4,0,1,"(anonymous)@46-46@mods/diff/hooks\git\fetch-hunks\fetch-hunks.ts","mods/diff/hooks\git\fetch-hunks\fetch-hunks.ts","(anonymous)","(anonymous)",46,46
+4,2,17,0,5,"(anonymous)@47-51@mods/diff/hooks\git\fetch-hunks\fetch-hunks.ts","mods/diff/hooks\git\fetch-hunks\fetch-hunks.ts","(anonymous)","(anonymous)",47,51
+1,1,10,0,1,"(anonymous)@68-68@mods/diff/hooks\git\fetch-hunks\fetch-hunks.ts","mods/diff/hooks\git\fetch-hunks\fetch-hunks.ts","(anonymous)","(anonymous)",68,68
+1,1,10,0,1,"(anonymous)@72-72@mods/diff/hooks\git\fetch-hunks\fetch-hunks.ts","mods/diff/hooks\git\fetch-hunks\fetch-hunks.ts","(anonymous)","(anonymous)",72,72
+7,3,47,0,8,"(anonymous)@77-84@mods/diff/hooks\git\fetch-hunks\fetch-hunks.ts","mods/diff/hooks\git\fetch-hunks\fetch-hunks.ts","(anonymous)","(anonymous)",77,84
+5,1,24,0,5,"(anonymous)@13-17@mods/diff/hooks\git\hunk-of\hunk-of.ts","mods/diff/hooks\git\hunk-of\hunk-of.ts","(anonymous)","(anonymous)",13,17
+2,1,7,1,2,"isBodyLine@8-9@mods/diff/hooks\git\parse\is-body-line\is-body-line.ts","mods/diff/hooks\git\parse\is-body-line\is-body-line.ts","isBodyLine","isBodyLine ( line )",8,9
+2,1,11,2,2,"isUnderUtf8Ceiling@11-12@mods/diff/hooks\git\parse\is-whole-listing\is-under-utf8-ceiling\is-under-utf8-ceiling.ts","mods/diff/hooks\git\parse\is-whole-listing\is-under-utf8-ceiling\is-under-utf8-ceiling.ts","isUnderUtf8Ceiling","isUnderUtf8Ceiling ( text , ceiling )",11,12
+3,3,24,2,3,"isWholeListing@16-18@mods/diff/hooks\git\parse\is-whole-listing\is-whole-listing.ts","mods/diff/hooks\git\parse\is-whole-listing\is-whole-listing.ts","isWholeListing","isWholeListing ( stdout , terminator )",16,18
+2,2,15,0,2,"(anonymous)@29-30@mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","(anonymous)","(anonymous)",29,30
+2,3,21,0,2,"(anonymous)@35-36@mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","(anonymous)","(anonymous)",35,36
+1,1,1,0,1,"(anonymous)@46-46@mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","(anonymous)","(anonymous)",46,46
+2,3,20,0,2,"(anonymous)@50-51@mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","(anonymous)","(anonymous)",50,51
+13,7,97,0,14,"(anonymous)@56-69@mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","(anonymous)","(anonymous)",56,69
+1,2,15,0,1,"(anonymous)@70-70@mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","(anonymous)","(anonymous)",70,70
+1,1,4,0,1,"(anonymous)@76-76@mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","(anonymous)","(anonymous)",76,76
+1,1,13,0,1,"(anonymous)@83-83@mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","(anonymous)","(anonymous)",83,83
+1,1,8,0,1,"(anonymous)@90-90@mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","(anonymous)","(anonymous)",90,90
+1,3,14,0,1,"(anonymous)@91-91@mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","mods/diff/hooks\git\parse\parse-file-diffs\parse-file-diffs.ts","(anonymous)","(anonymous)",91,91
+1,1,1,0,1,"(anonymous)@27-27@mods/diff/hooks\git\parse\parse-file-diff.ts","mods/diff/hooks\git\parse\parse-file-diff.ts","(anonymous)","(anonymous)",27,27
+3,1,12,2,3,"cutHunks@31-33@mods/diff/hooks\git\parse\parse-file-diff.ts","mods/diff/hooks\git\parse\parse-file-diff.ts","cutHunks","cutHunks ( headerRows map ( ( at , ordinal )",31,33
+1,1,9,0,1,"(anonymous)@24-24@mods/diff/hooks\git\probes\datings-of\datings-of.ts","mods/diff/hooks\git\probes\datings-of\datings-of.ts","(anonymous)","(anonymous)",24,24
+9,5,65,1,12,"datingOf@27-38@mods/diff/hooks\git\probes\datings-of\datings-of.ts","mods/diff/hooks\git\probes\datings-of\datings-of.ts","datingOf","datingOf ( stamp Types Stamp )",27,38
+1,1,4,0,1,"(anonymous)@30-30@mods/diff/hooks\git\probes\dirty-paths-of\dirty-paths-of.ts","mods/diff/hooks\git\probes\dirty-paths-of\dirty-paths-of.ts","(anonymous)","(anonymous)",30,30
+1,1,7,0,1,"(anonymous)@33-33@mods/diff/hooks\git\probes\dirty-paths-of\dirty-paths-of.ts","mods/diff/hooks\git\probes\dirty-paths-of\dirty-paths-of.ts","(anonymous)","(anonymous)",33,33
+10,1,34,0,11,"viaGit@36-46@mods/diff/hooks\git\probes\head-key-of\head-key-of.ts","mods/diff/hooks\git\probes\head-key-of\head-key-of.ts","viaGit","viaGit ( )",36,46
+1,1,2,0,1,"(anonymous)@52-52@mods/diff/hooks\git\probes\head-key-of\head-key-of.ts","mods/diff/hooks\git\probes\head-key-of\head-key-of.ts","(anonymous)","(anonymous)",52,52
+2,1,7,1,2,"isAbsolutePath@8-9@mods/diff/hooks\git\probes\is-absolute-path\is-absolute-path.ts","mods/diff/hooks\git\probes\is-absolute-path\is-absolute-path.ts","isAbsolutePath","isAbsolutePath ( line )",8,9
+2,1,7,1,2,"isSafeRefName@12-13@mods/diff/hooks\git\probes\is-safe-ref-name\is-safe-ref-name.ts","mods/diff/hooks\git\probes\is-safe-ref-name\is-safe-ref-name.ts","isSafeRefName","isSafeRefName ( ref )",12,13
+1,1,7,0,1,"(anonymous)@15-15@mods/diff/hooks\git\probes\is-safe-ref-name\is-safe-ref-name.ts","mods/diff/hooks\git\probes\is-safe-ref-name\is-safe-ref-name.ts","(anonymous)","(anonymous)",15,15
+2,1,7,1,2,"isSha@8-9@mods/diff/hooks\git\probes\is-sha\is-sha.ts","mods/diff/hooks\git\probes\is-sha\is-sha.ts","isSha","isSha ( text )",8,9
+11,6,70,1,15,"listingOf@26-40@mods/diff/hooks\git\probes\kind-walk-of\kind-walk-of.ts","mods/diff/hooks\git\probes\kind-walk-of\kind-walk-of.ts","listingOf","listingOf ( directory )",26,40
+22,9,132,1,31,"kindOf@42-72@mods/diff/hooks\git\probes\kind-walk-of\kind-walk-of.ts","mods/diff/hooks\git\probes\kind-walk-of\kind-walk-of.ts","kindOf","kindOf ( path )",42,72
+1,1,6,0,1,"(anonymous)@33-33@mods/diff/hooks\git\probes\merge-base-candidates-of\merge-base-candidates-of.ts","mods/diff/hooks\git\probes\merge-base-candidates-of\merge-base-candidates-of.ts","(anonymous)","(anonymous)",33,33
+1,1,8,0,1,"(anonymous)@34-34@mods/diff/hooks\git\probes\merge-base-candidates-of\merge-base-candidates-of.ts","mods/diff/hooks\git\probes\merge-base-candidates-of\merge-base-candidates-of.ts","(anonymous)","(anonymous)",34,34
+1,1,6,0,1,"(anonymous)@36-36@mods/diff/hooks\git\probes\merge-base-candidates-of\merge-base-candidates-of.ts","mods/diff/hooks\git\probes\merge-base-candidates-of\merge-base-candidates-of.ts","(anonymous)","(anonymous)",36,36
+1,1,4,0,1,"(anonymous)@29-29@mods/diff/hooks\git\probes\repository-of\repository-of.ts","mods/diff/hooks\git\probes\repository-of\repository-of.ts","(anonymous)","(anonymous)",29,29
+5,1,25,0,5,"(anonymous)@17-21@mods/diff/hooks\git\probes\stamp-probe-of\stamp-probe-of.ts","mods/diff/hooks\git\probes\stamp-probe-of\stamp-probe-of.ts","(anonymous)","(anonymous)",17,21
+1,1,4,0,1,"(anonymous)@36-36@mods/diff/hooks\git\probes\untracked-files\untracked-files.ts","mods/diff/hooks\git\probes\untracked-files\untracked-files.ts","(anonymous)","(anonymous)",36,36
+2,1,15,2,2,"isPreSessionOf@28-29@mods/diff/hooks\git\probes\untracked-rows-of\untracked-rows-of.ts","mods/diff/hooks\git\probes\untracked-rows-of\untracked-rows-of.ts","isPreSessionOf","isPreSessionOf ( path , dating Types Dating undefined )",28,29
+4,1,21,0,4,"(anonymous)@32-35@mods/diff/hooks\git\probes\untracked-rows-of\untracked-rows-of.ts","mods/diff/hooks\git\probes\untracked-rows-of\untracked-rows-of.ts","(anonymous)","(anonymous)",32,35
+1,1,4,0,1,"(anonymous)@41-41@mods/diff/hooks\git\probes\untracked-rows-of\untracked-rows-of.ts","mods/diff/hooks\git\probes\untracked-rows-of\untracked-rows-of.ts","(anonymous)","(anonymous)",41,41
+1,1,10,0,1,"(anonymous)@44-44@mods/diff/hooks\git\probes\untracked-rows-of\untracked-rows-of.ts","mods/diff/hooks\git\probes\untracked-rows-of\untracked-rows-of.ts","(anonymous)","(anonymous)",44,44
+1,1,5,0,1,"(anonymous)@48-48@mods/diff/hooks\git\probes\untracked-rows-of\untracked-rows-of.ts","mods/diff/hooks\git\probes\untracked-rows-of\untracked-rows-of.ts","(anonymous)","(anonymous)",48,48
+9,1,37,0,9,"(anonymous)@50-58@mods/diff/hooks\git\probes\untracked-rows-of\untracked-rows-of.ts","mods/diff/hooks\git\probes\untracked-rows-of\untracked-rows-of.ts","(anonymous)","(anonymous)",50,58
+1,1,9,0,1,"(anonymous)@36-36@mods/diff/hooks\git\probes\is-transient.ts","mods/diff/hooks\git\probes\is-transient.ts","(anonymous)","(anonymous)",36,36
+11,4,70,0,15,"(anonymous)@21-35@mods/diff/hooks\git\probes\overlay-unstaged.ts","mods/diff/hooks\git\probes\overlay-unstaged.ts","(anonymous)","(anonymous)",21,35
+1,1,8,0,1,"(anonymous)@39-39@mods/diff/hooks\git\probes\overlay-unstaged.ts","mods/diff/hooks\git\probes\overlay-unstaged.ts","(anonymous)","(anonymous)",39,39
+1,1,8,0,1,"(anonymous)@40-40@mods/diff/hooks\git\probes\overlay-unstaged.ts","mods/diff/hooks\git\probes\overlay-unstaged.ts","(anonymous)","(anonymous)",40,40
+1,1,4,0,1,"(anonymous)@23-23@mods/diff/hooks\git\probes\tag-pre-session.ts","mods/diff/hooks\git\probes\tag-pre-session.ts","(anonymous)","(anonymous)",23,23
+6,2,23,0,6,"(anonymous)@26-31@mods/diff/hooks\git\probes\tag-pre-session.ts","mods/diff/hooks\git\probes\tag-pre-session.ts","(anonymous)","(anonymous)",26,31
+2,1,7,1,2,"middleOf@45-46@mods/diff/hooks\git\rename-display-of\rename-display-of.ts","mods/diff/hooks\git\rename-display-of\rename-display-of.ts","middleOf","middleOf ( path )",45,46
+32,11,240,2,42,"renameDisplayOf@13-54@mods/diff/hooks\git\rename-display-of\rename-display-of.ts","mods/diff/hooks\git\rename-display-of\rename-display-of.ts","renameDisplayOf","renameDisplayOf ( oldPath , newPath )",13,54
+11,1,58,0,11,"(anonymous)@17-27@mods/diff/hooks\git\tiers\diff-data-of\diff-data-of.ts","mods/diff/hooks\git\tiers\diff-data-of\diff-data-of.ts","(anonymous)","(anonymous)",17,27
+11,1,40,0,11,"(anonymous)@16-26@mods/diff/hooks\git\tiers\fetch-context-of\fetch-context-of.ts","mods/diff/hooks\git\tiers\fetch-context-of\fetch-context-of.ts","(anonymous)","(anonymous)",16,26
+1,1,4,0,1,"(anonymous)@55-55@mods/diff/hooks\git\tiers\unborn-tier\unborn-tier.ts","mods/diff/hooks\git\tiers\unborn-tier\unborn-tier.ts","(anonymous)","(anonymous)",55,55
+1,1,9,0,1,"(anonymous)@13-13@mods/diff/hooks\git\tiers\with-untracked\merged-result-of\merged-result-of.ts","mods/diff/hooks\git\tiers\with-untracked\merged-result-of\merged-result-of.ts","(anonymous)","(anonymous)",13,13
+1,1,10,0,1,"(anonymous)@24-24@mods/diff/hooks\git\tiers\with-untracked\merged-with-untracked\merged-with-untracked.ts","mods/diff/hooks\git\tiers\with-untracked\merged-with-untracked\merged-with-untracked.ts","(anonymous)","(anonymous)",24,24
+14,3,59,0,14,"(anonymous)@28-41@mods/diff/hooks\git\git-backend-of.ts","mods/diff/hooks\git\git-backend-of.ts","(anonymous)","(anonymous)",28,41
+10,1,54,1,11,"depsOf@53-63@mods/diff/hooks\git\git-backend-of.ts","mods/diff/hooks\git\git-backend-of.ts","depsOf","depsOf ( dirty ReadonlySet null )",53,63
+4,3,23,0,5,"fetchDiff@67-71@mods/diff/hooks\git\git-backend-of.ts","mods/diff/hooks\git\git-backend-of.ts","fetchDiff","fetchDiff",67,71
+2,1,16,2,2,"fetchHunks@72-73@mods/diff/hooks\git\git-backend-of.ts","mods/diff/hooks\git\git-backend-of.ts","fetchHunks","fetchHunks ( data , files )",72,73
+2,1,4,0,2,"headKeyOf@73-74@mods/diff/hooks\git\git-backend-of.ts","mods/diff/hooks\git\git-backend-of.ts","headKeyOf","headKeyOf ( )",73,74
+1,1,8,0,1,"(anonymous)@16-16@mods/diff/hooks\git\hunk-after.ts","mods/diff/hooks\git\hunk-after.ts","(anonymous)","(anonymous)",16,16
+1,1,8,0,1,"(anonymous)@17-17@mods/diff/hooks\git\hunk-after.ts","mods/diff/hooks\git\hunk-after.ts","(anonymous)","(anonymous)",17,17
+8,1,68,2,9,"hunkAfter@12-20@mods/diff/hooks\git\hunk-after.ts","mods/diff/hooks\git\hunk-after.ts","hunkAfter","hunkAfter ( hunk Hunk , count )",12,20
+5,1,16,2,5,"isCheckpointing@15-19@mods/diff/hooks\is-checkpointing\is-checkpointing.ts","mods/diff/hooks\is-checkpointing\is-checkpointing.ts","isCheckpointing","isCheckpointing ( settings Settings , disabling undefined , )",15,19
+3,1,26,1,3,"isOnPaneSurface@10-12@mods/diff/hooks\is-on-pane-surface\is-on-pane-surface.ts","mods/diff/hooks\is-on-pane-surface\is-on-pane-surface.ts","isOnPaneSurface","isOnPaneSurface ( e E , )",10,12
+2,1,16,1,2,"isRecord@7-8@mods/diff/hooks\is-record\is-record.ts","mods/diff/hooks\is-record\is-record.ts","isRecord","isRecord ( value )",7,8
+1,1,1,0,1,"keptOf@9-9@mods/diff/hooks\kept-of\kept-of.ts","mods/diff/hooks\kept-of\kept-of.ts","keptOf","keptOf",9,9
+1,1,4,0,1,"(anonymous)@9-9@mods/diff/hooks\kept-of\kept-of.ts","mods/diff/hooks\kept-of\kept-of.ts","(anonymous)","(anonymous)",9,9
+2,1,7,1,2,"messageOf@8-9@mods/diff/hooks\message-of\message-of.ts","mods/diff/hooks\message-of\message-of.ts","messageOf","messageOf ( error )",8,9
+3,1,20,1,3,"mtimeOf@11-13@mods/diff/hooks\mtime-of\mtime-of.ts","mods/diff/hooks\mtime-of\mtime-of.ts","mtimeOf","mtimeOf ( engine Host )",11,13
+3,1,10,0,3,"(anonymous)@14-16@mods/diff/hooks\mtime-of\mtime-of.ts","mods/diff/hooks\mtime-of\mtime-of.ts","(anonymous)","(anonymous)",14,16
+1,1,12,1,1,"baseStoreKeyOf@8-8@mods/diff/hooks\names\keys\base-store-key-of.ts","mods/diff/hooks\names\keys\base-store-key-of.ts","baseStoreKeyOf","baseStoreKeyOf ( toplevel )",8,8
+2,1,7,1,2,"registerFailedTextOf@8-9@mods/diff/hooks\names\texts\register-failed-text-of.ts","mods/diff/hooks\names\texts\register-failed-text-of.ts","registerFailedTextOf","registerFailedTextOf ( reason )",8,9
+1,1,1,0,1,"(anonymous)@13-13@mods/diff/hooks\names\texts\untracked-withheld-text-of.ts","mods/diff/hooks\names\texts\untracked-withheld-text-of.ts","(anonymous)","(anonymous)",13,13
+9,5,55,1,12,"openOutcomeOf@14-25@mods/diff/hooks\open-outcome\open-outcome-of.ts","mods/diff/hooks\open-outcome\open-outcome-of.ts","openOutcomeOf","openOutcomeOf ( opened )",14,25
+15,3,95,2,16,"afterFetch@14-29@mods/diff/hooks\pane-state\after-fetch\after-fetch.ts","mods/diff/hooks\pane-state\after-fetch\after-fetch.ts","afterFetch","afterFetch ( model PaneModel , fetched Fetched )",14,29
+4,1,18,1,4,"afterNewSession@11-14@mods/diff/hooks\pane-state\after-new-session\after-new-session.ts","mods/diff/hooks\pane-state\after-new-session\after-new-session.ts","afterNewSession","afterNewSession ( model PaneModel )",11,14
+15,6,70,0,17,"nameOf@28-44@mods/diff/hooks\pane-state\mode-label-of\mode-label-of.ts","mods/diff/hooks\pane-state\mode-label-of\mode-label-of.ts","nameOf","nameOf ( )",28,44
+4,2,31,0,4,"(anonymous)@13-16@mods/diff/hooks\pane-state\turn-title-of\turn-title-of.ts","mods/diff/hooks\pane-state\turn-title-of\turn-title-of.ts","(anonymous)","(anonymous)",13,16
+14,4,64,0,15,"currentOf@22-36@mods/diff/hooks\pane-state\dialog-title-of.ts","mods/diff/hooks\pane-state\dialog-title-of.ts","currentOf","currentOf ( )",22,36
+7,2,55,1,22,"dialogTitleOf@16-37@mods/diff/hooks\pane-state\dialog-title-of.ts","mods/diff/hooks\pane-state\dialog-title-of.ts","dialogTitleOf","dialogTitleOf ( model PaneModel )",16,37
+48,9,197,2,54,"emptyStateOf@17-70@mods/diff/hooks\pane-state\empty-state-of.ts","mods/diff/hooks\pane-state\empty-state-of.ts","emptyStateOf","emptyStateOf ( model Pick , filesCount , )",17,70
+1,1,8,0,1,"(anonymous)@27-27@mods/diff/hooks\pane-state\header-totals-of.ts","mods/diff/hooks\pane-state\header-totals-of.ts","(anonymous)","(anonymous)",27,27
+1,1,8,0,1,"(anonymous)@29-29@mods/diff/hooks\pane-state\header-totals-of.ts","mods/diff/hooks\pane-state\header-totals-of.ts","(anonymous)","(anonymous)",29,29
+1,1,1,0,1,"(anonymous)@20-20@mods/diff/hooks\pane-state\partition-of.ts","mods/diff/hooks\pane-state\partition-of.ts","(anonymous)","(anonymous)",20,20
+1,1,4,0,1,"(anonymous)@23-23@mods/diff/hooks\pane-state\partition-of.ts","mods/diff/hooks\pane-state\partition-of.ts","(anonymous)","(anonymous)",23,23
+1,1,5,0,1,"(anonymous)@24-24@mods/diff/hooks\pane-state\partition-of.ts","mods/diff/hooks\pane-state\partition-of.ts","(anonymous)","(anonymous)",24,24
+1,1,10,0,1,"(anonymous)@25-25@mods/diff/hooks\pane-state\partition-of.ts","mods/diff/hooks\pane-state\partition-of.ts","(anonymous)","(anonymous)",25,25
+16,2,110,2,18,"partitionOf@15-32@mods/diff/hooks\pane-state\partition-of.ts","mods/diff/hooks\pane-state\partition-of.ts","partitionOf","partitionOf ( files readonly Git FileStat , noise , )",15,32
+9,3,41,2,10,"unbornNoteOf@13-22@mods/diff/hooks\pane-state\unborn-note-of.ts","mods/diff/hooks\pane-state\unborn-note-of.ts","unbornNoteOf","unbornNoteOf ( model Pick , filesCount , )",13,22
+7,4,42,1,8,"paneToggleOf@14-21@mods/diff/hooks\pane-toggle\pane-toggle-of.ts","mods/diff/hooks\pane-toggle\pane-toggle-of.ts","paneToggleOf","paneToggleOf ( pane PaneBelief , )",14,21
+1,1,11,1,1,"safely@7-7@mods/diff/hooks\record\safely\safely.ts","mods/diff/hooks\record\safely\safely.ts","safely","safely ( send ( )",7,7
+1,1,2,0,1,"(anonymous)@9-9@mods/diff/hooks\record\safely\safely.ts","mods/diff/hooks\record\safely\safely.ts","(anonymous)","(anonymous)",9,9
+10,6,75,1,12,"widthBucketOf@10-21@mods/diff/hooks\record\width-bucket-of\width-bucket-of.ts","mods/diff/hooks\record\width-bucket-of\width-bucket-of.ts","widthBucketOf","widthBucketOf ( columns null , )",10,21
+1,1,12,0,1,"(anonymous)@18-18@mods/diff/hooks\record\recorder-of.ts","mods/diff/hooks\record\recorder-of.ts","(anonymous)","(anonymous)",18,18
+2,1,14,2,2,"mark@18-19@mods/diff/hooks\record\recorder-of.ts","mods/diff/hooks\record\recorder-of.ts","mark","mark ( feature , outcome )",18,19
+2,1,7,2,2,"shown@19-20@mods/diff/hooks\record\recorder-of.ts","mods/diff/hooks\record\recorder-of.ts","shown","shown ( trigger , bucket )",19,20
+2,1,5,0,2,"safely@20-21@mods/diff/hooks\record\recorder-of.ts","mods/diff/hooks\record\recorder-of.ts","safely","safely ( ( )",20,21
+1,1,1,0,1,"(anonymous)@30-30@mods/diff/hooks\record\recorder-of.ts","mods/diff/hooks\record\recorder-of.ts","(anonymous)","(anonymous)",30,30
+1,1,17,0,1,"(anonymous)@30-30@mods/diff/hooks\record\recorder-of.ts","mods/diff/hooks\record\recorder-of.ts","(anonymous)","(anonymous)",30,30
+12,1,72,1,15,"recorderOf@17-31@mods/diff/hooks\record\recorder-of.ts","mods/diff/hooks\record\recorder-of.ts","recorderOf","recorderOf ( host Host )",17,31
+1,1,4,0,1,"(anonymous)@22-22@mods/diff/hooks\todos\todo-progress-of.ts","mods/diff/hooks\todos\todo-progress-of.ts","(anonymous)","(anonymous)",22,22
+1,1,8,0,1,"(anonymous)@23-23@mods/diff/hooks\todos\todo-progress-of.ts","mods/diff/hooks\todos\todo-progress-of.ts","(anonymous)","(anonymous)",23,23
+1,1,1,0,1,"(anonymous)@26-26@mods/diff/hooks\todos\todo-progress-of.ts","mods/diff/hooks\todos\todo-progress-of.ts","(anonymous)","(anonymous)",26,26
+1,1,4,0,1,"(anonymous)@30-30@mods/diff/hooks\todos\todo-progress-of.ts","mods/diff/hooks\todos\todo-progress-of.ts","(anonymous)","(anonymous)",30,30
+14,2,76,1,16,"todoProgressOf@18-33@mods/diff/hooks\todos\todo-progress-of.ts","mods/diff/hooks\todos\todo-progress-of.ts","todoProgressOf","todoProgressOf ( messages readonly SessionMessage , )",18,33
+9,3,51,1,10,"mayHaveWritten@14-23@mods/diff/hooks\tools\may-have-written.ts","mods/diff/hooks\tools\may-have-written.ts","mayHaveWritten","mayHaveWritten ( result ResultOf undefined , )",14,23
+2,1,6,0,2,"(anonymous)@29-30@mods/diff/hooks\turns\turn-of\file-edit-of\hunks-of\hunks-of.ts","mods/diff/hooks\turns\turn-of\file-edit-of\hunks-of\hunks-of.ts","(anonymous)","(anonymous)",29,30
+17,4,66,0,20,"(anonymous)@15-34@mods/diff/hooks\turns\turn-of\file-edit-of\hunks-of\hunks-of.ts","mods/diff/hooks\turns\turn-of\file-edit-of\hunks-of\hunks-of.ts","(anonymous)","(anonymous)",15,34
+1,1,4,0,1,"(anonymous)@25-25@mods/diff/hooks\turns\turn-of\file-edit-of\file-edit-of.ts","mods/diff/hooks\turns\turn-of\file-edit-of\file-edit-of.ts","(anonymous)","(anonymous)",25,25
+1,1,7,0,1,"(anonymous)@30-30@mods/diff/hooks\turns\turn-of\file-edit-of\file-edit-of.ts","mods/diff/hooks\turns\turn-of\file-edit-of\file-edit-of.ts","(anonymous)","(anonymous)",30,30
+1,1,7,0,1,"(anonymous)@31-31@mods/diff/hooks\turns\turn-of\file-edit-of\file-edit-of.ts","mods/diff/hooks\turns\turn-of\file-edit-of\file-edit-of.ts","(anonymous)","(anonymous)",31,31
+2,1,7,1,2,"isPromptRow@10-11@mods/diff/hooks\turns\turn-of\is-prompt-row\is-prompt-row.ts","mods/diff/hooks\turns\turn-of\is-prompt-row\is-prompt-row.ts","isPromptRow","isPromptRow ( message SessionMessage )",10,11
+1,2,15,0,1,"(anonymous)@31-31@mods/diff/hooks\turns\turn-of\turn-of.ts","mods/diff/hooks\turns\turn-of\turn-of.ts","(anonymous)","(anonymous)",31,31
+1,1,7,0,1,"(anonymous)@32-32@mods/diff/hooks\turns\turn-of\turn-of.ts","mods/diff/hooks\turns\turn-of\turn-of.ts","(anonymous)","(anonymous)",32,32
+1,1,4,0,1,"(anonymous)@33-33@mods/diff/hooks\turns\turn-of\turn-of.ts","mods/diff/hooks\turns\turn-of\turn-of.ts","(anonymous)","(anonymous)",33,33
+4,1,18,0,4,"(anonymous)@55-58@mods/diff/hooks\turns\turn-of\turn-of.ts","mods/diff/hooks\turns\turn-of\turn-of.ts","(anonymous)","(anonymous)",55,58
+1,1,1,0,1,"(anonymous)@25-25@mods/diff/hooks\turns\turn-diffs-of.ts","mods/diff/hooks\turns\turn-diffs-of.ts","(anonymous)","(anonymous)",25,25
+1,1,8,0,1,"(anonymous)@27-27@mods/diff/hooks\turns\turn-diffs-of.ts","mods/diff/hooks\turns\turn-diffs-of.ts","(anonymous)","(anonymous)",27,27
+2,1,9,1,2,"segmentRowsOf@10-11@mods/diff/hooks\views\body\plan\segments\segment-rows-of.ts","mods/diff/hooks\views\body\plan\segments\segment-rows-of.ts","segmentRowsOf","segmentRowsOf ( segment Segment )",10,11
+2,1,9,1,2,"gutterOf@33-34@mods/diff/hooks\views\body\plan\segments\segments-of.ts","mods/diff/hooks\views\body\plan\segments\segments-of.ts","gutterOf","gutterOf ( hunk Git Hunk )",33,34
+1,1,8,0,1,"(anonymous)@37-37@mods/diff/hooks\views\body\plan\segments\segments-of.ts","mods/diff/hooks\views\body\plan\segments\segments-of.ts","(anonymous)","(anonymous)",37,37
+1,1,8,0,1,"(anonymous)@38-38@mods/diff/hooks\views\body\plan\segments\segments-of.ts","mods/diff/hooks\views\body\plan\segments\segments-of.ts","(anonymous)","(anonymous)",38,38
+1,1,1,0,1,"(anonymous)@46-46@mods/diff/hooks\views\body\plan\segments\segments-of.ts","mods/diff/hooks\views\body\plan\segments\segments-of.ts","(anonymous)","(anonymous)",46,46
+1,1,6,0,1,"(anonymous)@63-63@mods/diff/hooks\views\body\plan\segments\segments-of.ts","mods/diff/hooks\views\body\plan\segments\segments-of.ts","(anonymous)","(anonymous)",63,63
+23,1,126,2,26,"hunkOf@42-67@mods/diff/hooks\views\body\plan\segments\segments-of.ts","mods/diff/hooks\views\body\plan\segments\segments-of.ts","hunkOf","hunkOf ( entry Entries BodyEntry , hunk Git Hunk )",42,67
+2,1,9,1,2,"splitOf@67-68@mods/diff/hooks\views\body\plan\segments\segments-of.ts","mods/diff/hooks\views\body\plan\segments\segments-of.ts","splitOf","splitOf ( hunk Git Hunk )",67,68
+1,1,4,0,1,"(anonymous)@83-83@mods/diff/hooks\views\body\plan\segments\segments-of.ts","mods/diff/hooks\views\body\plan\segments\segments-of.ts","(anonymous)","(anonymous)",83,83
+1,1,10,0,1,"(anonymous)@86-86@mods/diff/hooks\views\body\plan\segments\segments-of.ts","mods/diff/hooks\views\body\plan\segments\segments-of.ts","(anonymous)","(anonymous)",86,86
+1,1,7,0,1,"(anonymous)@87-87@mods/diff/hooks\views\body\plan\segments\segments-of.ts","mods/diff/hooks\views\body\plan\segments\segments-of.ts","(anonymous)","(anonymous)",87,87
+22,4,161,1,26,"fileOf@76-101@mods/diff/hooks\views\body\plan\segments\segments-of.ts","mods/diff/hooks\views\body\plan\segments\segments-of.ts","fileOf","fileOf ( entry Entries BodyEntry )",76,101
+2,1,14,1,2,"spacedFileOf@101-102@mods/diff/hooks\views\body\plan\segments\segments-of.ts","mods/diff/hooks\views\body\plan\segments\segments-of.ts","spacedFileOf","spacedFileOf ( entry Entries BodyEntry )",101,102
+2,1,8,0,2,"bodiesOf@120-121@mods/diff/hooks\views\body\plan\segments\segments-of.ts","mods/diff/hooks\views\body\plan\segments\segments-of.ts","bodiesOf","bodiesOf ( )",120,121
+4,1,13,0,4,"(anonymous)@131-134@mods/diff/hooks\views\body\plan\segments\segments-of.ts","mods/diff/hooks\views\body\plan\segments\segments-of.ts","(anonymous)","(anonymous)",131,134
+11,3,90,0,15,"openedOf@123-137@mods/diff/hooks\views\body\plan\segments\segments-of.ts","mods/diff/hooks\views\body\plan\segments\segments-of.ts","openedOf","openedOf ( )",123,137
+14,2,91,0,18,"messageOf@106-123@mods/diff/hooks\views\body\plan\segments\segments-of.ts","mods/diff/hooks\views\body\plan\segments\segments-of.ts","messageOf","messageOf ( )",106,123
+1,2,14,0,1,"(anonymous)@37-37@mods/diff/hooks\views\body\plan\dock-plan-of.ts","mods/diff/hooks\views\body\plan\dock-plan-of.ts","(anonymous)","(anonymous)",37,37
+53,24,389,1,63,"dockPlanOf@18-80@mods/diff/hooks\views\body\plan\dock-plan-of.ts","mods/diff/hooks\views\body\plan\dock-plan-of.ts","dockPlanOf","dockPlanOf ( model PaneState PaneModel )",18,80
+17,4,108,2,21,"hunkWindowOf@12-32@mods/diff/hooks\views\body\plan\hunk-window-of.ts","mods/diff/hooks\views\body\plan\hunk-window-of.ts","hunkWindowOf","hunkWindowOf ( segment HunkSegment , cut WindowCut )",12,32
+6,3,39,0,6,"(anonymous)@15-20@mods/diff/hooks\views\body\place-at-file.ts","mods/diff/hooks\views\body\place-at-file.ts","(anonymous)","(anonymous)",15,20
+2,1,7,1,2,"drawnLineOf@13-14@mods/diff/hooks\views\detail\code-blocks-of\drawn-line-of\drawn-line-of.ts","mods/diff/hooks\views\detail\code-blocks-of\drawn-line-of\drawn-line-of.ts","drawnLineOf","drawnLineOf ( line )",13,14
+25,8,208,0,31,"left@31-61@mods/diff/hooks\views\detail\code-blocks-of\code-blocks-of.ts","mods/diff/hooks\views\detail\code-blocks-of\code-blocks-of.ts","left","left ( )",31,61
+1,1,8,0,1,"(anonymous)@16-16@mods/diff/hooks\views\detail\hunk-header-of\hunk-header-of.ts","mods/diff/hooks\views\detail\hunk-header-of\hunk-header-of.ts","(anonymous)","(anonymous)",16,16
+25,8,121,1,31,"placeholderOf@15-45@mods/diff/hooks\views\detail\placeholder-of\placeholder-of.ts","mods/diff/hooks\views\detail\placeholder-of\placeholder-of.ts","placeholderOf","placeholderOf ( detail DetailModel )",15,45
+19,4,127,2,24,"subHunksOf@16-39@mods/diff/hooks\views\detail\sub-hunks-of\sub-hunks-of.ts","mods/diff/hooks\views\detail\sub-hunks-of\sub-hunks-of.ts","subHunksOf","subHunksOf ( hunk Git Hunk , maxChars , )",16,39
+1,1,1,0,1,"(anonymous)@21-21@mods/diff/hooks\views\dialog-pane\dialog-entries-of\dialog-entries-of.ts","mods/diff/hooks\views\dialog-pane\dialog-entries-of\dialog-entries-of.ts","(anonymous)","(anonymous)",21,21
+1,1,9,0,1,"(anonymous)@23-23@mods/diff/hooks\views\dialog-pane\dialog-entries-of\dialog-entries-of.ts","mods/diff/hooks\views\dialog-pane\dialog-entries-of\dialog-entries-of.ts","(anonymous)","(anonymous)",23,23
+12,4,87,1,13,"dialogEntriesOf@12-24@mods/diff/hooks\views\dialog-pane\dialog-entries-of\dialog-entries-of.ts","mods/diff/hooks\views\dialog-pane\dialog-entries-of\dialog-entries-of.ts","dialogEntriesOf","dialogEntriesOf ( model PaneState PaneModel , )",12,24
+1,1,1,0,1,"(anonymous)@16-16@mods/diff/hooks\views\dialog-pane\dialog-window-of\dialog-window-of.ts","mods/diff/hooks\views\dialog-pane\dialog-window-of\dialog-window-of.ts","(anonymous)","(anonymous)",16,16
+1,1,4,0,1,"(anonymous)@25-25@mods/diff/hooks\views\dialog-pane\dialog-focus-of.ts","mods/diff/hooks\views\dialog-pane\dialog-focus-of.ts","(anonymous)","(anonymous)",25,25
+1,1,7,0,1,"(anonymous)@26-26@mods/diff/hooks\views\dialog-pane\dialog-focus-of.ts","mods/diff/hooks\views\dialog-pane\dialog-focus-of.ts","(anonymous)","(anonymous)",26,26
+1,1,8,0,1,"(anonymous)@24-24@mods/diff/hooks\views\dialog-pane\dialog-rows-of.ts","mods/diff/hooks\views\dialog-pane\dialog-rows-of.ts","(anonymous)","(anonymous)",24,24
+1,1,4,0,1,"(anonymous)@29-29@mods/diff/hooks\views\dialog-pane\dialog-rows-of.ts","mods/diff/hooks\views\dialog-pane\dialog-rows-of.ts","(anonymous)","(anonymous)",29,29
+2,1,11,0,2,"(anonymous)@33-34@mods/diff/hooks\views\dialog-pane\dialog-rows-of.ts","mods/diff/hooks\views\dialog-pane\dialog-rows-of.ts","(anonymous)","(anonymous)",33,34
+22,6,182,1,30,"dialogRowsOf@17-46@mods/diff/hooks\views\dialog-pane\dialog-rows-of.ts","mods/diff/hooks\views\dialog-pane\dialog-rows-of.ts","dialogRowsOf","dialogRowsOf ( model PaneState PaneModel )",17,46
+9,1,56,0,9,"(anonymous)@16-24@mods/diff/hooks\views\entries\body-entry-of\body-entry-of.ts","mods/diff/hooks\views\entries\body-entry-of\body-entry-of.ts","(anonymous)","(anonymous)",16,24
+9,1,50,0,9,"(anonymous)@16-24@mods/diff/hooks\views\entries\detail-model-of\detail-model-of.ts","mods/diff/hooks\views\entries\detail-model-of\detail-model-of.ts","(anonymous)","(anonymous)",16,24
+4,1,32,1,4,"insetOf@14-17@mods/diff/hooks\views\inset-of\inset-of.ts","mods/diff/hooks\views\inset-of\inset-of.ts","insetOf","insetOf ( kit Kit )",14,17
+2,1,16,2,2,"holds@21-22@mods/diff/hooks\views\layout\cell-width\cell-width.ts","mods/diff/hooks\views\layout\cell-width\cell-width.ts","holds","holds ( low , high readonly , )",21,22
+12,10,88,1,17,"cellWidth@15-31@mods/diff/hooks\views\layout\cell-width\cell-width.ts","mods/diff/hooks\views\layout\cell-width\cell-width.ts","cellWidth","cellWidth ( text )",15,31
+7,2,35,1,9,"chargedWidth@14-22@mods/diff/hooks\views\layout\charged-width\charged-width.ts","mods/diff/hooks\views\layout\charged-width\charged-width.ts","chargedWidth","chargedWidth ( text )",14,22
+2,1,11,2,2,"padEnd@11-12@mods/diff/hooks\views\layout\pad-end\pad-end.ts","mods/diff/hooks\views\layout\pad-end\pad-end.ts","padEnd","padEnd ( text , cells )",11,12
+2,1,11,2,2,"plural@9-10@mods/diff/hooks\views\layout\plural\plural.ts","mods/diff/hooks\views\layout\plural\plural.ts","plural","plural ( count , noun )",9,10
+2,1,7,1,2,"sanitizeLine@14-15@mods/diff/hooks\views\layout\sanitize-line\sanitize-line.ts","mods/diff/hooks\views\layout\sanitize-line\sanitize-line.ts","sanitizeLine","sanitizeLine ( text )",14,15
+1,1,10,1,1,"sanitizeName@13-13@mods/diff/hooks\views\layout\sanitize-name\sanitize-name.ts","mods/diff/hooks\views\layout\sanitize-name\sanitize-name.ts","sanitizeName","sanitizeName ( text )",13,13
+15,4,90,2,21,"truncateStart@15-35@mods/diff/hooks\views\layout\truncate-start\truncate-start.ts","mods/diff/hooks\views\layout\truncate-start\truncate-start.ts","truncateStart","truncateStart ( text , cells )",15,35
+46,17,325,2,62,"wrappedLines@14-75@mods/diff/hooks\views\layout\wrapped-lines\wrapped-lines.ts","mods/diff/hooks\views\layout\wrapped-lines\wrapped-lines.ts","wrappedLines","wrappedLines ( text , columns )",14,75
+1,1,12,1,1,"askKeyOf@10-10@mods/diff/hooks\views\sections\ask-key-of\ask-key-of.ts","mods/diff/hooks\views\sections\ask-key-of\ask-key-of.ts","askKeyOf","askKeyOf ( path )",10,10
+2,1,12,1,2,"fileKeyOf@10-11@mods/diff/hooks\views\sections\file-key-of\file-key-of.ts","mods/diff/hooks\views\sections\file-key-of\file-key-of.ts","fileKeyOf","fileKeyOf ( entry Pick )",10,11
+5,1,17,3,5,"fileRow@23-27@mods/diff/hooks\views\sections\file-row\file-row.ts","mods/diff/hooks\views\sections\file-row\file-row.ts","fileRow","fileRow ( kit Kit , row FileRowModel , onPress ( )",23,27
+1,1,4,0,1,"present@14-14@mods/diff/hooks\views\sections\present\present.ts","mods/diff/hooks\views\sections\present\present.ts","present","present",14,14
+2,1,11,2,2,"statTextOf@11-12@mods/diff/hooks\views\sections\stat-text-of\stat-text-of.ts","mods/diff/hooks\views\sections\stat-text-of\stat-text-of.ts","statTextOf","statTextOf ( added , removed )",11,12
+2,3,13,1,2,"currentOf@73-74@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","currentOf","currentOf ( engine Host )",73,74
+2,2,11,0,3,"isPaneSeen@74-76@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","isPaneSeen","isPaneSeen ( )",74,76
+2,1,7,2,2,"run@77-78@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","run","run ( argv , init )",77,78
+2,1,11,0,2,"readFile@82-83@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","readFile","readFile",82,83
+2,1,12,0,2,"mtimeOf@83-84@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","mtimeOf","mtimeOf",83,84
+2,1,12,0,2,"entryKindsOf@84-85@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","entryKindsOf","entryKindsOf",84,85
+2,1,13,0,2,"nowMs@85-86@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","nowMs","nowMs ( )",85,86
+2,1,6,0,2,"sessionStartMsOf@86-87@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","sessionStartMsOf","sessionStartMsOf ( )",86,87
+18,3,101,0,21,"onBranchBase@87-107@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","onBranchBase","onBranchBase",87,107
+8,2,66,1,35,"backendHostOf@76-110@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","backendHostOf","backendHostOf ( engine Host )",76,110
+3,1,5,0,3,"(anonymous)@115-117@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",115,117
+7,5,47,1,11,"pinBackend@110-120@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","pinBackend","pinBackend ( engine Host )",110,120
+2,1,7,2,2,"run@130-131@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","run","run ( argv , init )",130,131
+5,3,26,0,6,"(anonymous)@131-136@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",131,136
+1,1,2,0,1,"(anonymous)@157-157@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",157,157
+34,12,199,1,49,"probeBackend@122-170@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","probeBackend","probeBackend ( engine Host )",122,170
+9,2,44,0,9,"unpin@172-180@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","unpin","unpin ( )",172,180
+9,1,35,0,10,"dialogPane@182-191@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","dialogPane","dialogPane ( )",182,191
+1,1,2,0,1,"(anonymous)@199-199@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",199,199
+9,5,55,1,11,"fitDialog@191-201@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","fitDialog","fitDialog ( engine Host )",191,201
+4,1,13,0,4,"(anonymous)@212-215@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",212,215
+10,2,44,1,15,"redraw@203-217@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","redraw","redraw ( engine Host )",203,217
+23,5,124,1,29,"loadBodies@219-247@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","loadBodies","loadBodies ( engine Host )",219,247
+2,1,19,1,3,"bodyStampOf@249-251@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","bodyStampOf","bodyStampOf ( data Git DiffData )",249,251
+1,1,10,0,1,"(anonymous)@258-258@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",258,258
+18,4,132,3,23,"fetchBodies@251-273@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","fetchBodies","fetchBodies ( engine Host , pinned Backend Backend , data Git DiffData , )",251,273
+1,1,2,0,1,"(anonymous)@284-284@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",284,284
+6,3,25,0,7,"(anonymous)@285-291@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",285,291
+10,4,42,0,18,"keepBaseline@275-292@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","keepBaseline","keepBaseline ( )",275,292
+1,1,2,0,1,"(anonymous)@295-295@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",295,295
+5,3,31,0,7,"readHeadKey@295-301@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","readHeadKey","readHeadKey ( )",295,301
+7,3,31,0,9,"(anonymous)@312-320@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",312,320
+6,2,23,0,15,"(anonymous)@307-321@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",307,321
+9,2,62,2,30,"startPoll@294-323@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","startPoll","startPoll ( engine Host , pinned Backend Backend )",294,323
+2,1,11,0,2,"fetched@337-338@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","fetched","fetched ( )",337,338
+1,1,3,0,1,"(anonymous)@347-347@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",347,347
+4,1,13,0,4,"(anonymous)@401-404@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",401,404
+8,2,43,1,13,"scheduleRefresh@396-408@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","scheduleRefresh","scheduleRefresh ( engine Host )",396,408
+56,10,278,1,87,"refresh@325-411@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","refresh","refresh ( engine Host )",325,411
+1,1,2,0,1,"(anonymous)@412-412@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",412,412
+1,1,2,0,1,"(anonymous)@448-448@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",448,448
+1,1,2,0,1,"(anonymous)@460-460@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",460,460
+5,1,31,1,5,"closePane@483-487@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","closePane","closePane ( engine Host )",483,487
+5,3,16,0,7,"isTaken@497-503@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","isTaken","isTaken ( )",497,503
+1,1,2,0,1,"(anonymous)@520-520@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",520,520
+24,12,127,1,38,"openOnFirstEdit@496-533@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","openOnFirstEdit","openOnFirstEdit ( engine Host )",496,533
+1,1,3,0,1,"(anonymous)@539-539@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",539,539
+9,3,52,1,10,"openOnRestore@536-545@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","openOnRestore","openOnRestore ( engine Host )",536,545
+5,1,26,1,5,"disarm@547-551@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","disarm","disarm ( engine Host )",547,551
+1,1,2,0,1,"(anonymous)@564-564@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",564,564
+11,4,64,0,13,"selectFile@554-566@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","selectFile","selectFile",554,566
+4,1,23,0,4,"scrollList@567-570@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","scrollList","scrollList",567,570
+5,1,27,0,5,"toggleNoise@571-575@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","toggleNoise","toggleNoise ( )",571,575
+5,1,27,0,5,"togglePreSession@576-580@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","togglePreSession","togglePreSession ( )",576,580
+1,1,2,0,1,"(anonymous)@604-604@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",604,604
+22,6,143,0,29,"cycleBase@581-609@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","cycleBase","cycleBase ( )",581,609
+9,3,64,0,11,"chooseSource@610-620@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","chooseSource","chooseSource",610,620
+8,2,27,0,10,"toggleAsk@621-630@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","toggleAsk","toggleAsk",621,630
+10,1,51,1,81,"actionsOf@553-633@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","actionsOf","actionsOf ( engine Host )",553,633
+1,1,6,0,1,"(anonymous)@636-636@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",636,636
+15,8,86,2,18,"arm@633-650@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","arm","arm ( engine Host , path )",633,650
+1,1,2,0,1,"(anonymous)@653-653@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",653,653
+17,7,134,1,21,"startedAtOf@652-672@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","startedAtOf","startedAtOf ( engine Host )",652,672
+2,1,12,0,2,"now@677-678@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","now","now ( )",677,678
+2,1,18,2,2,"after@678-679@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","after","after ( ms , fn )",678,679
+2,1,18,2,2,"every@679-680@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","every","every ( ms , fn )",679,680
+2,1,18,2,2,"run@680-681@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","run","run ( argv , init )",680,681
+2,1,10,0,2,"stat@681-682@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","stat","stat",681,682
+2,1,10,0,2,"listDir@682-683@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","listDir","listDir",682,683
+2,1,10,0,2,"readFile@683-684@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","readFile","readFile",683,684
+2,1,10,0,2,"storeGet@684-685@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","storeGet","storeGet",684,685
+2,1,18,2,2,"storeSet@685-686@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","storeSet","storeSet ( key , value )",685,686
+2,1,4,0,2,"isCheckpointing@686-687@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","isCheckpointing","isCheckpointing ( )",686,687
+2,1,9,0,2,"(anonymous)@691-692@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",691,692
+2,1,10,0,2,"(anonymous)@692-693@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",692,693
+2,1,10,0,2,"(anonymous)@693-694@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",693,694
+2,1,10,0,2,"(anonymous)@694-695@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",694,695
+2,1,10,0,2,"(anonymous)@695-696@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",695,696
+2,1,10,0,2,"(anonymous)@696-697@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",696,697
+2,1,10,0,2,"(anonymous)@697-698@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",697,698
+2,1,9,0,2,"(anonymous)@698-699@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",698,699
+1,1,1,0,1,"(anonymous)@700-700@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",700,700
+1,1,1,0,1,"(anonymous)@703-703@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",703,703
+2,1,10,0,2,"(anonymous)@705-706@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",705,706
+2,1,10,0,2,"(anonymous)@706-707@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",706,707
+15,2,132,0,36,"(anonymous)@674-709@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",674,709
+1,1,2,0,1,"(anonymous)@712-712@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",712,712
+1,1,2,0,1,"(anonymous)@732-732@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",732,732
+15,11,82,0,20,"(anonymous)@718-737@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",718,737
+1,1,2,0,1,"(anonymous)@752-752@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",752,752
+1,1,2,0,1,"(anonymous)@778-778@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",778,778
+38,10,238,0,53,"(anonymous)@739-791@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",739,791
+5,2,17,0,6,"(anonymous)@793-798@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",793,798
+1,1,4,0,1,"(anonymous)@826-826@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",826,826
+1,1,2,0,1,"(anonymous)@841-841@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",841,841
+1,1,2,0,1,"(anonymous)@862-862@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",862,862
+1,1,2,0,1,"(anonymous)@880-880@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",880,880
+28,12,165,0,37,"(anonymous)@848-884@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",848,884
+1,1,2,0,1,"(anonymous)@901-901@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",901,901
+16,8,108,0,21,"(anonymous)@886-906@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",886,906
+15,5,83,0,20,"(anonymous)@908-927@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",908,927
+1,1,2,0,1,"(anonymous)@940-940@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",940,940
+20,6,90,0,25,"(anonymous)@929-953@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",929,953
+1,1,2,0,1,"(anonymous)@961-961@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",961,961
+1,1,6,0,1,"(anonymous)@972-972@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",972,972
+1,1,2,0,1,"(anonymous)@993-993@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",993,993
+23,11,120,3,29,"afterTool@967-995@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","afterTool","afterTool ( engine Host , e Args , result ResultOf undefined , )",967,995
+10,2,37,0,13,"(anonymous)@1000-1012@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",1000,1012
+1,1,8,0,1,"(anonymous)@1027-1027@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",1027,1027
+35,9,170,0,47,"(anonymous)@1015-1061@mods/diff/hooks\register.ts","mods/diff/hooks\register.ts","(anonymous)","(anonymous)",1015,1061
+2,1,11,2,2,"admissionFailure@11-12@mods/sec-default/hooks\admission-failure\admission-failure.ts","mods/sec-default/hooks\admission-failure\admission-failure.ts","admissionFailure","admissionFailure ( name , error HookFailure )",11,12
+1,1,6,0,1,"(anonymous)@17-17@mods/sec-default/hooks\held-verdict\verdicts\ranking\handed-to.ts","mods/sec-default/hooks\held-verdict\verdicts\ranking\handed-to.ts","(anonymous)","(anonymous)",17,17
+4,2,34,2,4,"handedTo@14-17@mods/sec-default/hooks\held-verdict\verdicts\ranking\handed-to.ts","mods/sec-default/hooks\held-verdict\verdicts\ranking\handed-to.ts","handedTo","handedTo ( trace readonly TraceEntry , at , )",14,17
+5,1,22,2,5,"isLooser@15-19@mods/sec-default/hooks\held-verdict\verdicts\ranking\is-looser.ts","mods/sec-default/hooks\held-verdict\verdicts\ranking\is-looser.ts","isLooser","isLooser ( own EventResult undefined , handed EventResult undefined , )",15,19
+5,1,18,2,5,"holdsOver@18-22@mods/sec-default/hooks\held-verdict\verdicts\holds-over.ts","mods/sec-default/hooks\held-verdict\verdicts\holds-over.ts","holdsOver","holdsOver ( held EventResult , answer EventResult , )",18,22
+5,1,20,2,5,"isSameVerdict@11-15@mods/sec-default/hooks\held-verdict\verdicts\is-same-verdict.ts","mods/sec-default/hooks\held-verdict\verdicts\is-same-verdict.ts","isSameVerdict","isSameVerdict ( one EventResult , other EventResult undefined , )",11,15
+1,1,1,0,1,"(anonymous)@18-18@mods/sec-default/hooks\held-verdict\verdicts\is-same-verdict.ts","mods/sec-default/hooks\held-verdict\verdicts\is-same-verdict.ts","(anonymous)","(anonymous)",18,18
+1,1,4,0,1,"(anonymous)@20-20@mods/sec-default/hooks\held-verdict\verdicts\is-same-verdict.ts","mods/sec-default/hooks\held-verdict\verdicts\is-same-verdict.ts","(anonymous)","(anonymous)",20,20
+1,2,11,0,1,"(anonymous)@21-21@mods/sec-default/hooks\held-verdict\verdicts\is-same-verdict.ts","mods/sec-default/hooks\held-verdict\verdicts\is-same-verdict.ts","(anonymous)","(anonymous)",21,21
+1,1,7,0,1,"(anonymous)@24-24@mods/sec-default/hooks\held-verdict\verdicts\is-same-verdict.ts","mods/sec-default/hooks\held-verdict\verdicts\is-same-verdict.ts","(anonymous)","(anonymous)",24,24
+4,1,19,1,4,"rewrittenByUsers@17-20@mods/sec-default/hooks\held-verdict\verdicts\rewritten-by-users.ts","mods/sec-default/hooks\held-verdict\verdicts\rewritten-by-users.ts","rewrittenByUsers","rewrittenByUsers ( trace readonly TraceEntry , )",17,20
+9,4,54,0,10,"(anonymous)@21-30@mods/sec-default/hooks\held-verdict\verdicts\rewritten-by-users.ts","mods/sec-default/hooks\held-verdict\verdicts\rewritten-by-users.ts","(anonymous)","(anonymous)",21,30
+1,1,4,0,1,"(anonymous)@31-31@mods/sec-default/hooks\held-verdict\verdicts\rewritten-by-users.ts","mods/sec-default/hooks\held-verdict\verdicts\rewritten-by-users.ts","(anonymous)","(anonymous)",31,31
+12,4,63,1,13,"askKind@14-26@mods/sec-default/hooks\held-verdict\ask-kind.ts","mods/sec-default/hooks\held-verdict\ask-kind.ts","askKind","askKind ( held EventResult )",14,26
+8,3,48,2,9,"caughtAnswer@16-24@mods/sec-default/hooks\held-verdict\caught-answer.ts","mods/sec-default/hooks\held-verdict\caught-answer.ts","caughtAnswer","caughtAnswer ( last EventResult undefined , trace readonly TraceEntry , )",16,24
+9,3,46,1,10,"heldKind@16-25@mods/sec-default/hooks\held-verdict\held-kind.ts","mods/sec-default/hooks\held-verdict\held-kind.ts","heldKind","heldKind ( held EventResult )",16,25
+17,3,112,4,18,"heldNotice@17-34@mods/sec-default/hooks\held-verdict\held-notice.ts","mods/sec-default/hooks\held-verdict\held-notice.ts","heldNotice","heldNotice ( plugin , tool , held EventResult , attempt , )",17,34
+2,1,7,1,2,"managedModsOnlyRefusal@8-9@mods/sec-default/hooks\managed-mods-only-refusal\managed-mods-only-refusal.ts","mods/sec-default/hooks\managed-mods-only-refusal\managed-mods-only-refusal.ts","managedModsOnlyRefusal","managedModsOnlyRefusal ( name )",8,9
+2,1,7,1,2,"pinnedVariableRefusal@11-12@mods/sec-default/hooks\pinned-variable-refusal\pinned-variable-refusal.ts","mods/sec-default/hooks\pinned-variable-refusal\pinned-variable-refusal.ts","pinnedVariableRefusal","pinnedVariableRefusal ( name )",11,12
+4,1,17,2,4,"createPolicyMemo@11-14@mods/sec-default/hooks\policy\create-policy-memo\create-policy-memo.ts","mods/sec-default/hooks\policy\create-policy-memo\create-policy-memo.ts","createPolicyMemo","createPolicyMemo ( ttlMs , now ( )",11,14
+8,5,39,0,10,"(anonymous)@18-27@mods/sec-default/hooks\policy\create-policy-memo\create-policy-memo.ts","mods/sec-default/hooks\policy\create-policy-memo\create-policy-memo.ts","(anonymous)","(anonymous)",18,27
+5,1,25,0,15,"number@14-28@mods/sec-default/hooks\policy\create-policy-memo\create-policy-memo.ts","mods/sec-default/hooks\policy\create-policy-memo\create-policy-memo.ts","number","number",14,28
+2,1,9,1,2,"isServerFileUnreadable@10-11@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\is-server-file-unreadable\is-server-file-unreadable.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\is-server-file-unreadable\is-server-file-unreadable.ts","isServerFileUnreadable","isServerFileUnreadable ( policy Settings )",10,11
+2,1,16,2,2,"orgNames@19-20@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-names\org-names.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-names\org-names.ts","orgNames","orgNames ( policy Settings , own )",19,20
+1,1,11,0,1,"(anonymous)@21-21@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-names\org-names.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-names\org-names.ts","(anonymous)","(anonymous)",21,21
+2,1,9,1,2,"foldedId@10-11@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-plugin-names\folded-id.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-plugin-names\folded-id.ts","foldedId","foldedId ( id )",10,11
+5,2,44,1,6,"formsOf@11-16@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-plugin-names\forms-of.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-plugin-names\forms-of.ts","formsOf","formsOf ( name )",11,16
+2,1,9,1,2,"isEnabledEntry@8-9@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-plugin-names\is-enabled-entry.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-plugin-names\is-enabled-entry.ts","isEnabledEntry","isEnabledEntry ( value )",8,9
+4,2,33,1,5,"nameOfId@8-12@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-plugin-names\name-of-id.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-plugin-names\name-of-id.ts","nameOfId","nameOfId ( id )",8,12
+1,1,1,0,1,"(anonymous)@29-29@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-plugin-names\org-plugin-names.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-plugin-names\org-plugin-names.ts","(anonymous)","(anonymous)",29,29
+2,1,7,1,2,"isOwn@31-32@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-plugin-names\org-plugin-names.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-plugin-names\org-plugin-names.ts","isOwn","isOwn ( id )",31,32
+5,6,46,0,6,"(anonymous)@37-42@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-plugin-names\org-plugin-names.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-plugin-names\org-plugin-names.ts","(anonymous)","(anonymous)",37,42
+3,2,26,0,8,"(anonymous)@37-44@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-plugin-names\org-plugin-names.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-plugin-names\org-plugin-names.ts","(anonymous)","(anonymous)",37,44
+10,6,109,2,12,"orgPluginNames@26-37@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-plugin-names\org-plugin-names.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-plugin-names\org-plugin-names.ts","orgPluginNames","orgPluginNames ( policy Settings , own )",26,37
+7,6,48,0,9,"(anonymous)@19-27@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-server-names\org-server-names.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-server-names\org-server-names.ts","(anonymous)","(anonymous)",19,27
+9,6,85,1,18,"orgServerNames@13-30@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-server-names\org-server-names.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\org-server-names\org-server-names.ts","orgServerNames","orgServerNames ( policy Settings )",13,30
+1,1,4,0,1,"(anonymous)@15-15@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\spellings-of\spellings-of.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\spellings-of\spellings-of.ts","(anonymous)","(anonymous)",15,15
+5,1,59,1,6,"spellingsOf@11-16@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\spellings-of\spellings-of.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\spellings-of\spellings-of.ts","spellingsOf","spellingsOf ( server )",11,16
+2,1,7,1,2,"foldedName@12-13@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\tool-prefix-of\folded-name\folded-name.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\tool-prefix-of\folded-name\folded-name.ts","foldedName","foldedName ( name )",12,13
+1,1,13,1,1,"toolPrefixOf@13-13@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\tool-prefix-of\tool-prefix-of.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\tool-prefix-of\tool-prefix-of.ts","toolPrefixOf","toolPrefixOf ( name )",13,13
+3,3,27,2,3,"isOrgTool@25-27@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\is-org-tool.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\is-org-tool.ts","isOrgTool","isOrgTool ( policy Settings , tool )",25,27
+1,1,13,0,1,"(anonymous)@29-29@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\is-org-tool.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\is-org-tool.ts","(anonymous)","(anonymous)",29,29
+1,1,7,0,1,"(anonymous)@31-31@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\is-org-tool.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\is-org-tool.ts","(anonymous)","(anonymous)",31,31
+1,1,11,0,1,"(anonymous)@32-32@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\is-org-tool.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\is-org-tool.ts","(anonymous)","(anonymous)",32,32
+1,1,15,0,1,"(anonymous)@33-33@mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\is-org-tool.ts","mods/sec-default/hooks\policy\managed-tools-restored\is-org-tool\is-org-tool.ts","(anonymous)","(anonymous)",33,33
+16,4,104,3,17,"managedToolsRestored@17-33@mods/sec-default/hooks\policy\managed-tools-restored\managed-tools-restored.ts","mods/sec-default/hooks\policy\managed-tools-restored\managed-tools-restored.ts","managedToolsRestored","managedToolsRestored ( policy Settings undefined , real ValueOrDeny , seen ValueOrDeny , )",17,33
+4,3,44,2,5,"memberOf@9-13@mods/sec-default/hooks\policy\own-option\member-of\member-of.ts","mods/sec-default/hooks\policy\own-option\member-of\member-of.ts","memberOf","memberOf ( value , key )",9,13
+2,1,13,2,2,"ownOption@16-17@mods/sec-default/hooks\policy\own-option\own-option.ts","mods/sec-default/hooks\policy\own-option\own-option.ts","ownOption","ownOption ( policy Settings , name )",16,17
+4,1,19,2,4,"decidedByPolicy@12-15@mods/sec-default/hooks\policy\decided-by-policy.ts","mods/sec-default/hooks\policy\decided-by-policy.ts","decidedByPolicy","decidedByPolicy ( policy Promise , decide ( policy Settings )",12,15
+1,1,2,0,1,"(anonymous)@15-15@mods/sec-default/hooks\policy\decided-by-policy.ts","mods/sec-default/hooks\policy\decided-by-policy.ts","(anonymous)","(anonymous)",15,15
+1,2,13,0,1,"(anonymous)@15-15@mods/sec-default/hooks\policy\decided-by-policy.ts","mods/sec-default/hooks\policy\decided-by-policy.ts","(anonymous)","(anonymous)",15,15
+2,1,7,1,2,"denyRulesHold@17-18@mods/sec-default/hooks\policy\deny-rules-hold.ts","mods/sec-default/hooks\policy\deny-rules-hold.ts","denyRulesHold","denyRulesHold ( policy Settings )",17,18
+2,1,7,1,2,"hasMcpAllowlist@10-11@mods/sec-default/hooks\policy\has-mcp-allowlist.ts","mods/sec-default/hooks\policy\has-mcp-allowlist.ts","hasMcpAllowlist","hasMcpAllowlist ( policy Settings )",10,11
+4,2,24,1,5,"isManagedModsOnly@15-19@mods/sec-default/hooks\policy\is-managed-mods-only.ts","mods/sec-default/hooks\policy\is-managed-mods-only.ts","isManagedModsOnly","isManagedModsOnly ( policy Settings )",15,19
+2,1,9,1,2,"isPersonWritable@12-13@mods/sec-default/hooks\policy\is-person-writable.ts","mods/sec-default/hooks\policy\is-person-writable.ts","isPersonWritable","isPersonWritable ( policy Settings )",12,13
+2,1,13,2,2,"isPinnedVariable@13-14@mods/sec-default/hooks\policy\is-pinned-variable.ts","mods/sec-default/hooks\policy\is-pinned-variable.ts","isPinnedVariable","isPinnedVariable ( policy Settings , name )",13,14
+2,1,13,0,2,"(anonymous)@15-16@mods/sec-default/hooks\policy\is-pinned-variable.ts","mods/sec-default/hooks\policy\is-pinned-variable.ts","(anonymous)","(anonymous)",15,16
+15,3,78,4,16,"namesOrgTool@29-44@mods/sec-default/hooks\policy\names-org-tool.ts","mods/sec-default/hooks\policy\names-org-tool.ts","namesOrgTool","namesOrgTool ( policy Settings , plugin , tool , id , )",29,44
+9,4,54,1,10,"pinnedNames@17-26@mods/sec-default/hooks\policy\pinned-names.ts","mods/sec-default/hooks\policy\pinned-names.ts","pinnedNames","pinnedNames ( policy Settings )",17,26
+2,1,12,1,2,"isSkillRow@14-15@mods/sec-default/hooks\skill-row\is-skill-row.ts","mods/sec-default/hooks\skill-row\is-skill-row.ts","isSkillRow","isSkillRow ( e Args )",14,15
+7,1,20,4,7,"registerRefusalOf@21-27@mods/sec-default/hooks\tool-register-refusal\register-refusal-of.ts","mods/sec-default/hooks\tool-register-refusal\register-refusal-of.ts","registerRefusalOf","registerRefusalOf ( policy Settings , plugin , tool , id , )",21,27
+2,1,7,1,2,"serverNameRefusal@8-9@mods/sec-default/hooks\tool-register-refusal\server-name-refusal.ts","mods/sec-default/hooks\tool-register-refusal\server-name-refusal.ts","serverNameRefusal","serverNameRefusal ( plugin )",8,9
+1,1,9,0,1,"(anonymous)@30-30@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",30,30
+1,1,9,0,1,"(anonymous)@32-32@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",32,32
+1,1,9,0,1,"(anonymous)@33-33@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",33,33
+1,1,9,0,1,"(anonymous)@34-34@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",34,34
+1,1,9,0,1,"(anonymous)@35-35@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",35,35
+1,1,9,0,1,"(anonymous)@36-36@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",36,36
+1,1,9,0,1,"(anonymous)@37-37@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",37,37
+1,1,1,0,1,"(anonymous)@40-40@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",40,40
+1,1,1,0,1,"(anonymous)@43-43@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",43,43
+1,1,1,0,1,"(anonymous)@46-46@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",46,46
+1,1,1,0,1,"(anonymous)@49-49@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",49,49
+5,3,36,0,6,"(anonymous)@51-56@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",51,56
+1,1,9,0,1,"(anonymous)@58-58@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",58,58
+1,1,9,0,1,"(anonymous)@60-60@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",60,60
+1,1,7,0,1,"(anonymous)@62-62@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",62,62
+1,1,7,0,1,"(anonymous)@63-63@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",63,63
+1,1,7,0,1,"(anonymous)@64-64@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",64,64
+1,1,7,0,1,"(anonymous)@65-65@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",65,65
+1,1,11,0,1,"(anonymous)@77-77@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",77,77
+1,1,1,0,1,"(anonymous)@79-79@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",79,79
+1,1,2,0,1,"(anonymous)@86-86@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",86,86
+21,6,110,0,24,"(anonymous)@67-90@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",67,90
+1,1,1,0,1,"(anonymous)@93-93@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",93,93
+1,1,11,0,1,"(anonymous)@94-94@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",94,94
+2,1,3,0,2,"(anonymous)@95-96@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",95,96
+1,1,11,0,1,"(anonymous)@109-109@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",109,109
+1,1,16,0,1,"(anonymous)@125-125@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",125,125
+30,6,160,0,37,"(anonymous)@102-138@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",102,138
+1,1,2,0,1,"(anonymous)@139-139@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",139,139
+1,1,11,0,1,"(anonymous)@142-142@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",142,142
+8,3,53,0,10,"(anonymous)@138-147@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",138,147
+5,3,36,0,6,"(anonymous)@149-154@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",149,154
+5,3,36,0,6,"(anonymous)@156-161@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",156,161
+1,1,11,0,1,"(anonymous)@172-172@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",172,172
+2,1,12,0,2,"(anonymous)@173-174@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",173,174
+17,5,97,0,23,"(anonymous)@163-185@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",163,185
+9,3,47,0,11,"(anonymous)@185-195@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",185,195
+6,2,47,0,7,"(anonymous)@197-203@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",197,203
+4,2,45,0,5,"(anonymous)@203-207@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","(anonymous)","(anonymous)",203,207
+45,6,535,1,184,"register@25-208@mods/sec-default/hooks\register.ts","mods/sec-default/hooks\register.ts","register","register ( on On )",25,208
+2,1,10,1,2,"answerOf@14-15@mods/telemetry/hooks\answer-of\answer-of.ts","mods/telemetry/hooks\answer-of\answer-of.ts","answerOf","answerOf ( queued Promise )",14,15
+7,2,37,0,8,"(anonymous)@16-23@mods/telemetry/hooks\answer-of\answer-of.ts","mods/telemetry/hooks\answer-of\answer-of.ts","(anonymous)","(anonymous)",16,23
+2,1,7,1,2,"isRetriable@12-13@mods/telemetry/hooks\batching\is-retriable\is-retriable.ts","mods/telemetry/hooks\batching\is-retriable\is-retriable.ts","isRetriable","isRetriable ( status )",12,13
+2,1,7,1,2,"messageOf@8-9@mods/telemetry/hooks\batching\message-of\message-of.ts","mods/telemetry/hooks\batching\message-of\message-of.ts","messageOf","messageOf ( error )",8,9
+13,11,72,1,15,"clientTypeOf@12-26@mods/telemetry/hooks\context\client-type-of\client-type-of.ts","mods/telemetry/hooks\context\client-type-of\client-type-of.ts","clientTypeOf","clientTypeOf ( facts Facts )",12,26
+5,3,28,1,6,"entrypointOf@8-13@mods/telemetry/hooks\context\entrypoint-of\entrypoint-of.ts","mods/telemetry/hooks\context\entrypoint-of\entrypoint-of.ts","entrypointOf","entrypointOf ( variable undefined )",8,13
+2,1,9,1,2,"actionRefOf@8-9@mods/telemetry/hooks\context\environment-fields-of\action-ref-of\action-ref-of.ts","mods/telemetry/hooks\context\environment-fields-of\action-ref-of\action-ref-of.ts","actionRefOf","actionRefOf ( actionPath undefined )",8,9
+1,1,6,0,1,"(anonymous)@11-11@mods/telemetry/hooks\context\environment-fields-of\tags-of\tags-of.ts","mods/telemetry/hooks\context\environment-fields-of\tags-of\tags-of.ts","(anonymous)","(anonymous)",11,11
+6,2,38,1,8,"tagsOf@8-15@mods/telemetry/hooks\context\environment-fields-of\tags-of\tags-of.ts","mods/telemetry/hooks\context\environment-fields-of\tags-of\tags-of.ts","tagsOf","tagsOf ( variable undefined )",8,15
+3,1,9,1,3,"actionRefOf@52-54@mods/telemetry/hooks\context\environment-fields-of\environment-fields-of.ts","mods/telemetry/hooks\context\environment-fields-of\environment-fields-of.ts","actionRefOf","actionRefOf ( facts githubActionPath )",52,54
+3,1,7,1,3,"githubActionsFieldsOf@55-57@mods/telemetry/hooks\context\environment-fields-of\environment-fields-of.ts","mods/telemetry/hooks\context\environment-fields-of\environment-fields-of.ts","githubActionsFieldsOf","githubActionsFieldsOf ( facts )",55,57
+41,7,293,1,46,"environmentFieldsOf@21-66@mods/telemetry/hooks\context\environment-fields-of\environment-fields-of.ts","mods/telemetry/hooks\context\environment-fields-of\environment-fields-of.ts","environmentFieldsOf","environmentFieldsOf ( probe Probe )",21,66
+8,6,60,1,10,"globalConfigPath@10-19@mods/telemetry/hooks\context\identity\global-config-path\global-config-path.ts","mods/telemetry/hooks\context\identity\global-config-path\global-config-path.ts","globalConfigPath","globalConfigPath ( location ConfigLocation )",10,19
+7,4,36,1,8,"plausibleUuid@11-18@mods/telemetry/hooks\context\identity\plausible-uuid\plausible-uuid.ts","mods/telemetry/hooks\context\identity\plausible-uuid\plausible-uuid.ts","plausibleUuid","plausibleUuid ( value )",11,18
+3,1,15,1,3,"identityOf@19-21@mods/telemetry/hooks\context\identity\identity-of.ts","mods/telemetry/hooks\context\identity\identity-of.ts","identityOf","identityOf ( read ( path )",19,21
+2,1,13,2,2,"osReleaseValue@9-10@mods/telemetry/hooks\context\linux-distro-of\os-release-value\os-release-value.ts","mods/telemetry/hooks\context\linux-distro-of\os-release-value\os-release-value.ts","osReleaseValue","osReleaseValue ( content , key )",9,10
+1,1,20,0,1,"(anonymous)@12-12@mods/telemetry/hooks\context\linux-distro-of\os-release-value\os-release-value.ts","mods/telemetry/hooks\context\linux-distro-of\os-release-value\os-release-value.ts","(anonymous)","(anonymous)",12,12
+1,1,8,0,1,"(anonymous)@13-13@mods/telemetry/hooks\context\linux-distro-of\os-release-value\os-release-value.ts","mods/telemetry/hooks\context\linux-distro-of\os-release-value\os-release-value.ts","(anonymous)","(anonymous)",13,13
+3,1,12,1,3,"linuxDistroOf@11-13@mods/telemetry/hooks\context\linux-distro-of\linux-distro-of.ts","mods/telemetry/hooks\context\linux-distro-of\linux-distro-of.ts","linuxDistroOf","linuxDistroOf ( readOsRelease ( )",11,13
+1,1,2,0,1,"(anonymous)@17-17@mods/telemetry/hooks\context\machine\arch-of\arch-of.ts","mods/telemetry/hooks\context\machine\arch-of\arch-of.ts","(anonymous)","(anonymous)",17,17
+9,8,99,1,11,"archOf@8-18@mods/telemetry/hooks\context\machine\arch-of\arch-of.ts","mods/telemetry/hooks\context\machine\arch-of\arch-of.ts","archOf","archOf ( machine )",8,18
+1,1,4,0,1,"(anonymous)@13-13@mods/telemetry/hooks\context\machine\platform-of\platform-of.ts","mods/telemetry/hooks\context\machine\platform-of\platform-of.ts","(anonymous)","(anonymous)",13,13
+8,5,51,2,9,"platformOf@9-17@mods/telemetry/hooks\context\machine\platform-of\platform-of.ts","mods/telemetry/hooks\context\machine\platform-of\platform-of.ts","platformOf","platformOf ( hostPlatform undefined , platformRaw , )",9,17
+3,1,18,1,3,"machineOf@19-21@mods/telemetry/hooks\context\machine\machine-of.ts","mods/telemetry/hooks\context\machine\machine-of.ts","machineOf","machineOf ( run ( argv readonly )",19,21
+1,1,1,0,1,"(anonymous)@43-43@mods/telemetry/hooks\context\machine\machine-of.ts","mods/telemetry/hooks\context\machine\machine-of.ts","(anonymous)","(anonymous)",43,43
+1,1,7,0,1,"(anonymous)@20-20@mods/telemetry/hooks\context\probe-of\linux-files-of\linux-files-of.ts","mods/telemetry/hooks\context\probe-of\linux-files-of\linux-files-of.ts","(anonymous)","(anonymous)",20,20
+1,1,7,0,1,"(anonymous)@22-22@mods/telemetry/hooks\context\probe-of\linux-files-of\linux-files-of.ts","mods/telemetry/hooks\context\probe-of\linux-files-of\linux-files-of.ts","(anonymous)","(anonymous)",22,22
+3,1,13,0,3,"(anonymous)@25-27@mods/telemetry/hooks\context\probe-of\linux-files-of\linux-files-of.ts","mods/telemetry/hooks\context\probe-of\linux-files-of\linux-files-of.ts","(anonymous)","(anonymous)",25,27
+1,1,2,0,1,"(anonymous)@29-29@mods/telemetry/hooks\context\probe-of\linux-files-of\linux-files-of.ts","mods/telemetry/hooks\context\probe-of\linux-files-of\linux-files-of.ts","(anonymous)","(anonymous)",29,29
+24,6,125,2,27,"linuxFilesOf@14-40@mods/telemetry/hooks\context\probe-of\linux-files-of\linux-files-of.ts","mods/telemetry/hooks\context\probe-of\linux-files-of\linux-files-of.ts","linuxFilesOf","linuxFilesOf ( deps TelemetryDeps , isLinux , )",14,40
+1,1,2,0,1,"(anonymous)@31-31@mods/telemetry/hooks\context\probe-of\probe-of.ts","mods/telemetry/hooks\context\probe-of\probe-of.ts","(anonymous)","(anonymous)",31,31
+1,1,2,0,1,"(anonymous)@32-32@mods/telemetry/hooks\context\probe-of\probe-of.ts","mods/telemetry/hooks\context\probe-of\probe-of.ts","(anonymous)","(anonymous)",32,32
+7,1,19,0,8,"(anonymous)@33-40@mods/telemetry/hooks\context\probe-of\probe-of.ts","mods/telemetry/hooks\context\probe-of\probe-of.ts","(anonymous)","(anonymous)",33,40
+35,5,252,2,45,"probeOf@21-65@mods/telemetry/hooks\context\probe-of\probe-of.ts","mods/telemetry/hooks\context\probe-of\probe-of.ts","probeOf","probeOf ( deps TelemetryDeps , isInteractive , )",21,65
+2,1,7,1,2,"hexOf@9-10@mods/telemetry/hooks\context\remote-hash-of\hex-of\hex-of.ts","mods/telemetry/hooks\context\remote-hash-of\hex-of\hex-of.ts","hexOf","hexOf ( buffer ArrayBuffer )",9,10
+1,1,14,0,1,"(anonymous)@11-11@mods/telemetry/hooks\context\remote-hash-of\hex-of\hex-of.ts","mods/telemetry/hooks\context\remote-hash-of\hex-of\hex-of.ts","(anonymous)","(anonymous)",11,11
+11,7,74,1,14,"normalizedRemoteOf@11-24@mods/telemetry/hooks\context\remote-hash-of\normalized-remote-of\normalized-remote-of.ts","mods/telemetry/hooks\context\remote-hash-of\normalized-remote-of\normalized-remote-of.ts","normalizedRemoteOf","normalizedRemoteOf ( remote )",11,24
+11,3,71,1,13,"remoteHashOf@12-24@mods/telemetry/hooks\context\remote-hash-of\remote-hash-of.ts","mods/telemetry/hooks\context\remote-hash-of\remote-hash-of.ts","remoteHashOf","remoteHashOf ( remote null undefined , )",12,24
+8,4,61,1,8,"sessionFieldsOf@14-21@mods/telemetry/hooks\context\session-fields-of\session-fields-of.ts","mods/telemetry/hooks\context\session-fields-of\session-fields-of.ts","sessionFieldsOf","sessionFieldsOf ( facts Facts )",14,21
+10,5,59,1,13,"shellOf@12-24@mods/telemetry/hooks\context\shell-of\shell-of.ts","mods/telemetry/hooks\context\shell-of\shell-of.ts","shellOf","shellOf ( shellPath undefined )",12,24
+1,1,7,0,1,"(anonymous)@27-27@mods/telemetry/hooks\context\terminal-of\terminal-of.ts","mods/telemetry/hooks\context\terminal-of\terminal-of.ts","(anonymous)","(anonymous)",27,27
+1,1,2,0,1,"(anonymous)@73-73@mods/telemetry/hooks\context\terminal-of\terminal-of.ts","mods/telemetry/hooks\context\terminal-of\terminal-of.ts","(anonymous)","(anonymous)",73,73
+56,20,471,3,58,"terminalOf@17-74@mods/telemetry/hooks\context\terminal-of\terminal-of.ts","mods/telemetry/hooks\context\terminal-of\terminal-of.ts","terminalOf","terminalOf ( facts Facts , platform , isInteractive , )",17,74
+5,1,20,0,7,"(anonymous)@10-16@mods/telemetry/hooks\context\vcs-of\distinct\distinct.ts","mods/telemetry/hooks\context\vcs-of\distinct\distinct.ts","(anonymous)","(anonymous)",10,16
+4,1,33,1,11,"distinct@7-17@mods/telemetry/hooks\context\vcs-of\distinct\distinct.ts","mods/telemetry/hooks\context\vcs-of\distinct\distinct.ts","distinct","distinct ( values readonly )",7,17
+3,1,18,1,3,"vcsOf@15-17@mods/telemetry/hooks\context\vcs-of\vcs-of.ts","mods/telemetry/hooks\context\vcs-of\vcs-of.ts","vcsOf","vcsOf ( list ( path )",15,17
+1,1,4,0,1,"(anonymous)@28-28@mods/telemetry/hooks\context\vcs-of\vcs-of.ts","mods/telemetry/hooks\context\vcs-of\vcs-of.ts","(anonymous)","(anonymous)",28,28
+1,1,1,0,1,"(anonymous)@33-33@mods/telemetry/hooks\context\vcs-of\vcs-of.ts","mods/telemetry/hooks\context\vcs-of\vcs-of.ts","(anonymous)","(anonymous)",33,33
+5,8,47,1,6,"versionOf@8-13@mods/telemetry/hooks\context\version-of\version-of.ts","mods/telemetry/hooks\context\version-of\version-of.ts","versionOf","versionOf ( version undefined )",8,13
+3,1,12,1,3,"wslVersionOf@8-10@mods/telemetry/hooks\context\wsl-version-of\wsl-version-of.ts","mods/telemetry/hooks\context\wsl-version-of\wsl-version-of.ts","wslVersionOf","wslVersionOf ( readProcVersion ( )",8,10
+12,1,58,2,13,"contextOf@18-30@mods/telemetry/hooks\context\context-of.ts","mods/telemetry/hooks\context\context-of.ts","contextOf","contextOf ( deps TelemetryDeps , isInteractive , )",18,30
+5,1,15,2,5,"deploymentOf@12-16@mods/telemetry/hooks\deployment\deployment-of.ts","mods/telemetry/hooks\deployment\deployment-of.ts","deploymentOf","deploymentOf ( signals readonly DeploymentSignal , platform , )",12,16
+1,1,1,0,1,"(anonymous)@17-17@mods/telemetry/hooks\deployment\deployment-of.ts","mods/telemetry/hooks\deployment\deployment-of.ts","(anonymous)","(anonymous)",17,17
+1,2,6,0,1,"(anonymous)@17-17@mods/telemetry/hooks\deployment\deployment-of.ts","mods/telemetry/hooks\deployment\deployment-of.ts","(anonymous)","(anonymous)",17,17
+20,5,135,2,26,"checkedProps@16-41@mods/telemetry/hooks\entries\checked-props\checked-props.ts","mods/telemetry/hooks\entries\checked-props\checked-props.ts","checkedProps","checkedProps ( props , method Method , )",16,41
+2,2,13,0,2,"(anonymous)@59-60@mods/telemetry/hooks\entries\checked-value\checked-value.ts","mods/telemetry/hooks\entries\checked-value\checked-value.ts","(anonymous)","(anonymous)",59,60
+46,12,230,3,56,"checkedValue@19-74@mods/telemetry/hooks\entries\checked-value\checked-value.ts","mods/telemetry/hooks\entries\checked-value\checked-value.ts","checkedValue","checkedValue ( key , value , method Method , )",19,74
+11,3,43,1,12,"authOf@10-21@mods/telemetry/hooks\entries\event-data-of\auth-of\auth-of.ts","mods/telemetry/hooks\entries\event-data-of\auth-of\auth-of.ts","authOf","authOf ( identity Context )",10,21
+1,1,20,0,1,"(anonymous)@14-14@mods/telemetry/hooks\entries\event-data-of\metadata-of\metadata-of.ts","mods/telemetry/hooks\entries\event-data-of\metadata-of\metadata-of.ts","(anonymous)","(anonymous)",14,14
+4,2,36,2,4,"fieldsOf@13-16@mods/telemetry/hooks\entries\fields-of\fields-of.ts","mods/telemetry/hooks\entries\fields-of\fields-of.ts","fieldsOf","fieldsOf ( event , props Fields )",13,16
+2,1,11,1,2,"isMarkKind@10-11@mods/telemetry/hooks\entries\is-mark-kind\is-mark-kind.ts","mods/telemetry/hooks\entries\is-mark-kind\is-mark-kind.ts","isMarkKind","isMarkKind ( value )",10,11
+1,1,4,0,1,"(anonymous)@11-11@mods/telemetry/hooks\entries\is-mark-kind\is-mark-kind.ts","mods/telemetry/hooks\entries\is-mark-kind\is-mark-kind.ts","(anonymous)","(anonymous)",11,11
+2,1,16,1,2,"isRecord@7-8@mods/telemetry/hooks\entries\is-record\is-record.ts","mods/telemetry/hooks\entries\is-record\is-record.ts","isRecord","isRecord ( value )",7,8
+2,1,11,1,2,"isRefusedEntry@10-11@mods/telemetry/hooks\entries\is-refused-entry\is-refused-entry.ts","mods/telemetry/hooks\entries\is-refused-entry\is-refused-entry.ts","isRefusedEntry","isRefusedEntry ( error )",10,11
+12,2,55,5,12,"markFieldsOf@17-28@mods/telemetry/hooks\entries\mark-fields-of\mark-fields-of.ts","mods/telemetry/hooks\entries\mark-fields-of\mark-fields-of.ts","markFieldsOf","markFieldsOf ( kind , feature , reason , props , Mark )",17,28
+2,1,15,2,2,"refusal@16-17@mods/telemetry/hooks\entries\refusal\refusal.ts","mods/telemetry/hooks\entries\refusal\refusal.ts","refusal","refusal ( what , method Method )",16,17
+14,3,86,1,15,"wireOf@10-24@mods/telemetry/hooks\entries\wire-of\wire-of.ts","mods/telemetry/hooks\entries\wire-of\wire-of.ts","wireOf","wireOf ( value )",10,24
+1,1,1,0,1,"(anonymous)@18-18@mods/telemetry/hooks\entries\batch-of.ts","mods/telemetry/hooks\entries\batch-of.ts","(anonymous)","(anonymous)",18,18
+4,1,21,0,4,"(anonymous)@19-22@mods/telemetry/hooks\entries\batch-of.ts","mods/telemetry/hooks\entries\batch-of.ts","(anonymous)","(anonymous)",19,22
+10,4,69,1,13,"checkedFields@18-30@mods/telemetry/hooks\entries\checked-fields.ts","mods/telemetry/hooks\entries\checked-fields.ts","checkedFields","checkedFields ( entry )",18,30
+30,9,175,1,37,"checkedMark@19-55@mods/telemetry/hooks\entries\checked-mark.ts","mods/telemetry/hooks\entries\checked-mark.ts","checkedMark","checkedMark ( entry )",19,55
+1,1,16,2,1,"caught@13-13@mods/telemetry/hooks\gate\caught\caught.ts","mods/telemetry/hooks\gate\caught\caught.ts","caught","caught ( e E , next ( ( e E )",13,13
+1,1,1,0,1,"(anonymous)@14-14@mods/telemetry/hooks\gate\caught\caught.ts","mods/telemetry/hooks\gate\caught\caught.ts","(anonymous)","(anonymous)",14,14
+2,1,6,1,2,"next@18-19@mods/telemetry/hooks\gate\served\served.ts","mods/telemetry/hooks\gate\served\served.ts","next","next ( e )",18,19
+2,1,9,1,2,"isEnvSet@8-9@mods/telemetry/hooks\is-analytics-off\is-env-set\is-env-set.ts","mods/telemetry/hooks\is-analytics-off\is-env-set\is-env-set.ts","isEnvSet","isEnvSet ( value undefined )",8,9
+2,1,9,1,2,"isEnvTruthy@8-9@mods/telemetry/hooks\is-analytics-off\is-env-truthy\is-env-truthy.ts","mods/telemetry/hooks\is-analytics-off\is-env-truthy\is-env-truthy.ts","isEnvTruthy","isEnvTruthy ( value undefined )",8,9
+23,10,124,2,27,"isAnalyticsOff@18-44@mods/telemetry/hooks\is-analytics-off\is-analytics-off.ts","mods/telemetry/hooks\is-analytics-off\is-analytics-off.ts","isAnalyticsOff","isAnalyticsOff ( environment Environment , policy PolicyPins )",18,44
+1,1,9,0,1,"(anonymous)@35-35@mods/telemetry/hooks\telemetry-of\telemetry-of.ts","mods/telemetry/hooks\telemetry-of\telemetry-of.ts","(anonymous)","(anonymous)",35,35
+4,1,7,0,4,"(anonymous)@36-39@mods/telemetry/hooks\telemetry-of\telemetry-of.ts","mods/telemetry/hooks\telemetry-of\telemetry-of.ts","(anonymous)","(anonymous)",36,39
+10,4,44,0,15,"gathered@30-44@mods/telemetry/hooks\telemetry-of\telemetry-of.ts","mods/telemetry/hooks\telemetry-of\telemetry-of.ts","gathered","gathered ( )",30,44
+6,2,26,0,7,"primed@64-70@mods/telemetry/hooks\telemetry-of\telemetry-of.ts","mods/telemetry/hooks\telemetry-of\telemetry-of.ts","primed","primed ( )",64,70
+2,1,16,2,2,"post@72-73@mods/telemetry/hooks\telemetry-of\telemetry-of.ts","mods/telemetry/hooks\telemetry-of\telemetry-of.ts","post","post ( body , auth )",72,73
+17,6,86,2,23,"postedWithRetry@83-105@mods/telemetry/hooks\telemetry-of\telemetry-of.ts","mods/telemetry/hooks\telemetry-of\telemetry-of.ts","postedWithRetry","postedWithRetry ( body , auth , )",83,105
+28,6,173,1,35,"send@107-141@mods/telemetry/hooks\telemetry-of\telemetry-of.ts","mods/telemetry/hooks\telemetry-of\telemetry-of.ts","send","send ( rows readonly Batching PendingRow )",107,141
+1,1,1,0,1,"(anonymous)@156-156@mods/telemetry/hooks\telemetry-of\telemetry-of.ts","mods/telemetry/hooks\telemetry-of\telemetry-of.ts","(anonymous)","(anonymous)",156,156
+6,1,22,0,6,"(anonymous)@156-161@mods/telemetry/hooks\telemetry-of\telemetry-of.ts","mods/telemetry/hooks\telemetry-of\telemetry-of.ts","(anonymous)","(anonymous)",156,161
+13,3,65,0,23,"flush@143-165@mods/telemetry/hooks\telemetry-of\telemetry-of.ts","mods/telemetry/hooks\telemetry-of\telemetry-of.ts","flush","flush ( )",143,165
+1,1,2,0,1,"(anonymous)@168-168@mods/telemetry/hooks\telemetry-of\telemetry-of.ts","mods/telemetry/hooks\telemetry-of\telemetry-of.ts","(anonymous)","(anonymous)",168,168
+1,1,5,0,1,"(anonymous)@182-182@mods/telemetry/hooks\telemetry-of\telemetry-of.ts","mods/telemetry/hooks\telemetry-of\telemetry-of.ts","(anonymous)","(anonymous)",182,182
+13,7,84,1,17,"queued@167-183@mods/telemetry/hooks\telemetry-of\telemetry-of.ts","mods/telemetry/hooks\telemetry-of\telemetry-of.ts","queued","queued ( fields Entries Fields )",167,183
+2,1,11,0,2,"log@186-187@mods/telemetry/hooks\telemetry-of\telemetry-of.ts","mods/telemetry/hooks\telemetry-of\telemetry-of.ts","log","log",186,187
+2,1,11,0,2,"mark@187-188@mods/telemetry/hooks\telemetry-of\telemetry-of.ts","mods/telemetry/hooks\telemetry-of\telemetry-of.ts","mark","mark",187,188
+33,3,152,0,146,"sendingEnvironment@46-191@mods/telemetry/hooks\telemetry-of\telemetry-of.ts","mods/telemetry/hooks\telemetry-of\telemetry-of.ts","sendingEnvironment","sendingEnvironment ( )",46,191
+8,1,65,1,24,"telemetryOf@23-46@mods/telemetry/hooks\telemetry-of\telemetry-of.ts","mods/telemetry/hooks\telemetry-of\telemetry-of.ts","telemetryOf","telemetryOf ( deps TelemetryDeps )",23,46
+2,1,10,0,2,"(anonymous)@28-29@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",28,29
+1,1,1,0,1,"(anonymous)@32-32@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",32,32
+1,1,1,0,1,"(anonymous)@38-38@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",38,38
+4,1,12,0,5,"(anonymous)@41-45@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",41,45
+4,1,13,0,5,"(anonymous)@47-51@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",47,51
+2,1,12,0,2,"authorize@57-58@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","authorize","authorize ( )",57,58
+2,1,12,0,2,"id@58-59@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","id","id ( )",58,59
+2,1,12,0,2,"model@59-60@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","model","model ( )",59,60
+2,1,4,0,2,"isInteractive@60-61@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","isInteractive","isInteractive ( )",60,61
+23,1,177,0,23,"(anonymous)@63-85@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",63,85
+2,1,14,0,2,"(anonymous)@85-86@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",85,86
+102,3,822,0,102,"(anonymous)@86-187@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",86,187
+2,1,2,0,2,"(anonymous)@188-189@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",188,189
+6,1,42,0,6,"(anonymous)@345-350@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",345,350
+2,1,9,0,2,"(anonymous)@350-351@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",350,351
+2,1,9,0,2,"(anonymous)@351-352@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",351,352
+2,1,9,0,2,"(anonymous)@352-353@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",352,353
+2,1,10,0,2,"(anonymous)@353-354@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",353,354
+2,1,10,0,2,"(anonymous)@354-355@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",354,355
+2,1,10,0,2,"(anonymous)@355-356@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",355,356
+1,1,1,0,1,"(anonymous)@357-357@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",357,357
+2,1,12,0,2,"(anonymous)@358-359@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",358,359
+2,1,12,0,2,"(anonymous)@359-360@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",359,360
+2,1,10,0,2,"(anonymous)@360-361@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",360,361
+2,1,16,0,2,"(anonymous)@361-362@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",361,362
+165,4,939,0,309,"(anonymous)@53-361@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","(anonymous)","(anonymous)",53,361
+20,5,202,1,346,"register@23-368@mods/telemetry/hooks\register.ts","mods/telemetry/hooks\register.ts","register","register ( on On )",23,368
+6,1,53,2,7,"from_dict@23-29@plugins\hookify\core\config_loader.py","plugins\hookify\core\config_loader.py","from_dict","from_dict( cls , data : Dict [ str , Any ] )",23,29
+30,8,193,3,40,"from_dict@45-84@plugins\hookify\core\config_loader.py","plugins\hookify\core\config_loader.py","from_dict","from_dict( cls , frontmatter : Dict [ str , Any ] , message : str )",45,84
+71,32,531,1,109,"extract_frontmatter@87-195@plugins\hookify\core\config_loader.py","plugins\hookify\core\config_loader.py","extract_frontmatter","extract_frontmatter( content : str )",87,195
+24,10,171,1,44,"load_rules@198-241@plugins\hookify\core\config_loader.py","plugins\hookify\core\config_loader.py","load_rules","load_rules( event : Optional [ str ] = None )",198,241
+22,6,176,1,31,"load_rule_file@244-274@plugins\hookify\core\config_loader.py","plugins\hookify\core\config_loader.py","load_rule_file","load_rule_file( file_path : str )",244,274
+2,1,23,1,10,"compile_regex@15-24@plugins\hookify\core\rule_engine.py","plugins\hookify\core\rule_engine.py","compile_regex","compile_regex( pattern : str )",15,24
+2,1,7,1,4,"__init__@30-33@plugins\hookify\core\rule_engine.py","plugins\hookify\core\rule_engine.py","__init__","__init__( self )",30,33
+37,10,199,3,60,"evaluate_rules@35-94@plugins\hookify\core\rule_engine.py","plugins\hookify\core\rule_engine.py","evaluate_rules","evaluate_rules( self , rules : List [ Rule ] , input_data : Dict [ str , Any ] )",35,94
+12,6,96,3,30,"_rule_matches@96-125@plugins\hookify\core\rule_engine.py","plugins\hookify\core\rule_engine.py","_rule_matches","_rule_matches( self , rule : Rule , input_data : Dict [ str , Any ] )",96,125
+5,2,35,3,16,"_matches_tool@127-142@plugins\hookify\core\rule_engine.py","plugins\hookify\core\rule_engine.py","_matches_tool","_matches_tool( self , matcher : str , tool_name : str )",127,142
+21,8,139,5,37,"_check_condition@144-180@plugins\hookify\core\rule_engine.py","plugins\hookify\core\rule_engine.py","_check_condition","_check_condition( self , condition : Condition , tool_name : str , tool_input : Dict [ str , Any ] , input_data : Dict [ str , Any ] = None )",144,180
+49,26,368,5,73,"_extract_field@182-254@plugins\hookify\core\rule_engine.py","plugins\hookify\core\rule_engine.py","_extract_field","_extract_field( self , field : str , tool_name : str , tool_input : Dict [ str , Any ] , input_data : Dict [ str , Any ] = None )",182,254
+7,2,57,3,18,"_regex_match@256-273@plugins\hookify\core\rule_engine.py","plugins\hookify\core\rule_engine.py","_regex_match","_regex_match( self , pattern : str , text : str )",256,273
+20,5,130,0,33,"main@30-62@plugins\hookify\hooks\posttooluse.py","plugins\hookify\hooks\posttooluse.py","main","main( )",30,62
+20,5,130,0,36,"main@35-70@plugins\hookify\hooks\pretooluse.py","plugins\hookify\hooks\pretooluse.py","main","main( )",35,70
+14,3,95,0,26,"main@30-55@plugins\hookify\hooks\stop.py","plugins\hookify\hooks\stop.py","main","main( )",30,55
+14,3,95,0,25,"main@30-54@plugins\hookify\hooks\userpromptsubmit.py","plugins\hookify\hooks\userpromptsubmit.py","main","main( )",30,54
+2,1,11,1,2,"save_baseline_sha._save@45-46@plugins\security-guidance\hooks\diffstate.py","plugins\security-guidance\hooks\diffstate.py","save_baseline_sha._save","save_baseline_sha._save( state )",45,46
+3,1,16,2,5,"save_baseline_sha@43-47@plugins\security-guidance\hooks\diffstate.py","plugins\security-guidance\hooks\diffstate.py","save_baseline_sha","save_baseline_sha( session_id , sha )",43,47
+2,1,12,1,2,"load_baseline_sha._load@52-53@plugins\security-guidance\hooks\diffstate.py","plugins\security-guidance\hooks\diffstate.py","load_baseline_sha._load","load_baseline_sha._load( state )",52,53
+3,1,15,1,5,"load_baseline_sha@50-54@plugins\security-guidance\hooks\diffstate.py","plugins\security-guidance\hooks\diffstate.py","load_baseline_sha","load_baseline_sha( session_id )",50,54
+6,3,47,1,6,"record_touched_path._record@65-70@plugins\security-guidance\hooks\diffstate.py","plugins\security-guidance\hooks\diffstate.py","record_touched_path._record","record_touched_path._record( state )",65,70
+3,1,16,2,15,"record_touched_path@57-71@plugins\security-guidance\hooks\diffstate.py","plugins\security-guidance\hooks\diffstate.py","record_touched_path","record_touched_path( session_id , file_path )",57,71
+19,5,166,1,19,"consume_stop_state._snap@89-107@plugins\security-guidance\hooks\diffstate.py","plugins\security-guidance\hooks\diffstate.py","consume_stop_state._snap","consume_stop_state._snap( state )",89,107
+9,2,60,1,40,"consume_stop_state@74-113@plugins\security-guidance\hooks\diffstate.py","plugins\security-guidance\hooks\diffstate.py","consume_stop_state","consume_stop_state( session_id )",74,113
+8,4,73,1,8,"restore_unreviewed_stop_state._restore@129-136@plugins\security-guidance\hooks\diffstate.py","plugins\security-guidance\hooks\diffstate.py","restore_unreviewed_stop_state._restore","restore_unreviewed_stop_state._restore( state )",129,136
+5,2,23,3,22,"restore_unreviewed_stop_state@116-137@plugins\security-guidance\hooks\diffstate.py","plugins\security-guidance\hooks\diffstate.py","restore_unreviewed_stop_state","restore_unreviewed_stop_state( session_id , paths , baseline_sha )",116,137
+20,6,131,3,21,"get_baseline_file_content@140-160@plugins\security-guidance\hooks\diffstate.py","plugins\security-guidance\hooks\diffstate.py","get_baseline_file_content","get_baseline_file_content( session_id , file_path , cwd )",140,160
+25,5,164,1,42,"capture_git_baseline@163-204@plugins\security-guidance\hooks\diffstate.py","plugins\security-guidance\hooks\diffstate.py","capture_git_baseline","capture_git_baseline( cwd )",163,204
+3,2,26,1,3,"_reviewed_shas_path@245-247@plugins\security-guidance\hooks\diffstate.py","plugins\security-guidance\hooks\diffstate.py","_reviewed_shas_path","_reviewed_shas_path( repo_root )",245,247
+14,8,100,1,15,"_load_reviewed_shas@250-264@plugins\security-guidance\hooks\diffstate.py","plugins\security-guidance\hooks\diffstate.py","_load_reviewed_shas","_load_reviewed_shas( repo_root )",250,264
+34,12,260,3,43,"_append_reviewed_shas@267-309@plugins\security-guidance\hooks\diffstate.py","plugins\security-guidance\hooks\diffstate.py","_append_reviewed_shas","_append_reviewed_shas( repo_root , shas , vulns_found = 0 )",267,309
+26,8,175,1,33,"_list_untracked@319-351@plugins\security-guidance\hooks\diffstate.py","plugins\security-guidance\hooks\diffstate.py","_list_untracked","_list_untracked( cwd )",319,351
+8,3,47,1,8,"compute_v2_review_set._unchanged_since_baseline@390-397@plugins\security-guidance\hooks\diffstate.py","plugins\security-guidance\hooks\diffstate.py","compute_v2_review_set._unchanged_since_baseline","compute_v2_review_set._unchanged_since_baseline( p )",390,397
+34,17,269,4,86,"compute_v2_review_set@353-438@plugins\security-guidance\hooks\diffstate.py","plugins\security-guidance\hooks\diffstate.py","compute_v2_review_set","compute_v2_review_set( cwd , baseline_sha , head_at_capture , untracked_at_baseline = None )",353,438
+5,2,25,0,8,"_sdk_on_syspath@35-42@plugins\security-guidance\hooks\ensure_agent_sdk.py","plugins\security-guidance\hooks\ensure_agent_sdk.py","_sdk_on_syspath","_sdk_on_syspath( )",35,42
+8,3,77,0,10,"_plugin_version_int@45-54@plugins\security-guidance\hooks\ensure_agent_sdk.py","plugins\security-guidance\hooks\ensure_agent_sdk.py","_plugin_version_int","_plugin_version_int( )",45,54
+91,44,598,0,130,"main@57-186@plugins\security-guidance\hooks\ensure_agent_sdk.py","plugins\security-guidance\hooks\ensure_agent_sdk.py","main","main( )",57,186
+12,3,65,1,17,"load_for_session@60-76@plugins\security-guidance\hooks\extensibility.py","plugins\security-guidance\hooks\extensibility.py","load_for_session","load_for_session( cwd : Optional [ str ] )",60,76
+2,1,9,0,3,"guidance_block@79-81@plugins\security-guidance\hooks\extensibility.py","plugins\security-guidance\hooks\extensibility.py","guidance_block","guidance_block( )",79,81
+2,1,17,0,3,"user_patterns@84-86@plugins\security-guidance\hooks\extensibility.py","plugins\security-guidance\hooks\extensibility.py","user_patterns","user_patterns( )",84,86
+7,2,114,2,11,"_config_paths@92-102@plugins\security-guidance\hooks\extensibility.py","plugins\security-guidance\hooks\extensibility.py","_config_paths","_config_paths( cwd : Optional [ str ] , basename : str )",92,102
+21,6,125,1,21,"_load_guidance@105-125@plugins\security-guidance\hooks\extensibility.py","plugins\security-guidance\hooks\extensibility.py","_load_guidance","_load_guidance( cwd : Optional [ str ] )",105,125
+14,2,29,1,14,"_wrap_guidance@128-141@plugins\security-guidance\hooks\extensibility.py","plugins\security-guidance\hooks\extensibility.py","_wrap_guidance","_wrap_guidance( guidance : str )",128,141
+19,9,150,1,22,"_load_user_patterns@147-168@plugins\security-guidance\hooks\extensibility.py","plugins\security-guidance\hooks\extensibility.py","_load_user_patterns","_load_user_patterns( cwd : Optional [ str ] )",147,168
+24,7,128,1,26,"_read_config@171-196@plugins\security-guidance\hooks\extensibility.py","plugins\security-guidance\hooks\extensibility.py","_read_config","_read_config( path : str )",171,196
+40,21,349,2,46,"_validate_pattern@199-244@plugins\security-guidance\hooks\extensibility.py","plugins\security-guidance\hooks\extensibility.py","_validate_pattern","_validate_pattern( entry : Any , source : str )",199,244
+4,3,39,1,4,"_glob_match._hit@251-254@plugins\security-guidance\hooks\extensibility.py","plugins\security-guidance\hooks\extensibility.py","_glob_match._hit","_glob_match._hit( globs : Tuple [ str , ... ] )",251,254
+9,5,75,3,13,"_glob_match@247-259@plugins\security-guidance\hooks\extensibility.py","plugins\security-guidance\hooks\extensibility.py","_glob_match","_glob_match( path : str , include : Tuple [ str , ... ] , exclude : Tuple [ str , ... ] )",247,259
+10,10,103,1,18,"_has_redos_structure@272-289@plugins\security-guidance\hooks\extensibility.py","plugins\security-guidance\hooks\extensibility.py","_has_redos_structure","_has_redos_structure( regex : str )",272,289
+11,4,77,1,12,"_git_rev_parse_head@32-43@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","_git_rev_parse_head","_git_rev_parse_head( cwd )",32,43
+15,5,118,1,20,"_find_git_index@48-67@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","_find_git_index","_find_git_index( cwd )",48,67
+14,6,85,2,19,"_diff_pathspec@70-88@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","_diff_pathspec","_diff_pathspec( cwd , paths )",70,88
+32,10,178,2,50,"_temp_index@92-141@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","_temp_index","_temp_index( cwd , untracked_paths = None )",92,141
+9,4,77,1,10,"_git_toplevel@144-153@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","_git_toplevel","_git_toplevel( cwd )",144,153
+12,4,93,1,21,"_git_dir@156-176@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","_git_dir","_git_dir( repo_root )",156,176
+11,5,96,3,12,"_git_rev_list_range@179-190@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","_git_rev_list_range","_git_rev_list_range( repo_root , base , head = 'HEAD' )",179,190
+11,3,85,3,18,"_git_diff_range@193-210@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","_git_diff_range","_git_diff_range( repo_root , base , head = 'HEAD' )",193,210
+12,5,89,1,12,"_detect_main_branch@213-224@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","_detect_main_branch","_detect_main_branch( repo_root )",213,224
+32,10,208,3,74,"_git_reflog_recent_commits@227-300@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","_git_reflog_recent_commits","_git_reflog_recent_commits( repo_root , max_age_s = 120 , max_n = 5 )",227,300
+10,4,95,1,10,"_git_name_only._run@309-318@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","_git_name_only._run","_git_name_only._run( env )",309,318
+10,3,63,3,25,"_git_name_only@303-327@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","_git_name_only","_git_name_only( cwd , base , include_untracked = False )",303,327
+30,8,197,1,44,"_git_status_porcelain@330-373@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","_git_status_porcelain","_git_status_porcelain( cwd )",330,373
+9,2,67,3,11,"_is_ancestor@377-387@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","_is_ancestor","_is_ancestor( cwd , maybe_ancestor , descendant )",377,387
+15,6,163,5,37,"get_git_diff@391-427@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","get_git_diff","get_git_diff( cwd , baseline_sha , full_context = False , paths = None , untracked_paths = None )",391,427
+11,5,74,1,18,"_prioritize_diff_files._score@527-544@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","_prioritize_diff_files._score","_prioritize_diff_files._score( item )",527,544
+6,2,49,2,36,"_prioritize_diff_files@512-547@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","_prioritize_diff_files","_prioritize_diff_files( diff_files , cap )",512,547
+19,13,154,1,35,"_is_reviewable_source@550-584@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","_is_reviewable_source","_is_reviewable_source( file_path )",550,584
+17,9,106,1,25,"extract_file_paths_from_diff@587-611@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","extract_file_paths_from_diff","extract_file_paths_from_diff( diff_output )",587,611
+25,13,154,1,40,"parse_diff_into_files@615-654@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","parse_diff_into_files","parse_diff_into_files( diff_output )",615,654
+39,19,287,3,66,"filter_preexisting_from_diff@657-722@plugins\security-guidance\hooks\gitutil.py","plugins\security-guidance\hooks\gitutil.py","filter_preexisting_from_diff","filter_preexisting_from_diff( diff_files , cwd , baseline_sha )",657,722
+2,1,23,0,10,"_anthropic_base_url@90-99@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_anthropic_base_url","_anthropic_base_url( )",90,99
+9,3,73,1,9,"_probe_anthropic@102-110@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_probe_anthropic","_probe_anthropic( timeout : float = 5 . 0 )",102,110
+7,5,63,0,7,"_strip_anthropic_from_no_proxy@113-119@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_strip_anthropic_from_no_proxy","_strip_anthropic_from_no_proxy( )",113,119
+16,5,81,0,20,"ensure_anthropic_reachable@122-141@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","ensure_anthropic_reachable","ensure_anthropic_reachable( )",122,141
+20,5,120,1,26,"_cap_files_for_prompt@158-183@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_cap_files_for_prompt","_cap_files_for_prompt( files )",158,183
+13,2,60,1,13,"_build_auth_headers@191-203@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_build_auth_headers","_build_auth_headers( use_token )",191,203
+10,10,94,1,15,"_model_supports_adaptive_thinking@226-240@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_model_supports_adaptive_thinking","_model_supports_adaptive_thinking( model : str )",226,240
+6,3,49,0,11,"_is_3p_provider@261-271@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_is_3p_provider","_is_3p_provider( )",261,271
+3,1,22,0,3,"_call_claude_via_sdk._call_claude_via_sdk._arun._once@347-349@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_call_claude_via_sdk._call_claude_via_sdk._arun._once","_call_claude_via_sdk._call_claude_via_sdk._arun._once( )",347,349
+24,6,150,0,31,"_call_claude_via_sdk._arun@328-358@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_call_claude_via_sdk._arun","_call_claude_via_sdk._arun( )",328,358
+57,14,303,4,110,"_call_claude_via_sdk@274-383@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_call_claude_via_sdk","_call_claude_via_sdk( prompt , output_schema , * , max_tokens = 16000 , model = None )",274,383
+87,27,561,6,122,"_call_claude@386-507@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_call_claude","_call_claude( prompt , output_schema , thinking_budget = 10000 , max_tokens = 16000 , model = None , retry_5xx = True )",386,507
+2,1,36,0,9,"_dual_or_enabled@510-518@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_dual_or_enabled","_dual_or_enabled( )",510,518
+9,3,69,0,9,"_call_claude_dual_or._leg@559-567@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_call_claude_dual_or._leg","_call_claude_dual_or._leg( )",559,567
+36,21,340,6,77,"_call_claude_dual_or@521-597@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_call_claude_dual_or","_call_claude_dual_or( prompt , output_schema , * , bool_key : str , list_key : str , thinking_budget = 10000 , max_tokens = 16000 )",521,597
+25,6,230,1,32,"_format_vulns_guidance@600-631@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_format_vulns_guidance","_format_vulns_guidance( vulns : List [ Dict [ str , Any ] ] )",600,631
+4,3,30,1,4,"_format_vulns_summary._item@654-657@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_format_vulns_summary._item","_format_vulns_summary._item( v )",654,657
+6,2,36,1,6,"_format_vulns_summary._render@661-666@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_format_vulns_summary._render","_format_vulns_summary._render( items )",661,666
+18,5,175,2,39,"_format_vulns_summary@639-677@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_format_vulns_summary","_format_vulns_summary( vulns : List [ Dict [ str , Any ] ] , prefix : str = 'Background security review found' )",639,677
+3,3,50,1,3,"_finding_keys@680-682@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_finding_keys","_finding_keys( findings : List [ Dict [ str , Any ] ] )",680,682
+11,5,124,3,23,"_dedup_against_state@685-707@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_dedup_against_state","_dedup_against_state( session_id : str , vulns : List [ Dict [ str , Any ] ] , prompted : set )",685,707
+247,22,664,3,270,"analyze_code_security@710-979@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","analyze_code_security","analyze_code_security( files : List [ Tuple [ str , str ] ] , is_diff : bool = False , previous_findings : Optional [ List [ str ] ] = None )",710,979
+7,3,51,0,12,"_agentic_commit_review_enabled@982-993@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_agentic_commit_review_enabled","_agentic_commit_review_enabled( )",982,993
+20,3,99,0,45,"_agentic_spawn_env@1012-1056@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","_agentic_spawn_env","_agentic_spawn_env( )",1012,1056
+5,2,33,1,5,"agentic_review._tolerant@1194-1198@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","agentic_review._tolerant","agentic_review._tolerant( data )",1194,1198
+3,1,22,0,3,"agentic_review.agentic_review._arun._once@1273-1275@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","agentic_review.agentic_review._arun._once","agentic_review.agentic_review._arun._once( )",1273,1275
+31,8,243,4,85,"agentic_review._arun@1205-1289@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","agentic_review._arun","agentic_review._arun( system : str , prompt : str , * , schema : Dict [ str , Any ] , turns : Optional [ int ] = None )",1205,1289
+3,1,58,3,3,"agentic_review._run@1291-1293@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","agentic_review._run","agentic_review._run( system : str , prompt : str , * , schema : Dict [ str , Any ] )",1291,1293
+5,2,60,1,5,"agentic_review._scrub@1339-1343@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","agentic_review._scrub","agentic_review._scrub( s : object )",1339,1343
+2,3,40,1,2,"agentic_review._norm@1396-1397@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","agentic_review._norm","agentic_review._norm( s : str )",1396,1397
+18,11,171,1,24,"agentic_review._intersects_diff@1402-1425@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","agentic_review._intersects_diff","agentic_review._intersects_diff( cand : Dict [ str , Any ] )",1402,1425
+279,61,1431,3,509,"agentic_review@1059-1567@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","agentic_review","agentic_review( repo_dir : str , diff_files : List [ Tuple [ str , str ] ] , touched_paths : List [ str ] , )",1059,1567
+77,14,466,2,127,"analyze_security_concerns@1570-1696@plugins\security-guidance\hooks\llm.py","plugins\security-guidance\hooks\llm.py","analyze_security_concerns","analyze_security_concerns( files : List [ Tuple [ str , str ] ] , is_diff : bool = False )",1570,1696
+6,3,30,1,9,"rule_names_to_mask@337-345@plugins\security-guidance\hooks\patterns.py","plugins\security-guidance\hooks\patterns.py","rule_names_to_mask","rule_names_to_mask( rule_names )",337,345
+29,5,160,1,34,"cap_diff_for_prompt@31-64@plugins\security-guidance\hooks\review_api.py","plugins\security-guidance\hooks\review_api.py","cap_diff_for_prompt","cap_diff_for_prompt( files : list [ tuple [ str , str ] ] , )",31,64
+21,3,96,3,21,"build_investigate_prompt@156-176@plugins\security-guidance\hooks\review_api.py","plugins\security-guidance\hooks\review_api.py","build_investigate_prompt","build_investigate_prompt( touched_paths : list [ str ] , diff_files : list [ tuple [ str , str ] ] , * , context_note : str = '' , )",156,176
+74,1,113,2,74,"build_refute_prompt@210-283@plugins\security-guidance\hooks\review_api.py","plugins\security-guidance\hooks\review_api.py","build_refute_prompt","build_refute_prompt( candidates : list [ dict [ str , Any ] ] , diff_text : str )",210,283
+2,3,40,1,2,"tag_diff_anchor._norm@317-318@plugins\security-guidance\hooks\review_api.py","plugins\security-guidance\hooks\review_api.py","tag_diff_anchor._norm","tag_diff_anchor._norm( s : str )",317,318
+17,11,168,1,17,"tag_diff_anchor._intersects@323-339@plugins\security-guidance\hooks\review_api.py","plugins\security-guidance\hooks\review_api.py","tag_diff_anchor._intersects","tag_diff_anchor._intersects( cand : dict [ str , Any ] )",323,339
+21,9,158,2,54,"tag_diff_anchor@291-344@plugins\security-guidance\hooks\review_api.py","plugins\security-guidance\hooks\review_api.py","tag_diff_anchor","tag_diff_anchor( candidates : list [ dict [ str , Any ] ] , diff_text : str )",291,344
+11,4,109,2,16,"filter_by_severity@350-365@plugins\security-guidance\hooks\review_api.py","plugins\security-guidance\hooks\review_api.py","filter_by_severity","filter_by_severity( findings : list [ dict [ str , Any ] ] , * , include_medium : bool = True )",350,365
+30,5,194,1,31,"format_findings@368-398@plugins\security-guidance\hooks\review_api.py","plugins\security-guidance\hooks\review_api.py","format_findings","format_findings( findings : list [ dict [ str , Any ] ] )",368,398
+11,5,77,2,34,"emit_metrics@193-226@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","emit_metrics","emit_metrics( metrics , rewake_summary = None )",193,226
+6,2,26,1,6,"atomic_check_and_mark_warning._check@243-248@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","atomic_check_and_mark_warning._check","atomic_check_and_mark_warning._check( state )",243,248
+4,2,27,2,15,"atomic_check_and_mark_warning@237-251@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","atomic_check_and_mark_warning","atomic_check_and_mark_warning( session_id , warning_key )",237,251
+8,2,49,1,8,"atomic_check_counter._check@259-266@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","atomic_check_counter._check","atomic_check_counter._check( state )",259,266
+4,2,29,3,17,"atomic_check_counter@253-269@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","atomic_check_counter","atomic_check_counter( session_id , counter_key , max_count )",253,269
+10,5,91,1,11,"atomic_check_rate_limit._check@294-304@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","atomic_check_rate_limit._check","atomic_check_rate_limit._check( state )",294,304
+7,2,51,4,38,"atomic_check_rate_limit@271-308@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","atomic_check_rate_limit","atomic_check_rate_limit( session_id , key , max_per_window , window_s )",271,308
+7,3,46,1,7,"record_pending_warnings._record@323-329@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","record_pending_warnings._record","record_pending_warnings._record( state )",323,329
+3,1,18,3,10,"record_pending_warnings@321-330@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","record_pending_warnings","record_pending_warnings( session_id , file_path , rule_names )",321,330
+30,14,220,1,35,"sweep_pending_warnings._sweep@339-373@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","sweep_pending_warnings._sweep","sweep_pending_warnings._sweep( state )",339,373
+4,2,31,1,45,"sweep_pending_warnings@332-376@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","sweep_pending_warnings","sweep_pending_warnings( session_id )",332,376
+31,19,162,2,42,"check_patterns@386-427@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","check_patterns","check_patterns( file_path , content )",386,427
+11,6,77,2,12,"extract_content_from_input@429-440@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","extract_content_from_input","extract_content_from_input( tool_name , tool_input )",429,440
+8,4,48,1,15,"handle_user_prompt_submit._save@488-502@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","handle_user_prompt_submit._save","handle_user_prompt_submit._save( state )",488,502
+26,5,152,1,70,"handle_user_prompt_submit@446-515@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","handle_user_prompt_submit","handle_user_prompt_submit( input_data )",446,515
+25,12,183,2,57,"_resolve_amend_pre_sha@517-573@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","_resolve_amend_pre_sha","_resolve_amend_pre_sha( repo_root , expected_post_sha = None )",517,573
+31,12,192,1,51,"_claim_bash_hook_once@646-696@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","_claim_bash_hook_once","_claim_bash_hook_once( input_data )",646,696
+9,4,55,0,16,"is_push_sweep_enabled@698-713@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","is_push_sweep_enabled","is_push_sweep_enabled( )",698,713
+8,5,66,3,21,"_compute_push_sweep_base@717-737@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","_compute_push_sweep_base","_compute_push_sweep_base( prev_upstream , push_range , reviewed )",717,737
+14,5,69,1,36,"_push_section@739-774@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","_push_section","_push_section( bash_output )",739,774
+26,11,195,2,38,"_detect_prev_upstream@776-813@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","_detect_prev_upstream","_detect_prev_upstream( repo_root , bash_output )",776,813
+7,3,46,0,14,"is_commit_review_enabled@815-828@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","is_commit_review_enabled","is_commit_review_enabled( )",815,828
+9,3,62,0,9,"_agentic_review_with_race._agentic@865-873@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","_agentic_review_with_race._agentic","_agentic_review_with_race._agentic( )",865,873
+15,4,85,0,15,"_agentic_review_with_race._fallback@875-889@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","_agentic_review_with_race._fallback","_agentic_review_with_race._fallback( )",875,889
+24,4,227,4,68,"_agentic_review_with_race@832-899@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","_agentic_review_with_race","_agentic_review_with_race( repo_root : str , diff_files : List [ Tuple [ str , str ] ] , rel_touched : List [ str ] , previous_findings : List [ Dict [ str , Any ] ] , )",832,899
+5,2,40,1,5,"handle_commit_review_posttooluse._read_previous@1220-1224@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","handle_commit_review_posttooluse._read_previous","handle_commit_review_posttooluse._read_previous( state )",1220,1224
+10,6,108,1,10,"handle_commit_review_posttooluse._record_findings@1346-1355@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","handle_commit_review_posttooluse._record_findings","handle_commit_review_posttooluse._record_findings( state )",1346,1355
+254,80,1847,1,476,"handle_commit_review_posttooluse@901-1376@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","handle_commit_review_posttooluse","handle_commit_review_posttooluse( input_data )",901,1376
+10,6,109,1,10,"handle_push_sweep_posttooluse._record@1671-1680@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","handle_push_sweep_posttooluse._record","handle_push_sweep_posttooluse._record( state )",1671,1680
+192,62,1627,1,321,"handle_push_sweep_posttooluse@1378-1698@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","handle_push_sweep_posttooluse","handle_push_sweep_posttooluse( input_data )",1378,1698
+9,2,61,3,12,"handle_stop_hook._skip@1750-1761@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","handle_stop_hook._skip","handle_stop_hook._skip( reason , restore = False , ** extra )",1750,1761
+15,7,139,1,20,"handle_stop_hook._record_fire@1896-1915@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","handle_stop_hook._record_fire","handle_stop_hook._record_fire( state )",1896,1915
+148,37,974,1,273,"handle_stop_hook@1700-1972@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","handle_stop_hook","handle_stop_hook( input_data )",1700,1972
+22,5,146,0,39,"_maybe_bootstrap_agent_sdk_async@1979-2017@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","_maybe_bootstrap_agent_sdk_async","_maybe_bootstrap_agent_sdk_async( )",1979,2017
+95,41,705,0,171,"main@2019-2189@plugins\security-guidance\hooks\security_reminder_hook.py","plugins\security-guidance\hooks\security_reminder_hook.py","main","main( )",2019,2189
+3,2,36,1,10,"_state_key@25-34@plugins\security-guidance\hooks\session_state.py","plugins\security-guidance\hooks\session_state.py","_state_key","_state_key( session_id )",25,34
+3,1,42,1,4,"get_state_file@37-40@plugins\security-guidance\hooks\session_state.py","plugins\security-guidance\hooks\session_state.py","get_state_file","get_state_file( session_id )",37,40
+3,1,42,1,4,"get_lock_file@43-46@plugins\security-guidance\hooks\session_state.py","plugins\security-guidance\hooks\session_state.py","get_lock_file","get_lock_file( session_id )",43,46
+29,14,218,0,37,"cleanup_old_state_files@49-85@plugins\security-guidance\hooks\session_state.py","plugins\security-guidance\hooks\session_state.py","cleanup_old_state_files","cleanup_old_state_files( )",49,85
+13,4,86,1,14,"load_state@88-101@plugins\security-guidance\hooks\session_state.py","plugins\security-guidance\hooks\session_state.py","load_state","load_state( session_id )",88,101
+10,3,74,2,12,"save_state@104-115@plugins\security-guidance\hooks\session_state.py","plugins\security-guidance\hooks\session_state.py","save_state","save_state( session_id , state )",104,115
+30,7,167,2,43,"with_locked_state@118-160@plugins\security-guidance\hooks\session_state.py","plugins\security-guidance\hooks\session_state.py","with_locked_state","with_locked_state( session_id , callback )",118,160
+17,5,129,1,25,"debug_log@29-53@plugins\security-guidance\hooks\_base.py","plugins\security-guidance\hooks\_base.py","debug_log","debug_log( message )",29,53
+8,3,86,0,10,"_read_plugin_version_int@70-79@plugins\security-guidance\hooks\_base.py","plugins\security-guidance\hooks\_base.py","_read_plugin_version_int","_read_plugin_version_int( )",70,79
+26,14,227,3,31,"_record_usage@109-139@plugins\security-guidance\hooks\_base.py","plugins\security-guidance\hooks\_base.py","_record_usage","_record_usage( usage , model , cost_usd = None )",109,139
+12,2,69,0,15,"_usage_metrics@142-156@plugins\security-guidance\hooks\_base.py","plugins\security-guidance\hooks\_base.py","_usage_metrics","_usage_metrics( )",142,156
+12,3,69,1,18,"extractDuplicateIssueNumber@49-66@scripts\auto-close-duplicates.ts","scripts\auto-close-duplicates.ts","extractDuplicateIssueNumber","extractDuplicateIssueNumber ( commentBody )",49,66
+30,1,103,5,32,"closeIssueAsDuplicate@66-97@scripts\auto-close-duplicates.ts","scripts\auto-close-duplicates.ts","closeIssueAsDuplicate","closeIssueAsDuplicate ( owner , repo , issueNumber , duplicateOfNumber , token )",66,97
+2,1,10,0,2,"(anonymous)@133-134@scripts\auto-close-duplicates.ts","scripts\auto-close-duplicates.ts","(anonymous)","(anonymous)",133,134
+1,1,1,0,1,"(anonymous)@166-166@scripts\auto-close-duplicates.ts","scripts\auto-close-duplicates.ts","(anonymous)","(anonymous)",166,166
+2,1,10,0,2,"(anonymous)@204-205@scripts\auto-close-duplicates.ts","scripts\auto-close-duplicates.ts","(anonymous)","(anonymous)",204,205
+1,1,1,0,1,"(anonymous)@230-230@scripts\auto-close-duplicates.ts","scripts\auto-close-duplicates.ts","(anonymous)","(anonymous)",230,230
+144,17,832,0,174,"autoCloseDuplicates@99-272@scripts\auto-close-duplicates.ts","scripts\auto-close-duplicates.ts","autoCloseDuplicates","autoCloseDuplicates ( )",99,272
+23,2,88,5,24,"triggerDedupeWorkflow@47-70@scripts\backfill-duplicate-comments.ts","scripts\backfill-duplicate-comments.ts","triggerDedupeWorkflow","triggerDedupeWorkflow ( owner , repo , issueNumber , token , dryRun true )",47,70
+1,1,1,0,1,"(anonymous)@114-114@scripts\backfill-duplicate-comments.ts","scripts\backfill-duplicate-comments.ts","(anonymous)","(anonymous)",114,114
+1,1,1,0,1,"(anonymous)@163-163@scripts\backfill-duplicate-comments.ts","scripts\backfill-duplicate-comments.ts","(anonymous)","(anonymous)",163,163
+1,1,7,0,1,"(anonymous)@202-202@scripts\backfill-duplicate-comments.ts","scripts\backfill-duplicate-comments.ts","(anonymous)","(anonymous)",202,202
+108,20,739,0,137,"backfillDuplicateComments@72-208@scripts\backfill-duplicate-comments.ts","scripts\backfill-duplicate-comments.ts","backfillDuplicateComments","backfillDuplicateComments ( )",72,208
+1,1,6,0,1,"(anonymous)@19-19@scripts\lifecycle-comment.ts","scripts\lifecycle-comment.ts","(anonymous)","(anonymous)",19,19
+2,1,7,1,2,"CLOSE_MESSAGE@10-11@scripts\sweep.ts","scripts\sweep.ts","CLOSE_MESSAGE","CLOSE_MESSAGE ( reason )",10,11
+1,1,6,0,1,"(anonymous)@46-46@scripts\sweep.ts","scripts\sweep.ts","(anonymous)","(anonymous)",46,46
+2,2,12,0,2,"(anonymous)@69-70@scripts\sweep.ts","scripts\sweep.ts","(anonymous)","(anonymous)",69,70
+33,13,319,2,46,"markStale@45-90@scripts\sweep.ts","scripts\sweep.ts","markStale","markStale ( owner , repo )",45,90
+1,2,14,0,1,"(anonymous)@118-118@scripts\sweep.ts","scripts\sweep.ts","(anonymous)","(anonymous)",118,118
+1,1,8,0,1,"(anonymous)@119-119@scripts\sweep.ts","scripts\sweep.ts","(anonymous)","(anonymous)",119,119
+2,2,12,0,2,"(anonymous)@131-132@scripts\sweep.ts","scripts\sweep.ts","(anonymous)","(anonymous)",131,132
+44,14,387,2,63,"closeExpired@92-154@scripts\sweep.ts","scripts\sweep.ts","closeExpired","closeExpired ( owner , repo )",92,154

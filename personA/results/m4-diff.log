@@ -1,0 +1,371 @@
+
+tests\ask\fitted-ask-text-of.test.ts:
+(pass) fitted-ask-text-of > an ask that fits rides whole [34.73ms]
+(pass) fitted-ask-text-of > an ask past the room keeps its first lines and the cut note [14.03ms]
+(pass) fitted-ask-text-of > an ask whose first hunk line does not fit is not attached [6.79ms]
+
+tests\backend\backend-of.test.ts:
+(pass) backend-of > as published: no probes, so git or nothing [56.64ms]
+(pass) backend-of > a declining probe leaves a git working tree to git [17.60ms]
+(pass) backend-of > a probe that answers pins before git is asked [6.14ms]
+(pass) backend-of > the probes are asked in order and the first answer pins [6.55ms]
+
+tests\classify\is-noise-file.test.ts:
+(pass) is-noise-file > tests, fixtures and snapshots are noise [8.27ms]
+(pass) is-noise-file > lockfiles, builds, minified and generated files are noise [3.88ms]
+(pass) is-noise-file > source is not, even with test inside a longer word [1.71ms]
+
+tests\git.test.ts:
+(fail) git > each git child names the pin, in the C locale [23035.79ms]
+  Error: timed out after 5000 ms
+(fail) git > the working tree is walked once, by the first fetch [7687.52ms]
+  Error: timed out after 5000 ms
+(fail) git > fifty drawn files: one hunks child a read [7538.20ms]
+  Error: timed out after 5000 ms
+(fail) git > a file moved in since the start is session work [6467.21ms]
+  Error: timed out after 5000 ms
+(fail) git > the session began when the engine says [7209.71ms]
+  Error: timed out after 5000 ms
+
+tests\git\fetch-diff.test.ts:
+(pass) fetch-diff > session mode: rows tagged by mtime, untracked merged [62.95ms]
+(pass) fetch-diff > every diff spawn carries the pinned leading argv [13.86ms]
+(pass) fetch-diff > uncommitted mode drops pre-session untracked files [8.95ms]
+(pass) fetch-diff > past 500 files: totals only, no numstat, no untracked [6.88ms]
+(pass) fetch-diff > a transient state file: unavailable, and no diff runs [8.63ms]
+(pass) fetch-diff > unborn HEAD: staged rows with unstaged edits folded in [19.57ms]
+(pass) fetch-diff > unborn HEAD: a staged or unstaged listing git withheld [4.26ms]
+(pass) fetch-diff > a withheld untracked listing: tracked rows, flagged [30.14ms]
+(pass) fetch-diff > a failed vs-HEAD diff with commits present: unavailable [5.26ms]
+(pass) fetch-diff > a tracked or untracked symlink is never dated: no stat [8.79ms]
+(pass) fetch-diff > an unlistable directory dates nothing and stats nothing [2.53ms]
+(pass) fetch-diff > a MERGE_HEAD that is a symbolic link is no merge [6.59ms]
+(pass) fetch-diff > a rebase stopped on a conflict: unavailable [5.84ms]
+(pass) fetch-diff > a rebase applying patches, stopped: unavailable [3.25ms]
+(pass) fetch-diff > a REBASE_HEAD a finished rebase left is no rebase [3.60ms]
+(pass) fetch-diff > git am beside a REBASE_HEAD left behind is no rebase [5.12ms]
+(pass) fetch-diff > a rebase folder that is a symbolic link is no rebase [5.03ms]
+(pass) fetch-diff > git am stopped on a conflict reads as it did [4.00ms]
+(pass) fetch-diff > a rebase waiting at a break reads as it did [4.74ms]
+(pass) fetch-diff > a path under a symlinked directory: unlisted, undated [8.32ms]
+(pass) fetch-diff > a listing the host cut short is never parsed [330.20ms]
+(pass) fetch-diff > an untracked directory git prints with a slash is dated [7.42ms]
+(pass) fetch-diff > a hundred directories deep and wide still date [96.70ms]
+(pass) fetch-diff > a rename is one row under its new name and reads no body [7.09ms]
+
+tests\git\fetch-hunks.test.ts:
+(pass) fetch-hunks > fifty files are read by one child [105.62ms]
+(pass) fetch-hunks > the child keeps every pin of the read of one file [9.39ms]
+(pass) fetch-hunks > on an unborn HEAD the child reads what is staged [7.99ms]
+(pass) fetch-hunks > rows with no body are never named to git [8.37ms]
+(pass) fetch-hunks > rows with no body alone start no child [6.72ms]
+(pass) fetch-hunks > every file but the last gains the closing line [6.29ms]
+(pass) fetch-hunks > paths past the budget are asked of a second child [12.75ms]
+(pass) fetch-hunks > one path past the budget is still asked, alone [6.12ms]
+(pass) fetch-hunks > past the output cap the rest is asked again [73.57ms]
+(pass) fetch-hunks > a child that fails leaves every file unread [9.33ms]
+(pass) fetch-hunks > a second child that fails keeps what the first read [6.39ms]
+(pass) fetch-hunks > a second child is paired by its own list [14.31ms]
+(pass) fetch-hunks > an answer whose names and patches disagree ends the read [11.64ms]
+
+tests\git\parse\parse-file-diff.test.ts:
+(pass) parse-file-diff > hunk starts and marked lines; header and notes skipped [84.02ms]
+(pass) parse-file-diff > a removed line that starts with dashes is body, not a header [9.80ms]
+(pass) parse-file-diff > the body is cut at the line cap and marked truncated [14.02ms]
+(pass) parse-file-diff > a diff past the byte cap is large and has no hunks [4.70ms]
+
+tests\git\parse\parse-file-diffs.test.ts:
+(pass) parse-file-diffs > an empty answer: every file asked reads no hunks [40.86ms]
+(pass) parse-file-diffs > each unusual name holds its own patch [16.48ms]
+(pass) parse-file-diffs > the order asked in does not move a patch [5.02ms]
+(pass) parse-file-diffs > content that looks like an opening line stays content [7.04ms]
+(pass) parse-file-diffs > a file turned link: its two patches are one file [4.82ms]
+(pass) parse-file-diffs > a conflicted file read against HEAD is one more file [12.99ms]
+(pass) parse-file-diffs > an unmerged path has no patch and reads no hunks [6.61ms]
+(pass) parse-file-diffs > a file git no longer lists reads no hunks [2.14ms]
+(pass) parse-file-diffs > a listed file nobody asked for is left out [7.85ms]
+(pass) parse-file-diffs > with no empty field before the patches it reads the same [2.33ms]
+(pass) parse-file-diffs > fewer patches than names settle nothing [3.07ms]
+(pass) parse-file-diffs > a patch opened under another name settles nothing [1.89ms]
+(pass) parse-file-diffs > patches git coloured: no hunks, as one file read alone [1.81ms]
+(pass) parse-file-diffs > the line cap and the size cap hold file by file [22.26ms]
+(pass) parse-file-diffs > a file at the size cap to the character is not large [44.58ms]
+(pass) parse-file-diffs > cut by the host: whole files settle, the rest wait [54.19ms]
+(pass) parse-file-diffs > cut by the host inside a small file: that file waits [70.61ms]
+(pass) parse-file-diffs > cut by the host: a file git did not list reads no hunks [43.49ms]
+
+tests\git\parse\parse-numstat.test.ts:
+(pass) parse-numstat > NUL records: totals, binaries at 0/0, tabs in a path kept [8.00ms]
+(pass) parse-numstat > the cap keeps the first rows but counts every row [1.44ms]
+(pass) parse-numstat > a line with fewer than three fields is no row [1.07ms]
+(pass) parse-numstat > a non-ASCII path arrives as its own characters [1.65ms]
+(pass) parse-numstat > a rename record keeps the new path and remembers the old [1.84ms]
+
+tests\git\parse\parse-shortstat.test.ts:
+(pass) parse-shortstat > files, insertions and deletions; either tail optional [6.97ms]
+(pass) parse-shortstat > an empty diff prints nothing and parses to null [1.05ms]
+
+tests\git\probes\branch-base-of.test.ts:
+(pass) branch-base-of > origin's merge-base wins unless the local descends [59.53ms]
+(pass) branch-base-of > the default branch, or HEAD at the base: head-is-base [9.32ms]
+(pass) branch-base-of > a detached HEAD, or no common ancestor, has no base [7.09ms]
+(pass) branch-base-of > a failed merge-base while the ref exists: error [8.43ms]
+(pass) branch-base-of > no default ref anywhere: none [11.77ms]
+
+tests\git\probes\datings-of.test.ts:
+(pass) datings-of > a spent budget answers unlisted, and stats nothing there [48.07ms]
+(pass) datings-of > an unlisted tracked row stays session work [11.75ms]
+(pass) datings-of > an unlisted untracked file reads as pre-session [6.51ms]
+
+tests\git\probes\head-key-of.test.ts:
+(pass) head-key-of > a plain checkout reads HEAD, its ref file, packed-refs [60.68ms]
+(pass) head-key-of > a climbing ref: is never stat-ed; git answers instead [12.30ms]
+(pass) head-key-of > a branch named with a # starts no git while idle [12.84ms]
+(pass) head-key-of > a branch named outside ASCII starts no git while idle [13.76ms]
+(pass) head-key-of > on such a branch a moved HEAD is seen at the next look [5.92ms]
+(pass) head-key-of > with no log of HEAD such a branch is read through git [11.26ms]
+(pass) head-key-of > a HEAD that is a symbolic link is never read or stat-ed [9.79ms]
+(pass) head-key-of > a symlinked refs directory hides the ref file [13.65ms]
+
+tests\git\probes\is-safe-ref-name.test.ts:
+(pass) is-safe-ref-name > branch refs under refs/ pass [36.47ms]
+(pass) is-safe-ref-name > climbing, absolute, backslashed, control or lock names fail [12.39ms]
+
+tests\git\probes\kind-walk-of.test.ts:
+(pass) kind-walk-of > a fifty-thousand-deep path reads over-budget in budget [40.40ms]
+(pass) kind-walk-of > a path within the budget reads its kind from its parent [13.85ms]
+
+tests\git\probes\repository-of.test.ts:
+(pass) repository-of > three absolute lines are the repository [58.84ms]
+(pass) repository-of > a git that echoes the flag, or a relative path: nothing [7.38ms]
+
+tests\pane-state\empty-state-of.test.ts:
+(pass) empty-state-of > the built-in's headlines, keyed on the fetched mode [65.38ms]
+(pass) empty-state-of > with files to count there is no empty state [2.84ms]
+(pass) empty-state-of > no tracked rows, untracked withheld: claims no more [4.23ms]
+
+tests\pane-state\header-totals-of.test.ts:
+(pass) header-totals-of > pre-session rows leave the header; the rest is not shown [111.69ms]
+(pass) header-totals-of > every stored row pre-session: files past the cap still count [8.68ms]
+(pass) header-totals-of > tests count as noise and leave the shown rows [8.66ms]
+
+tests\pane-state\mode-label-of.test.ts:
+(pass) mode-label-of > each settled mode is named as the built-in names it [26.67ms]
+(pass) mode-label-of > settled branch mode names its base, or what stands in [3.98ms]
+(pass) mode-label-of > a working tree that names its own base shows that name [3.31ms]
+(pass) mode-label-of > the requested mode pends with an ellipsis until its data lands [3.50ms]
+(pass) mode-label-of > an unborn HEAD with rows says what the rows are [3.34ms]
+
+tests\pane-toggle\pane-toggle-of.test.ts:
+(pass) pane-toggle-of > an open pane closes, however narrow [4.64ms]
+(pass) pane-toggle-of > below the panel width it is too narrow, from it it opens [1.37ms]
+
+tests\record.test.ts:
+(fail) record > a read marks how its hunks went, by the same names [21141.70ms]
+  Error: timed out after 5000 ms
+
+tests\register.test.ts:
+(fail) register > the start asks nothing of git and registers /diff [15680.92ms]
+  Error: timed out after 5000 ms
+(fail) register > git runs at the built-in's moments and no others [7900.58ms]
+  Error: timed out after 5000 ms
+(fail) register > a shell command held read-only fetches nothing [6849.88ms]
+  Error: timed out after 5000 ms
+(fail) register > /diff whose probe never answers probes once more [6473.54ms]
+  Error: timed out after 5000 ms
+(fail) register > two /diff typed together probe the repository once [6611.55ms]
+  Error: timed out after 5000 ms
+(fail) register > outside a repository /diff says so, opens nothing [5591.50ms]
+  Error: timed out after 5000 ms
+(pass) register > a git that never answers is not "no repository" [5023.84ms]
+(fail) register > when the built-in holds /diff, the mod stands down [5042.76ms]
+  Error: timed out after 5000 ms
+(pass) register > a refusal the built-in did not cause is said aloud [4954.77ms]
+(fail) register > /diff opens the pane, unfocused, and says so [5096.46ms]
+  Error: timed out after 5000 ms
+(fail) register > off fullscreen, /diff opens the dialog, focused [5104.11ms]
+  Error: timed out after 5000 ms
+(fail) register > /diff again closes the pane and says so [6071.56ms]
+  Error: timed out after 5000 ms
+(fail) register > a wide terminal opens the pane at the first edit [5755.28ms]
+  Error: timed out after 5000 ms
+(fail) register > on the main screen only /diff opens, as a dialog [6242.59ms]
+  Error: timed out after 5000 ms
+(fail) register > a surface silent on docking opens nothing by itself [5519.19ms]
+  Error: timed out after 5000 ms
+(fail) register > an edit that failed or was refused opens nothing [5424.18ms]
+  Error: timed out after 5000 ms
+(fail) register > only the main loop's edit opens the pane [5036.13ms]
+  Error: timed out after 5000 ms
+(pass) register > checkpointing off in settings: edits open nothing [4129.21ms]
+(pass) register > checkpointing off by variable: edits open nothing [4036.97ms]
+(pass) register > an open left waiting is withdrawn; /diff opens it [3996.59ms]
+(pass) register > an unplaced open is tried again at the next edit [3566.96ms]
+(pass) register > an open nothing draws yet is kept until drawn [3741.37ms]
+(pass) register > while it waits unseen an edit reads nothing [3223.37ms]
+(pass) register > a docked pane opens once its first fetch settled [3412.61ms]
+(pass) register > /clear leaves an open pane up and reads afresh [3370.97ms]
+(pass) register > /clear under an open pane counts it shown again [3789.12ms]
+(fail) register > a merge finished 3 s after the open is noticed [3847.31ms]
+  AssertionError: finished in another terminal: read with no edit or command
+  
+  expect(received).toEqual()
+  
+  Expected: {
+    before: StringContaining "Diff unavailable",
+    after: StringContaining "1 file changed"
+  }
+  Received: {
+    before: "1 file changed +1app.ts                                                                       +1───────────────────────────────────────────────────────────────────────────────app.tsask───────────────────────────────────────────────────────────────────────────────@@ -1,1 +1,1 @@\n-const a = 1\n+const a = 2",
+    after: "1 file changed +1app.ts                                                                       +1───────────────────────────────────────────────────────────────────────────────app.tsask───────────────────────────────────────────────────────────────────────────────@@ -1,1 +1,1 @@\n-const a = 1\n+const a = 2"
+  }
+(fail) register > a merge finished 1.2 s after the open is noticed [3827.16ms]
+  AssertionError: before the first look at HEAD on the clock: the open read it
+  
+  expect(received).toEqual()
+  
+  Expected: {
+    before: StringContaining "Diff unavailable",
+    after: StringContaining "1 file changed"
+  }
+  Received: {
+    before: "1 file changed +1app.ts                                                                       +1───────────────────────────────────────────────────────────────────────────────app.tsask───────────────────────────────────────────────────────────────────────────────@@ -1,1 +1,1 @@\n-const a = 1\n+const a = 2",
+    after: "1 file changed +1app.ts                                                                       +1───────────────────────────────────────────────────────────────────────────────app.tsask───────────────────────────────────────────────────────────────────────────────@@ -1,1 +1,1 @@\n-const a = 1\n+const a = 2"
+  }
+(fail) register > a merge finished 0.3 s after the open is noticed [3824.71ms]
+  AssertionError: before the first look at HEAD on the clock: the open read it
+  
+  expect(received).toEqual()
+  
+  Expected: {
+    before: StringContaining "Diff unavailable",
+    after: StringContaining "1 file changed"
+  }
+  Received: {
+    before: "1 file changed +1app.ts                                                                       +1───────────────────────────────────────────────────────────────────────────────app.tsask───────────────────────────────────────────────────────────────────────────────@@ -1,1 +1,1 @@\n-const a = 1\n+const a = 2",
+    after: "1 file changed +1app.ts                                                                       +1───────────────────────────────────────────────────────────────────────────────app.tsask───────────────────────────────────────────────────────────────────────────────@@ -1,1 +1,1 @@\n-const a = 1\n+const a = 2"
+  }
+(pass) register > a resumed session that edited opens before an edit [2829.75ms]
+(pass) register > a resumed session opens only where an edit would [3478.69ms]
+(pass) register > a resumed session kept open opens at the low floor [3642.23ms]
+(pass) register > a resumed session with no edits opens nothing [3957.03ms]
+(pass) register > a resumed session the person closed opens nothing [3725.43ms]
+(pass) register > /resume closes the pane, reopens it for its turns [3886.11ms]
+(pass) register > ask attaches the hunks on screen and calls no tool [3867.72ms]
+(pass) register > an ask with no room in the context is dropped [4025.75ms]
+(pass) register > a worktree opens on the base it kept [3952.89ms]
+(pass) register > no repository is an answer kept until /clear [3904.03ms]
+(pass) register > a repository that appears later opens on first edit [3857.60ms]
+(pass) register > a git that cannot start is an answer, not a timeout [3575.99ms]
+(pass) register > /diff on a narrow terminal: the resize line [4081.13ms]
+(pass) register > open-outcome-of > placed: a placed pane, and an engine that resolves nothing [28.66ms]
+(pass) register > open-outcome-of > left waiting it is withdrawn, with a reason or none [3.18ms]
+(pass) register > open-outcome-of > with nothing attached to draw it yet it is awaited [1.77ms]
+
+tests\todos\todo-progress-of.test.ts:
+(pass) todo-progress-of > the latest TodoWrite decides: completed over total [38.02ms]
+(pass) todo-progress-of > no TodoWrite yet reads as an empty list [3.47ms]
+
+tests\turns\turn-diffs-of.test.ts:
+(pass) turn-diffs-of > turns with edits, newest first, numbered by prompt [64.76ms]
+(pass) turn-diffs-of > a file edited twice in a turn: both hunks, summed [14.73ms]
+(pass) turn-diffs-of > results that are not file edits are ignored [5.25ms]
+(pass) turn-diffs-of > a big created file is cut at the line cap and says so [11.18ms]
+
+tests\views.test.ts:
+(fail) views > docked, every file has its hunks under the list [16623.46ms]
+  Error: timed out after 5000 ms
+(fail) views > a failed hunks read blanks every body, not the list [7772.25ms]
+  Error: timed out after 5000 ms
+(fail) views > the read after a failed one draws the hunks again [6494.09ms]
+  Error: timed out after 5000 ms
+(fail) views > inline, a row opens that file alone [6550.90ms]
+  Error: timed out after 5000 ms
+(fail) views > inline, a file edited before the session opens too [6873.81ms]
+  Error: timed out after 5000 ms
+(fail) views > inline, a file the docked pane hides opens too [5833.77ms]
+  Error: timed out after 5000 ms
+(fail) views > inline, a window that moves reads only its new rows [5020.22ms]
+  Error: timed out after 5000 ms
+(fail) views > docked, a wheel tick moves the body, not the list [5229.55ms]
+  Error: timed out after 5000 ms
+(fail) views > docked, the wheel over a long list moves the list [5041.79ms]
+  Error: timed out after 5000 ms
+(fail) views > past eight files the docked list scrolls by key [5028.14ms]
+  Error: timed out after 5000 ms
+(fail) views > a rename lists as git prints it, and reads no body [5347.59ms]
+  Error: timed out after 5000 ms
+(fail) views > inline, the dialog lists every file and its keys [5776.91ms]
+  Error: timed out after 5000 ms
+(fail) views > narrow under the fullscreen layout, the resize line [5796.41ms]
+  Error: timed out after 5000 ms
+(fail) views > off fullscreen, the window follows the walk [6269.88ms]
+  Error: timed out after 5000 ms
+(fail) views > the walk follows under the name a build registers [5599.41ms]
+  Error: timed out after 5000 ms
+(fail) views > off fullscreen, the walk stops at the last file [5500.44ms]
+  Error: timed out after 5000 ms
+(fail) views > off fullscreen, the dialog draws at any width [5080.69ms]
+  Error: timed out after 5000 ms
+
+tests\views\detail\code-blocks-of.test.ts:
+(pass) code-blocks-of > each hunk is a source of its own, nothing between them [116.27ms]
+(pass) code-blocks-of > an oversize hunk stacks as sub-hunks that add up [70.13ms]
+(pass) code-blocks-of > letters beyond the BMP are capped in UTF-16 units [46.54ms]
+(pass) code-blocks-of > a line longer than any source holds is cut, reported [16.86ms]
+(pass) code-blocks-of > the room runs down by what is drawn, and out at the budget [14.07ms]
+(pass) code-blocks-of > a line's controls and format characters go, tabs stay [6.13ms]
+
+tests\views\detail\detail-view.test.ts:
+(fail) detail-view > each hunk draws as a diff Code named by the path [9923.28ms]
+  Error: timed out after 5000 ms
+(fail) detail-view > the name sits over the built-in's dim rule [7786.50ms]
+  Error: timed out after 5000 ms
+
+tests\views\layout\truncate-start.test.ts:
+(pass) truncate-start > a path padded with combining marks is cut to the room [60.15ms]
+(pass) truncate-start > a path that fits is whole; one that does not keeps its tail [5.36ms]
+
+tests\views\layout\wrapped-lines.test.ts:
+(pass) wrapped-lines > each line cut as Ink cuts it for the built-in [126.94ms]
+
+tests\views\pane-view.test.ts:
+(fail) pane-view > docked: header, rows, every body, the earlier line [8491.47ms]
+  Error: timed out after 5000 ms
+(fail) pane-view > untracked withheld: the rows stay, the pane says so [7723.70ms]
+  Error: timed out after 5000 ms
+(fail) pane-view > a file at the line cap draws under the tree caps [6288.04ms]
+  Error: timed out after 5000 ms
+(fail) pane-view > placeholders in the built-in's words [7117.57ms]
+  Error: timed out after 5000 ms
+(fail) pane-view > a picked turn draws its files under the turn line [5662.74ms]
+  Error: timed out after 5000 ms
+(fail) pane-view > a long body splits into leaves under their cap [5123.74ms]
+  Error: timed out after 5000 ms
+(pass) pane-view > the window draws what is in view, a scroll the rest [5010.02ms]
+(pass) pane-view > no newline or escape in a name reaches the tree [4936.82ms]
+(fail) pane-view > a path past the string cap is cut in the header [5074.91ms]
+  Error: timed out after 5000 ms
+(fail) pane-view > a base branch name loses its format characters [5017.93ms]
+  Error: timed out after 5000 ms
+(fail) pane-view > only a plainly safe name gets a git add to paste [5299.08ms]
+  Error: timed out after 5000 ms
+(fail) pane-view > docked: no top pad, the built-in's last column [5149.15ms]
+  Error: timed out after 5000 ms
+(pass) pane-view > docked: the window takes every row under the list [35.69ms]
+(pass) pane-view > docked: the list takes the wheel from its first row [8.90ms]
+(fail) pane-view > docked rows follow the built-in's, its hunks after [7017.34ms]
+  Error: timed out after 5000 ms
+(fail) pane-view > an empty state on the built-in's row, foot below [6106.48ms]
+  Error: timed out after 5000 ms
+(fail) pane-view > shown files or too few rows stack the empty state [5414.56ms]
+  Error: timed out after 5000 ms
+(fail) pane-view > shown pre-session rows land on the built-in's rows [5311.83ms]
+  Error: timed out after 5000 ms
+(pass) pane-view > inline: title, rows round the pick, then one body [4338.67ms]
+(pass) pane-view > inline, too narrow: the wider-terminal line alone [3893.69ms]
+(pass) pane-view > the header row carries its controls in every state [4099.79ms]
+
+ 160 pass
+ 57 fail
+Ran 217 tests across 30 files. [256.50s]
