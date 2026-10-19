@@ -1,0 +1,16 @@
+file,function,start,end,lines,ccn
+scripts/auto-close-duplicates.ts,githubRequest,29,48,20,4
+scripts/auto-close-duplicates.ts,extractDuplicateIssueNumber,50,64,15,3
+scripts/auto-close-duplicates.ts,closeIssueAsDuplicate,67,98,32,1
+scripts/auto-close-duplicates.ts,isOldEnough,106,108,3,1
+scripts/auto-close-duplicates.ts,isDupeDetectionComment,110,116,7,3
+scripts/auto-close-duplicates.ts,lastDupeCommentOf,118,122,5,1
+scripts/auto-close-duplicates.ts,(anonymous),130,130,1,1
+scripts/auto-close-duplicates.ts,hasActivityAfter,124,131,8,1
+scripts/auto-close-duplicates.ts,(anonymous),138,138,1,2
+scripts/auto-close-duplicates.ts,hasAuthorDisagreed,133,140,8,1
+scripts/auto-close-duplicates.ts,commentVerdictOf,143,156,14,4
+scripts/auto-close-duplicates.ts,closeVerdictOf,158,171,14,3
+scripts/auto-close-duplicates.ts,(anonymous),188,188,1,1
+scripts/auto-close-duplicates.ts,fetchOldOpenIssues,173,192,20,3
+scripts/auto-close-duplicates.ts,autoCloseDuplicates,194,242,49,8

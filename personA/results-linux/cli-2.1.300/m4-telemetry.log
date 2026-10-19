@@ -1,0 +1,42 @@
+
+tests/gate.test.ts:
+(pass) gate > the table an engine.create step is handed serves no one above either [185.55ms]
+(pass) gate > a module that keeps the table to call later never loads [126.35ms]
+(pass) gate > a hook above on the collector's stream renames no row, sends none [170.37ms]
+(pass) gate > a hook above that swallows the collector's stream stops no row [175.83ms]
+(pass) gate > a step above cannot hand up its own telemetry in place of this one [149.88ms]
+(pass) gate > a hook on every event cannot turn a row to the other destination [185.43ms]
+(pass) gate > what a hook on every event adds beside a row never leaves in it [188.91ms]
+
+tests/register.test.ts:
+(pass) register > rows queued through $.telemetry.log go out as one complete batch [165.99ms]
+(pass) register > an engine without the version read leaves those three columns empty [173.08ms]
+(pass) register > a full queue goes out at once, before the window [258.16ms]
+(pass) register > the end of the session sends what still waits [150.61ms]
+(pass) register > a tengu_ name is kept; an external build sends no address [147.03ms]
+(pass) register > nothing is sent where any switch has analytics off [192.04ms]
+(pass) register > a gateway the managed policy pins sends nothing [107.98ms]
+(pass) register > unreadable switches send nothing, and the debug log says why [97.76ms]
+(pass) register > a host-managed third-party provider follows DISABLE_TELEMETRY [142.98ms]
+(pass) register > marks go out as the feature events, by their own names [146.00ms]
+(pass) register > a mark with a bad kind or a wrong reason is refused, nothing queued [116.59ms]
+(pass) register > with no first-party credential nothing is sent, and the debug log says so [130.40ms]
+(pass) register > a server error is tried once more; a second one drops the batch [137.84ms]
+(pass) register > a server error then an acceptance sends the batch [172.23ms]
+(pass) register > a client error is not retried [135.62ms]
+(pass) register > free text and a malformed entry are refused, nothing queued [122.31ms]
+(pass) register > a refused entry is denied by the hook, naming the caller and the reason [103.12ms]
+(pass) register > a number that is not finite is refused, nothing queued [112.25ms]
+(pass) register > the config, the machine and the variables are read once a session [138.61ms]
+(pass) register > on Windows the platform is read off the environment and no program runs [129.35ms]
+(pass) register > on Linux the distribution, kernel, WSL and EC2 come from their files [138.63ms]
+(pass) register > in a GitHub Actions run the client and the workflow ids ride along [133.83ms]
+(pass) register > a failed authorize is not held against the next batch [140.16ms]
+(pass) register > a plugin a person installed is refused, and its own hook carries on [123.24ms]
+(pass) register > a plugin an administrator prepended is refused too [121.50ms]
+(pass) register > the gate serves built-ins and core, throws on no origin [0.48ms]
+(pass) register > a gate that threw refuses; a refusal from beneath passes up [0.23ms]
+
+ 34 pass
+ 0 fail
+Ran 34 tests across 2 files. [3.79s]

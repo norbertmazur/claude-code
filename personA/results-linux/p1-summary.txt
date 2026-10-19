@@ -1,0 +1,17 @@
+before (linux): register.ts decision points=155  diff total decision points=640
+after (linux): register.ts decision points=148  diff total decision points=640
+after (windows csv): register.ts decision points=148  diff total decision points=640
+before: lizard file NLOC=828  let=21  wc-l=1062  nonblank=845  'new Set|new Map|= {'/const containers:
+63:  const bodyLoads = new Set<string>()
+65:  const polled = { toplevel: '', headKey: '' }
+66:  const pin = { cwd: '', isEmpty: false, epoch: 0 }
+70:  const timers = new Map<'refresh' | 'redraw' | 'poll', Timer>()
+71:  const loggedBaseKinds = new Set<'ok' | 'sad'>()
+after: lizard file NLOC=791  let=19  wc-l=1012  nonblank=808  'new Set|new Map|= {'/const containers:
+61:  const polled = { toplevel: '', headKey: '' }
+62:  const pin = { cwd: '', isEmpty: false, epoch: 0 }
+66:  const timers = new Map<'refresh' | 'redraw' | 'poll', Timer>()
+67:  const loggedBaseKinds = new Set<'ok' | 'sad'>()
+== diff: files=596 edges=1146 mean_fanout=1.92 median_fanout=1.0 multi-file cycles=4 packages=29
+  pkg fan-out: [('index', 26), ('register', 21), ('views', 8), ('pane-state', 6), ('body-loader', 4), ('drawn-files-of', 4)]
+  pkgs with fan-out 0: 11 / 29

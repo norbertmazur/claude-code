@@ -1,0 +1,451 @@
+{
+  "duplicates": [
+    {
+      "firstFile": {
+        "end": 31,
+        "endLoc": {
+          "column": 6,
+          "line": 31,
+          "position": 840
+        },
+        "name": "hookify/hooks/posttooluse.py",
+        "start": 4,
+        "startLoc": {
+          "column": 58,
+          "line": 4,
+          "position": 131
+        }
+      },
+      "format": "python",
+      "fragment": "This script is called by Claude Code after a tool executes.\nIt reads .claude/hookify.*.local.md files and evaluates rules.\n\"\"\"\n\nimport os\nimport sys\nimport json\n\n# CRITICAL: Add plugin root to Python path for imports\nPLUGIN_ROOT = os.environ.get('CLAUDE_PLUGIN_ROOT')\nif PLUGIN_ROOT:\n    parent_dir = os.path.dirname(PLUGIN_ROOT)\n    if parent_dir not in sys.path:\n        sys.path.insert(0, parent_dir)\n    if PLUGIN_ROOT not in sys.path:\n        sys.path.insert(0, PLUGIN_ROOT)\n\ntry:\n    from hookify.core.config_loader import load_rules\n    from hookify.core.rule_engine import RuleEngine\nexcept ImportError as e:\n    error_msg = {\"systemMessage\": f\"Hookify import error: {e}\"}\n    print(json.dumps(error_msg), file=sys.stdout)\n    sys.exit(0)\n\n\ndef main():\n    \"\"\"Main entry point for PostToolUse hook.\"\"\"",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 28,
+      "secondFile": {
+        "end": 31,
+        "endLoc": {
+          "column": 6,
+          "line": 31,
+          "position": 850
+        },
+        "name": "hookify/hooks/userpromptsubmit.py",
+        "start": 4,
+        "startLoc": {
+          "column": 63,
+          "line": 4,
+          "position": 141
+        }
+      },
+      "tokens": 144
+    },
+    {
+      "firstFile": {
+        "end": 31,
+        "endLoc": {
+          "column": 6,
+          "line": 31,
+          "position": 840
+        },
+        "name": "hookify/hooks/posttooluse.py",
+        "start": 5,
+        "startLoc": {
+          "column": 56,
+          "line": 5,
+          "position": 189
+        }
+      },
+      "format": "python",
+      "fragment": "It reads .claude/hookify.*.local.md files and evaluates rules.\n\"\"\"\n\nimport os\nimport sys\nimport json\n\n# CRITICAL: Add plugin root to Python path for imports\nPLUGIN_ROOT = os.environ.get('CLAUDE_PLUGIN_ROOT')\nif PLUGIN_ROOT:\n    parent_dir = os.path.dirname(PLUGIN_ROOT)\n    if parent_dir not in sys.path:\n        sys.path.insert(0, parent_dir)\n    if PLUGIN_ROOT not in sys.path:\n        sys.path.insert(0, PLUGIN_ROOT)\n\ntry:\n    from hookify.core.config_loader import load_rules\n    from hookify.core.rule_engine import RuleEngine\nexcept ImportError as e:\n    error_msg = {\"systemMessage\": f\"Hookify import error: {e}\"}\n    print(json.dumps(error_msg), file=sys.stdout)\n    sys.exit(0)\n\n\ndef main():\n    \"\"\"Main entry point for PostToolUse hook.\"\"\"",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 27,
+      "secondFile": {
+        "end": 31,
+        "endLoc": {
+          "column": 6,
+          "line": 31,
+          "position": 841
+        },
+        "name": "hookify/hooks/stop.py",
+        "start": 5,
+        "startLoc": {
+          "column": 61,
+          "line": 5,
+          "position": 190
+        }
+      },
+      "tokens": 128
+    },
+    {
+      "firstFile": {
+        "end": 54,
+        "endLoc": {
+          "column": 26,
+          "line": 54,
+          "position": 1529
+        },
+        "name": "hookify/hooks/posttooluse.py",
+        "start": 37,
+        "startLoc": {
+          "column": 8,
+          "line": 37,
+          "position": 1020
+        }
+      },
+      "format": "python",
+      "fragment": "        tool_name = input_data.get('tool_name', '')\n        event = None\n        if tool_name == 'Bash':\n            event = 'bash'\n        elif tool_name in ['Edit', 'Write', 'MultiEdit']:\n            event = 'file'\n\n        # Load rules\n        rules = load_rules(event=event)\n\n        # Evaluate rules\n        engine = RuleEngine()\n        result = engine.evaluate_rules(rules, input_data)\n\n        # Always output JSON (even if empty)\n        print(json.dumps(result), file=sys.stdout)\n\n    except Exception as e:",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 18,
+      "secondFile": {
+        "end": 61,
+        "endLoc": {
+          "column": 26,
+          "line": 61,
+          "position": 1862
+        },
+        "name": "hookify/hooks/pretooluse.py",
+        "start": 43,
+        "startLoc": {
+          "column": 8,
+          "line": 43,
+          "position": 1352
+        }
+      },
+      "tokens": 82
+    },
+    {
+      "firstFile": {
+        "end": 66,
+        "endLoc": {
+          "column": 10,
+          "line": 66,
+          "position": 1775
+        },
+        "name": "hookify/hooks/posttooluse.py",
+        "start": 45,
+        "startLoc": {
+          "column": 38,
+          "line": 45,
+          "position": 1289
+        }
+      },
+      "format": "python",
+      "fragment": "        rules = load_rules(event=event)\n\n        # Evaluate rules\n        engine = RuleEngine()\n        result = engine.evaluate_rules(rules, input_data)\n\n        # Always output JSON (even if empty)\n        print(json.dumps(result), file=sys.stdout)\n\n    except Exception as e:\n        error_output = {\n            \"systemMessage\": f\"Hookify error: {str(e)}\"\n        }\n        print(json.dumps(error_output), file=sys.stdout)\n\n    finally:\n        # ALWAYS exit 0\n        sys.exit(0)\n\n\nif __name__ == '__main__':\n    main()",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 22,
+      "secondFile": {
+        "end": 58,
+        "endLoc": {
+          "column": 10,
+          "line": 58,
+          "position": 1542
+        },
+        "name": "hookify/hooks/userpromptsubmit.py",
+        "start": 37,
+        "startLoc": {
+          "column": 41,
+          "line": 37,
+          "position": 1056
+        }
+      },
+      "tokens": 79
+    },
+    {
+      "firstFile": {
+        "end": 221,
+        "endLoc": {
+          "column": 22,
+          "line": 221,
+          "position": 8256
+        },
+        "name": "security-guidance/hooks/gitutil.py",
+        "start": 214,
+        "startLoc": {
+          "column": 79,
+          "line": 214,
+          "position": 7979
+        }
+      },
+      "format": "python",
+      "fragment": "    for ref in (\"origin/HEAD\", \"origin/main\", \"origin/master\", \"main\", \"master\"):\n        try:\n            r = subprocess.run(\n                [*GIT_CMD, \"rev-parse\", \"--verify\", \"-q\", ref],\n                cwd=repo_root, capture_output=True, text=True, timeout=5,\n            )\n            if r.returncode == 0 and r.stdout.strip():\n                return ref",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 799,
+        "endLoc": {
+          "column": 22,
+          "line": 799,
+          "position": 35770
+        },
+        "name": "security-guidance/hooks/security_reminder_hook.py",
+        "start": 792,
+        "startLoc": {
+          "column": 41,
+          "line": 792,
+          "position": 35493
+        }
+      },
+      "tokens": 57
+    },
+    {
+      "firstFile": {
+        "end": 306,
+        "endLoc": {
+          "column": 39,
+          "line": 306,
+          "position": 12649
+        },
+        "name": "security-guidance/hooks/llm.py",
+        "start": 297,
+        "startLoc": {
+          "column": 8,
+          "line": 297,
+          "position": 12259
+        }
+      },
+      "format": "python",
+      "fragment": "        _state_dir = os.environ.get(\n            \"SECURITY_WARNINGS_STATE_DIR\",\n            os.path.expanduser(\"~/.claude/security\"),\n        )\n        for _sp in glob.glob(\n            os.path.join(_state_dir, \"agent-sdk-venv\", \"lib\",\n                         \"python*\", \"site-packages\")\n        ):\n            if os.path.isdir(_sp) and _sp not in sys.path:\n                sys.path.insert(0, _sp)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 1102,
+        "endLoc": {
+          "column": 39,
+          "line": 1102,
+          "position": 79324
+        },
+        "name": "security-guidance/hooks/llm.py",
+        "start": 1093,
+        "startLoc": {
+          "column": 8,
+          "line": 1093,
+          "position": 78934
+        }
+      },
+      "tokens": 72
+    },
+    {
+      "firstFile": {
+        "end": 627,
+        "endLoc": {
+          "column": 26,
+          "line": 627,
+          "position": 27109
+        },
+        "name": "security-guidance/hooks/llm.py",
+        "start": 619,
+        "startLoc": {
+          "column": 433,
+          "line": 619,
+          "position": 26906
+        }
+      },
+      "format": "python",
+      "fragment": "        \"The following issues were flagged by automated security review. Address each, or briefly note why it doesn't apply. Valid reasons to proceed without changes: the user explicitly asked for this and you've already surfaced the security tradeoffs, or the pattern isn't actually exploitable in this context. Do not dismiss findings solely because the service is internal-only — internal services are common SSRF/IDOR targets:\",\n        \"\",\n    ]\n    n = 1\n    for fp, vs in by_file.items():\n        lines.append(f\"  {fp}:\")\n        for v in vs:\n            sev = (v.get(\"severity\") or \"medium\").upper()\n            lines.append(f\"    {n}. [{sev}] [{v.get('category', 'Unknown')}] {v.get('vulnerableCode', 'N/A')}\")",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 392,
+        "endLoc": {
+          "column": 17,
+          "line": 392,
+          "position": 24495
+        },
+        "name": "security-guidance/hooks/review_api.py",
+        "start": 383,
+        "startLoc": {
+          "column": 48,
+          "line": 383,
+          "position": 24275
+        }
+      },
+      "tokens": 51
+    },
+    {
+      "firstFile": {
+        "end": 1402,
+        "endLoc": {
+          "column": 11,
+          "line": 1402,
+          "position": 94886
+        },
+        "name": "security-guidance/hooks/llm.py",
+        "start": 1391,
+        "startLoc": {
+          "column": 8,
+          "line": 1391,
+          "position": 94414
+        }
+      },
+      "format": "python",
+      "fragment": "        added = [ln[1:] for ln in diff_text.splitlines()\n                 if ln.startswith(\"+\") and not ln.startswith(\"+++\")]\n        removed = [ln[1:] for ln in diff_text.splitlines()\n                   if ln.startswith(\"-\") and not ln.startswith(\"---\")]\n\n        def _norm(s: str) -> str:\n            return \" \".join(t for t in \" \".join(s.split()).split() if len(t) > 2)\n\n        added_norm = _norm(\"\\n\".join(added))\n        removed_norm = _norm(\"\\n\".join(removed))\n\n        def _intersects_diff(cand: Dict[str, Any]) -> bool:",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 323,
+        "endLoc": {
+          "column": 7,
+          "line": 323,
+          "position": 21745
+        },
+        "name": "security-guidance/hooks/review_api.py",
+        "start": 306,
+        "startLoc": {
+          "column": 4,
+          "line": 306,
+          "position": 21273
+        }
+      },
+      "tokens": 129
+    },
+    {
+      "firstFile": {
+        "end": 1527,
+        "endLoc": {
+          "column": 9,
+          "line": 1527,
+          "position": 102420
+        },
+        "name": "security-guidance/hooks/llm.py",
+        "start": 1455,
+        "startLoc": {
+          "column": 24,
+          "line": 1455,
+          "position": 97661
+        }
+      },
+      "format": "python",
+      "fragment": "        refute_prompt = (\n            \"You previously flagged these candidate vulnerabilities:\\n\\n\"\n            + json.dumps(candidates, indent=2)\n            + \"\\n\\nDIFF:\\n\" + diff_text[:8000]\n            + \"\\n\\nNow adversarially try to DISPROVE each one. For each \"\n            \"candidate, FIRST identify the attacker (who controls the \"\n            \"input) and the victim (who is harmed). REFUTE if the only \"\n            \"victim is the attacker themselves on their own machine. KEEP \"\n            \"if the attacker is a legitimate user/tenant but the impact \"\n            \"reaches other users/tenants, shared infra, or server-side \"\n            \"resources.\\n\\n\"\n            \"DIFF-ANCHOR: candidates are sorted `in_diff` first, then \"\n            \"`off_diff`. Process them in order. `in_diff` candidates \"\n            \"use the standard KEEP/REFUTE bar above. `off_diff` \"\n            \"candidates require STRICTER evidence: you must identify \"\n            \"the specific +/- line in the diff that ENABLES the \"\n            \"off-diff sink (a removed guard, a new caller, a changed \"\n            \"argument feeding it). If you cannot name that enabling \"\n            \"diff line, REFUTE the off_diff candidate. Additionally, \"\n            \"REFUTE any off_diff candidate whose sink is already \"\n            \"covered by a surviving in_diff candidate.\\n\\n\"\n            \"Then Read the cited file and refute with cited file:line \"\n            \"evidence if ANY of these holds:\\n\"\n            \"- PRE-EXISTING: the cited vulnerableCode does NOT appear on \"\n            \"any + line in the DIFF block above — it is unchanged context \"\n            \"in a touched file. The diff did not introduce it.\\n\"\n            \"- A sanitizer/validator/authz check prevents the described \"\n            \"exploit.\\n\"\n            \"- The sink is non-dangerous: typed-schema decoder (msgspec/\"\n            \"pydantic, not pickle/yaml), hardcoded https://<host>/ URL \"\n            \"with non-:path params, autogen client stub, value is \"\n            \"statically number/boolean.\\n\"\n            \"- NO PRIVILEGE BOUNDARY: attacker == victim. The input \"\n            \"comes from env var / CLI arg / $HOME dotfile / HKCU / \"\n            \"~/Library prefs / OS-user config — and the process runs at \"\n            \"the same privilege as whoever writes that source. Also: \"\n            \"the 'allow' decision is advisory self-gating returned to \"\n            \"the same caller; or the prefix/suffix check is a secondary \"\n            \"filter behind a parent-domain pin.\\n\"\n            \"  NEVER apply NO-PRIVILEGE-BOUNDARY to: SSRF/outbound-\"\n            \"network sinks; LLM-agent capability gates (PreToolUse/\"\n            \"PostToolUse hooks, bash allow/denylists, workspace path \"\n            \"jails — the model is the attacker, the user is the \"\n            \"victim); data-exposure findings (CWE-200/359/532, secrets-\"\n            \"in-logs — the question is who READS the sink, not who \"\n            \"controls the input); project-working-directory config \"\n            \"(.claude/settings, .vscode/, package.json scripts — repo \"\n            \"author ≠ repo cloner); cross-process metadata sources \"\n            \"(psutil.Process(...), /proc/<pid>/* — different process \"\n            \"owner is a different principal).\\n\"\n            \"- TRUSTED-HEADER NAMESPACE: the flagged header is from a \"\n            \"namespace the same handler already trusts for actor \"\n            \"identity/authz (e.g. control-plane-injected X-Amzn-*).\\n\"\n            \"- FRONTEND-ONLY GATE: the loosened check is in frontend \"\n            \"code AND the backend handler independently enforces it.\\n\"\n            \"- DELEGATED VALIDATION: the unvalidated credential is \"\n            \"immediately forwarded to an upstream that validates.\\n\"\n            \"- THROWAWAY-CODE: all touched files live under scripts/, \"\n            \"dev/, tools/, examples/, testdata/, fixtures/, or behind \"\n            \"a __main__ dev guard.\\n\"\n            \"- CONTROL MOVED TO LIBRARY: the diff removes a security \"\n            \"control AND bumps a dependency that documents providing \"\n            \"that control — the control was delegated, not removed.\\n\"\n            \"- Config/feature-flag gates the path with no per-request \"\n            \"user control over the gate value.\\n\"\n            \"- Protective-control polarity: the change loosens a guard \"\n            \"around a PROTECTIVE control (prompt/audit/confirm).\\n\"\n            \"Do NOT speculate — refute only with cited evidence. Default \"\n            \"= SURVIVES.\\n\\n\"\n            \"Return `survived` — the indices of candidates you could NOT \"\n            \"refute — and `refuted` — {idx, reason} records for each you \"\n            \"did. An empty `survived` means every candidate was refuted.\"\n        )",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 73,
+      "secondFile": {
+        "end": 283,
+        "endLoc": {
+          "column": 5,
+          "line": 283,
+          "position": 20367
+        },
+        "name": "security-guidance/hooks/review_api.py",
+        "start": 211,
+        "startLoc": {
+          "column": 11,
+          "line": 211,
+          "position": 15896
+        }
+      },
+      "tokens": 91
+    },
+    {
+      "firstFile": {
+        "end": 801,
+        "endLoc": {
+          "column": 16,
+          "line": 801,
+          "position": 35876
+        },
+        "name": "security-guidance/hooks/security_reminder_hook.py",
+        "start": 795,
+        "startLoc": {
+          "column": 61,
+          "line": 795,
+          "position": 35602
+        }
+      },
+      "format": "python",
+      "fragment": "                [*GIT_CMD, \"rev-parse\", \"--verify\", \"-q\", ref],\n                cwd=repo_root, capture_output=True, text=True, timeout=5,\n            )\n            if r.returncode == 0 and r.stdout.strip():\n                return r.stdout.strip()\n        except (subprocess.TimeoutExpired, FileNotFoundError, OSError):\n            pass",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 7,
+      "secondFile": {
+        "end": 812,
+        "endLoc": {
+          "column": 16,
+          "line": 812,
+          "position": 36304
+        },
+        "name": "security-guidance/hooks/security_reminder_hook.py",
+        "start": 806,
+        "startLoc": {
+          "column": 53,
+          "line": 806,
+          "position": 36030
+        }
+      },
+      "tokens": 55
+    },
+    {
+      "firstFile": {
+        "end": 1355,
+        "endLoc": {
+          "column": 52,
+          "line": 1355,
+          "position": 62460
+        },
+        "name": "security-guidance/hooks/security_reminder_hook.py",
+        "start": 1347,
+        "startLoc": {
+          "column": 8,
+          "line": 1347,
+          "position": 62016
+        }
+      },
+      "format": "python",
+      "fragment": "        existing = [f for f in state.get(\"previous_findings\", []) if isinstance(f, dict)]\n        seen = {(f.get(\"filePath\", \"\"), f.get(\"category\", \"\")) for f in existing}\n        for f in finding_snapshots:\n            key = (f[\"filePath\"], f[\"category\"])\n            if key not in seen:\n                seen.add(key)\n                existing.append(f)\n        state[\"previous_findings\"] = existing\n        state[\"previous_findings_ts\"] = _time.time()",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 1912,
+        "endLoc": {
+          "column": 56,
+          "line": 1912,
+          "position": 90024
+        },
+        "name": "security-guidance/hooks/security_reminder_hook.py",
+        "start": 1904,
+        "startLoc": {
+          "column": 12,
+          "line": 1904,
+          "position": 89548
+        }
+      },
+      "tokens": 103
+    }
+  ],
+  "statistics": {
+    "detectionDate": "2026-10-19T13:37:32.790Z",
+    "formats": {
+      "python": {
+        "clones": 11,
+        "duplicatedLines": 223,
+        "duplicatedTokens": 991,
+        "lines": 7488,
+        "newClones": 0,
+        "newDuplicatedLines": 0,
+        "percentage": 2.9780982905982905,
+        "percentageTokens": 2.0311539249846278,
+        "sources": 16,
+        "tokens": 48790
+      }
+    },
+    "total": {
+      "clones": 11,
+      "duplicatedLines": 223,
+      "duplicatedTokens": 991,
+      "lines": 7488,
+      "newClones": 0,
+      "newDuplicatedLines": 0,
+      "percentage": 2.9780982905982905,
+      "percentageTokens": 2.0311539249846278,
+      "sources": 16,
+      "tokens": 48790
+    }
+  }
+}

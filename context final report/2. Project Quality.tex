@@ -2,8 +2,10 @@
 % Project quality (45 points) -- Person A: structure and static quality
 % (Maintainability: modularity, analysability, modifiability, testability).
 % Person B's parts are marked "% >>> PERSON B" and are left as placeholders.
-% Source of all numbers: personA/draft.md, raw output in personA/results/,
-% reproducible with personA/measure/run.sh.
+% Source of all numbers: personA/draft.md, raw output in personA/results/
+% (Windows) and personA/results-linux/ (Linux re-run, see its SUMMARY.md),
+% reproducible with personA/measure/run.sh. M4 and the P1 behaviour check
+% cite the Linux run; M1--M3, P1 and P2 metrics are identical on both.
 %
 % Assignment brief (kept for reference, not typeset):
 %   1. quality of the project as-is  2. concrete improvements
@@ -128,8 +130,8 @@ in \code{sweep.ts}, which has diverged (different signature, returns \code{{}} o
 a divergent copy is worse than an identical one because a fix no longer applies mechanically.
 
 \paragraph{M4: test distribution and effectiveness.}
-\emph{Indicates} testability. We ran \code{claude plugin test mods/<mod>} (Claude Code 2.1.300, with
-\code{CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1}). The runner has no coverage option, so we report structural proxies
+\emph{Indicates} testability. We ran \code{claude plugin test mods/<mod>} (Claude Code 2.1.303 on Ubuntu 22.04, the
+platform family CI uses, with \code{CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1}). The runner has no coverage option, so we report structural proxies
 instead of line coverage.
 
 \begin{table}[H]
@@ -152,14 +154,16 @@ Corpus & Source LOC & Test LOC & Test:source & Test cases & Pkgs with own test \
 \end{table}
 
 A package without its own test file is not necessarily untested, since each mod's \code{register.test.ts} drives the whole
-mod through the engine; the last column counts only direct, isolatable tests. On Windows 11, \code{sec-default}
-(162/162) and \code{agents-md} (5/5) pass, but \code{diff} failed 57/217 and then 31/217 in two identical runs, nearly
-all by \code{timed out after 5000 ms}, plus three recurring assertion failures in \code{register}; \code{telemetry}
-failed 8/34, including a Linux-only test. Failures that change between identical runs are environmental, so
-\todo{replace with a Linux run (WSL or the CI run of \texttt{\repocommit}) before submission}. The metric also carries an
-effectiveness caveat: \permalink{.github/workflows/mod-tests.yml}{L29-L32} exits 0 when the installed CLI lacks the test
-command. With 2.1.300 the command exists, but a regression would turn the gate green without running anything, so a
-pass rate is evidence only together with this caveat.
+mod through the engine; the last column counts only direct, isolatable tests. On Linux every suite passes:
+\code{sec-default} 162/162, \code{agents-md} 5/5, \code{telemetry} 34/34 (including a Linux-only test) and \code{diff}
+217/217 in each of three identical runs, with no timeouts and the same outcome for every test in every run. An earlier
+run on Windows 11 failed 57/217 and then 31/217 in \code{diff} (nearly all \code{timed out after 5000 ms}) and 8/34 in
+\code{telemetry}; three \code{register} assertion failures that recurred there pass on Linux. The failures are
+therefore environmental, not defects at \texttt{\repocommit}, but that the suite's verdict depends on the machine is
+itself a testability finding. The metric also carries an effectiveness caveat:
+\permalink{.github/workflows/mod-tests.yml}{L29-L32} exits 0 when the installed CLI lacks the test command. With 2.1.300
+and 2.1.303 the command exists, but a regression would turn the gate green without running anything, so a pass rate is
+evidence only together with this caveat.
 
 \paragraph{Reproducibility.}
 \cref{tab:repro} gives tool, version and command for each metric; \code{personA/measure/run.sh} runs them all and
@@ -176,10 +180,11 @@ M1 Python & lizard 1.24.1 & \code{lizard --csv plugins -l python} \\
 M1 TypeScript & \code{ccn.mjs}, typescript 5.9, Node 25 & \code{node personA/measure/ccn.mjs mods/*/hooks scripts} \\
 M2 & madge 8.0.0 & \code{madge --extensions ts --ts-config mods/tsconfig.json --json mods/<mod>/hooks} \\
 M3 & jscpd 5.4.1 & \code{jscpd <dir> --format typescript,tsx,python --min-tokens 50} \\
-M4 & Claude Code 2.1.300 & \code{claude plugin test mods/<mod>} \\
+M4 & Claude Code 2.1.303 & \code{claude plugin test mods/<mod>} \\
 \bottomrule
 \end{tabularx}
-\caption{Tools and commands for M1--M4 (all at commit \texttt{\repocommit}, run on 13--19 October 2026).}
+\caption{Tools and commands for M1--M4 (all at commit \texttt{\repocommit}, run on 13--19 October 2026). M1--M3 give
+identical results on Windows 11 and Ubuntu 22.04 (Node 25); M4 is reported from Ubuntu 22.04.}
 \label{tab:repro}
 \end{table}
 
@@ -248,8 +253,8 @@ through the real hook chain: every hook of the mod runs as shipped and anything 
 \code{diff}, 45 such tests make 134 calls on \code{$.session/command/tool/ui}). This answers the interim report's open
 question: the hook--engine contract \emph{is} tested, at integration level. The defects are elsewhere. \code{plugins/} (9\,088
 LOC) and \code{scripts/} (748 LOC) have no tests (M4), and the CI gate can pass without running tests. In \code{diff}, 17 of
-27 packages carry no direct test and depend on the integration tests, which are the slowest and most timing-sensitive; on our
-machine every failure in three runs fell in 6 of the 30 test files.
+27 packages carry no direct test and depend on the integration tests, which are the slowest and most timing-sensitive: on
+Linux they all pass, but on a slower Windows machine every failure in three runs fell in 6 of the 30 test files.
 
 %---------------------------------------------------------------------------
 \subsection{Proposed improvements}
@@ -302,7 +307,8 @@ API call is added; the I/O loop keeps only fetching and acting.
 \paragraph{P3: make test results trustworthy, then extend them to \code{plugins/}.}
 \emph{Motivated by} M4 and (e); \emph{targets} testability. (1) Delete the \code{exit 0} branch in
 \code{mod-tests.yml} L29--32 and pin the CLI version at L22, so a green gate implies the tests ran. (2) Raise the per-test
-timeout or fix the timing-sensitive tests, since two identical runs differed by 26 failures. (3) Add \texttt{pytest}
+timeout or fix the timing-sensitive tests, since two identical runs on Windows differed by 26 failures while Linux
+showed none, so a contributor's local verdict can disagree with CI's. (3) Add \texttt{pytest}
 suites for the two highest-risk plugin units: \code{hookify}'s rule engine (frontmatter extraction has CCN 32) and the
 dispatch of \code{security_reminder_hook.py}, which needs a P2-style extraction first. (4) Add unit tests for the
 \code{scripts/} predicates P2 creates. Trade-off: mandatory tests raise the bar for third-party plugin authors, a gain for
@@ -343,7 +349,7 @@ Unit tests possible without mocking the GitHub API & 0 & 6 (6 pass) \\
 \toprule
 \code{mods/diff/hooks/register.ts} (P1, \code{BodyLoader} only) & Before & After \\
 \midrule
-LOC (non-blank, lizard NLOC) & 735 & 701 \\
+LOC (sum of function NLOC, lizard) & 735 & 701 \\
 Decision points & 155 & 148 \\
 Mutable \code{let} & 20 & 18 \\
 Mutable containers & 5 & 4 \\
@@ -361,9 +367,10 @@ one coordinator removes 7 decision points for 3 mutable items. \textbf{This is a
 five coordinators take over 22 of the 25 mutable items, and at the same per-item ratio \code{register.ts} falls to roughly
 100 decision points or fewer, a lower bound on the reduction since the hook bodies would also shrink to one-line
 dispatches. Package fan-out should \emph{not} move: P1 improves state-per-unit, not coupling. As a behaviour check,
-\code{claude plugin test diff} on the modified copy gave 165 pass and 52 fail, i.e.\ 49 timeouts plus the same three
-assertion failures as both baseline runs and no new one. This is evidence, not proof, because a timed-out test never
-reached its assertions; \todo{re-run on Linux before claiming unchanged behaviour}.
+\code{claude plugin test mods/diff} on the modified copy passed 217/217 in each of three runs on Linux, with no
+timeouts, exactly as the unmodified baseline did in three runs; the per-test outcomes are identical with and without
+the patch. This is evidence, not proof, of unchanged behaviour: it shows that the existing 217 tests cannot tell the
+two versions apart.
 
 % >>> JOINT (S7): trade-off matrix of proposals x characteristics, covering P1 (performance, co-existence),
 % >>> P3 (ecosystem extensibility) against B's P5 and P6.

@@ -1,0 +1,9 @@
+file,function,start,end,lines,ccn
+scripts/auto-close-duplicates.ts,githubRequest,28,47,20,4
+scripts/auto-close-duplicates.ts,extractDuplicateIssueNumber,49,63,15,3
+scripts/auto-close-duplicates.ts,closeIssueAsDuplicate,66,97,32,1
+scripts/auto-close-duplicates.ts,(anonymous),132,133,2,1
+scripts/auto-close-duplicates.ts,(anonymous),165,168,4,3
+scripts/auto-close-duplicates.ts,(anonymous),204,204,1,1
+scripts/auto-close-duplicates.ts,(anonymous),229,230,2,2
+scripts/auto-close-duplicates.ts,autoCloseDuplicates,99,272,174,14

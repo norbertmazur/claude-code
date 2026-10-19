@@ -1,0 +1,47 @@
+## commit
+bf2323b3021c9d3db7a31e1e7d61068c3f704497 2026-10-13 04:34:03 +0000 chore: Update mods/
+## uname -a
+Linux norbert-HP-ZBook-Power-15-6-inch-G10-Mobile-Workstation-PC 6.8.0-138-generic #138~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug  7 13:43:15 UTC  x86_64 x86_64 x86_64 GNU/Linux
+## /etc/os-release
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+## node
+v25.9.0
+## npm
+11.12.1
+## python3
+Python 3.10.12
+## claude --version
+2.1.303 (Claude Code)
+## lizard
+1.24.1
+## jscpd
+jscpd 5.4.1
+## madge
+8.0.0
+## tsc
+Version 5.9.3
+## claude plugin test --help
+Usage: claude plugin test [dir]
+
+Run a mod's tests
+
+Arguments:
+  dir         The mod's folder (default: the current folder)
+
+Options:
+  -h, --help  Display help for command
+
+Runs every *.test.ts and *.test.tsx under dir, each file in a child of this
+binary, in an environment like the one the mod's hooks run in. A test file
+imports its kit from 'claude-code/testing'. Exits 1 when a test fails.

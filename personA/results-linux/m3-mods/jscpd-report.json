@@ -1,0 +1,3427 @@
+{
+  "duplicates": [
+    {
+      "firstFile": {
+        "end": 20,
+        "endLoc": {
+          "column": 9,
+          "line": 20,
+          "position": 638
+        },
+        "name": "diff/tests/git.test.ts",
+        "start": 11,
+        "startLoc": {
+          "column": 63,
+          "line": 11,
+          "position": 356
+        }
+      },
+      "format": "typescript",
+      "fragment": "    const world = Fixtures.inRepository(on, Fixtures.oneSecret())\n\n    await $.session.start(Fixtures.WORKTREE_SESSION)\n    await $.command.run(Fixtures.DIFF)\n    await world.clock.advance(Fixtures.SETTLE_MS)\n    await $.ui.render(Fixtures.PANE)\n    await $.ui.press({ plugin: 'diff', key: 'ask:.env' })\n    await world.clock.settle()\n\n    const [discovery, ...pinned] = world.runs",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 1069,
+        "endLoc": {
+          "column": 9,
+          "line": 1069,
+          "position": 30622
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 1060,
+        "startLoc": {
+          "column": 71,
+          "line": 1060,
+          "position": 30340
+        }
+      },
+      "tokens": 72
+    },
+    {
+      "firstFile": {
+        "end": 18,
+        "endLoc": {
+          "column": 30,
+          "line": 18,
+          "position": 627
+        },
+        "name": "diff/tests/git.test.ts",
+        "start": 11,
+        "startLoc": {
+          "column": 64,
+          "line": 11,
+          "position": 357
+        }
+      },
+      "format": "typescript",
+      "fragment": "    const world = Fixtures.inRepository(on, Fixtures.oneSecret())\n\n    await $.session.start(Fixtures.WORKTREE_SESSION)\n    await $.command.run(Fixtures.DIFF)\n    await world.clock.advance(Fixtures.SETTLE_MS)\n    await $.ui.render(Fixtures.PANE)\n    await $.ui.press({ plugin: 'diff', key: 'ask:.env' })\n    await world.clock.settle()",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 1104,
+        "endLoc": {
+          "column": 30,
+          "line": 1104,
+          "position": 31784
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 1097,
+        "startLoc": {
+          "column": 5,
+          "line": 1097,
+          "position": 31514
+        }
+      },
+      "tokens": 70
+    },
+    {
+      "firstFile": {
+        "end": 64,
+        "endLoc": {
+          "column": 11,
+          "line": 64,
+          "position": 1921
+        },
+        "name": "diff/tests/git.test.ts",
+        "start": 56,
+        "startLoc": {
+          "column": 6,
+          "line": 56,
+          "position": 1725
+        }
+      },
+      "format": "typescript",
+      "fragment": "      )\n\n    on('tool.call', () => ({ result: 'ran' }))\n\n    await $.session.start(Fixtures.SESSION)\n    await $.command.run(Fixtures.DIFF)\n    await world.clock.advance(Fixtures.SETTLE_MS)\n\n    expect(walks(), 'the first fetch walked').toHaveLength(1)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 89,
+        "endLoc": {
+          "column": 11,
+          "line": 89,
+          "position": 2782
+        },
+        "name": "diff/tests/git.test.ts",
+        "start": 81,
+        "startLoc": {
+          "column": 79,
+          "line": 81,
+          "position": 2586
+        }
+      },
+      "tokens": 51
+    },
+    {
+      "firstFile": {
+        "end": 64,
+        "endLoc": {
+          "column": 11,
+          "line": 64,
+          "position": 1921
+        },
+        "name": "diff/tests/git.test.ts",
+        "start": 56,
+        "startLoc": {
+          "column": 6,
+          "line": 56,
+          "position": 1725
+        }
+      },
+      "format": "typescript",
+      "fragment": "      )\n\n    on('tool.call', () => ({ result: 'ran' }))\n\n    await $.session.start(Fixtures.SESSION)\n    await $.command.run(Fixtures.DIFF)\n    await world.clock.advance(Fixtures.SETTLE_MS)\n\n    expect(walks(), 'the first fetch walked').toHaveLength(1)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 58,
+        "endLoc": {
+          "column": 11,
+          "line": 58,
+          "position": 1862
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 50,
+        "startLoc": {
+          "column": 5,
+          "line": 50,
+          "position": 1666
+        }
+      },
+      "tokens": 51
+    },
+    {
+      "firstFile": {
+        "end": 124,
+        "endLoc": {
+          "column": 49,
+          "line": 124,
+          "position": 4018
+        },
+        "name": "diff/tests/git.test.ts",
+        "start": 116,
+        "startLoc": {
+          "column": 4,
+          "line": 116,
+          "position": 3705
+        }
+      },
+      "format": "typescript",
+      "fragment": "    const clock = Fixtures.startsSession(on, Fixtures.SETTLE_MS)\n\n    on('process.run', ($, e) => ({\n      value: Fixtures.gitIn(e.argv, Fixtures.MOVED_IN),\n    }))\n\n    on('ui.open', () => ({ value: undefined }))\n    on('ui.invalidate', () => ({ value: undefined }))\n    on('session.messages', () => ({ value: [] }))",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 150,
+        "endLoc": {
+          "column": 49,
+          "line": 150,
+          "position": 4841
+        },
+        "name": "diff/tests/git.test.ts",
+        "start": 142,
+        "startLoc": {
+          "column": 4,
+          "line": 142,
+          "position": 4528
+        }
+      },
+      "tokens": 89
+    },
+    {
+      "firstFile": {
+        "end": 411,
+        "endLoc": {
+          "column": 31,
+          "line": 411,
+          "position": 11433
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 405,
+        "startLoc": {
+          "column": 57,
+          "line": 405,
+          "position": 11241
+        }
+      },
+      "format": "typescript",
+      "fragment": "  test('a wide terminal opens the pane at the first edit', async ($, on) => {\n    const world = Fixtures.inRepository(on)\n\n    on('tool.call', () => ({ result: 'edited' }))\n\n    await $.session.start(Fixtures.SESSION)\n    await $.ui.render(Fixtures.HINT)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 7,
+      "secondFile": {
+        "end": 431,
+        "endLoc": {
+          "column": 31,
+          "line": 431,
+          "position": 11941
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 425,
+        "startLoc": {
+          "column": 57,
+          "line": 425,
+          "position": 11749
+        }
+      },
+      "tokens": 53
+    },
+    {
+      "firstFile": {
+        "end": 411,
+        "endLoc": {
+          "column": 31,
+          "line": 411,
+          "position": 11433
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 405,
+        "startLoc": {
+          "column": 57,
+          "line": 405,
+          "position": 11241
+        }
+      },
+      "format": "typescript",
+      "fragment": "  test('a wide terminal opens the pane at the first edit', async ($, on) => {\n    const world = Fixtures.inRepository(on)\n\n    on('tool.call', () => ({ result: 'edited' }))\n\n    await $.session.start(Fixtures.SESSION)\n    await $.ui.render(Fixtures.HINT)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 7,
+      "secondFile": {
+        "end": 459,
+        "endLoc": {
+          "column": 31,
+          "line": 459,
+          "position": 12773
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 453,
+        "startLoc": {
+          "column": 60,
+          "line": 453,
+          "position": 12581
+        }
+      },
+      "tokens": 53
+    },
+    {
+      "firstFile": {
+        "end": 422,
+        "endLoc": {
+          "column": 23,
+          "line": 422,
+          "position": 11645
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 406,
+        "startLoc": {
+          "column": 42,
+          "line": 406,
+          "position": 11304
+        }
+      },
+      "format": "typescript",
+      "fragment": "    const world = Fixtures.inRepository(on)\n\n    on('tool.call', () => ({ result: 'edited' }))\n\n    await $.session.start(Fixtures.SESSION)\n    await $.ui.render(Fixtures.HINT)\n\n    await $.tool.call({\n      tool: 'Edit',\n      file_path: '/work/app.ts',\n      old_string: '1',\n      new_string: '2',\n    })\n\n    await world.clock.advance(Fixtures.SETTLE_MS)\n\n    expect(world.opened.map(pane => pane.id)).toEqual(['diff'])",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 17,
+      "secondFile": {
+        "end": 577,
+        "endLoc": {
+          "column": 23,
+          "line": 577,
+          "position": 15790
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 561,
+        "startLoc": {
+          "column": 5,
+          "line": 561,
+          "position": 15449
+        }
+      },
+      "tokens": 80
+    },
+    {
+      "firstFile": {
+        "end": 420,
+        "endLoc": {
+          "column": 9,
+          "line": 420,
+          "position": 11580
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 408,
+        "startLoc": {
+          "column": 48,
+          "line": 408,
+          "position": 11355
+        }
+      },
+      "format": "typescript",
+      "fragment": "    on('tool.call', () => ({ result: 'edited' }))\n\n    await $.session.start(Fixtures.SESSION)\n    await $.ui.render(Fixtures.HINT)\n\n    await $.tool.call({\n      tool: 'Edit',\n      file_path: '/work/app.ts',\n      old_string: '1',\n      new_string: '2',\n    })\n\n    await world.clock.advance(Fixtures.SETTLE_MS)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 13,
+      "secondFile": {
+        "end": 837,
+        "endLoc": {
+          "column": 9,
+          "line": 837,
+          "position": 23364
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 825,
+        "startLoc": {
+          "column": 19,
+          "line": 825,
+          "position": 23139
+        }
+      },
+      "tokens": 50
+    },
+    {
+      "firstFile": {
+        "end": 420,
+        "endLoc": {
+          "column": 49,
+          "line": 420,
+          "position": 11620
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 410,
+        "startLoc": {
+          "column": 4,
+          "line": 410,
+          "position": 11362
+        }
+      },
+      "format": "typescript",
+      "fragment": "    await $.session.start(Fixtures.SESSION)\n    await $.ui.render(Fixtures.HINT)\n\n    await $.tool.call({\n      tool: 'Edit',\n      file_path: '/work/app.ts',\n      old_string: '1',\n      new_string: '2',\n    })\n\n    await world.clock.advance(Fixtures.SETTLE_MS)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 908,
+        "endLoc": {
+          "column": 49,
+          "line": 908,
+          "position": 25396
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 898,
+        "startLoc": {
+          "column": 4,
+          "line": 898,
+          "position": 25138
+        }
+      },
+      "tokens": 59
+    },
+    {
+      "firstFile": {
+        "end": 577,
+        "endLoc": {
+          "column": 23,
+          "line": 577,
+          "position": 15790
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 560,
+        "startLoc": {
+          "column": 50,
+          "line": 560,
+          "position": 15441
+        }
+      },
+      "format": "typescript",
+      "fragment": "      settings: { fileCheckpointingEnabled: false },\n    })\n\n    on('tool.call', () => ({ result: 'edited' }))\n\n    await $.session.start(Fixtures.SESSION)\n    await $.ui.render(Fixtures.HINT)\n\n    await $.tool.call({\n      tool: 'Edit',\n      file_path: '/work/app.ts',\n      old_string: '1',\n      new_string: '2',\n    })\n\n    await world.clock.advance(Fixtures.SETTLE_MS)\n\n    expect(world.opened, 'the built-in opens on a checkpoint alone').toEqual([])",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 18,
+      "secondFile": {
+        "end": 605,
+        "endLoc": {
+          "column": 23,
+          "line": 605,
+          "position": 16584
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 588,
+        "startLoc": {
+          "column": 60,
+          "line": 588,
+          "position": 16235
+        }
+      },
+      "tokens": 83
+    },
+    {
+      "firstFile": {
+        "end": 632,
+        "endLoc": {
+          "column": 12,
+          "line": 632,
+          "position": 17288
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 608,
+        "startLoc": {
+          "column": 58,
+          "line": 608,
+          "position": 16662
+        }
+      },
+      "format": "typescript",
+      "fragment": "  test('an open left waiting is withdrawn; /diff opens it', async ($, on) => {\n    let isNarrow = true\n\n    const world = Fixtures.inRepository(on, Fixtures.REPOSITORY, {\n      stored: { [Names.STORE_OPEN_KEY]: true },\n      isLeftWaiting: () => isNarrow,\n    })\n\n    const edit = () =>\n      $.tool.call({\n        tool: 'Edit',\n        file_path: '/work/app.ts',\n        old_string: '1',\n        new_string: '2',\n      })\n\n    on('tool.call', () => ({ result: 'edited' }))\n\n    await $.session.start(Fixtures.SESSION)\n    await $.ui.render(Fixtures.hintAt(Limits.AUTO_OPEN_MIN_COLUMNS - 1))\n    await edit()\n    await world.clock.advance(Fixtures.SETTLE_MS)\n\n    expect(\n      world.waiting.map(pane => pane.id),",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 25,
+      "secondFile": {
+        "end": 692,
+        "endLoc": {
+          "column": 17,
+          "line": 692,
+          "position": 19139
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 669,
+        "startLoc": {
+          "column": 57,
+          "line": 669,
+          "position": 18520
+        }
+      },
+      "tokens": 142
+    },
+    {
+      "firstFile": {
+        "end": 627,
+        "endLoc": {
+          "column": 31,
+          "line": 627,
+          "position": 17154
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 613,
+        "startLoc": {
+          "column": 35,
+          "line": 613,
+          "position": 16858
+        }
+      },
+      "format": "typescript",
+      "fragment": "      isLeftWaiting: () => isNarrow,\n    })\n\n    const edit = () =>\n      $.tool.call({\n        tool: 'Edit',\n        file_path: '/work/app.ts',\n        old_string: '1',\n        new_string: '2',\n      })\n\n    on('tool.call', () => ({ result: 'edited' }))\n\n    await $.session.start(Fixtures.SESSION)\n    await $.ui.render(Fixtures.hintAt(Limits.AUTO_OPEN_MIN_COLUMNS - 1))",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 15,
+      "secondFile": {
+        "end": 782,
+        "endLoc": {
+          "column": 31,
+          "line": 782,
+          "position": 21841
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 768,
+        "startLoc": {
+          "column": 30,
+          "line": 768,
+          "position": 21545
+        }
+      },
+      "tokens": 69
+    },
+    {
+      "firstFile": {
+        "end": 837,
+        "endLoc": {
+          "column": 9,
+          "line": 837,
+          "position": 23364
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 825,
+        "startLoc": {
+          "column": 18,
+          "line": 825,
+          "position": 23138
+        }
+      },
+      "format": "typescript",
+      "fragment": "    mock.env(on, {})\n\n    await $.session.start(Fixtures.SESSION)\n    await $.ui.render(Fixtures.HINT)\n\n    await $.tool.call({\n      tool: 'Edit',\n      file_path: '/work/app.ts',\n      old_string: '1',\n      new_string: '2',\n    })\n\n    await clock.advance(Fixtures.SLOW_DIFF_MS - 1)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 13,
+      "secondFile": {
+        "end": 908,
+        "endLoc": {
+          "column": 9,
+          "line": 908,
+          "position": 25356
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 896,
+        "startLoc": {
+          "column": 4,
+          "line": 896,
+          "position": 25130
+        }
+      },
+      "tokens": 51
+    },
+    {
+      "firstFile": {
+        "end": 1005,
+        "endLoc": {
+          "column": 7,
+          "line": 1005,
+          "position": 28632
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 994,
+        "startLoc": {
+          "column": 54,
+          "line": 994,
+          "position": 28405
+        }
+      },
+      "format": "typescript",
+      "fragment": "      messages: () => [Fixtures.promptOf('just talk')],\n    })\n\n    await $.session.start(Fixtures.SESSION)\n    await $.ui.render(Fixtures.HINT)\n    await world.clock.advance(Fixtures.SETTLE_MS)\n\n    expect(world.opened).toEqual([])\n    expect(world.runs).toEqual([])\n  })\n\n  test('a resumed session the person closed opens nothing', async ($, on) => {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 1019,
+        "endLoc": {
+          "column": 7,
+          "line": 1019,
+          "position": 29095
+        },
+        "name": "diff/tests/register.test.ts",
+        "start": 1008,
+        "startLoc": {
+          "column": 47,
+          "line": 1008,
+          "position": 28868
+        }
+      },
+      "tokens": 64
+    },
+    {
+      "firstFile": {
+        "end": 13,
+        "endLoc": {
+          "column": 49,
+          "line": 13,
+          "position": 420
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 8,
+        "startLoc": {
+          "column": 56,
+          "line": 8,
+          "position": 202
+        }
+      },
+      "format": "typescript",
+      "fragment": "  test('docked, every file has its hunks under the list', async ($, on) => {\n    const world = Fixtures.inRepository(on, Fixtures.TWO_FILES)\n\n    await $.session.start(Fixtures.SESSION)\n    await $.command.run(Fixtures.DIFF)\n    await world.clock.advance(Fixtures.SETTLE_MS)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 6,
+      "secondFile": {
+        "end": 303,
+        "endLoc": {
+          "column": 49,
+          "line": 303,
+          "position": 10242
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 298,
+        "startLoc": {
+          "column": 60,
+          "line": 298,
+          "position": 10024
+        }
+      },
+      "tokens": 55
+    },
+    {
+      "firstFile": {
+        "end": 19,
+        "endLoc": {
+          "column": 16,
+          "line": 19,
+          "position": 561
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 9,
+        "startLoc": {
+          "column": 62,
+          "line": 9,
+          "position": 285
+        }
+      },
+      "format": "typescript",
+      "fragment": "    const world = Fixtures.inRepository(on, Fixtures.TWO_FILES)\n\n    await $.session.start(Fixtures.SESSION)\n    await $.command.run(Fixtures.DIFF)\n    await world.clock.advance(Fixtures.SETTLE_MS)\n\n    const drawn = Fixtures.textOf(await $.ui.render(Fixtures.PANE))\n\n    expect(drawn).toContain('2 files changed +3 -1')\n\n    expect(drawn, \"a closing empty row, as the built-in's\").toContain(",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 39,
+        "endLoc": {
+          "column": 16,
+          "line": 39,
+          "position": 1244
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 30,
+        "startLoc": {
+          "column": 5,
+          "line": 30,
+          "position": 969
+        }
+      },
+      "tokens": 65
+    },
+    {
+      "firstFile": {
+        "end": 17,
+        "endLoc": {
+          "column": 28,
+          "line": 17,
+          "position": 519
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 9,
+        "startLoc": {
+          "column": 62,
+          "line": 9,
+          "position": 285
+        }
+      },
+      "format": "typescript",
+      "fragment": "    const world = Fixtures.inRepository(on, Fixtures.TWO_FILES)\n\n    await $.session.start(Fixtures.SESSION)\n    await $.command.run(Fixtures.DIFF)\n    await world.clock.advance(Fixtures.SETTLE_MS)\n\n    const drawn = Fixtures.textOf(await $.ui.render(Fixtures.PANE))\n\n    expect(drawn).toContain('2 files changed +3 -1')",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 237,
+        "endLoc": {
+          "column": 28,
+          "line": 237,
+          "position": 7920
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 229,
+        "startLoc": {
+          "column": 63,
+          "line": 229,
+          "position": 7686
+        }
+      },
+      "tokens": 60
+    },
+    {
+      "firstFile": {
+        "end": 17,
+        "endLoc": {
+          "column": 28,
+          "line": 17,
+          "position": 519
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 9,
+        "startLoc": {
+          "column": 62,
+          "line": 9,
+          "position": 285
+        }
+      },
+      "format": "typescript",
+      "fragment": "    const world = Fixtures.inRepository(on, Fixtures.TWO_FILES)\n\n    await $.session.start(Fixtures.SESSION)\n    await $.command.run(Fixtures.DIFF)\n    await world.clock.advance(Fixtures.SETTLE_MS)\n\n    const drawn = Fixtures.textOf(await $.ui.render(Fixtures.PANE))\n\n    expect(drawn).toContain('2 files changed +3 -1')",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 262,
+        "endLoc": {
+          "column": 28,
+          "line": 262,
+          "position": 8823
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 254,
+        "startLoc": {
+          "column": 60,
+          "line": 254,
+          "position": 8589
+        }
+      },
+      "tokens": 60
+    },
+    {
+      "firstFile": {
+        "end": 80,
+        "endLoc": {
+          "column": 49,
+          "line": 80,
+          "position": 2625
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 75,
+        "startLoc": {
+          "column": 44,
+          "line": 75,
+          "position": 2400
+        }
+      },
+      "format": "typescript",
+      "fragment": "  test('inline, a row opens that file alone', async ($, on) => {\n    const world = Fixtures.inRepository(on, Fixtures.TWO_FILES)\n\n    await $.session.start(Fixtures.SESSION)\n    await $.command.run(Fixtures.DIALOG_DIFF)\n    await world.clock.advance(Fixtures.SETTLE_MS)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 6,
+      "secondFile": {
+        "end": 276,
+        "endLoc": {
+          "column": 49,
+          "line": 276,
+          "position": 9353
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 271,
+        "startLoc": {
+          "column": 57,
+          "line": 271,
+          "position": 9128
+        }
+      },
+      "tokens": 55
+    },
+    {
+      "firstFile": {
+        "end": 80,
+        "endLoc": {
+          "column": 49,
+          "line": 80,
+          "position": 2625
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 75,
+        "startLoc": {
+          "column": 44,
+          "line": 75,
+          "position": 2400
+        }
+      },
+      "format": "typescript",
+      "fragment": "  test('inline, a row opens that file alone', async ($, on) => {\n    const world = Fixtures.inRepository(on, Fixtures.TWO_FILES)\n\n    await $.session.start(Fixtures.SESSION)\n    await $.command.run(Fixtures.DIALOG_DIFF)\n    await world.clock.advance(Fixtures.SETTLE_MS)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 6,
+      "secondFile": {
+        "end": 396,
+        "endLoc": {
+          "column": 49,
+          "line": 396,
+          "position": 13555
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 391,
+        "startLoc": {
+          "column": 54,
+          "line": 391,
+          "position": 13330
+        }
+      },
+      "tokens": 55
+    },
+    {
+      "firstFile": {
+        "end": 83,
+        "endLoc": {
+          "column": 50,
+          "line": 83,
+          "position": 2721
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 76,
+        "startLoc": {
+          "column": 62,
+          "line": 76,
+          "position": 2483
+        }
+      },
+      "format": "typescript",
+      "fragment": "    const world = Fixtures.inRepository(on, Fixtures.TWO_FILES)\n\n    await $.session.start(Fixtures.SESSION)\n    await $.command.run(Fixtures.DIALOG_DIFF)\n    await world.clock.advance(Fixtures.SETTLE_MS)\n    await $.ui.render(Fixtures.INLINE_PANE)\n\n    expect(await $.ui.press({ plugin: 'diff', key: 'file:lib.ts' })).toEqual({",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 135,
+        "endLoc": {
+          "column": 50,
+          "line": 135,
+          "position": 4461
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 128,
+        "startLoc": {
+          "column": 66,
+          "line": 128,
+          "position": 4223
+        }
+      },
+      "tokens": 61
+    },
+    {
+      "firstFile": {
+        "end": 83,
+        "endLoc": {
+          "column": 22,
+          "line": 83,
+          "position": 2693
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 76,
+        "startLoc": {
+          "column": 62,
+          "line": 76,
+          "position": 2483
+        }
+      },
+      "format": "typescript",
+      "fragment": "    const world = Fixtures.inRepository(on, Fixtures.TWO_FILES)\n\n    await $.session.start(Fixtures.SESSION)\n    await $.command.run(Fixtures.DIALOG_DIFF)\n    await world.clock.advance(Fixtures.SETTLE_MS)\n    await $.ui.render(Fixtures.INLINE_PANE)\n\n    expect(await $.ui.press({ plugin: 'diff', key: 'file:lib.ts' })).toEqual({",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 350,
+        "endLoc": {
+          "column": 17,
+          "line": 350,
+          "position": 11855
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 342,
+        "startLoc": {
+          "column": 63,
+          "line": 342,
+          "position": 11638
+        }
+      },
+      "tokens": 52
+    },
+    {
+      "firstFile": {
+        "end": 191,
+        "endLoc": {
+          "column": 49,
+          "line": 191,
+          "position": 6324
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 186,
+        "startLoc": {
+          "column": 58,
+          "line": 186,
+          "position": 6105
+        }
+      },
+      "format": "typescript",
+      "fragment": "  test('docked, a wheel tick moves the body, not the list', async ($, on) => {\n    const world = Fixtures.inRepository(on, Fixtures.MANY_FILES)\n\n    await $.session.start(Fixtures.SESSION)\n    await $.command.run(Fixtures.DIFF)\n    await world.clock.advance(Fixtures.SETTLE_MS)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 6,
+      "secondFile": {
+        "end": 216,
+        "endLoc": {
+          "column": 49,
+          "line": 216,
+          "position": 7202
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 211,
+        "startLoc": {
+          "column": 58,
+          "line": 211,
+          "position": 6983
+        }
+      },
+      "tokens": 55
+    },
+    {
+      "firstFile": {
+        "end": 193,
+        "endLoc": {
+          "column": 9,
+          "line": 193,
+          "position": 6335
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 186,
+        "startLoc": {
+          "column": 58,
+          "line": 186,
+          "position": 6105
+        }
+      },
+      "format": "typescript",
+      "fragment": "  test('docked, a wheel tick moves the body, not the list', async ($, on) => {\n    const world = Fixtures.inRepository(on, Fixtures.MANY_FILES)\n\n    await $.session.start(Fixtures.SESSION)\n    await $.command.run(Fixtures.DIFF)\n    await world.clock.advance(Fixtures.SETTLE_MS)\n\n    const before = Fixtures.textOf(await $.ui.render(Fixtures.PANE))",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 235,
+        "endLoc": {
+          "column": 9,
+          "line": 235,
+          "position": 7832
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 228,
+        "startLoc": {
+          "column": 56,
+          "line": 228,
+          "position": 7602
+        }
+      },
+      "tokens": 56
+    },
+    {
+      "firstFile": {
+        "end": 280,
+        "endLoc": {
+          "column": 28,
+          "line": 280,
+          "position": 9459
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 272,
+        "startLoc": {
+          "column": 62,
+          "line": 272,
+          "position": 9211
+        }
+      },
+      "format": "typescript",
+      "fragment": "    const world = Fixtures.inRepository(on, Fixtures.TWO_FILES)\n\n    await $.session.start(Fixtures.SESSION)\n    await $.command.run(Fixtures.DIALOG_DIFF)\n    await world.clock.advance(Fixtures.SETTLE_MS)\n\n    const drawn = Fixtures.textOf(await $.ui.render(Fixtures.INLINE_PANE))\n\n    expect(drawn).toContain('Uncommitted changes (git diff HEAD)')",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 321,
+        "endLoc": {
+          "column": 28,
+          "line": 321,
+          "position": 10812
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 313,
+        "startLoc": {
+          "column": 63,
+          "line": 313,
+          "position": 10564
+        }
+      },
+      "tokens": 60
+    },
+    {
+      "firstFile": {
+        "end": 317,
+        "endLoc": {
+          "column": 49,
+          "line": 317,
+          "position": 10706
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 312,
+        "startLoc": {
+          "column": 52,
+          "line": 312,
+          "position": 10480
+        }
+      },
+      "format": "typescript",
+      "fragment": "  test('off fullscreen, the window follows the walk', async ($, on) => {\n    const world = Fixtures.inRepository(on, Fixtures.MANY_FILES)\n\n    await $.session.start(Fixtures.SESSION)\n    await $.command.run(Fixtures.DIALOG_DIFF)\n    await world.clock.advance(Fixtures.SETTLE_MS)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 6,
+      "secondFile": {
+        "end": 346,
+        "endLoc": {
+          "column": 49,
+          "line": 346,
+          "position": 11780
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 341,
+        "startLoc": {
+          "column": 58,
+          "line": 341,
+          "position": 11554
+        }
+      },
+      "tokens": 55
+    },
+    {
+      "firstFile": {
+        "end": 317,
+        "endLoc": {
+          "column": 49,
+          "line": 317,
+          "position": 10706
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 312,
+        "startLoc": {
+          "column": 52,
+          "line": 312,
+          "position": 10480
+        }
+      },
+      "format": "typescript",
+      "fragment": "  test('off fullscreen, the window follows the walk', async ($, on) => {\n    const world = Fixtures.inRepository(on, Fixtures.MANY_FILES)\n\n    await $.session.start(Fixtures.SESSION)\n    await $.command.run(Fixtures.DIALOG_DIFF)\n    await world.clock.advance(Fixtures.SETTLE_MS)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 6,
+      "secondFile": {
+        "end": 364,
+        "endLoc": {
+          "column": 49,
+          "line": 364,
+          "position": 12347
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 359,
+        "startLoc": {
+          "column": 56,
+          "line": 359,
+          "position": 12121
+        }
+      },
+      "tokens": 55
+    },
+    {
+      "firstFile": {
+        "end": 347,
+        "endLoc": {
+          "column": 43,
+          "line": 347,
+          "position": 11824
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 341,
+        "startLoc": {
+          "column": 72,
+          "line": 341,
+          "position": 11568
+        }
+      },
+      "format": "typescript",
+      "fragment": "  test('the walk follows under the name a build registers', async ($, on) => {\n    const world = Fixtures.inRepository(on, Fixtures.MANY_FILES)\n\n    await $.session.start(Fixtures.SESSION)\n    await $.command.run(Fixtures.DIALOG_DIFF)\n    await world.clock.advance(Fixtures.SETTLE_MS)\n    await $.ui.render(Fixtures.INLINE_PANE)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 7,
+      "secondFile": {
+        "end": 365,
+        "endLoc": {
+          "column": 43,
+          "line": 365,
+          "position": 12391
+        },
+        "name": "diff/tests/views.test.ts",
+        "start": 359,
+        "startLoc": {
+          "column": 70,
+          "line": 359,
+          "position": 12135
+        }
+      },
+      "tokens": 60
+    },
+    {
+      "firstFile": {
+        "end": 20,
+        "endLoc": {
+          "column": 13,
+          "line": 20,
+          "position": 513
+        },
+        "name": "sec-default/tests/fixtures/repointing-settings.ts",
+        "start": 11,
+        "startLoc": {
+          "column": 32,
+          "line": 11,
+          "position": 340
+        }
+      },
+      "format": "typescript",
+      "fragment": "export const repointingSettings = (\n  name: string,\n  tier?: Plugin['tier'],\n): Plugin => ({\n  name,\n  tier,\n  register(on) {\n    on('session.start', async ($, e, next) => {\n      await $.env\n        .set('CLAUDE_CODE_MANAGED_SETTINGS_PATH', '/tmp/forged-policy')",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 22,
+        "endLoc": {
+          "column": 13,
+          "line": 22,
+          "position": 534
+        },
+        "name": "sec-default/tests/fixtures/setting-bash-env.ts",
+        "start": 13,
+        "startLoc": {
+          "column": 28,
+          "line": 13,
+          "position": 361
+        }
+      },
+      "tokens": 50
+    },
+    {
+      "firstFile": {
+        "end": 20,
+        "endLoc": {
+          "column": 13,
+          "line": 20,
+          "position": 513
+        },
+        "name": "sec-default/tests/fixtures/repointing-settings.ts",
+        "start": 11,
+        "startLoc": {
+          "column": 32,
+          "line": 11,
+          "position": 340
+        }
+      },
+      "format": "typescript",
+      "fragment": "export const repointingSettings = (\n  name: string,\n  tier?: Plugin['tier'],\n): Plugin => ({\n  name,\n  tier,\n  register(on) {\n    on('session.start', async ($, e, next) => {\n      await $.env\n        .set('CLAUDE_CODE_MANAGED_SETTINGS_PATH', '/tmp/forged-policy')",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 22,
+        "endLoc": {
+          "column": 13,
+          "line": 22,
+          "position": 548
+        },
+        "name": "sec-default/tests/fixtures/setting-dyld-insert.ts",
+        "start": 13,
+        "startLoc": {
+          "column": 31,
+          "line": 13,
+          "position": 375
+        }
+      },
+      "tokens": 50
+    },
+    {
+      "firstFile": {
+        "end": 20,
+        "endLoc": {
+          "column": 13,
+          "line": 20,
+          "position": 513
+        },
+        "name": "sec-default/tests/fixtures/repointing-settings.ts",
+        "start": 11,
+        "startLoc": {
+          "column": 32,
+          "line": 11,
+          "position": 340
+        }
+      },
+      "format": "typescript",
+      "fragment": "export const repointingSettings = (\n  name: string,\n  tier?: Plugin['tier'],\n): Plugin => ({\n  name,\n  tier,\n  register(on) {\n    on('session.start', async ($, e, next) => {\n      await $.env\n        .set('CLAUDE_CODE_MANAGED_SETTINGS_PATH', '/tmp/forged-policy')",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 22,
+        "endLoc": {
+          "column": 13,
+          "line": 22,
+          "position": 536
+        },
+        "name": "sec-default/tests/fixtures/setting-ld-preload.ts",
+        "start": 13,
+        "startLoc": {
+          "column": 30,
+          "line": 13,
+          "position": 363
+        }
+      },
+      "tokens": 50
+    },
+    {
+      "firstFile": {
+        "end": 20,
+        "endLoc": {
+          "column": 13,
+          "line": 20,
+          "position": 513
+        },
+        "name": "sec-default/tests/fixtures/repointing-settings.ts",
+        "start": 11,
+        "startLoc": {
+          "column": 32,
+          "line": 11,
+          "position": 340
+        }
+      },
+      "format": "typescript",
+      "fragment": "export const repointingSettings = (\n  name: string,\n  tier?: Plugin['tier'],\n): Plugin => ({\n  name,\n  tier,\n  register(on) {\n    on('session.start', async ($, e, next) => {\n      await $.env\n        .set('CLAUDE_CODE_MANAGED_SETTINGS_PATH', '/tmp/forged-policy')",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 22,
+        "endLoc": {
+          "column": 13,
+          "line": 22,
+          "position": 543
+        },
+        "name": "sec-default/tests/fixtures/setting-node-options.ts",
+        "start": 13,
+        "startLoc": {
+          "column": 32,
+          "line": 13,
+          "position": 370
+        }
+      },
+      "tokens": 50
+    },
+    {
+      "firstFile": {
+        "end": 20,
+        "endLoc": {
+          "column": 13,
+          "line": 20,
+          "position": 513
+        },
+        "name": "sec-default/tests/fixtures/repointing-settings.ts",
+        "start": 11,
+        "startLoc": {
+          "column": 32,
+          "line": 11,
+          "position": 340
+        }
+      },
+      "format": "typescript",
+      "fragment": "export const repointingSettings = (\n  name: string,\n  tier?: Plugin['tier'],\n): Plugin => ({\n  name,\n  tier,\n  register(on) {\n    on('session.start', async ($, e, next) => {\n      await $.env\n        .set('CLAUDE_CODE_MANAGED_SETTINGS_PATH', '/tmp/forged-policy')",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 22,
+        "endLoc": {
+          "column": 13,
+          "line": 22,
+          "position": 513
+        },
+        "name": "sec-default/tests/fixtures/unsetting-node-options.ts",
+        "start": 13,
+        "startLoc": {
+          "column": 34,
+          "line": 13,
+          "position": 340
+        }
+      },
+      "tokens": 50
+    },
+    {
+      "firstFile": {
+        "end": 22,
+        "endLoc": {
+          "column": 28,
+          "line": 22,
+          "position": 558
+        },
+        "name": "sec-default/tests/fixtures/setting-node-options.ts",
+        "start": 13,
+        "startLoc": {
+          "column": 34,
+          "line": 13,
+          "position": 372
+        }
+      },
+      "format": "typescript",
+      "fragment": "export const settingNodeOptions = (\n  name: string,\n  tier?: Plugin['tier'],\n): Plugin => ({\n  name,\n  tier,\n  register(on) {\n    on('session.start', async ($, e, next) => {\n      await $.env\n        .set('NODE_OPTIONS', 'mine')",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 22,
+        "endLoc": {
+          "column": 28,
+          "line": 22,
+          "position": 528
+        },
+        "name": "sec-default/tests/fixtures/unsetting-node-options.ts",
+        "start": 13,
+        "startLoc": {
+          "column": 36,
+          "line": 13,
+          "position": 342
+        }
+      },
+      "tokens": 51
+    },
+    {
+      "firstFile": {
+        "end": 104,
+        "endLoc": {
+          "column": 34,
+          "line": 104,
+          "position": 2695
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 96,
+        "startLoc": {
+          "column": 4,
+          "line": 96,
+          "position": 2463
+        }
+      },
+      "format": "typescript",
+      "fragment": "    },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.SERVER_POLICY }))\n\n      const registered = Fixtures.toolsRegistered(on)\n\n      await $.session.start(Fixtures.SESSION)\n\n      expect(registered).toEqual(['mine', 'bundled'])",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 137,
+        "endLoc": {
+          "column": 34,
+          "line": 137,
+          "position": 3570
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 129,
+        "startLoc": {
+          "column": 56,
+          "line": 129,
+          "position": 3338
+        }
+      },
+      "tokens": 55
+    },
+    {
+      "firstFile": {
+        "end": 157,
+        "endLoc": {
+          "column": 7,
+          "line": 157,
+          "position": 4093
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 145,
+        "startLoc": {
+          "column": 61,
+          "line": 145,
+          "position": 3807
+        }
+      },
+      "format": "typescript",
+      "fragment": "      on('settings.read', () => ({ value: Fixtures.ALLOWLIST }))\n      on('tool.list', () => ({ value: [...Fixtures.TOOLS] }))\n\n      const { text } = await $.command.run(Fixtures.TOOLS_COMMAND)\n\n      expect(text?.split('\\n')).toEqual([\n        'mcp__corp__search: Searches the corp wiki.',\n        'Bash: relabeled',\n      ])\n    },\n  )\n\n  test(",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 13,
+      "secondFile": {
+        "end": 228,
+        "endLoc": {
+          "column": 7,
+          "line": 228,
+          "position": 6215
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 216,
+        "startLoc": {
+          "column": 65,
+          "line": 216,
+          "position": 5929
+        }
+      },
+      "tokens": 63
+    },
+    {
+      "firstFile": {
+        "end": 173,
+        "endLoc": {
+          "column": 7,
+          "line": 173,
+          "position": 4633
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 161,
+        "startLoc": {
+          "column": 64,
+          "line": 161,
+          "position": 4317
+        }
+      },
+      "format": "typescript",
+      "fragment": "      on('settings.read', () => ({ value: Fixtures.SEATED_SUITE }))\n      on('tool.list', () => ({ value: [...Fixtures.SUITE_TOOLS] }))\n\n      const { text } = await $.command.run(Fixtures.TOOLS_COMMAND)\n\n      expect(text?.split('\\n')).toEqual([\n        'mcp__plugin_corp-suite_corp-jira__create_ticket: Creates a ticket.',\n        'Bash: relabeled',\n      ])\n    },\n  )\n\n  test(",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 13,
+      "secondFile": {
+        "end": 191,
+        "endLoc": {
+          "column": 7,
+          "line": 191,
+          "position": 5208
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 179,
+        "startLoc": {
+          "column": 6,
+          "line": 179,
+          "position": 4892
+        }
+      },
+      "tokens": 63
+    },
+    {
+      "firstFile": {
+        "end": 355,
+        "endLoc": {
+          "column": 7,
+          "line": 355,
+          "position": 9988
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 338,
+        "startLoc": {
+          "column": 33,
+          "line": 338,
+          "position": 9494
+        }
+      },
+      "format": "typescript",
+      "fragment": "    { plugins: [Fixtures.emptying, Fixtures.heading] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.NO_ALLOWLIST }))\n\n      on('prompt.compose', () => ({\n        sections: [{ id: 'body', text: 'the body', scope: 'shared' }],\n      }))\n\n      expect(await $.prompt.compose(Fixtures.COMPOSED)).toEqual({\n        sections: [\n          { id: 'heading:org', text: 'the org says hi', scope: 'shared' },\n          { id: 'body', text: 'the body', scope: 'shared' },\n        ],\n      })\n    },\n  )\n\n  test(",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 18,
+      "secondFile": {
+        "end": 374,
+        "endLoc": {
+          "column": 7,
+          "line": 374,
+          "position": 10589
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 357,
+        "startLoc": {
+          "column": 34,
+          "line": 357,
+          "position": 10095
+        }
+      },
+      "tokens": 120
+    },
+    {
+      "firstFile": {
+        "end": 683,
+        "endLoc": {
+          "column": 43,
+          "line": 683,
+          "position": 19258
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 676,
+        "startLoc": {
+          "column": 72,
+          "line": 676,
+          "position": 19032
+        }
+      },
+      "format": "typescript",
+      "fragment": "    'a deny rule holds over an allow from a plugin the person installed',\n    { plugins: [Fixtures.allowing('easy')] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 785,
+        "endLoc": {
+          "column": 43,
+          "line": 785,
+          "position": 22334
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 778,
+        "startLoc": {
+          "column": 72,
+          "line": 778,
+          "position": 22108
+        }
+      },
+      "tokens": 56
+    },
+    {
+      "firstFile": {
+        "end": 683,
+        "endLoc": {
+          "column": 43,
+          "line": 683,
+          "position": 19258
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 676,
+        "startLoc": {
+          "column": 72,
+          "line": 676,
+          "position": 19032
+        }
+      },
+      "format": "typescript",
+      "fragment": "    'a deny rule holds over an allow from a plugin the person installed',\n    { plugins: [Fixtures.allowing('easy')] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 803,
+        "endLoc": {
+          "column": 43,
+          "line": 803,
+          "position": 22869
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 796,
+        "startLoc": {
+          "column": 74,
+          "line": 796,
+          "position": 22643
+        }
+      },
+      "tokens": 56
+    },
+    {
+      "firstFile": {
+        "end": 683,
+        "endLoc": {
+          "column": 43,
+          "line": 683,
+          "position": 19258
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 676,
+        "startLoc": {
+          "column": 72,
+          "line": 676,
+          "position": 19032
+        }
+      },
+      "format": "typescript",
+      "fragment": "    'a deny rule holds over an allow from a plugin the person installed',\n    { plugins: [Fixtures.allowing('easy')] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 821,
+        "endLoc": {
+          "column": 43,
+          "line": 821,
+          "position": 23395
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 814,
+        "startLoc": {
+          "column": 65,
+          "line": 814,
+          "position": 23169
+        }
+      },
+      "tokens": 56
+    },
+    {
+      "firstFile": {
+        "end": 683,
+        "endLoc": {
+          "column": 43,
+          "line": 683,
+          "position": 19258
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 676,
+        "startLoc": {
+          "column": 72,
+          "line": 676,
+          "position": 19032
+        }
+      },
+      "format": "typescript",
+      "fragment": "    'a deny rule holds over an allow from a plugin the person installed',\n    { plugins: [Fixtures.allowing('easy')] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 839,
+        "endLoc": {
+          "column": 43,
+          "line": 839,
+          "position": 23938
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 832,
+        "startLoc": {
+          "column": 73,
+          "line": 832,
+          "position": 23712
+        }
+      },
+      "tokens": 56
+    },
+    {
+      "firstFile": {
+        "end": 683,
+        "endLoc": {
+          "column": 43,
+          "line": 683,
+          "position": 19258
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 676,
+        "startLoc": {
+          "column": 72,
+          "line": 676,
+          "position": 19032
+        }
+      },
+      "format": "typescript",
+      "fragment": "    'a deny rule holds over an allow from a plugin the person installed',\n    { plugins: [Fixtures.allowing('easy')] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 870,
+        "endLoc": {
+          "column": 43,
+          "line": 870,
+          "position": 24832
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 863,
+        "startLoc": {
+          "column": 50,
+          "line": 863,
+          "position": 24606
+        }
+      },
+      "tokens": 56
+    },
+    {
+      "firstFile": {
+        "end": 683,
+        "endLoc": {
+          "column": 43,
+          "line": 683,
+          "position": 19258
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 676,
+        "startLoc": {
+          "column": 72,
+          "line": 676,
+          "position": 19032
+        }
+      },
+      "format": "typescript",
+      "fragment": "    'a deny rule holds over an allow from a plugin the person installed',\n    { plugins: [Fixtures.allowing('easy')] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 1004,
+        "endLoc": {
+          "column": 43,
+          "line": 1004,
+          "position": 28737
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 997,
+        "startLoc": {
+          "column": 71,
+          "line": 997,
+          "position": 28511
+        }
+      },
+      "tokens": 56
+    },
+    {
+      "firstFile": {
+        "end": 683,
+        "endLoc": {
+          "column": 43,
+          "line": 683,
+          "position": 19258
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 676,
+        "startLoc": {
+          "column": 72,
+          "line": 676,
+          "position": 19032
+        }
+      },
+      "format": "typescript",
+      "fragment": "    'a deny rule holds over an allow from a plugin the person installed',\n    { plugins: [Fixtures.allowing('easy')] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 1019,
+        "endLoc": {
+          "column": 43,
+          "line": 1019,
+          "position": 29176
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1012,
+        "startLoc": {
+          "column": 76,
+          "line": 1012,
+          "position": 28950
+        }
+      },
+      "tokens": 56
+    },
+    {
+      "firstFile": {
+        "end": 687,
+        "endLoc": {
+          "column": 13,
+          "line": 687,
+          "position": 19363
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 677,
+        "startLoc": {
+          "column": 43,
+          "line": 677,
+          "position": 19077
+        }
+      },
+      "format": "typescript",
+      "fragment": "    { plugins: [Fixtures.allowing('easy')] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.RULE_DENY)\n\n      expect(lines).toEqual([",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 706,
+        "endLoc": {
+          "column": 13,
+          "line": 706,
+          "position": 19937
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 697,
+        "startLoc": {
+          "column": 4,
+          "line": 697,
+          "position": 19652
+        }
+      },
+      "tokens": 69
+    },
+    {
+      "firstFile": {
+        "end": 685,
+        "endLoc": {
+          "column": 68,
+          "line": 685,
+          "position": 19338
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 677,
+        "startLoc": {
+          "column": 40,
+          "line": 677,
+          "position": 19074
+        }
+      },
+      "format": "typescript",
+      "fragment": "    { plugins: [Fixtures.allowing('easy')] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.RULE_DENY)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 757,
+        "endLoc": {
+          "column": 68,
+          "line": 757,
+          "position": 21546
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 749,
+        "startLoc": {
+          "column": 52,
+          "line": 749,
+          "position": 21282
+        }
+      },
+      "tokens": 67
+    },
+    {
+      "firstFile": {
+        "end": 685,
+        "endLoc": {
+          "column": 68,
+          "line": 685,
+          "position": 19338
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 677,
+        "startLoc": {
+          "column": 40,
+          "line": 677,
+          "position": 19074
+        }
+      },
+      "format": "typescript",
+      "fragment": "    { plugins: [Fixtures.allowing('easy')] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.RULE_DENY)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 772,
+        "endLoc": {
+          "column": 68,
+          "line": 772,
+          "position": 21975
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 764,
+        "startLoc": {
+          "column": 54,
+          "line": 764,
+          "position": 21711
+        }
+      },
+      "tokens": 67
+    },
+    {
+      "firstFile": {
+        "end": 687,
+        "endLoc": {
+          "column": 29,
+          "line": 687,
+          "position": 19379
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 677,
+        "startLoc": {
+          "column": 41,
+          "line": 677,
+          "position": 19075
+        }
+      },
+      "format": "typescript",
+      "fragment": "    { plugins: [Fixtures.allowing('easy')] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.RULE_DENY)\n\n      expect(lines).toEqual([",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 957,
+        "endLoc": {
+          "column": 29,
+          "line": 957,
+          "position": 27332
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 947,
+        "startLoc": {
+          "column": 35,
+          "line": 947,
+          "position": 27028
+        }
+      },
+      "tokens": 76
+    },
+    {
+      "firstFile": {
+        "end": 687,
+        "endLoc": {
+          "column": 29,
+          "line": 687,
+          "position": 19379
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 677,
+        "startLoc": {
+          "column": 41,
+          "line": 677,
+          "position": 19075
+        }
+      },
+      "format": "typescript",
+      "fragment": "    { plugins: [Fixtures.allowing('easy')] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.RULE_DENY)\n\n      expect(lines).toEqual([",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 1041,
+        "endLoc": {
+          "column": 29,
+          "line": 1041,
+          "position": 29831
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1031,
+        "startLoc": {
+          "column": 33,
+          "line": 1031,
+          "position": 29527
+        }
+      },
+      "tokens": 76
+    },
+    {
+      "firstFile": {
+        "end": 687,
+        "endLoc": {
+          "column": 29,
+          "line": 687,
+          "position": 19379
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 677,
+        "startLoc": {
+          "column": 41,
+          "line": 677,
+          "position": 19075
+        }
+      },
+      "format": "typescript",
+      "fragment": "    { plugins: [Fixtures.allowing('easy')] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.RULE_DENY)\n\n      expect(lines).toEqual([",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 1282,
+        "endLoc": {
+          "column": 29,
+          "line": 1282,
+          "position": 36829
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1272,
+        "startLoc": {
+          "column": 32,
+          "line": 1272,
+          "position": 36525
+        }
+      },
+      "tokens": 76
+    },
+    {
+      "firstFile": {
+        "end": 687,
+        "endLoc": {
+          "column": 18,
+          "line": 687,
+          "position": 19368
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 679,
+        "startLoc": {
+          "column": 29,
+          "line": 679,
+          "position": 19132
+        }
+      },
+      "format": "typescript",
+      "fragment": "      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.RULE_DENY)\n\n      expect(lines).toEqual([",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 1208,
+        "endLoc": {
+          "column": 13,
+          "line": 1208,
+          "position": 34452
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1199,
+        "startLoc": {
+          "column": 29,
+          "line": 1199,
+          "position": 34207
+        }
+      },
+      "tokens": 54
+    },
+    {
+      "firstFile": {
+        "end": 705,
+        "endLoc": {
+          "column": 68,
+          "line": 705,
+          "position": 19913
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 696,
+        "startLoc": {
+          "column": 69,
+          "line": 696,
+          "position": 19645
+        }
+      },
+      "format": "typescript",
+      "fragment": "      plugins: [Fixtures.allowing('first'), Fixtures.asking('second')],\n    },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.RULE_DENY)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 742,
+        "endLoc": {
+          "column": 68,
+          "line": 742,
+          "position": 21098
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 733,
+        "startLoc": {
+          "column": 6,
+          "line": 733,
+          "position": 20830
+        }
+      },
+      "tokens": 67
+    },
+    {
+      "firstFile": {
+        "end": 721,
+        "endLoc": {
+          "column": 43,
+          "line": 721,
+          "position": 20531
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 716,
+        "startLoc": {
+          "column": 72,
+          "line": 716,
+          "position": 20323
+        }
+      },
+      "format": "typescript",
+      "fragment": "    'a deny rule turned into an ask by a plugin of the person holds too',\n    { plugins: [Fixtures.asking('easy')] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n      Fixtures.logged(on)\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 6,
+      "secondFile": {
+        "end": 886,
+        "endLoc": {
+          "column": 43,
+          "line": 886,
+          "position": 25326
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 881,
+        "startLoc": {
+          "column": 48,
+          "line": 881,
+          "position": 25118
+        }
+      },
+      "tokens": 53
+    },
+    {
+      "firstFile": {
+        "end": 740,
+        "endLoc": {
+          "column": 43,
+          "line": 740,
+          "position": 21018
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 728,
+        "startLoc": {
+          "column": 76,
+          "line": 728,
+          "position": 20718
+        }
+      },
+      "format": "typescript",
+      "fragment": "    \"an organization plugin's allow over a deny rule stands, above or below\",\n    {\n      plugins: [\n        Fixtures.allowing('suite', 'append'),\n        Fixtures.allowing('easy'),\n      ],\n    },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 13,
+      "secondFile": {
+        "end": 919,
+        "endLoc": {
+          "column": 43,
+          "line": 919,
+          "position": 26239
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 907,
+        "startLoc": {
+          "column": 60,
+          "line": 907,
+          "position": 25939
+        }
+      },
+      "tokens": 67
+    },
+    {
+      "firstFile": {
+        "end": 742,
+        "endLoc": {
+          "column": 68,
+          "line": 742,
+          "position": 21098
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 731,
+        "startLoc": {
+          "column": 43,
+          "line": 731,
+          "position": 20786
+        }
+      },
+      "format": "typescript",
+      "fragment": "        Fixtures.allowing('suite', 'append'),\n        Fixtures.allowing('easy'),\n      ],\n    },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.ALLOWED)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 1205,
+        "endLoc": {
+          "column": 68,
+          "line": 1205,
+          "position": 34413
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1194,
+        "startLoc": {
+          "column": 45,
+          "line": 1194,
+          "position": 34101
+        }
+      },
+      "tokens": 76
+    },
+    {
+      "firstFile": {
+        "end": 747,
+        "endLoc": {
+          "column": 7,
+          "line": 747,
+          "position": 21158
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 736,
+        "startLoc": {
+          "column": 29,
+          "line": 736,
+          "position": 20892
+        }
+      },
+      "format": "typescript",
+      "fragment": "      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.ALLOWED)\n      expect(lines).toEqual([])\n    },\n  )\n\n  test(",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 762,
+        "endLoc": {
+          "column": 7,
+          "line": 762,
+          "position": 21606
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 751,
+        "startLoc": {
+          "column": 29,
+          "line": 751,
+          "position": 21340
+        }
+      },
+      "tokens": 66
+    },
+    {
+      "firstFile": {
+        "end": 747,
+        "endLoc": {
+          "column": 7,
+          "line": 747,
+          "position": 21158
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 736,
+        "startLoc": {
+          "column": 29,
+          "line": 736,
+          "position": 20892
+        }
+      },
+      "format": "typescript",
+      "fragment": "      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.ALLOWED)\n      expect(lines).toEqual([])\n    },\n  )\n\n  test(",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 777,
+        "endLoc": {
+          "column": 7,
+          "line": 777,
+          "position": 22035
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 766,
+        "startLoc": {
+          "column": 29,
+          "line": 766,
+          "position": 21769
+        }
+      },
+      "tokens": 66
+    },
+    {
+      "firstFile": {
+        "end": 787,
+        "endLoc": {
+          "column": 68,
+          "line": 787,
+          "position": 22413
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 779,
+        "startLoc": {
+          "column": 43,
+          "line": 779,
+          "position": 22153
+        }
+      },
+      "format": "typescript",
+      "fragment": "    { plugins: [Fixtures.allowing('easy')] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_ASK)\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.RULE_ASK)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 921,
+        "endLoc": {
+          "column": 68,
+          "line": 921,
+          "position": 26318
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 913,
+        "startLoc": {
+          "column": 4,
+          "line": 913,
+          "position": 26058
+        }
+      },
+      "tokens": 65
+    },
+    {
+      "firstFile": {
+        "end": 789,
+        "endLoc": {
+          "column": 29,
+          "line": 789,
+          "position": 22453
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 779,
+        "startLoc": {
+          "column": 33,
+          "line": 779,
+          "position": 22143
+        }
+      },
+      "format": "typescript",
+      "fragment": "    { plugins: [Fixtures.allowing('easy')] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_ASK)\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.RULE_ASK)\n\n      expect(lines).toEqual([",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 938,
+        "endLoc": {
+          "column": 29,
+          "line": 938,
+          "position": 26792
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 928,
+        "startLoc": {
+          "column": 31,
+          "line": 928,
+          "position": 26482
+        }
+      },
+      "tokens": 79
+    },
+    {
+      "firstFile": {
+        "end": 790,
+        "endLoc": {
+          "column": 40,
+          "line": 790,
+          "position": 22494
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 779,
+        "startLoc": {
+          "column": 41,
+          "line": 779,
+          "position": 22151
+        }
+      },
+      "format": "typescript",
+      "fragment": "    { plugins: [Fixtures.allowing('easy')] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_ASK)\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.RULE_ASK)\n\n      expect(lines).toEqual([\n        `transcript: ${Hooks.heldNotice('easy', 'Bash', Fixtures.RULE_ASK, 'lift')}`,",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 1061,
+        "endLoc": {
+          "column": 40,
+          "line": 1061,
+          "position": 30376
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1050,
+        "startLoc": {
+          "column": 31,
+          "line": 1050,
+          "position": 30033
+        }
+      },
+      "tokens": 81
+    },
+    {
+      "firstFile": {
+        "end": 926,
+        "endLoc": {
+          "column": 7,
+          "line": 926,
+          "position": 26378
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 912,
+        "startLoc": {
+          "column": 6,
+          "line": 912,
+          "position": 26051
+        }
+      },
+      "format": "typescript",
+      "fragment": "      ],\n    },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_ASK)\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.ALLOWED)\n      expect(lines).toEqual([])\n    },\n  )\n\n  test(",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 15,
+      "secondFile": {
+        "end": 1131,
+        "endLoc": {
+          "column": 7,
+          "line": 1131,
+          "position": 32265
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1117,
+        "startLoc": {
+          "column": 76,
+          "line": 1117,
+          "position": 31938
+        }
+      },
+      "tokens": 84
+    },
+    {
+      "firstFile": {
+        "end": 926,
+        "endLoc": {
+          "column": 7,
+          "line": 926,
+          "position": 26378
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 915,
+        "startLoc": {
+          "column": 66,
+          "line": 915,
+          "position": 26150
+        }
+      },
+      "format": "typescript",
+      "fragment": "      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_ASK)\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.ALLOWED)\n      expect(lines).toEqual([])\n    },\n  )\n\n  test(",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 996,
+        "endLoc": {
+          "column": 7,
+          "line": 996,
+          "position": 28439
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 985,
+        "startLoc": {
+          "column": 74,
+          "line": 985,
+          "position": 28211
+        }
+      },
+      "tokens": 58
+    },
+    {
+      "firstFile": {
+        "end": 959,
+        "endLoc": {
+          "column": 27,
+          "line": 959,
+          "position": 27385
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 949,
+        "startLoc": {
+          "column": 68,
+          "line": 949,
+          "position": 27124
+        }
+      },
+      "format": "typescript",
+      "fragment": "      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.RULE_DENY)\n\n      expect(lines).toEqual([\n        'transcript: ' +\n          Hooks.heldNotice('strict', 'Bash', Fixtures.RULE_DENY, 'reword'),",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 1043,
+        "endLoc": {
+          "column": 27,
+          "line": 1043,
+          "position": 29884
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1033,
+        "startLoc": {
+          "column": 68,
+          "line": 1033,
+          "position": 29623
+        }
+      },
+      "tokens": 55
+    },
+    {
+      "firstFile": {
+        "end": 959,
+        "endLoc": {
+          "column": 27,
+          "line": 959,
+          "position": 27385
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 949,
+        "startLoc": {
+          "column": 68,
+          "line": 949,
+          "position": 27124
+        }
+      },
+      "format": "typescript",
+      "fragment": "      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n\n      Fixtures.checksAnswered(on, Fixtures.RULE_DENY)\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.RULE_DENY)\n\n      expect(lines).toEqual([\n        'transcript: ' +\n          Hooks.heldNotice('strict', 'Bash', Fixtures.RULE_DENY, 'reword'),",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 1284,
+        "endLoc": {
+          "column": 27,
+          "line": 1284,
+          "position": 36882
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1274,
+        "startLoc": {
+          "column": 68,
+          "line": 1274,
+          "position": 36621
+        }
+      },
+      "tokens": 55
+    },
+    {
+      "firstFile": {
+        "end": 987,
+        "endLoc": {
+          "column": 39,
+          "line": 987,
+          "position": 28255
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 982,
+        "startLoc": {
+          "column": 76,
+          "line": 982,
+          "position": 28066
+        }
+      },
+      "format": "typescript",
+      "fragment": "    'the option that lets them override deny rules lets them override these',\n    { plugins: [Fixtures.allowing('easy')] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.overridePolicyOf(true) }))\n\n      const lines = Fixtures.logged(on)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 6,
+      "secondFile": {
+        "end": 1319,
+        "endLoc": {
+          "column": 39,
+          "line": 1319,
+          "position": 37832
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1314,
+        "startLoc": {
+          "column": 69,
+          "line": 1314,
+          "position": 37643
+        }
+      },
+      "tokens": 51
+    },
+    {
+      "firstFile": {
+        "end": 1178,
+        "endLoc": {
+          "column": 68,
+          "line": 1178,
+          "position": 33678
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1169,
+        "startLoc": {
+          "column": 35,
+          "line": 1169,
+          "position": 33328
+        }
+      },
+      "format": "typescript",
+      "fragment": "    { plugins: [Fixtures.tightening] },\n    async ($, on) => {\n      const reads = Fixtures.policyReads(on, Fixtures.MANAGED_POLICY)\n      const evaluations = Fixtures.checksAnswered(on, Fixtures.ASKED)\n\n      await $.tool.check(Fixtures.CHECKED)\n\n      const loaded = { reads: reads(), evaluations: evaluations() }\n\n      expect(await $.tool.check(Fixtures.CHECKED)).toEqual(Fixtures.PLAIN_DENY)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 1225,
+        "endLoc": {
+          "column": 68,
+          "line": 1225,
+          "position": 35077
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1216,
+        "startLoc": {
+          "column": 47,
+          "line": 1216,
+          "position": 34727
+        }
+      },
+      "tokens": 83
+    },
+    {
+      "firstFile": {
+        "end": 1468,
+        "endLoc": {
+          "column": 16,
+          "line": 1468,
+          "position": 42269
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1460,
+        "startLoc": {
+          "column": 41,
+          "line": 1460,
+          "position": 42064
+        }
+      },
+      "format": "typescript",
+      "fragment": "    { plugins: [Fixtures.unsettingProxy] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.PINNING_POLICY }))\n\n      const set = Fixtures.variablesSet(on)\n\n      await $.session.start(Fixtures.SESSION)\n\n      expect(set).toEqual([])",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 1531,
+        "endLoc": {
+          "column": 16,
+          "line": 1531,
+          "position": 43945
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1523,
+        "startLoc": {
+          "column": 4,
+          "line": 1523,
+          "position": 43740
+        }
+      },
+      "tokens": 50
+    },
+    {
+      "firstFile": {
+        "end": 1468,
+        "endLoc": {
+          "column": 27,
+          "line": 1468,
+          "position": 42280
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1460,
+        "startLoc": {
+          "column": 42,
+          "line": 1460,
+          "position": 42065
+        }
+      },
+      "format": "typescript",
+      "fragment": "    { plugins: [Fixtures.unsettingProxy] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.PINNING_POLICY }))\n\n      const set = Fixtures.variablesSet(on)\n\n      await $.session.start(Fixtures.SESSION)\n\n      expect(set).toEqual([])",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 1580,
+        "endLoc": {
+          "column": 27,
+          "line": 1580,
+          "position": 45144
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1572,
+        "startLoc": {
+          "column": 5,
+          "line": 1572,
+          "position": 44929
+        }
+      },
+      "tokens": 54
+    },
+    {
+      "firstFile": {
+        "end": 1468,
+        "endLoc": {
+          "column": 27,
+          "line": 1468,
+          "position": 42280
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1460,
+        "startLoc": {
+          "column": 39,
+          "line": 1460,
+          "position": 42062
+        }
+      },
+      "format": "typescript",
+      "fragment": "    { plugins: [Fixtures.unsettingProxy] },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.PINNING_POLICY }))\n\n      const set = Fixtures.variablesSet(on)\n\n      await $.session.start(Fixtures.SESSION)\n\n      expect(set).toEqual([])",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 1614,
+        "endLoc": {
+          "column": 27,
+          "line": 1614,
+          "position": 45982
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1606,
+        "startLoc": {
+          "column": 45,
+          "line": 1606,
+          "position": 45764
+        }
+      },
+      "tokens": 56
+    },
+    {
+      "firstFile": {
+        "end": 1531,
+        "endLoc": {
+          "column": 16,
+          "line": 1531,
+          "position": 43945
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1521,
+        "startLoc": {
+          "column": 48,
+          "line": 1521,
+          "position": 43724
+        }
+      },
+      "format": "typescript",
+      "fragment": "        Fixtures.settingOther('guard', 'prepend'),\n      ],\n    },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.PINNING_POLICY }))\n\n      const set = Fixtures.variablesSet(on)\n\n      await $.session.start(Fixtures.SESSION)\n\n      expect(set.toSorted()).toEqual([",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 1580,
+        "endLoc": {
+          "column": 16,
+          "line": 1580,
+          "position": 45133
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1570,
+        "startLoc": {
+          "column": 50,
+          "line": 1570,
+          "position": 44912
+        }
+      },
+      "tokens": 54
+    },
+    {
+      "firstFile": {
+        "end": 1561,
+        "endLoc": {
+          "column": 27,
+          "line": 1561,
+          "position": 44693
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1543,
+        "startLoc": {
+          "column": 4,
+          "line": 1543,
+          "position": 44251
+        }
+      },
+      "format": "typescript",
+      "fragment": "    },\n    async ($, on) => {\n      const stopPolicy = Fixtures.policyUntilStopped(\n        on,\n        Fixtures.MANAGED_POLICY,\n        'managed settings unreadable',\n      )\n\n      Fixtures.logged(on)\n\n      on('prompt.section', ($, e) => ({ text: e.text }))\n\n      const set = Fixtures.variablesSet(on)\n\n      await $.prompt.section(Fixtures.MEMORY)\n      stopPolicy()\n      await $.session.start(Fixtures.SESSION)\n\n      expect(set).toEqual(['audit OTHER=mine'])",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 19,
+      "secondFile": {
+        "end": 1656,
+        "endLoc": {
+          "column": 27,
+          "line": 1656,
+          "position": 47011
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 1638,
+        "startLoc": {
+          "column": 47,
+          "line": 1638,
+          "position": 46569
+        }
+      },
+      "tokens": 94
+    },
+    {
+      "firstFile": {
+        "end": 2029,
+        "endLoc": {
+          "column": 34,
+          "line": 2029,
+          "position": 59364
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 2016,
+        "startLoc": {
+          "column": 41,
+          "line": 2016,
+          "position": 59024
+        }
+      },
+      "format": "typescript",
+      "fragment": "        Fixtures.registering('corp-guard'),\n        Fixtures.registering('mine'),\n      ],\n    },\n    async ($, on) => {\n      on('settings.read', () => ({\n        value: { enabledPlugins: { 'corp-guard@claude-plugin-test': true } },\n      }))\n\n      const registered = Fixtures.toolsRegistered(on)\n\n      await $.session.start(Fixtures.SESSION)\n\n      expect(registered).toEqual(['corp-guard', 'mine'])",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 14,
+      "secondFile": {
+        "end": 2139,
+        "endLoc": {
+          "column": 34,
+          "line": 2139,
+          "position": 61976
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 2126,
+        "startLoc": {
+          "column": 42,
+          "line": 2126,
+          "position": 61636
+        }
+      },
+      "tokens": 73
+    },
+    {
+      "firstFile": {
+        "end": 2029,
+        "endLoc": {
+          "column": 46,
+          "line": 2029,
+          "position": 59376
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 2019,
+        "startLoc": {
+          "column": 4,
+          "line": 2019,
+          "position": 59078
+        }
+      },
+      "format": "typescript",
+      "fragment": "    },\n    async ($, on) => {\n      on('settings.read', () => ({\n        value: { enabledPlugins: { 'corp-guard@claude-plugin-test': true } },\n      }))\n\n      const registered = Fixtures.toolsRegistered(on)\n\n      await $.session.start(Fixtures.SESSION)\n\n      expect(registered).toEqual(['corp-guard', 'mine'])",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 2155,
+        "endLoc": {
+          "column": 46,
+          "line": 2155,
+          "position": 62440
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 2145,
+        "startLoc": {
+          "column": 63,
+          "line": 2145,
+          "position": 62142
+        }
+      },
+      "tokens": 63
+    },
+    {
+      "firstFile": {
+        "end": 2299,
+        "endLoc": {
+          "column": 27,
+          "line": 2299,
+          "position": 66174
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 2288,
+        "startLoc": {
+          "column": 33,
+          "line": 2288,
+          "position": 65881
+        }
+      },
+      "format": "typescript",
+      "fragment": "        Fixtures.settingLdPreload('bundled', 'builtin'),\n      ],\n    },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n      const set = Fixtures.variablesSet(on)\n\n      await $.session.start(Fixtures.SESSION)\n\n      expect(set).toEqual([",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 2325,
+        "endLoc": {
+          "column": 27,
+          "line": 2325,
+          "position": 66897
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 2314,
+        "startLoc": {
+          "column": 34,
+          "line": 2314,
+          "position": 66604
+        }
+      },
+      "tokens": 72
+    },
+    {
+      "firstFile": {
+        "end": 2299,
+        "endLoc": {
+          "column": 27,
+          "line": 2299,
+          "position": 66174
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 2288,
+        "startLoc": {
+          "column": 33,
+          "line": 2288,
+          "position": 65881
+        }
+      },
+      "format": "typescript",
+      "fragment": "        Fixtures.settingLdPreload('bundled', 'builtin'),\n      ],\n    },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n      const set = Fixtures.variablesSet(on)\n\n      await $.session.start(Fixtures.SESSION)\n\n      expect(set).toEqual([",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 2353,
+        "endLoc": {
+          "column": 27,
+          "line": 2353,
+          "position": 67648
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 2342,
+        "startLoc": {
+          "column": 31,
+          "line": 2342,
+          "position": 67355
+        }
+      },
+      "tokens": 72
+    },
+    {
+      "firstFile": {
+        "end": 2299,
+        "endLoc": {
+          "column": 27,
+          "line": 2299,
+          "position": 66174
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 2288,
+        "startLoc": {
+          "column": 33,
+          "line": 2288,
+          "position": 65881
+        }
+      },
+      "format": "typescript",
+      "fragment": "        Fixtures.settingLdPreload('bundled', 'builtin'),\n      ],\n    },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n      const set = Fixtures.variablesSet(on)\n\n      await $.session.start(Fixtures.SESSION)\n\n      expect(set).toEqual([",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 2379,
+        "endLoc": {
+          "column": 27,
+          "line": 2379,
+          "position": 68359
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 2368,
+        "startLoc": {
+          "column": 35,
+          "line": 2368,
+          "position": 68066
+        }
+      },
+      "tokens": 72
+    },
+    {
+      "firstFile": {
+        "end": 2299,
+        "endLoc": {
+          "column": 27,
+          "line": 2299,
+          "position": 66174
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 2288,
+        "startLoc": {
+          "column": 54,
+          "line": 2288,
+          "position": 65902
+        }
+      },
+      "format": "typescript",
+      "fragment": "        Fixtures.settingLdPreload('bundled', 'builtin'),\n      ],\n    },\n    async ($, on) => {\n      on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))\n\n      const lines = Fixtures.logged(on)\n      const set = Fixtures.variablesSet(on)\n\n      await $.session.start(Fixtures.SESSION)\n\n      expect(set).toEqual([",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 2404,
+        "endLoc": {
+          "column": 27,
+          "line": 2404,
+          "position": 69016
+        },
+        "name": "sec-default/tests/register.test.ts",
+        "start": 2393,
+        "startLoc": {
+          "column": 44,
+          "line": 2393,
+          "position": 68744
+        }
+      },
+      "tokens": 68
+    },
+    {
+      "firstFile": {
+        "end": 18,
+        "endLoc": {
+          "column": 1,
+          "line": 18,
+          "position": 513
+        },
+        "name": "telemetry/tests/fixtures/plugins/managing.ts",
+        "start": 11,
+        "startLoc": {
+          "column": 42,
+          "line": 11,
+          "position": 339
+        }
+      },
+      "format": "typescript",
+      "fragment": "    on('command.run', { command: 'manage' }, ($, e) =>\n      $.telemetry.mark(JSON.parse(e.args)).then(\n        () => ({ text: 'queued' }),\n        (error: unknown) => ({ text: String(error) }),\n      ),\n    )\n  },\n}",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 18,
+        "endLoc": {
+          "column": 1,
+          "line": 18,
+          "position": 495
+        },
+        "name": "telemetry/tests/fixtures/plugins/marking.ts",
+        "start": 11,
+        "startLoc": {
+          "column": 40,
+          "line": 11,
+          "position": 321
+        }
+      },
+      "tokens": 60
+    },
+    {
+      "firstFile": {
+        "end": 23,
+        "endLoc": {
+          "column": 1,
+          "line": 23,
+          "position": 677
+        },
+        "name": "telemetry/tests/fixtures/plugins/meddling.ts",
+        "start": 16,
+        "startLoc": {
+          "column": 42,
+          "line": 16,
+          "position": 493
+        }
+      },
+      "format": "typescript",
+      "fragment": "    on('command.run', { command: 'meddle' }, $ =>\n      $.telemetry.log({ to: 'collector', event: 'mine' }).then(\n        () => ({ text: 'served' }),\n        (error: unknown) => ({ text: String(error) }),\n      ),\n    )\n  },\n}",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 25,
+        "endLoc": {
+          "column": 1,
+          "line": 25,
+          "position": 695
+        },
+        "name": "telemetry/tests/fixtures/plugins/replacing.ts",
+        "start": 18,
+        "startLoc": {
+          "column": 43,
+          "line": 18,
+          "position": 511
+        }
+      },
+      "tokens": 57
+    },
+    {
+      "firstFile": {
+        "end": 79,
+        "endLoc": {
+          "column": 12,
+          "line": 79,
+          "position": 2452
+        },
+        "name": "telemetry/tests/gate.test.ts",
+        "start": 70,
+        "startLoc": {
+          "column": 62,
+          "line": 70,
+          "position": 2187
+        }
+      },
+      "format": "typescript",
+      "fragment": "      const own = (await $.command.run(Fixtures.typed('meddle', {}))).text\n\n      await $.command.run(Fixtures.record(Fixtures.surveyAnswer()))\n      await session.clock.advance(Hooks.BATCH_WINDOW_MS)\n\n      expect({\n        own,\n        rows: Fixtures.rowsOf(session).map(Fixtures.eventNameOf),\n      }).toEqual({\n        own: `HooksError: meddling: $.telemetry.log: ${Hooks.REFUSED.deny}`,",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 127,
+        "endLoc": {
+          "column": 12,
+          "line": 127,
+          "position": 3861
+        },
+        "name": "telemetry/tests/gate.test.ts",
+        "start": 118,
+        "startLoc": {
+          "column": 63,
+          "line": 118,
+          "position": 3596
+        }
+      },
+      "tokens": 66
+    },
+    {
+      "firstFile": {
+        "end": 102,
+        "endLoc": {
+          "column": 38,
+          "line": 102,
+          "position": 3114
+        },
+        "name": "telemetry/tests/gate.test.ts",
+        "start": 91,
+        "startLoc": {
+          "column": 51,
+          "line": 91,
+          "position": 2840
+        }
+      },
+      "format": "typescript",
+      "fragment": "      const session = Fixtures.firstPartySession(on)\n\n      const answer = (\n        await $.command.run(Fixtures.record(Fixtures.surveyAnswer()))\n      ).text\n\n      await session.clock.advance(Hooks.BATCH_WINDOW_MS)\n\n      expect({\n        answer,\n        posts: session.posts.length,\n        rows: Fixtures.rowsOf(session).map(Fixtures.eventNameOf),",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 152,
+        "endLoc": {
+          "column": 38,
+          "line": 152,
+          "position": 4571
+        },
+        "name": "telemetry/tests/gate.test.ts",
+        "start": 141,
+        "startLoc": {
+          "column": 44,
+          "line": 141,
+          "position": 4297
+        }
+      },
+      "tokens": 58
+    },
+    {
+      "firstFile": {
+        "end": 159,
+        "endLoc": {
+          "column": 3,
+          "line": 159,
+          "position": 4694
+        },
+        "name": "telemetry/tests/gate.test.ts",
+        "start": 135,
+        "startLoc": {
+          "column": 53,
+          "line": 135,
+          "position": 4129
+        }
+      },
+      "format": "typescript",
+      "fragment": "    { plugins: [Fixtures.recording, Fixtures.sweeping] },\n    async ($, on) => {\n      mock.env(on, Fixtures.SENDING_ENV)\n\n      const session = Fixtures.firstPartySession(on)\n\n      await $.session.start(Fixtures.STARTED)\n\n      const answer = (\n        await $.command.run(Fixtures.record(Fixtures.surveyAnswer()))\n      ).text\n\n      await session.clock.advance(Hooks.BATCH_WINDOW_MS)\n\n      expect({\n        answer,\n        posts: session.posts.length,\n        rows: Fixtures.rowsOf(session),\n      }).toEqual({\n        answer: 'queued',\n        posts: 1,\n        rows: [Fixtures.EXPECTED_ROW],\n      })\n    },\n  )",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 25,
+      "secondFile": {
+        "end": 187,
+        "endLoc": {
+          "column": 3,
+          "line": 187,
+          "position": 5395
+        },
+        "name": "telemetry/tests/gate.test.ts",
+        "start": 163,
+        "startLoc": {
+          "column": 55,
+          "line": 163,
+          "position": 4830
+        }
+      },
+      "tokens": 126
+    },
+    {
+      "firstFile": {
+        "end": 161,
+        "endLoc": {
+          "column": 6,
+          "line": 161,
+          "position": 4702
+        },
+        "name": "telemetry/tests/gate.test.ts",
+        "start": 144,
+        "startLoc": {
+          "column": 23,
+          "line": 144,
+          "position": 4346
+        }
+      },
+      "format": "typescript",
+      "fragment": "        await $.command.run(Fixtures.record(Fixtures.surveyAnswer()))\n      ).text\n\n      await session.clock.advance(Hooks.BATCH_WINDOW_MS)\n\n      expect({\n        answer,\n        posts: session.posts.length,\n        rows: Fixtures.rowsOf(session),\n      }).toEqual({\n        answer: 'queued',\n        posts: 1,\n        rows: [Fixtures.EXPECTED_ROW],\n      })\n    },\n  )\n\n  test(",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 18,
+      "secondFile": {
+        "end": 188,
+        "endLoc": {
+          "column": 1,
+          "line": 188,
+          "position": 5397
+        },
+        "name": "telemetry/tests/gate.test.ts",
+        "start": 172,
+        "startLoc": {
+          "column": 23,
+          "line": 172,
+          "position": 5047
+        }
+      },
+      "tokens": 77
+    },
+    {
+      "firstFile": {
+        "end": 243,
+        "endLoc": {
+          "column": 21,
+          "line": 243,
+          "position": 6873
+        },
+        "name": "telemetry/tests/register.test.ts",
+        "start": 229,
+        "startLoc": {
+          "column": 38,
+          "line": 229,
+          "position": 6571
+        }
+      },
+      "format": "typescript",
+      "fragment": "        policy: { kind: 'unreadable' },\n      })\n\n      const { text } = await $.command.run(\n        Fixtures.record(Fixtures.surveyAnswer()),\n      )\n\n      await session.clock.advance(Hooks.BATCH_WINDOW_MS)\n\n      expect({ text, posts: session.posts }).toEqual({\n        text: 'queued',\n        posts: [],\n      })\n\n      expect(session.reads, 'nothing of the machine is read either').toEqual([])",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 15,
+      "secondFile": {
+        "end": 379,
+        "endLoc": {
+          "column": 21,
+          "line": 379,
+          "position": 10921
+        },
+        "name": "telemetry/tests/register.test.ts",
+        "start": 365,
+        "startLoc": {
+          "column": 30,
+          "line": 365,
+          "position": 10619
+        }
+      },
+      "tokens": 69
+    },
+    {
+      "firstFile": {
+        "end": 400,
+        "endLoc": {
+          "column": 41,
+          "line": 400,
+          "position": 11599
+        },
+        "name": "telemetry/tests/register.test.ts",
+        "start": 393,
+        "startLoc": {
+          "column": 52,
+          "line": 393,
+          "position": 11363
+        }
+      },
+      "format": "typescript",
+      "fragment": "        answers: [Fixtures.REFUSED, Fixtures.REFUSED],\n      })\n\n      await $.command.run(Fixtures.record(Fixtures.surveyAnswer()))\n      await session.clock.advance(Hooks.BATCH_WINDOW_MS)\n      await session.clock.advance(Hooks.RETRY_DELAY_MS)\n\n      expect(session.posts).toHaveLength(2)",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 445,
+        "endLoc": {
+          "column": 41,
+          "line": 445,
+          "position": 12909
+        },
+        "name": "telemetry/tests/register.test.ts",
+        "start": 438,
+        "startLoc": {
+          "column": 35,
+          "line": 438,
+          "position": 12673
+        }
+      },
+      "tokens": 53
+    },
+    {
+      "firstFile": {
+        "end": 600,
+        "endLoc": {
+          "column": 57,
+          "line": 600,
+          "position": 17488
+        },
+        "name": "telemetry/tests/register.test.ts",
+        "start": 593,
+        "startLoc": {
+          "column": 39,
+          "line": 593,
+          "position": 17248
+        }
+      },
+      "format": "typescript",
+      "fragment": "      mock.env(on, Fixtures.WINDOWS_ENV)\n\n      const session = Fixtures.firstPartySession(on)\n\n      await $.command.run(Fixtures.record(Fixtures.surveyAnswer()))\n      await session.clock.advance(Hooks.BATCH_WINDOW_MS)\n\n      expect(Fixtures.rowsOf(session)[0]).toMatchObject({",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 659,
+        "endLoc": {
+          "column": 57,
+          "line": 659,
+          "position": 19229
+        },
+        "name": "telemetry/tests/register.test.ts",
+        "start": 652,
+        "startLoc": {
+          "column": 45,
+          "line": 652,
+          "position": 18989
+        }
+      },
+      "tokens": 55
+    },
+    {
+      "firstFile": {
+        "end": 602,
+        "endLoc": {
+          "column": 19,
+          "line": 602,
+          "position": 17523
+        },
+        "name": "telemetry/tests/register.test.ts",
+        "start": 595,
+        "startLoc": {
+          "column": 51,
+          "line": 595,
+          "position": 17302
+        }
+      },
+      "format": "typescript",
+      "fragment": "      const session = Fixtures.firstPartySession(on)\n\n      await $.command.run(Fixtures.record(Fixtures.surveyAnswer()))\n      await session.clock.advance(Hooks.BATCH_WINDOW_MS)\n\n      expect(Fixtures.rowsOf(session)[0]).toMatchObject({\n        env: {\n          platform: 'win32',",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 632,
+        "endLoc": {
+          "column": 19,
+          "line": 632,
+          "position": 18397
+        },
+        "name": "telemetry/tests/register.test.ts",
+        "start": 625,
+        "startLoc": {
+          "column": 7,
+          "line": 625,
+          "position": 18176
+        }
+      },
+      "tokens": 51
+    }
+  ],
+  "statistics": {
+    "detectionDate": "2026-10-19T13:37:32.911Z",
+    "formats": {
+      "tsx": {
+        "clones": 0,
+        "duplicatedLines": 0,
+        "duplicatedTokens": 0,
+        "lines": 1206,
+        "newClones": 0,
+        "newDuplicatedLines": 0,
+        "percentage": 0.0,
+        "percentageTokens": 0.0,
+        "sources": 21,
+        "tokens": 5088
+      },
+      "typescript": {
+        "clones": 89,
+        "duplicatedLines": 940,
+        "duplicatedTokens": 5726,
+        "lines": 22181,
+        "newClones": 0,
+        "newDuplicatedLines": 0,
+        "percentage": 4.2378612325864475,
+        "percentageTokens": 5.365542832511854,
+        "sources": 405,
+        "tokens": 106718
+      }
+    },
+    "total": {
+      "clones": 89,
+      "duplicatedLines": 940,
+      "duplicatedTokens": 5726,
+      "lines": 23387,
+      "newClones": 0,
+      "newDuplicatedLines": 0,
+      "percentage": 4.01932697652542,
+      "percentageTokens": 5.121370946103072,
+      "sources": 426,
+      "tokens": 111806
+    }
+  }
+}

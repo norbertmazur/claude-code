@@ -1,0 +1,32 @@
+corpus                  fns meanCCN medCCN  p90  max CCN>10 CCN>15 len>60
+plugins (py)            159    7.65      5   14   80     28     15     20
+ALL                     159    7.65      5   14   80     28     15     20
+
+Top 15 by CCN:
+CCN= 80 len= 476 nloc= 254 plugins/security-guidance/hooks/security_reminder_hook.py:901-1376 handle_commit_review_posttooluse
+CCN= 62 len= 321 nloc= 192 plugins/security-guidance/hooks/security_reminder_hook.py:1378-1698 handle_push_sweep_posttooluse
+CCN= 61 len= 509 nloc= 279 plugins/security-guidance/hooks/llm.py:1059-1567 agentic_review
+CCN= 44 len= 130 nloc=  91 plugins/security-guidance/hooks/ensure_agent_sdk.py:57-186 main
+CCN= 41 len= 171 nloc=  95 plugins/security-guidance/hooks/security_reminder_hook.py:2019-2189 main
+CCN= 37 len= 273 nloc= 148 plugins/security-guidance/hooks/security_reminder_hook.py:1700-1972 handle_stop_hook
+CCN= 32 len= 109 nloc=  71 plugins/hookify/core/config_loader.py:87-195 extract_frontmatter
+CCN= 27 len= 122 nloc=  87 plugins/security-guidance/hooks/llm.py:386-507 _call_claude
+CCN= 26 len=  73 nloc=  49 plugins/hookify/core/rule_engine.py:182-254 _extract_field
+CCN= 22 len= 270 nloc= 247 plugins/security-guidance/hooks/llm.py:710-979 analyze_code_security
+CCN= 21 len=  77 nloc=  36 plugins/security-guidance/hooks/llm.py:521-597 _call_claude_dual_or
+CCN= 21 len=  46 nloc=  40 plugins/security-guidance/hooks/extensibility.py:199-244 _validate_pattern
+CCN= 19 len=  42 nloc=  31 plugins/security-guidance/hooks/security_reminder_hook.py:386-427 check_patterns
+CCN= 19 len=  66 nloc=  39 plugins/security-guidance/hooks/gitutil.py:657-722 filter_preexisting_from_diff
+CCN= 17 len=  86 nloc=  34 plugins/security-guidance/hooks/diffstate.py:353-438 compute_v2_review_set
+
+Top 8 by length:
+len= 509 CCN= 61 plugins/security-guidance/hooks/llm.py:1059-1567 agentic_review
+len= 476 CCN= 80 plugins/security-guidance/hooks/security_reminder_hook.py:901-1376 handle_commit_review_posttooluse
+len= 321 CCN= 62 plugins/security-guidance/hooks/security_reminder_hook.py:1378-1698 handle_push_sweep_posttooluse
+len= 273 CCN= 37 plugins/security-guidance/hooks/security_reminder_hook.py:1700-1972 handle_stop_hook
+len= 270 CCN= 22 plugins/security-guidance/hooks/llm.py:710-979 analyze_code_security
+len= 171 CCN= 41 plugins/security-guidance/hooks/security_reminder_hook.py:2019-2189 main
+len= 130 CCN= 44 plugins/security-guidance/hooks/ensure_agent_sdk.py:57-186 main
+len= 127 CCN= 14 plugins/security-guidance/hooks/llm.py:1570-1696 analyze_security_concerns
+
+register.ts / auto-close entries:

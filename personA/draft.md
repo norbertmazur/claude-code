@@ -416,7 +416,7 @@ mods/tsconfig.json` passes.
 
 | `mods/diff/hooks/register.ts` | before | after |
 |---|---:|---:|
-| LOC (non-blank, lizard NLOC) | 735 | 701 |
+| LOC (sum of function NLOC, lizard) | 735 | 701 |
 | decision points | 155 | 148 |
 | mutable `let` | 20 | 18 |
 | mutable containers | 5 | 4 |

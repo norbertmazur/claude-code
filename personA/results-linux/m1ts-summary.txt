@@ -1,0 +1,24 @@
+corpus            fns  mean med p90 max >10 >15
+mods/agents-md     65  2.25   1   5  22   2   1
+mods/diff         450  2.42 1.0   5  23  10   3
+mods/sec-default  104  1.88 1.0   4   8   0   0
+mods/telemetry    125  2.43   1   5  16   2   1
+scripts            24  4.21 2.0  13  19   4   1
+
+Top TS functions by CCN:
+   23   63L mods/diff/hooks/views/body/plan/dock-plan-of.ts:18-80 dockPlanOf
+   22   76L mods/agents-md/hooks/register.ts:181-256 (anonymous)
+   19  137L scripts/backfill-duplicate-comments.ts:72-208 backfillDuplicateComments
+   18   51L mods/diff/hooks/git/parse/parse-numstat.ts:16-66 parseNumstat
+   17  118L mods/diff/hooks/views/dialog-pane/dialog-pane.tsx:29-146 dialogPane
+   16   58L mods/telemetry/hooks/context/terminal-of/terminal-of.ts:17-74 terminalOf
+   15   62L mods/diff/hooks/views/layout/wrapped-lines/wrapped-lines.ts:14-75 wrappedLines
+   14   54L mods/diff/hooks/register.ts:793-846 (anonymous)
+   14  174L scripts/auto-close-duplicates.ts:99-272 autoCloseDuplicates
+   13   63L scripts/sweep.ts:92-154 closeExpired
+
+register.ts share of each mod's decision points:
+  mods/agents-md     45/  81 = 55.6%
+  mods/diff         155/ 640 = 24.2%
+  mods/sec-default   25/  92 = 27.2%
+  mods/telemetry      6/ 179 = 3.4%

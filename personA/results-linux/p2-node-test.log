@@ -1,0 +1,15 @@
+✔ no bot comment -> skip (0.576621ms)
+✔ recent bot comment -> skip (0.199899ms)
+✔ activity after detection -> skip (0.128005ms)
+✔ old, quiet detection returns the comment (0.0881ms)
+✔ author thumbs-down -> skip (0.143755ms)
+✔ otherwise close as duplicate of the number in the comment (0.569266ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 79.214093
+node --test exit=0

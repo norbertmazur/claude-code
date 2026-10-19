@@ -1,0 +1,6 @@
+m4-diff-run2: identical outcome set to baseline run1
+m4-diff-run3: identical outcome set to baseline run1
+m4-diff-p1-run1: identical outcome set to baseline run1
+m4-diff-p1-run2: identical outcome set to baseline run1
+m4-diff-p1-run3: identical outcome set to baseline run1
+duplicate test names in run1: 0

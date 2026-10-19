@@ -1,0 +1,6 @@
+agents-md exit=0
+sec-default exit=0
+telemetry exit=0
+diff run1 exit=0
+diff run2 exit=0
+diff run3 exit=0

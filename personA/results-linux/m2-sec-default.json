@@ -1,0 +1,292 @@
+{
+  "admission-failure/admission-failure.ts": [],
+  "admission-failure/index.ts": [
+    "admission-failure/admission-failure.ts",
+    "admission-failure/index.ts"
+  ],
+  "held-verdict/ask-kind.ts": [],
+  "held-verdict/caught-answer.ts": [
+    "held-verdict/verdicts/index.ts"
+  ],
+  "held-verdict/held-kind.ts": [
+    "held-verdict/ask-kind.ts"
+  ],
+  "held-verdict/held-notice.ts": [
+    "held-verdict/held-kind.ts"
+  ],
+  "held-verdict/index.ts": [
+    "held-verdict/ask-kind.ts",
+    "held-verdict/caught-answer.ts",
+    "held-verdict/held-kind.ts",
+    "held-verdict/held-notice.ts",
+    "held-verdict/index.ts",
+    "held-verdict/verdicts/index.ts"
+  ],
+  "held-verdict/verdicts/holds-over.ts": [
+    "held-verdict/verdicts/is-same-verdict.ts",
+    "held-verdict/verdicts/ranking/index.ts"
+  ],
+  "held-verdict/verdicts/index.ts": [
+    "held-verdict/verdicts/holds-over.ts",
+    "held-verdict/verdicts/index.ts",
+    "held-verdict/verdicts/is-same-verdict.ts",
+    "held-verdict/verdicts/ranking/index.ts",
+    "held-verdict/verdicts/rewritten-by-users.ts",
+    "held-verdict/verdicts/unchecked-deny.ts"
+  ],
+  "held-verdict/verdicts/is-same-verdict.ts": [],
+  "held-verdict/verdicts/ranking/handed-to.ts": [],
+  "held-verdict/verdicts/ranking/index.ts": [
+    "held-verdict/verdicts/ranking/handed-to.ts",
+    "held-verdict/verdicts/ranking/index.ts",
+    "held-verdict/verdicts/ranking/is-looser.ts",
+    "held-verdict/verdicts/ranking/leniency/index.ts",
+    "held-verdict/verdicts/ranking/tiers-holding-users/index.ts"
+  ],
+  "held-verdict/verdicts/ranking/is-looser.ts": [
+    "held-verdict/verdicts/ranking/leniency/index.ts"
+  ],
+  "held-verdict/verdicts/ranking/leniency/index.ts": [
+    "held-verdict/verdicts/ranking/leniency/index.ts",
+    "held-verdict/verdicts/ranking/leniency/leniency.ts"
+  ],
+  "held-verdict/verdicts/ranking/leniency/leniency.ts": [],
+  "held-verdict/verdicts/ranking/tiers-holding-users/index.ts": [
+    "held-verdict/verdicts/ranking/tiers-holding-users/index.ts",
+    "held-verdict/verdicts/ranking/tiers-holding-users/tiers-holding-users.ts"
+  ],
+  "held-verdict/verdicts/ranking/tiers-holding-users/tiers-holding-users.ts": [],
+  "held-verdict/verdicts/rewritten-by-users.ts": [
+    "held-verdict/verdicts/is-same-verdict.ts",
+    "held-verdict/verdicts/ranking/index.ts"
+  ],
+  "held-verdict/verdicts/unchecked-deny.ts": [],
+  "index.ts": [
+    "admission-failure/index.ts",
+    "held-verdict/index.ts",
+    "index.ts",
+    "managed-mods-only-refusal/index.ts",
+    "past-users/index.ts",
+    "pinned-variable-refusal/index.ts",
+    "policy/index.ts",
+    "register.ts",
+    "skill-row/index.ts",
+    "tool-register-refusal/index.ts"
+  ],
+  "managed-mods-only-refusal/index.ts": [
+    "managed-mods-only-refusal/index.ts",
+    "managed-mods-only-refusal/managed-mods-only-refusal.ts"
+  ],
+  "managed-mods-only-refusal/managed-mods-only-refusal.ts": [],
+  "past-users/index.ts": [
+    "past-users/index.ts",
+    "past-users/past-users.ts",
+    "past-users/provided/index.ts",
+    "past-users/user-reachable-tiers/index.ts"
+  ],
+  "past-users/past-users.ts": [
+    "past-users/provided/index.ts",
+    "past-users/user-reachable-tiers/index.ts"
+  ],
+  "past-users/provided/index.ts": [
+    "past-users/provided/index.ts",
+    "past-users/provided/provided-next.ts",
+    "past-users/provided/provided.ts"
+  ],
+  "past-users/provided/provided-next.ts": [],
+  "past-users/provided/provided.ts": [],
+  "past-users/user-reachable-tiers/index.ts": [
+    "past-users/user-reachable-tiers/index.ts",
+    "past-users/user-reachable-tiers/user-reachable-tiers.ts"
+  ],
+  "past-users/user-reachable-tiers/user-reachable-tiers.ts": [],
+  "pinned-variable-refusal/index.ts": [
+    "pinned-variable-refusal/index.ts",
+    "pinned-variable-refusal/pinned-variable-refusal.ts"
+  ],
+  "pinned-variable-refusal/pinned-variable-refusal.ts": [],
+  "policy/code-loading-variables.ts": [],
+  "policy/create-policy-memo/create-policy-memo.ts": [],
+  "policy/create-policy-memo/index.ts": [
+    "policy/create-policy-memo/create-policy-memo.ts",
+    "policy/create-policy-memo/index.ts"
+  ],
+  "policy/decided-by-policy.ts": [],
+  "policy/deny-rules-hold.ts": [
+    "policy/is-person-writable.ts",
+    "policy/own-option/index.ts"
+  ],
+  "policy/has-mcp-allowlist.ts": [],
+  "policy/index.ts": [
+    "policy/code-loading-variables.ts",
+    "policy/create-policy-memo/index.ts",
+    "policy/decided-by-policy.ts",
+    "policy/deny-rules-hold.ts",
+    "policy/has-mcp-allowlist.ts",
+    "policy/index.ts",
+    "policy/is-managed-mods-only.ts",
+    "policy/is-person-writable.ts",
+    "policy/is-pinned-variable.ts",
+    "policy/managed-tools-restored/index.ts",
+    "policy/names-org-tool.ts",
+    "policy/own-option/index.ts",
+    "policy/pinned-names.ts",
+    "policy/policy-memo-ms.ts",
+    "policy/policy-source-variables.ts",
+    "policy/process-wrapper-variable.ts",
+    "policy/source.ts"
+  ],
+  "policy/is-managed-mods-only.ts": [
+    "policy/own-option/index.ts"
+  ],
+  "policy/is-person-writable.ts": [],
+  "policy/is-pinned-variable.ts": [
+    "policy/pinned-names.ts"
+  ],
+  "policy/managed-tools-restored/index.ts": [
+    "policy/managed-tools-restored/index.ts",
+    "policy/managed-tools-restored/is-org-tool/index.ts",
+    "policy/managed-tools-restored/managed-tools-restored.ts"
+  ],
+  "policy/managed-tools-restored/is-org-tool/index.ts": [
+    "policy/managed-tools-restored/is-org-tool/index.ts",
+    "policy/managed-tools-restored/is-org-tool/is-org-tool.ts",
+    "policy/managed-tools-restored/is-org-tool/is-server-file-unreadable/index.ts",
+    "policy/managed-tools-restored/is-org-tool/org-names/index.ts",
+    "policy/managed-tools-restored/is-org-tool/org-plugin-names/index.ts",
+    "policy/managed-tools-restored/is-org-tool/org-server-names/index.ts",
+    "policy/managed-tools-restored/is-org-tool/spellings-of/index.ts",
+    "policy/managed-tools-restored/is-org-tool/tool-prefix-of/index.ts"
+  ],
+  "policy/managed-tools-restored/is-org-tool/is-org-tool.ts": [
+    "policy/managed-tools-restored/is-org-tool/is-server-file-unreadable/index.ts",
+    "policy/managed-tools-restored/is-org-tool/org-plugin-names/index.ts",
+    "policy/managed-tools-restored/is-org-tool/org-server-names/index.ts",
+    "policy/managed-tools-restored/is-org-tool/spellings-of/index.ts",
+    "policy/managed-tools-restored/is-org-tool/tool-prefix-of/folded-name/index.ts",
+    "policy/managed-tools-restored/is-org-tool/tool-prefix-of/index.ts"
+  ],
+  "policy/managed-tools-restored/is-org-tool/is-server-file-unreadable/index.ts": [
+    "policy/managed-tools-restored/is-org-tool/is-server-file-unreadable/index.ts",
+    "policy/managed-tools-restored/is-org-tool/is-server-file-unreadable/is-server-file-unreadable.ts"
+  ],
+  "policy/managed-tools-restored/is-org-tool/is-server-file-unreadable/is-server-file-unreadable.ts": [],
+  "policy/managed-tools-restored/is-org-tool/org-names/index.ts": [
+    "policy/managed-tools-restored/is-org-tool/org-names/index.ts",
+    "policy/managed-tools-restored/is-org-tool/org-names/org-names.ts"
+  ],
+  "policy/managed-tools-restored/is-org-tool/org-names/org-names.ts": [
+    "policy/managed-tools-restored/is-org-tool/org-plugin-names/index.ts",
+    "policy/managed-tools-restored/is-org-tool/org-server-names/index.ts"
+  ],
+  "policy/managed-tools-restored/is-org-tool/org-plugin-names/folded-id.ts": [],
+  "policy/managed-tools-restored/is-org-tool/org-plugin-names/forms-of.ts": [],
+  "policy/managed-tools-restored/is-org-tool/org-plugin-names/index.ts": [
+    "policy/managed-tools-restored/is-org-tool/org-plugin-names/folded-id.ts",
+    "policy/managed-tools-restored/is-org-tool/org-plugin-names/forms-of.ts",
+    "policy/managed-tools-restored/is-org-tool/org-plugin-names/index.ts",
+    "policy/managed-tools-restored/is-org-tool/org-plugin-names/is-enabled-entry.ts",
+    "policy/managed-tools-restored/is-org-tool/org-plugin-names/name-of-id.ts",
+    "policy/managed-tools-restored/is-org-tool/org-plugin-names/org-plugin-names.ts"
+  ],
+  "policy/managed-tools-restored/is-org-tool/org-plugin-names/is-enabled-entry.ts": [],
+  "policy/managed-tools-restored/is-org-tool/org-plugin-names/name-of-id.ts": [],
+  "policy/managed-tools-restored/is-org-tool/org-plugin-names/org-plugin-names.ts": [
+    "policy/managed-tools-restored/is-org-tool/org-plugin-names/folded-id.ts",
+    "policy/managed-tools-restored/is-org-tool/org-plugin-names/forms-of.ts",
+    "policy/managed-tools-restored/is-org-tool/org-plugin-names/is-enabled-entry.ts",
+    "policy/managed-tools-restored/is-org-tool/org-plugin-names/name-of-id.ts"
+  ],
+  "policy/managed-tools-restored/is-org-tool/org-server-names/index.ts": [
+    "policy/managed-tools-restored/is-org-tool/org-server-names/index.ts",
+    "policy/managed-tools-restored/is-org-tool/org-server-names/org-server-names.ts"
+  ],
+  "policy/managed-tools-restored/is-org-tool/org-server-names/org-server-names.ts": [],
+  "policy/managed-tools-restored/is-org-tool/spellings-of/index.ts": [
+    "policy/managed-tools-restored/is-org-tool/spellings-of/index.ts",
+    "policy/managed-tools-restored/is-org-tool/spellings-of/spellings-of.ts"
+  ],
+  "policy/managed-tools-restored/is-org-tool/spellings-of/spellings-of.ts": [],
+  "policy/managed-tools-restored/is-org-tool/tool-prefix-of/folded-name/folded-name.ts": [],
+  "policy/managed-tools-restored/is-org-tool/tool-prefix-of/folded-name/index.ts": [
+    "policy/managed-tools-restored/is-org-tool/tool-prefix-of/folded-name/folded-name.ts",
+    "policy/managed-tools-restored/is-org-tool/tool-prefix-of/folded-name/index.ts"
+  ],
+  "policy/managed-tools-restored/is-org-tool/tool-prefix-of/index.ts": [
+    "policy/managed-tools-restored/is-org-tool/tool-prefix-of/index.ts",
+    "policy/managed-tools-restored/is-org-tool/tool-prefix-of/tool-prefix-of.ts"
+  ],
+  "policy/managed-tools-restored/is-org-tool/tool-prefix-of/tool-prefix-of.ts": [
+    "policy/managed-tools-restored/is-org-tool/tool-prefix-of/folded-name/index.ts"
+  ],
+  "policy/managed-tools-restored/managed-tools-restored.ts": [
+    "policy/managed-tools-restored/is-org-tool/index.ts"
+  ],
+  "policy/names-org-tool.ts": [
+    "policy/managed-tools-restored/is-org-tool/is-server-file-unreadable/index.ts",
+    "policy/managed-tools-restored/is-org-tool/org-names/index.ts",
+    "policy/managed-tools-restored/is-org-tool/tool-prefix-of/folded-name/index.ts",
+    "policy/managed-tools-restored/is-org-tool/tool-prefix-of/index.ts"
+  ],
+  "policy/own-option/index.ts": [
+    "policy/own-option/index.ts",
+    "policy/own-option/member-of/index.ts",
+    "policy/own-option/own-option.ts",
+    "policy/own-option/own-options-path/index.ts"
+  ],
+  "policy/own-option/member-of/index.ts": [
+    "policy/own-option/member-of/index.ts",
+    "policy/own-option/member-of/member-of.ts"
+  ],
+  "policy/own-option/member-of/member-of.ts": [],
+  "policy/own-option/own-option.ts": [
+    "policy/own-option/member-of/index.ts",
+    "policy/own-option/own-options-path/index.ts"
+  ],
+  "policy/own-option/own-options-path/index.ts": [
+    "policy/own-option/own-options-path/index.ts",
+    "policy/own-option/own-options-path/own-options-path.ts"
+  ],
+  "policy/own-option/own-options-path/own-options-path.ts": [],
+  "policy/pinned-names.ts": [
+    "policy/code-loading-variables.ts",
+    "policy/policy-source-variables.ts",
+    "policy/process-wrapper-variable.ts"
+  ],
+  "policy/policy-memo-ms.ts": [],
+  "policy/policy-source-variables.ts": [],
+  "policy/process-wrapper-variable.ts": [],
+  "policy/source.ts": [],
+  "register.ts": [
+    "admission-failure/index.ts",
+    "held-verdict/index.ts",
+    "managed-mods-only-refusal/index.ts",
+    "past-users/index.ts",
+    "pinned-variable-refusal/index.ts",
+    "policy/index.ts",
+    "skill-row/index.ts",
+    "tool-register-refusal/index.ts"
+  ],
+  "skill-row/index.ts": [
+    "skill-row/index.ts",
+    "skill-row/is-skill-row.ts",
+    "skill-row/skill-tool.ts"
+  ],
+  "skill-row/is-skill-row.ts": [
+    "skill-row/skill-tool.ts"
+  ],
+  "skill-row/skill-tool.ts": [],
+  "tool-register-refusal/index.ts": [
+    "tool-register-refusal/index.ts",
+    "tool-register-refusal/register-refusal-of.ts",
+    "tool-register-refusal/server-name-refusal.ts",
+    "tool-register-refusal/tool-register-refusal.ts"
+  ],
+  "tool-register-refusal/register-refusal-of.ts": [
+    "policy/index.ts",
+    "tool-register-refusal/server-name-refusal.ts",
+    "tool-register-refusal/tool-register-refusal.ts"
+  ],
+  "tool-register-refusal/server-name-refusal.ts": [],
+  "tool-register-refusal/tool-register-refusal.ts": []
+}

@@ -1,0 +1,2463 @@
+{
+  "array-of/array-of.ts": [],
+  "array-of/index.ts": [
+    "array-of/array-of.ts",
+    "array-of/index.ts"
+  ],
+  "ask/armed-ask-of.ts": [
+    "ask/armed-ask/index.ts",
+    "git/index.ts",
+    "limits/index.ts"
+  ],
+  "ask/armed-ask/armed-ask.ts": [],
+  "ask/armed-ask/index.ts": [
+    "ask/armed-ask/armed-ask.ts",
+    "ask/armed-ask/index.ts"
+  ],
+  "ask/ask-cut-note/ask-cut-note.ts": [],
+  "ask/ask-cut-note/index.ts": [
+    "ask/ask-cut-note/ask-cut-note.ts",
+    "ask/ask-cut-note/index.ts"
+  ],
+  "ask/fitted-ask-text-of.ts": [
+    "ask/ask-cut-note/index.ts"
+  ],
+  "ask/index.ts": [
+    "ask/armed-ask-of.ts",
+    "ask/armed-ask/index.ts",
+    "ask/ask-cut-note/index.ts",
+    "ask/fitted-ask-text-of.ts",
+    "ask/index.ts"
+  ],
+  "backend/backend-of.ts": [
+    "backend/types/index.ts",
+    "git/index.ts"
+  ],
+  "backend/index.ts": [
+    "backend/backend-of.ts",
+    "backend/index.ts",
+    "backend/installed-backend-probes.ts",
+    "backend/types/index.ts"
+  ],
+  "backend/installed-backend-probes.ts": [
+    "backend/types/index.ts"
+  ],
+  "backend/types/backend-host/backend-host.ts": [
+    "git/index.ts",
+    "host/index.ts"
+  ],
+  "backend/types/backend-host/index.ts": [
+    "backend/types/backend-host/backend-host.ts",
+    "backend/types/backend-host/index.ts"
+  ],
+  "backend/types/backend-probe/backend-probe.ts": [
+    "backend/types/backend-host/index.ts",
+    "backend/types/backend/index.ts"
+  ],
+  "backend/types/backend-probe/index.ts": [
+    "backend/types/backend-probe/backend-probe.ts",
+    "backend/types/backend-probe/index.ts"
+  ],
+  "backend/types/backend-words/backend-words.ts": [],
+  "backend/types/backend-words/index.ts": [
+    "backend/types/backend-words/backend-words.ts",
+    "backend/types/backend-words/index.ts"
+  ],
+  "backend/types/backend/backend.ts": [
+    "backend/types/backend-words/index.ts",
+    "git/index.ts"
+  ],
+  "backend/types/backend/index.ts": [
+    "backend/types/backend/backend.ts",
+    "backend/types/backend/index.ts"
+  ],
+  "backend/types/index.ts": [
+    "backend/types/backend-host/index.ts",
+    "backend/types/backend-probe/index.ts",
+    "backend/types/backend-words/index.ts",
+    "backend/types/backend/index.ts",
+    "backend/types/index.ts"
+  ],
+  "body-loader/body-loader.ts": [
+    "backend/index.ts",
+    "drawn-files-of/index.ts",
+    "git/index.ts",
+    "pane-state/index.ts"
+  ],
+  "body-loader/index.ts": [
+    "body-loader/body-loader.ts",
+    "body-loader/index.ts"
+  ],
+  "classify/base-name-of/base-name-of.ts": [],
+  "classify/base-name-of/index.ts": [
+    "classify/base-name-of/base-name-of.ts",
+    "classify/base-name-of/index.ts"
+  ],
+  "classify/index.ts": [
+    "classify/base-name-of/index.ts",
+    "classify/index.ts",
+    "classify/is-generated-file/index.ts",
+    "classify/is-noise-file.ts",
+    "classify/is-test-file/index.ts",
+    "classify/rooted-path-of/index.ts"
+  ],
+  "classify/is-generated-file/generated-directories/generated-directories.ts": [],
+  "classify/is-generated-file/generated-directories/index.ts": [
+    "classify/is-generated-file/generated-directories/generated-directories.ts",
+    "classify/is-generated-file/generated-directories/index.ts"
+  ],
+  "classify/is-generated-file/generated-filename-patterns/generated-filename-patterns.ts": [],
+  "classify/is-generated-file/generated-filename-patterns/index.ts": [
+    "classify/is-generated-file/generated-filename-patterns/generated-filename-patterns.ts",
+    "classify/is-generated-file/generated-filename-patterns/index.ts"
+  ],
+  "classify/is-generated-file/generated-filenames/generated-filenames.ts": [],
+  "classify/is-generated-file/generated-filenames/index.ts": [
+    "classify/is-generated-file/generated-filenames/generated-filenames.ts",
+    "classify/is-generated-file/generated-filenames/index.ts"
+  ],
+  "classify/is-generated-file/generated-suffixes/generated-suffixes.ts": [],
+  "classify/is-generated-file/generated-suffixes/index.ts": [
+    "classify/is-generated-file/generated-suffixes/generated-suffixes.ts",
+    "classify/is-generated-file/generated-suffixes/index.ts"
+  ],
+  "classify/is-generated-file/index.ts": [
+    "classify/is-generated-file/generated-directories/index.ts",
+    "classify/is-generated-file/generated-filename-patterns/index.ts",
+    "classify/is-generated-file/generated-filenames/index.ts",
+    "classify/is-generated-file/generated-suffixes/index.ts",
+    "classify/is-generated-file/index.ts",
+    "classify/is-generated-file/is-generated-file.ts"
+  ],
+  "classify/is-generated-file/is-generated-file.ts": [
+    "classify/base-name-of/index.ts",
+    "classify/is-generated-file/generated-directories/index.ts",
+    "classify/is-generated-file/generated-filename-patterns/index.ts",
+    "classify/is-generated-file/generated-filenames/index.ts",
+    "classify/is-generated-file/generated-suffixes/index.ts",
+    "classify/rooted-path-of/index.ts"
+  ],
+  "classify/is-noise-file.ts": [
+    "classify/is-generated-file/index.ts",
+    "classify/is-test-file/index.ts"
+  ],
+  "classify/is-test-file/index.ts": [
+    "classify/is-test-file/index.ts",
+    "classify/is-test-file/is-test-file.ts",
+    "classify/is-test-file/test-directories/index.ts",
+    "classify/is-test-file/test-filename-patterns/index.ts"
+  ],
+  "classify/is-test-file/is-test-file.ts": [
+    "classify/base-name-of/index.ts",
+    "classify/is-test-file/test-directories/index.ts",
+    "classify/is-test-file/test-filename-patterns/index.ts",
+    "classify/rooted-path-of/index.ts"
+  ],
+  "classify/is-test-file/test-directories/index.ts": [
+    "classify/is-test-file/test-directories/index.ts",
+    "classify/is-test-file/test-directories/test-directories.ts"
+  ],
+  "classify/is-test-file/test-directories/test-directories.ts": [],
+  "classify/is-test-file/test-filename-patterns/index.ts": [
+    "classify/is-test-file/test-filename-patterns/index.ts",
+    "classify/is-test-file/test-filename-patterns/test-filename-patterns.ts"
+  ],
+  "classify/is-test-file/test-filename-patterns/test-filename-patterns.ts": [],
+  "classify/rooted-path-of/index.ts": [
+    "classify/rooted-path-of/index.ts",
+    "classify/rooted-path-of/rooted-path-of.ts"
+  ],
+  "classify/rooted-path-of/rooted-path-of.ts": [],
+  "command-spec/command-spec.ts": [
+    "names/index.ts"
+  ],
+  "command-spec/index.ts": [
+    "command-spec/command-spec.ts",
+    "command-spec/index.ts"
+  ],
+  "count-of/count-of.ts": [],
+  "count-of/index.ts": [
+    "count-of/count-of.ts",
+    "count-of/index.ts"
+  ],
+  "drawn-files-of/drawn-files-of.ts": [
+    "git/index.ts",
+    "limits/index.ts",
+    "pane-state/index.ts",
+    "views/index.ts"
+  ],
+  "drawn-files-of/index.ts": [
+    "drawn-files-of/drawn-files-of.ts",
+    "drawn-files-of/index.ts"
+  ],
+  "entry-kinds-of/entry-kinds-of.ts": [
+    "git/index.ts",
+    "host/index.ts"
+  ],
+  "entry-kinds-of/index.ts": [
+    "entry-kinds-of/entry-kinds-of.ts",
+    "entry-kinds-of/index.ts"
+  ],
+  "git/argv/diff-leading-args.ts": [],
+  "git/argv/git-child-env/git-child-env.ts": [],
+  "git/argv/git-child-env/index.ts": [
+    "git/argv/git-child-env/git-child-env.ts",
+    "git/argv/git-child-env/index.ts"
+  ],
+  "git/argv/hunks-args/hunks-args.ts": [],
+  "git/argv/hunks-args/index.ts": [
+    "git/argv/hunks-args/hunks-args.ts",
+    "git/argv/hunks-args/index.ts"
+  ],
+  "git/argv/index.ts": [
+    "git/argv/diff-leading-args.ts",
+    "git/argv/git-child-env/index.ts",
+    "git/argv/hunks-args/index.ts",
+    "git/argv/index.ts",
+    "git/argv/no-optional-locks.ts",
+    "git/argv/pinned-lead-of/index.ts"
+  ],
+  "git/argv/no-optional-locks.ts": [],
+  "git/argv/pinned-lead-of/index.ts": [
+    "git/argv/pinned-lead-of/index.ts",
+    "git/argv/pinned-lead-of/pinned-lead-of.ts"
+  ],
+  "git/argv/pinned-lead-of/pinned-lead-of.ts": [
+    "git/types/index.ts"
+  ],
+  "git/cut-hunks/cut-hunks.ts": [
+    "git/types/index.ts",
+    "limits/index.ts"
+  ],
+  "git/cut-hunks/index.ts": [
+    "git/cut-hunks/cut-hunks.ts",
+    "git/cut-hunks/index.ts"
+  ],
+  "git/display-path-of/display-path-of.ts": [
+    "git/rename-display-of/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/display-path-of/index.ts": [
+    "git/display-path-of/display-path-of.ts",
+    "git/display-path-of/index.ts"
+  ],
+  "git/empty-file-hunks/empty-file-hunks.ts": [
+    "git/types/index.ts"
+  ],
+  "git/empty-file-hunks/index.ts": [
+    "git/empty-file-hunks/empty-file-hunks.ts",
+    "git/empty-file-hunks/index.ts"
+  ],
+  "git/failed-run/failed-run.ts": [
+    "git/types/index.ts"
+  ],
+  "git/failed-run/index.ts": [
+    "git/failed-run/failed-run.ts",
+    "git/failed-run/index.ts"
+  ],
+  "git/fetch-diff/fetch-diff.ts": [
+    "git/probes/index.ts",
+    "git/tiers/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/fetch-diff/index.ts": [
+    "git/fetch-diff/fetch-diff.ts",
+    "git/fetch-diff/index.ts"
+  ],
+  "git/fetch-hunks/fetch-hunks.ts": [
+    "git/argv/index.ts",
+    "git/empty-file-hunks/index.ts",
+    "git/fetch-hunks/is-last-of-diff/index.ts",
+    "git/fetch-hunks/with-closing-line/index.ts",
+    "git/parse/index.ts",
+    "git/types/index.ts",
+    "limits/index.ts"
+  ],
+  "git/fetch-hunks/index.ts": [
+    "git/fetch-hunks/fetch-hunks.ts",
+    "git/fetch-hunks/index.ts",
+    "git/fetch-hunks/is-last-of-diff/index.ts",
+    "git/fetch-hunks/with-closing-line/index.ts"
+  ],
+  "git/fetch-hunks/is-last-of-diff/index.ts": [
+    "git/fetch-hunks/is-last-of-diff/index.ts",
+    "git/fetch-hunks/is-last-of-diff/is-last-of-diff.ts"
+  ],
+  "git/fetch-hunks/is-last-of-diff/is-last-of-diff.ts": [
+    "git/types/index.ts"
+  ],
+  "git/fetch-hunks/with-closing-line/index.ts": [
+    "git/fetch-hunks/with-closing-line/index.ts",
+    "git/fetch-hunks/with-closing-line/with-closing-line.ts"
+  ],
+  "git/fetch-hunks/with-closing-line/with-closing-line.ts": [
+    "git/types/index.ts"
+  ],
+  "git/git-backend-of.ts": [
+    "backend/index.ts",
+    "git/argv/index.ts",
+    "git/failed-run/index.ts",
+    "git/fetch-diff/index.ts",
+    "git/fetch-hunks/index.ts",
+    "git/git-base-modes/index.ts",
+    "git/git-words/index.ts",
+    "git/probes/index.ts",
+    "git/types/index.ts",
+    "limits/index.ts"
+  ],
+  "git/git-base-modes/git-base-modes.ts": [
+    "git/types/index.ts"
+  ],
+  "git/git-base-modes/index.ts": [
+    "git/git-base-modes/git-base-modes.ts",
+    "git/git-base-modes/index.ts"
+  ],
+  "git/git-words/git-words.ts": [
+    "backend/index.ts"
+  ],
+  "git/git-words/index.ts": [
+    "git/git-words/git-words.ts",
+    "git/git-words/index.ts"
+  ],
+  "git/hunk-after.ts": [
+    "count-of/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/hunk-of/hunk-of.ts": [
+    "git/types/index.ts"
+  ],
+  "git/hunk-of/index.ts": [
+    "git/hunk-of/hunk-of.ts",
+    "git/hunk-of/index.ts"
+  ],
+  "git/index.ts": [
+    "git/argv/index.ts",
+    "git/cut-hunks/index.ts",
+    "git/display-path-of/index.ts",
+    "git/empty-file-hunks/index.ts",
+    "git/failed-run/index.ts",
+    "git/fetch-diff/index.ts",
+    "git/fetch-hunks/index.ts",
+    "git/git-backend-of.ts",
+    "git/git-base-modes/index.ts",
+    "git/git-words/index.ts",
+    "git/hunk-after.ts",
+    "git/hunk-of/index.ts",
+    "git/index.ts",
+    "git/large-file-hunks/index.ts",
+    "git/parse/index.ts",
+    "git/probes/index.ts",
+    "git/rename-display-of/index.ts",
+    "git/tiers/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/large-file-hunks/index.ts": [
+    "git/large-file-hunks/index.ts",
+    "git/large-file-hunks/large-file-hunks.ts"
+  ],
+  "git/large-file-hunks/large-file-hunks.ts": [
+    "git/types/index.ts"
+  ],
+  "git/parse/file-header-start/file-header-start.ts": [],
+  "git/parse/file-header-start/index.ts": [
+    "git/parse/file-header-start/file-header-start.ts",
+    "git/parse/file-header-start/index.ts"
+  ],
+  "git/parse/hunk-header/hunk-header.ts": [],
+  "git/parse/hunk-header/index.ts": [
+    "git/parse/hunk-header/hunk-header.ts",
+    "git/parse/hunk-header/index.ts"
+  ],
+  "git/parse/index.ts": [
+    "git/parse/file-header-start/index.ts",
+    "git/parse/hunk-header/index.ts",
+    "git/parse/index.ts",
+    "git/parse/is-body-line/index.ts",
+    "git/parse/is-whole-answer/index.ts",
+    "git/parse/is-whole-listing/index.ts",
+    "git/parse/parse-file-diff.ts",
+    "git/parse/parse-file-diffs/index.ts",
+    "git/parse/parse-numstat.ts",
+    "git/parse/parse-shortstat.ts",
+    "git/parse/quoted-header-start/index.ts",
+    "git/parse/rename-records/index.ts",
+    "git/parse/shortstat-pattern/index.ts",
+    "git/parse/unmerged-status/index.ts"
+  ],
+  "git/parse/is-body-line/index.ts": [
+    "git/parse/is-body-line/index.ts",
+    "git/parse/is-body-line/is-body-line.ts"
+  ],
+  "git/parse/is-body-line/is-body-line.ts": [],
+  "git/parse/is-whole-answer/index.ts": [
+    "git/parse/is-whole-answer/index.ts",
+    "git/parse/is-whole-answer/is-whole-answer.ts"
+  ],
+  "git/parse/is-whole-answer/is-whole-answer.ts": [
+    "git/parse/is-whole-listing/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/parse/is-whole-listing/index.ts": [
+    "git/parse/is-whole-listing/index.ts",
+    "git/parse/is-whole-listing/is-under-utf8-ceiling/index.ts",
+    "git/parse/is-whole-listing/is-whole-listing.ts",
+    "git/parse/is-whole-listing/most-utf8-bytes/index.ts"
+  ],
+  "git/parse/is-whole-listing/is-under-utf8-ceiling/index.ts": [
+    "git/parse/is-whole-listing/is-under-utf8-ceiling/index.ts",
+    "git/parse/is-whole-listing/is-under-utf8-ceiling/is-under-utf8-ceiling.ts"
+  ],
+  "git/parse/is-whole-listing/is-under-utf8-ceiling/is-under-utf8-ceiling.ts": [
+    "git/parse/is-whole-listing/most-utf8-bytes/index.ts"
+  ],
+  "git/parse/is-whole-listing/is-whole-listing.ts": [
+    "git/parse/is-whole-listing/is-under-utf8-ceiling/index.ts",
+    "git/parse/is-whole-listing/most-utf8-bytes/index.ts",
+    "limits/index.ts"
+  ],
+  "git/parse/is-whole-listing/most-utf8-bytes/index.ts": [
+    "git/parse/is-whole-listing/most-utf8-bytes/index.ts",
+    "git/parse/is-whole-listing/most-utf8-bytes/most-utf8-bytes.ts"
+  ],
+  "git/parse/is-whole-listing/most-utf8-bytes/most-utf8-bytes.ts": [],
+  "git/parse/parse-file-diff.ts": [
+    "git/cut-hunks/index.ts",
+    "git/hunk-of/index.ts",
+    "git/large-file-hunks/index.ts",
+    "git/parse/hunk-header/index.ts",
+    "git/parse/is-body-line/index.ts",
+    "git/types/index.ts",
+    "limits/index.ts"
+  ],
+  "git/parse/parse-file-diffs/index.ts": [
+    "git/parse/parse-file-diffs/index.ts",
+    "git/parse/parse-file-diffs/parse-file-diffs.ts"
+  ],
+  "git/parse/parse-file-diffs/parse-file-diffs.ts": [
+    "git/empty-file-hunks/index.ts",
+    "git/parse/file-header-start/index.ts",
+    "git/parse/is-whole-listing/index.ts",
+    "git/parse/parse-file-diff.ts",
+    "git/parse/quoted-header-start/index.ts",
+    "git/parse/unmerged-status/index.ts",
+    "git/types/index.ts",
+    "limits/index.ts"
+  ],
+  "git/parse/parse-numstat.ts": [
+    "git/parse/rename-records/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/parse/parse-shortstat.ts": [
+    "git/parse/shortstat-pattern/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/parse/quoted-header-start/index.ts": [
+    "git/parse/quoted-header-start/index.ts",
+    "git/parse/quoted-header-start/quoted-header-start.ts"
+  ],
+  "git/parse/quoted-header-start/quoted-header-start.ts": [
+    "git/parse/file-header-start/index.ts"
+  ],
+  "git/parse/rename-records/index.ts": [
+    "git/parse/rename-records/index.ts",
+    "git/parse/rename-records/rename-records.ts"
+  ],
+  "git/parse/rename-records/rename-records.ts": [],
+  "git/parse/shortstat-pattern/index.ts": [
+    "git/parse/shortstat-pattern/index.ts",
+    "git/parse/shortstat-pattern/shortstat-pattern.ts"
+  ],
+  "git/parse/shortstat-pattern/shortstat-pattern.ts": [],
+  "git/parse/unmerged-status/index.ts": [
+    "git/parse/unmerged-status/index.ts",
+    "git/parse/unmerged-status/unmerged-status.ts"
+  ],
+  "git/parse/unmerged-status/unmerged-status.ts": [],
+  "git/probes/branch-base-of/branch-base-of.ts": [
+    "git/argv/index.ts",
+    "git/probes/current-branch-of/index.ts",
+    "git/probes/default-branch-of/index.ts",
+    "git/probes/merge-base-candidates-of/index.ts",
+    "git/probes/missing-base-of/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/probes/branch-base-of/index.ts": [
+    "git/probes/branch-base-of/branch-base-of.ts",
+    "git/probes/branch-base-of/index.ts"
+  ],
+  "git/probes/conventional-default-branches/conventional-default-branches.ts": [],
+  "git/probes/conventional-default-branches/index.ts": [
+    "git/probes/conventional-default-branches/conventional-default-branches.ts",
+    "git/probes/conventional-default-branches/index.ts"
+  ],
+  "git/probes/current-branch-of/current-branch-of.ts": [
+    "git/argv/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/probes/current-branch-of/index.ts": [
+    "git/probes/current-branch-of/current-branch-of.ts",
+    "git/probes/current-branch-of/index.ts"
+  ],
+  "git/probes/datings-of/datings-of.ts": [
+    "git/probes/stamp-if-file/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/probes/datings-of/index.ts": [
+    "git/probes/datings-of/datings-of.ts",
+    "git/probes/datings-of/index.ts"
+  ],
+  "git/probes/default-branch-of/default-branch-of.ts": [
+    "git/argv/index.ts",
+    "git/probes/conventional-default-branches/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/probes/default-branch-of/index.ts": [
+    "git/probes/default-branch-of/default-branch-of.ts",
+    "git/probes/default-branch-of/index.ts"
+  ],
+  "git/probes/dirty-paths-of/dirty-paths-of.ts": [
+    "git/argv/index.ts",
+    "git/parse/index.ts",
+    "git/probes/dirty-paths-of/status-path-offset/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/probes/dirty-paths-of/index.ts": [
+    "git/probes/dirty-paths-of/dirty-paths-of.ts",
+    "git/probes/dirty-paths-of/index.ts",
+    "git/probes/dirty-paths-of/status-path-offset/index.ts"
+  ],
+  "git/probes/dirty-paths-of/status-path-offset/index.ts": [
+    "git/probes/dirty-paths-of/status-path-offset/index.ts",
+    "git/probes/dirty-paths-of/status-path-offset/status-path-offset.ts"
+  ],
+  "git/probes/dirty-paths-of/status-path-offset/status-path-offset.ts": [],
+  "git/probes/head-key-of/head-key-of.ts": [
+    "git/argv/index.ts",
+    "git/probes/is-safe-ref-name/index.ts",
+    "git/probes/stamp-if-file/index.ts",
+    "git/probes/stamp-probe-of/index.ts",
+    "git/types/index.ts",
+    "limits/index.ts"
+  ],
+  "git/probes/head-key-of/index.ts": [
+    "git/probes/head-key-of/head-key-of.ts",
+    "git/probes/head-key-of/index.ts"
+  ],
+  "git/probes/index.ts": [
+    "git/probes/branch-base-of/index.ts",
+    "git/probes/conventional-default-branches/index.ts",
+    "git/probes/current-branch-of/index.ts",
+    "git/probes/datings-of/index.ts",
+    "git/probes/default-branch-of/index.ts",
+    "git/probes/dirty-paths-of/index.ts",
+    "git/probes/head-key-of/index.ts",
+    "git/probes/index.ts",
+    "git/probes/is-absolute-path/index.ts",
+    "git/probes/is-safe-ref-name/index.ts",
+    "git/probes/is-sha/index.ts",
+    "git/probes/is-transient.ts",
+    "git/probes/is-unborn-head.ts",
+    "git/probes/kind-walk-of/index.ts",
+    "git/probes/merge-base-candidates-of/index.ts",
+    "git/probes/missing-base-of/index.ts",
+    "git/probes/overlay-unstaged.ts",
+    "git/probes/rebase-marks/index.ts",
+    "git/probes/repository-lines/index.ts",
+    "git/probes/repository-of/index.ts",
+    "git/probes/stamp-if-file/index.ts",
+    "git/probes/stamp-probe-of/index.ts",
+    "git/probes/stats-of.ts",
+    "git/probes/tag-pre-session.ts",
+    "git/probes/transient-state-files/index.ts",
+    "git/probes/unstaged-numstat.ts",
+    "git/probes/untracked-files/index.ts",
+    "git/probes/untracked-place/index.ts",
+    "git/probes/untracked-rows-of/index.ts",
+    "git/probes/was-dirty-at-start/index.ts"
+  ],
+  "git/probes/is-absolute-path/index.ts": [
+    "git/probes/is-absolute-path/index.ts",
+    "git/probes/is-absolute-path/is-absolute-path.ts"
+  ],
+  "git/probes/is-absolute-path/is-absolute-path.ts": [],
+  "git/probes/is-safe-ref-name/index.ts": [
+    "git/probes/is-safe-ref-name/index.ts",
+    "git/probes/is-safe-ref-name/is-safe-ref-name.ts",
+    "git/probes/is-safe-ref-name/safe-ref-pattern/index.ts"
+  ],
+  "git/probes/is-safe-ref-name/is-safe-ref-name.ts": [
+    "git/probes/is-safe-ref-name/safe-ref-pattern/index.ts"
+  ],
+  "git/probes/is-safe-ref-name/safe-ref-pattern/index.ts": [
+    "git/probes/is-safe-ref-name/safe-ref-pattern/index.ts",
+    "git/probes/is-safe-ref-name/safe-ref-pattern/safe-ref-pattern.ts"
+  ],
+  "git/probes/is-safe-ref-name/safe-ref-pattern/safe-ref-pattern.ts": [],
+  "git/probes/is-sha/index.ts": [
+    "git/probes/is-sha/index.ts",
+    "git/probes/is-sha/is-sha.ts"
+  ],
+  "git/probes/is-sha/is-sha.ts": [],
+  "git/probes/is-transient.ts": [
+    "git/probes/rebase-marks/index.ts",
+    "git/probes/transient-state-files/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/probes/is-unborn-head.ts": [
+    "git/argv/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/probes/kind-walk-of/index.ts": [
+    "git/probes/kind-walk-of/index.ts",
+    "git/probes/kind-walk-of/kind-walk-of.ts"
+  ],
+  "git/probes/kind-walk-of/kind-walk-of.ts": [
+    "git/types/index.ts"
+  ],
+  "git/probes/merge-base-candidates-of/index.ts": [
+    "git/probes/merge-base-candidates-of/index.ts",
+    "git/probes/merge-base-candidates-of/merge-base-candidates-of.ts",
+    "git/probes/merge-base-candidates-of/merge-base-candidates/index.ts"
+  ],
+  "git/probes/merge-base-candidates-of/merge-base-candidates-of.ts": [
+    "git/argv/index.ts",
+    "git/probes/is-sha/index.ts",
+    "git/probes/merge-base-candidates-of/merge-base-candidates/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/probes/merge-base-candidates-of/merge-base-candidates/index.ts": [
+    "git/probes/merge-base-candidates-of/merge-base-candidates/index.ts",
+    "git/probes/merge-base-candidates-of/merge-base-candidates/merge-base-candidates.ts"
+  ],
+  "git/probes/merge-base-candidates-of/merge-base-candidates/merge-base-candidates.ts": [],
+  "git/probes/missing-base-of/index.ts": [
+    "git/probes/missing-base-of/index.ts",
+    "git/probes/missing-base-of/missing-base-of.ts"
+  ],
+  "git/probes/missing-base-of/missing-base-of.ts": [
+    "git/argv/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/probes/overlay-unstaged.ts": [
+    "git/types/index.ts"
+  ],
+  "git/probes/rebase-marks/index.ts": [
+    "git/probes/rebase-marks/index.ts",
+    "git/probes/rebase-marks/rebase-marks.ts"
+  ],
+  "git/probes/rebase-marks/rebase-marks.ts": [],
+  "git/probes/repository-lines/index.ts": [
+    "git/probes/repository-lines/index.ts",
+    "git/probes/repository-lines/repository-lines.ts"
+  ],
+  "git/probes/repository-lines/repository-lines.ts": [],
+  "git/probes/repository-of/index.ts": [
+    "git/probes/repository-of/index.ts",
+    "git/probes/repository-of/repository-of.ts"
+  ],
+  "git/probes/repository-of/repository-of.ts": [
+    "git/argv/index.ts",
+    "git/probes/is-absolute-path/index.ts",
+    "git/probes/repository-lines/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/probes/stamp-if-file/index.ts": [
+    "git/probes/stamp-if-file/index.ts",
+    "git/probes/stamp-if-file/stamp-if-file.ts"
+  ],
+  "git/probes/stamp-if-file/stamp-if-file.ts": [
+    "git/types/index.ts"
+  ],
+  "git/probes/stamp-probe-of/index.ts": [
+    "git/probes/stamp-probe-of/index.ts",
+    "git/probes/stamp-probe-of/stamp-probe-of.ts"
+  ],
+  "git/probes/stamp-probe-of/stamp-probe-of.ts": [
+    "git/probes/kind-walk-of/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/probes/stats-of.ts": [
+    "git/argv/index.ts",
+    "git/parse/index.ts",
+    "git/types/index.ts",
+    "limits/index.ts"
+  ],
+  "git/probes/tag-pre-session.ts": [
+    "git/probes/datings-of/index.ts",
+    "git/probes/was-dirty-at-start/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/probes/transient-state-files/index.ts": [
+    "git/probes/transient-state-files/index.ts",
+    "git/probes/transient-state-files/transient-state-files.ts"
+  ],
+  "git/probes/transient-state-files/transient-state-files.ts": [],
+  "git/probes/unstaged-numstat.ts": [
+    "git/argv/index.ts",
+    "git/parse/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/probes/untracked-files/index.ts": [
+    "git/probes/untracked-files/index.ts",
+    "git/probes/untracked-files/untracked-files.ts"
+  ],
+  "git/probes/untracked-files/untracked-files.ts": [
+    "git/argv/index.ts",
+    "git/parse/index.ts",
+    "git/probes/untracked-place/index.ts",
+    "git/probes/untracked-rows-of/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/probes/untracked-place/index.ts": [
+    "git/probes/untracked-place/index.ts",
+    "git/probes/untracked-place/untracked-place.ts"
+  ],
+  "git/probes/untracked-place/untracked-place.ts": [
+    "git/types/index.ts"
+  ],
+  "git/probes/untracked-rows-of/index.ts": [
+    "git/probes/untracked-rows-of/index.ts",
+    "git/probes/untracked-rows-of/untracked-rows-of.ts"
+  ],
+  "git/probes/untracked-rows-of/untracked-rows-of.ts": [
+    "git/probes/datings-of/index.ts",
+    "git/probes/untracked-place/index.ts",
+    "git/probes/was-dirty-at-start/index.ts",
+    "git/types/index.ts",
+    "limits/index.ts"
+  ],
+  "git/probes/was-dirty-at-start/index.ts": [
+    "git/probes/was-dirty-at-start/index.ts",
+    "git/probes/was-dirty-at-start/was-dirty-at-start.ts"
+  ],
+  "git/probes/was-dirty-at-start/was-dirty-at-start.ts": [
+    "git/types/index.ts"
+  ],
+  "git/rename-display-of/index.ts": [
+    "git/rename-display-of/index.ts",
+    "git/rename-display-of/rename-display-of.ts"
+  ],
+  "git/rename-display-of/rename-display-of.ts": [],
+  "git/tiers/branch-source-of/branch-source-of.ts": [
+    "git/types/index.ts"
+  ],
+  "git/tiers/branch-source-of/index.ts": [
+    "git/tiers/branch-source-of/branch-source-of.ts",
+    "git/tiers/branch-source-of/index.ts"
+  ],
+  "git/tiers/branch-tier.ts": [
+    "git/probes/index.ts",
+    "git/tiers/branch-source-of/index.ts",
+    "git/tiers/diff-data-of/index.ts",
+    "git/tiers/unborn-tier/index.ts",
+    "git/tiers/with-untracked/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/tiers/diff-data-of/diff-basis/diff-basis.ts": [
+    "git/types/index.ts"
+  ],
+  "git/tiers/diff-data-of/diff-basis/index.ts": [
+    "git/tiers/diff-data-of/diff-basis/diff-basis.ts",
+    "git/tiers/diff-data-of/diff-basis/index.ts"
+  ],
+  "git/tiers/diff-data-of/diff-data-of.ts": [
+    "git/tiers/diff-data-of/diff-basis/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/tiers/diff-data-of/index.ts": [
+    "git/tiers/diff-data-of/diff-basis/index.ts",
+    "git/tiers/diff-data-of/diff-data-of.ts",
+    "git/tiers/diff-data-of/index.ts"
+  ],
+  "git/tiers/fetch-context-of/fetch-context-of.ts": [
+    "git/probes/index.ts",
+    "git/types/index.ts",
+    "limits/index.ts"
+  ],
+  "git/tiers/fetch-context-of/index.ts": [
+    "git/tiers/fetch-context-of/fetch-context-of.ts",
+    "git/tiers/fetch-context-of/index.ts"
+  ],
+  "git/tiers/index.ts": [
+    "git/tiers/branch-source-of/index.ts",
+    "git/tiers/branch-tier.ts",
+    "git/tiers/diff-data-of/index.ts",
+    "git/tiers/fetch-context-of/index.ts",
+    "git/tiers/index.ts",
+    "git/tiers/is-past-details/index.ts",
+    "git/tiers/unborn-tier/index.ts",
+    "git/tiers/with-untracked/index.ts",
+    "git/tiers/working-tree-basis/index.ts",
+    "git/tiers/working-tree-tier.ts"
+  ],
+  "git/tiers/is-past-details/index.ts": [
+    "git/tiers/is-past-details/index.ts",
+    "git/tiers/is-past-details/is-past-details.ts"
+  ],
+  "git/tiers/is-past-details/is-past-details.ts": [
+    "git/types/index.ts",
+    "limits/index.ts"
+  ],
+  "git/tiers/unborn-tier/empty-numstat/empty-numstat.ts": [
+    "git/types/index.ts"
+  ],
+  "git/tiers/unborn-tier/empty-numstat/index.ts": [
+    "git/tiers/unborn-tier/empty-numstat/empty-numstat.ts",
+    "git/tiers/unborn-tier/empty-numstat/index.ts"
+  ],
+  "git/tiers/unborn-tier/index.ts": [
+    "git/tiers/unborn-tier/empty-numstat/index.ts",
+    "git/tiers/unborn-tier/index.ts",
+    "git/tiers/unborn-tier/unborn-tier.ts"
+  ],
+  "git/tiers/unborn-tier/unborn-tier.ts": [
+    "git/probes/index.ts",
+    "git/tiers/diff-data-of/index.ts",
+    "git/tiers/unborn-tier/empty-numstat/index.ts",
+    "git/tiers/with-untracked/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/tiers/with-untracked/index.ts": [
+    "git/tiers/with-untracked/index.ts",
+    "git/tiers/with-untracked/merged-result-of/index.ts",
+    "git/tiers/with-untracked/merged-with-untracked/index.ts",
+    "git/tiers/with-untracked/with-untracked.ts"
+  ],
+  "git/tiers/with-untracked/merged-result-of/index.ts": [
+    "git/tiers/with-untracked/merged-result-of/index.ts",
+    "git/tiers/with-untracked/merged-result-of/merged-result-of.ts"
+  ],
+  "git/tiers/with-untracked/merged-result-of/merged-result-of.ts": [
+    "git/types/index.ts"
+  ],
+  "git/tiers/with-untracked/merged-with-untracked/index.ts": [
+    "git/tiers/with-untracked/merged-with-untracked/index.ts",
+    "git/tiers/with-untracked/merged-with-untracked/merged-with-untracked.ts"
+  ],
+  "git/tiers/with-untracked/merged-with-untracked/merged-with-untracked.ts": [
+    "git/tiers/with-untracked/merged-result-of/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/tiers/with-untracked/with-untracked.ts": [
+    "git/probes/index.ts",
+    "git/tiers/is-past-details/index.ts",
+    "git/tiers/with-untracked/merged-result-of/index.ts",
+    "git/tiers/with-untracked/merged-with-untracked/index.ts",
+    "git/types/index.ts",
+    "limits/index.ts"
+  ],
+  "git/tiers/working-tree-basis/index.ts": [
+    "git/tiers/working-tree-basis/index.ts",
+    "git/tiers/working-tree-basis/working-tree-basis.ts"
+  ],
+  "git/tiers/working-tree-basis/working-tree-basis.ts": [
+    "git/tiers/diff-data-of/index.ts"
+  ],
+  "git/tiers/working-tree-tier.ts": [
+    "git/probes/index.ts",
+    "git/tiers/diff-data-of/index.ts",
+    "git/tiers/unborn-tier/index.ts",
+    "git/tiers/with-untracked/index.ts",
+    "git/tiers/working-tree-basis/index.ts",
+    "git/types/index.ts"
+  ],
+  "git/types/base-mode/base-mode.ts": [],
+  "git/types/base-mode/index.ts": [
+    "git/types/base-mode/base-mode.ts",
+    "git/types/base-mode/index.ts"
+  ],
+  "git/types/branch-base/branch-base.ts": [
+    "git/types/resolved-branch-base/index.ts"
+  ],
+  "git/types/branch-base/index.ts": [
+    "git/types/branch-base/branch-base.ts",
+    "git/types/branch-base/index.ts"
+  ],
+  "git/types/dating-context/dating-context.ts": [
+    "git/types/git-deps/index.ts",
+    "git/types/stamp-probe/index.ts"
+  ],
+  "git/types/dating-context/index.ts": [
+    "git/types/dating-context/dating-context.ts",
+    "git/types/dating-context/index.ts"
+  ],
+  "git/types/dating/dating.ts": [],
+  "git/types/dating/index.ts": [
+    "git/types/dating/dating.ts",
+    "git/types/dating/index.ts"
+  ],
+  "git/types/diff-data/diff-data.ts": [
+    "git/types/base-mode/index.ts",
+    "git/types/diff-source/index.ts",
+    "git/types/diff-stats/index.ts",
+    "git/types/file-stat/index.ts",
+    "git/types/repository/index.ts"
+  ],
+  "git/types/diff-data/index.ts": [
+    "git/types/diff-data/diff-data.ts",
+    "git/types/diff-data/index.ts"
+  ],
+  "git/types/diff-source/diff-source.ts": [],
+  "git/types/diff-source/index.ts": [
+    "git/types/diff-source/diff-source.ts",
+    "git/types/diff-source/index.ts"
+  ],
+  "git/types/diff-stats/diff-stats.ts": [],
+  "git/types/diff-stats/index.ts": [
+    "git/types/diff-stats/diff-stats.ts",
+    "git/types/diff-stats/index.ts"
+  ],
+  "git/types/entry-kind/entry-kind.ts": [],
+  "git/types/entry-kind/index.ts": [
+    "git/types/entry-kind/entry-kind.ts",
+    "git/types/entry-kind/index.ts"
+  ],
+  "git/types/fetch-context.ts": [
+    "git/types/base-mode/index.ts",
+    "git/types/git-deps/index.ts",
+    "git/types/git-run/index.ts",
+    "git/types/repository/index.ts",
+    "git/types/stamp-probe/index.ts"
+  ],
+  "git/types/fetch-outcome.ts": [
+    "git/types/diff-data/index.ts"
+  ],
+  "git/types/file-hunks.ts": [
+    "git/types/hunk/index.ts"
+  ],
+  "git/types/file-stat/file-stat.ts": [],
+  "git/types/file-stat/index.ts": [
+    "git/types/file-stat/file-stat.ts",
+    "git/types/file-stat/index.ts"
+  ],
+  "git/types/git-deps/git-deps.ts": [
+    "git/types/branch-base/index.ts",
+    "git/types/entry-kind/index.ts",
+    "git/types/git-run/index.ts",
+    "git/types/repository/index.ts"
+  ],
+  "git/types/git-deps/index.ts": [
+    "git/types/git-deps/git-deps.ts",
+    "git/types/git-deps/index.ts"
+  ],
+  "git/types/git-run/git-run.ts": [
+    "git/types/run-result/index.ts"
+  ],
+  "git/types/git-run/index.ts": [
+    "git/types/git-run/git-run.ts",
+    "git/types/git-run/index.ts"
+  ],
+  "git/types/head-key-deps/head-key-deps.ts": [
+    "git/types/git-deps/index.ts"
+  ],
+  "git/types/head-key-deps/index.ts": [
+    "git/types/head-key-deps/head-key-deps.ts",
+    "git/types/head-key-deps/index.ts"
+  ],
+  "git/types/hunk/hunk.ts": [],
+  "git/types/hunk/index.ts": [
+    "git/types/hunk/hunk.ts",
+    "git/types/hunk/index.ts"
+  ],
+  "git/types/index.ts": [
+    "git/types/base-mode/index.ts",
+    "git/types/branch-base/index.ts",
+    "git/types/dating-context/index.ts",
+    "git/types/dating/index.ts",
+    "git/types/diff-data/index.ts",
+    "git/types/diff-source/index.ts",
+    "git/types/diff-stats/index.ts",
+    "git/types/entry-kind/index.ts",
+    "git/types/fetch-context.ts",
+    "git/types/fetch-outcome.ts",
+    "git/types/file-hunks.ts",
+    "git/types/file-stat/index.ts",
+    "git/types/git-deps/index.ts",
+    "git/types/git-run/index.ts",
+    "git/types/head-key-deps/index.ts",
+    "git/types/hunk/index.ts",
+    "git/types/index.ts",
+    "git/types/kind-walk/index.ts",
+    "git/types/merged-result/index.ts",
+    "git/types/repository/index.ts",
+    "git/types/resolved-branch-base/index.ts",
+    "git/types/run-result/index.ts",
+    "git/types/stamp-probe/index.ts",
+    "git/types/stamp/index.ts",
+    "git/types/untracked-scope.ts",
+    "git/types/walk-kind/index.ts"
+  ],
+  "git/types/kind-walk/index.ts": [
+    "git/types/kind-walk/index.ts",
+    "git/types/kind-walk/kind-walk.ts"
+  ],
+  "git/types/kind-walk/kind-walk.ts": [
+    "git/types/walk-kind/index.ts"
+  ],
+  "git/types/merged-result/index.ts": [
+    "git/types/merged-result/index.ts",
+    "git/types/merged-result/merged-result.ts",
+    "git/types/merged-result/numstat-result/index.ts"
+  ],
+  "git/types/merged-result/merged-result.ts": [
+    "git/types/merged-result/numstat-result/index.ts"
+  ],
+  "git/types/merged-result/numstat-result/index.ts": [
+    "git/types/merged-result/numstat-result/index.ts",
+    "git/types/merged-result/numstat-result/numstat-result.ts"
+  ],
+  "git/types/merged-result/numstat-result/numstat-result.ts": [
+    "git/types/diff-stats/index.ts",
+    "git/types/file-stat/index.ts"
+  ],
+  "git/types/repository/index.ts": [
+    "git/types/repository/index.ts",
+    "git/types/repository/repository.ts"
+  ],
+  "git/types/repository/repository.ts": [],
+  "git/types/resolved-branch-base/index.ts": [
+    "git/types/resolved-branch-base/index.ts",
+    "git/types/resolved-branch-base/resolved-branch-base.ts"
+  ],
+  "git/types/resolved-branch-base/resolved-branch-base.ts": [],
+  "git/types/run-result/index.ts": [
+    "git/types/run-result/index.ts",
+    "git/types/run-result/run-result.ts"
+  ],
+  "git/types/run-result/run-result.ts": [],
+  "git/types/stamp-probe/index.ts": [
+    "git/types/stamp-probe/index.ts",
+    "git/types/stamp-probe/stamp-probe.ts"
+  ],
+  "git/types/stamp-probe/stamp-probe.ts": [
+    "git/types/git-deps/index.ts",
+    "git/types/kind-walk/index.ts"
+  ],
+  "git/types/stamp/index.ts": [
+    "git/types/stamp/index.ts",
+    "git/types/stamp/stamp.ts"
+  ],
+  "git/types/stamp/stamp.ts": [],
+  "git/types/untracked-scope.ts": [],
+  "git/types/walk-kind/index.ts": [
+    "git/types/walk-kind/index.ts",
+    "git/types/walk-kind/walk-kind.ts"
+  ],
+  "git/types/walk-kind/walk-kind.ts": [
+    "git/types/entry-kind/index.ts"
+  ],
+  "host/host.ts": [],
+  "host/index.ts": [
+    "host/host.ts",
+    "host/index.ts"
+  ],
+  "index.ts": [
+    "array-of/index.ts",
+    "ask/index.ts",
+    "backend/index.ts",
+    "classify/index.ts",
+    "command-spec/index.ts",
+    "count-of/index.ts",
+    "drawn-files-of/index.ts",
+    "entry-kinds-of/index.ts",
+    "git/index.ts",
+    "host/index.ts",
+    "index.ts",
+    "is-checkpointing/index.ts",
+    "is-on-pane-surface/index.ts",
+    "is-record/index.ts",
+    "kept-of/index.ts",
+    "limits/index.ts",
+    "message-of/index.ts",
+    "mtime-of/index.ts",
+    "names/index.ts",
+    "pane-state/index.ts",
+    "pane-toggle/index.ts",
+    "record/index.ts",
+    "register.ts",
+    "todos/index.ts",
+    "tools/index.ts",
+    "turns/index.ts",
+    "views/index.ts"
+  ],
+  "is-checkpointing/index.ts": [
+    "is-checkpointing/index.ts",
+    "is-checkpointing/is-checkpointing.ts"
+  ],
+  "is-checkpointing/is-checkpointing.ts": [],
+  "is-on-pane-surface/index.ts": [
+    "is-on-pane-surface/index.ts",
+    "is-on-pane-surface/is-on-pane-surface.ts"
+  ],
+  "is-on-pane-surface/is-on-pane-surface.ts": [],
+  "is-record/index.ts": [
+    "is-record/index.ts",
+    "is-record/is-record.ts"
+  ],
+  "is-record/is-record.ts": [],
+  "kept-of/index.ts": [
+    "kept-of/index.ts",
+    "kept-of/kept-of.ts"
+  ],
+  "kept-of/kept-of.ts": [],
+  "limits/columns/auto-open-min-columns.ts": [],
+  "limits/columns/dialog-path-reserve.ts": [],
+  "limits/columns/index.ts": [
+    "limits/columns/auto-open-min-columns.ts",
+    "limits/columns/dialog-path-reserve.ts",
+    "limits/columns/index.ts",
+    "limits/columns/open-min-columns.ts",
+    "limits/columns/pane-right-pad-columns.ts",
+    "limits/columns/path-floor.ts",
+    "limits/columns/stat-cells.ts",
+    "limits/columns/widest-bucket-columns.ts"
+  ],
+  "limits/columns/open-min-columns.ts": [],
+  "limits/columns/pane-right-pad-columns.ts": [],
+  "limits/columns/path-floor.ts": [],
+  "limits/columns/stat-cells.ts": [],
+  "limits/columns/widest-bucket-columns.ts": [],
+  "limits/dialog-path-floor.ts": [],
+  "limits/index.ts": [
+    "limits/columns/index.ts",
+    "limits/dialog-path-floor.ts",
+    "limits/index.ts",
+    "limits/sizes/index.ts",
+    "limits/timing/index.ts",
+    "limits/todo-bar-cells.ts",
+    "limits/todo-bar-reserve.ts"
+  ],
+  "limits/sizes/bytes/host-output-cap-bytes.ts": [],
+  "limits/sizes/bytes/index.ts": [
+    "limits/sizes/bytes/host-output-cap-bytes.ts",
+    "limits/sizes/bytes/index.ts",
+    "limits/sizes/bytes/max-diff-bytes.ts"
+  ],
+  "limits/sizes/bytes/max-diff-bytes.ts": [],
+  "limits/sizes/index.ts": [
+    "limits/sizes/bytes/index.ts",
+    "limits/sizes/index.ts",
+    "limits/sizes/max-files-for-details.ts",
+    "limits/sizes/max-files.ts",
+    "limits/sizes/max-lines-per-file.ts",
+    "limits/sizes/max-listed-directories.ts",
+    "limits/sizes/max-pathspec-chars/index.ts",
+    "limits/sizes/max-untracked-probes.ts",
+    "limits/sizes/max-visible-files.ts",
+    "limits/sizes/pane/index.ts",
+    "limits/sizes/prompt-context-max-chars.ts"
+  ],
+  "limits/sizes/max-files-for-details.ts": [],
+  "limits/sizes/max-files.ts": [],
+  "limits/sizes/max-lines-per-file.ts": [],
+  "limits/sizes/max-listed-directories.ts": [],
+  "limits/sizes/max-pathspec-chars/index.ts": [
+    "limits/sizes/max-pathspec-chars/index.ts",
+    "limits/sizes/max-pathspec-chars/max-pathspec-chars.ts"
+  ],
+  "limits/sizes/max-pathspec-chars/max-pathspec-chars.ts": [],
+  "limits/sizes/max-untracked-probes.ts": [],
+  "limits/sizes/max-visible-files.ts": [],
+  "limits/sizes/pane/gutter-chrome.ts": [],
+  "limits/sizes/pane/index.ts": [
+    "limits/sizes/pane/gutter-chrome.ts",
+    "limits/sizes/pane/index.ts",
+    "limits/sizes/pane/max-summary-rows.ts",
+    "limits/sizes/pane/pre-session-body-cap.ts",
+    "limits/sizes/pane/scroll-margin-rows.ts",
+    "limits/sizes/pane/wheel-rows.ts"
+  ],
+  "limits/sizes/pane/max-summary-rows.ts": [],
+  "limits/sizes/pane/pre-session-body-cap.ts": [],
+  "limits/sizes/pane/scroll-margin-rows.ts": [],
+  "limits/sizes/pane/wheel-rows.ts": [],
+  "limits/sizes/prompt-context-max-chars.ts": [],
+  "limits/timing/git-timeout-ms.ts": [],
+  "limits/timing/head-poll-ms.ts": [],
+  "limits/timing/index.ts": [
+    "limits/timing/git-timeout-ms.ts",
+    "limits/timing/head-poll-ms.ts",
+    "limits/timing/index.ts",
+    "limits/timing/redraw-coalesce-ms.ts",
+    "limits/timing/refresh-debounce-ms.ts"
+  ],
+  "limits/timing/redraw-coalesce-ms.ts": [],
+  "limits/timing/refresh-debounce-ms.ts": [],
+  "limits/todo-bar-cells.ts": [],
+  "limits/todo-bar-reserve.ts": [],
+  "message-of/index.ts": [
+    "message-of/index.ts",
+    "message-of/message-of.ts"
+  ],
+  "message-of/message-of.ts": [],
+  "mtime-of/index.ts": [
+    "mtime-of/index.ts",
+    "mtime-of/mtime-of.ts"
+  ],
+  "mtime-of/mtime-of.ts": [
+    "host/index.ts"
+  ],
+  "names/command-description.ts": [],
+  "names/command-name.ts": [],
+  "names/index.ts": [
+    "names/command-description.ts",
+    "names/command-name.ts",
+    "names/index.ts",
+    "names/keys/index.ts",
+    "names/pane-id.ts",
+    "names/pane-title.ts",
+    "names/plugin-names.ts",
+    "names/texts/index.ts"
+  ],
+  "names/keys/base-store-key-of.ts": [],
+  "names/keys/index.ts": [
+    "names/keys/base-store-key-of.ts",
+    "names/keys/index.ts",
+    "names/keys/store-open-key.ts"
+  ],
+  "names/keys/store-open-key.ts": [],
+  "names/pane-id.ts": [],
+  "names/pane-title.ts": [],
+  "names/plugin-names.ts": [],
+  "names/texts/awaits-surface-text.ts": [],
+  "names/texts/builtin-holds-pattern.ts": [],
+  "names/texts/git-unanswered-text.ts": [],
+  "names/texts/index.ts": [
+    "names/texts/awaits-surface-text.ts",
+    "names/texts/builtin-holds-pattern.ts",
+    "names/texts/git-unanswered-text.ts",
+    "names/texts/index.ts",
+    "names/texts/more-below-text.ts",
+    "names/texts/not-in-repository-text.ts",
+    "names/texts/panel-toggle/index.ts",
+    "names/texts/register-failed-text-of.ts",
+    "names/texts/resize-terminal-text.ts",
+    "names/texts/untracked-withheld-text-of.ts"
+  ],
+  "names/texts/more-below-text.ts": [],
+  "names/texts/not-in-repository-text.ts": [],
+  "names/texts/panel-toggle/dialog-dismissed-text.ts": [],
+  "names/texts/panel-toggle/index.ts": [
+    "names/texts/panel-toggle/dialog-dismissed-text.ts",
+    "names/texts/panel-toggle/index.ts",
+    "names/texts/panel-toggle/panel-hidden-text.ts",
+    "names/texts/panel-toggle/panel-shown-text.ts"
+  ],
+  "names/texts/panel-toggle/panel-hidden-text.ts": [],
+  "names/texts/panel-toggle/panel-shown-text.ts": [],
+  "names/texts/register-failed-text-of.ts": [],
+  "names/texts/resize-terminal-text.ts": [],
+  "names/texts/untracked-withheld-text-of.ts": [
+    "pane-state/index.ts"
+  ],
+  "open-outcome/index.ts": [
+    "open-outcome/index.ts",
+    "open-outcome/open-outcome-of.ts",
+    "open-outcome/open-outcome.ts"
+  ],
+  "open-outcome/open-outcome-of.ts": [
+    "is-record/index.ts",
+    "open-outcome/open-outcome.ts"
+  ],
+  "open-outcome/open-outcome.ts": [],
+  "pane-state/after-fetch/after-fetch.ts": [
+    "pane-state/after-fetch/fetched/index.ts",
+    "pane-state/pane-model/index.ts",
+    "todos/index.ts",
+    "turns/index.ts"
+  ],
+  "pane-state/after-fetch/fetched/fetched.ts": [
+    "git/index.ts"
+  ],
+  "pane-state/after-fetch/fetched/index.ts": [
+    "pane-state/after-fetch/fetched/fetched.ts",
+    "pane-state/after-fetch/fetched/index.ts"
+  ],
+  "pane-state/after-fetch/index.ts": [
+    "pane-state/after-fetch/after-fetch.ts",
+    "pane-state/after-fetch/fetched/index.ts",
+    "pane-state/after-fetch/index.ts"
+  ],
+  "pane-state/after-new-session/after-new-session.ts": [
+    "pane-state/after-new-session/new-session-fields/index.ts",
+    "pane-state/pane-model/index.ts"
+  ],
+  "pane-state/after-new-session/index.ts": [
+    "pane-state/after-new-session/after-new-session.ts",
+    "pane-state/after-new-session/index.ts",
+    "pane-state/after-new-session/new-session-fields/index.ts"
+  ],
+  "pane-state/after-new-session/new-session-fields/index.ts": [
+    "pane-state/after-new-session/new-session-fields/index.ts",
+    "pane-state/after-new-session/new-session-fields/new-session-fields.ts"
+  ],
+  "pane-state/after-new-session/new-session-fields/new-session-fields.ts": [
+    "pane-state/no-bodies/index.ts"
+  ],
+  "pane-state/base-mode-of/base-mode-of.ts": [
+    "git/index.ts"
+  ],
+  "pane-state/base-mode-of/index.ts": [
+    "pane-state/base-mode-of/base-mode-of.ts",
+    "pane-state/base-mode-of/index.ts"
+  ],
+  "pane-state/bodies/bodies.ts": [
+    "git/index.ts"
+  ],
+  "pane-state/bodies/index.ts": [
+    "pane-state/bodies/bodies.ts",
+    "pane-state/bodies/index.ts"
+  ],
+  "pane-state/dialog-focus/dialog-focus.ts": [],
+  "pane-state/dialog-focus/index.ts": [
+    "pane-state/dialog-focus/dialog-focus.ts",
+    "pane-state/dialog-focus/index.ts"
+  ],
+  "pane-state/dialog-title-of.ts": [
+    "pane-state/dialog-title/index.ts",
+    "pane-state/pane-model/index.ts",
+    "pane-state/picked-turn-of/index.ts",
+    "pane-state/turn-title-of/index.ts"
+  ],
+  "pane-state/dialog-title/dialog-title.ts": [],
+  "pane-state/dialog-title/index.ts": [
+    "pane-state/dialog-title/dialog-title.ts",
+    "pane-state/dialog-title/index.ts"
+  ],
+  "pane-state/empty-state-of.ts": [
+    "names/index.ts",
+    "pane-state/empty-state/index.ts",
+    "pane-state/pane-model/index.ts"
+  ],
+  "pane-state/empty-state/empty-state.ts": [],
+  "pane-state/empty-state/index.ts": [
+    "pane-state/empty-state/empty-state.ts",
+    "pane-state/empty-state/index.ts"
+  ],
+  "pane-state/header-totals-of.ts": [
+    "git/index.ts",
+    "pane-state/header-totals/index.ts",
+    "pane-state/partition/index.ts"
+  ],
+  "pane-state/header-totals/header-totals.ts": [],
+  "pane-state/header-totals/index.ts": [
+    "pane-state/header-totals/header-totals.ts",
+    "pane-state/header-totals/index.ts"
+  ],
+  "pane-state/index.ts": [
+    "pane-state/after-fetch/index.ts",
+    "pane-state/after-new-session/index.ts",
+    "pane-state/base-mode-of/index.ts",
+    "pane-state/bodies/index.ts",
+    "pane-state/dialog-focus/index.ts",
+    "pane-state/dialog-title-of.ts",
+    "pane-state/dialog-title/index.ts",
+    "pane-state/empty-state-of.ts",
+    "pane-state/empty-state/index.ts",
+    "pane-state/header-totals-of.ts",
+    "pane-state/header-totals/index.ts",
+    "pane-state/index.ts",
+    "pane-state/initial-model/index.ts",
+    "pane-state/mode-label-of/index.ts",
+    "pane-state/no-bodies/index.ts",
+    "pane-state/pane-model/index.ts",
+    "pane-state/partition-of.ts",
+    "pane-state/partition/index.ts",
+    "pane-state/picked-turn-of/index.ts",
+    "pane-state/source/index.ts",
+    "pane-state/turn-title-of/index.ts",
+    "pane-state/turn-totals-of/index.ts",
+    "pane-state/unborn-note-of.ts",
+    "pane-state/zero-totals/index.ts"
+  ],
+  "pane-state/initial-model/index.ts": [
+    "pane-state/initial-model/index.ts",
+    "pane-state/initial-model/initial-model.ts"
+  ],
+  "pane-state/initial-model/initial-model.ts": [
+    "git/index.ts",
+    "pane-state/no-bodies/index.ts",
+    "pane-state/pane-model/index.ts"
+  ],
+  "pane-state/mode-label-of/index.ts": [
+    "pane-state/mode-label-of/index.ts",
+    "pane-state/mode-label-of/mode-label-of.ts"
+  ],
+  "pane-state/mode-label-of/mode-label-of.ts": [
+    "git/index.ts",
+    "pane-state/pane-model/index.ts"
+  ],
+  "pane-state/no-bodies/index.ts": [
+    "pane-state/no-bodies/index.ts",
+    "pane-state/no-bodies/no-bodies.ts"
+  ],
+  "pane-state/no-bodies/no-bodies.ts": [
+    "pane-state/bodies/index.ts"
+  ],
+  "pane-state/pane-model/index.ts": [
+    "pane-state/pane-model/index.ts",
+    "pane-state/pane-model/pane-model.ts"
+  ],
+  "pane-state/pane-model/pane-model.ts": [
+    "backend/index.ts",
+    "git/index.ts",
+    "pane-state/bodies/index.ts",
+    "pane-state/source/index.ts",
+    "todos/index.ts",
+    "turns/index.ts"
+  ],
+  "pane-state/partition-of.ts": [
+    "classify/index.ts",
+    "git/index.ts",
+    "pane-state/partition/index.ts"
+  ],
+  "pane-state/partition/index.ts": [
+    "pane-state/partition/index.ts",
+    "pane-state/partition/partition.ts"
+  ],
+  "pane-state/partition/partition.ts": [
+    "git/index.ts"
+  ],
+  "pane-state/picked-turn-of/index.ts": [
+    "pane-state/picked-turn-of/index.ts",
+    "pane-state/picked-turn-of/picked-turn-of.ts"
+  ],
+  "pane-state/picked-turn-of/picked-turn-of.ts": [
+    "pane-state/pane-model/index.ts",
+    "turns/index.ts"
+  ],
+  "pane-state/source/index.ts": [
+    "pane-state/source/index.ts",
+    "pane-state/source/source.ts"
+  ],
+  "pane-state/source/source.ts": [],
+  "pane-state/turn-title-of/index.ts": [
+    "pane-state/turn-title-of/index.ts",
+    "pane-state/turn-title-of/turn-title-of.ts"
+  ],
+  "pane-state/turn-title-of/turn-title-of.ts": [
+    "pane-state/dialog-title/index.ts",
+    "turns/index.ts"
+  ],
+  "pane-state/turn-totals-of/index.ts": [
+    "pane-state/turn-totals-of/index.ts",
+    "pane-state/turn-totals-of/turn-totals-of.ts"
+  ],
+  "pane-state/turn-totals-of/turn-totals-of.ts": [
+    "pane-state/header-totals/index.ts",
+    "turns/index.ts"
+  ],
+  "pane-state/unborn-note-of.ts": [
+    "pane-state/pane-model/index.ts"
+  ],
+  "pane-state/zero-totals/index.ts": [
+    "pane-state/zero-totals/index.ts",
+    "pane-state/zero-totals/zero-totals.ts"
+  ],
+  "pane-state/zero-totals/zero-totals.ts": [
+    "pane-state/header-totals/index.ts"
+  ],
+  "pane-toggle/index.ts": [
+    "pane-toggle/index.ts",
+    "pane-toggle/pane-belief/index.ts",
+    "pane-toggle/pane-toggle-of.ts"
+  ],
+  "pane-toggle/pane-belief/index.ts": [
+    "pane-toggle/pane-belief/index.ts",
+    "pane-toggle/pane-belief/pane-belief.ts"
+  ],
+  "pane-toggle/pane-belief/pane-belief.ts": [],
+  "pane-toggle/pane-toggle-of.ts": [
+    "limits/index.ts",
+    "pane-toggle/pane-belief/index.ts"
+  ],
+  "record/base-outcomes/base-outcomes.ts": [],
+  "record/base-outcomes/index.ts": [
+    "record/base-outcomes/base-outcomes.ts",
+    "record/base-outcomes/index.ts"
+  ],
+  "record/features/features.ts": [],
+  "record/features/index.ts": [
+    "record/features/features.ts",
+    "record/features/index.ts"
+  ],
+  "record/index.ts": [
+    "record/base-outcomes/index.ts",
+    "record/features/index.ts",
+    "record/index.ts",
+    "record/mark-outcome/index.ts",
+    "record/recorder-of.ts",
+    "record/recorder/index.ts",
+    "record/safely/index.ts",
+    "record/shown-triggers/index.ts",
+    "record/tabs/index.ts",
+    "record/width-bucket-of/index.ts",
+    "record/width-buckets/index.ts"
+  ],
+  "record/mark-outcome/index.ts": [
+    "record/mark-outcome/index.ts",
+    "record/mark-outcome/mark-outcome.ts"
+  ],
+  "record/mark-outcome/mark-outcome.ts": [
+    "host/index.ts"
+  ],
+  "record/recorder-of.ts": [
+    "host/index.ts",
+    "record/features/index.ts",
+    "record/recorder/index.ts",
+    "record/safely/index.ts",
+    "record/shown-triggers/index.ts",
+    "record/width-buckets/index.ts"
+  ],
+  "record/recorder/index.ts": [
+    "record/recorder/index.ts",
+    "record/recorder/recorder.ts"
+  ],
+  "record/recorder/recorder.ts": [
+    "record/mark-outcome/index.ts",
+    "record/shown-triggers/index.ts",
+    "record/width-buckets/index.ts"
+  ],
+  "record/safely/index.ts": [
+    "record/safely/index.ts",
+    "record/safely/safely.ts"
+  ],
+  "record/safely/safely.ts": [],
+  "record/shown-triggers/index.ts": [
+    "record/shown-triggers/index.ts",
+    "record/shown-triggers/shown-triggers.ts"
+  ],
+  "record/shown-triggers/shown-triggers.ts": [],
+  "record/tabs/index.ts": [
+    "record/tabs/index.ts",
+    "record/tabs/tabs.ts"
+  ],
+  "record/tabs/tabs.ts": [],
+  "record/width-bucket-of/index.ts": [
+    "record/width-bucket-of/index.ts",
+    "record/width-bucket-of/width-bucket-of.ts"
+  ],
+  "record/width-bucket-of/width-bucket-of.ts": [
+    "limits/index.ts",
+    "record/width-buckets/index.ts"
+  ],
+  "record/width-buckets/index.ts": [
+    "record/width-buckets/index.ts",
+    "record/width-buckets/width-buckets.ts"
+  ],
+  "record/width-buckets/width-buckets.ts": [],
+  "register.ts": [
+    "ask/index.ts",
+    "backend/index.ts",
+    "body-loader/index.ts",
+    "command-spec/index.ts",
+    "entry-kinds-of/index.ts",
+    "git/index.ts",
+    "host/index.ts",
+    "is-checkpointing/index.ts",
+    "is-on-pane-surface/index.ts",
+    "is-record/index.ts",
+    "limits/index.ts",
+    "message-of/index.ts",
+    "mtime-of/index.ts",
+    "names/index.ts",
+    "open-outcome/index.ts",
+    "pane-state/index.ts",
+    "pane-toggle/index.ts",
+    "record/index.ts",
+    "tools/index.ts",
+    "turns/index.ts",
+    "views/index.ts"
+  ],
+  "todos/index.ts": [
+    "todos/index.ts",
+    "todos/todo-progress-of.ts",
+    "todos/todo-progress/index.ts"
+  ],
+  "todos/todo-progress-of.ts": [
+    "array-of/index.ts",
+    "count-of/index.ts",
+    "is-record/index.ts",
+    "todos/todo-progress/index.ts",
+    "tools/index.ts"
+  ],
+  "todos/todo-progress/index.ts": [
+    "todos/todo-progress/index.ts",
+    "todos/todo-progress/todo-progress.ts"
+  ],
+  "todos/todo-progress/todo-progress.ts": [],
+  "tools/editing-tools.ts": [],
+  "tools/index.ts": [
+    "tools/editing-tools.ts",
+    "tools/index.ts",
+    "tools/may-have-written.ts",
+    "tools/shell-tools.ts",
+    "tools/todo-tool.ts"
+  ],
+  "tools/may-have-written.ts": [],
+  "tools/shell-tools.ts": [],
+  "tools/todo-tool.ts": [],
+  "turns/index.ts": [
+    "turns/index.ts",
+    "turns/turn-diffs-of.ts",
+    "turns/turn-of/index.ts",
+    "turns/types/index.ts"
+  ],
+  "turns/turn-diffs-of.ts": [
+    "turns/turn-of/index.ts",
+    "turns/types/index.ts"
+  ],
+  "turns/turn-of/file-edit-of/file-edit-of.ts": [
+    "count-of/index.ts",
+    "is-record/index.ts",
+    "turns/turn-of/file-edit-of/hunks-of/index.ts",
+    "turns/types/index.ts"
+  ],
+  "turns/turn-of/file-edit-of/hunks-of/hunks-of.ts": [
+    "array-of/index.ts",
+    "git/index.ts",
+    "is-record/index.ts"
+  ],
+  "turns/turn-of/file-edit-of/hunks-of/index.ts": [
+    "turns/turn-of/file-edit-of/hunks-of/hunks-of.ts",
+    "turns/turn-of/file-edit-of/hunks-of/index.ts"
+  ],
+  "turns/turn-of/file-edit-of/index.ts": [
+    "turns/turn-of/file-edit-of/file-edit-of.ts",
+    "turns/turn-of/file-edit-of/hunks-of/index.ts",
+    "turns/turn-of/file-edit-of/index.ts"
+  ],
+  "turns/turn-of/index.ts": [
+    "turns/turn-of/file-edit-of/index.ts",
+    "turns/turn-of/index.ts",
+    "turns/turn-of/is-prompt-row/index.ts",
+    "turns/turn-of/preview-chars/index.ts",
+    "turns/turn-of/turn-of.ts"
+  ],
+  "turns/turn-of/is-prompt-row/index.ts": [
+    "turns/turn-of/is-prompt-row/index.ts",
+    "turns/turn-of/is-prompt-row/is-prompt-row.ts"
+  ],
+  "turns/turn-of/is-prompt-row/is-prompt-row.ts": [],
+  "turns/turn-of/preview-chars/index.ts": [
+    "turns/turn-of/preview-chars/index.ts",
+    "turns/turn-of/preview-chars/preview-chars.ts"
+  ],
+  "turns/turn-of/preview-chars/preview-chars.ts": [],
+  "turns/turn-of/turn-of.ts": [
+    "git/index.ts",
+    "turns/turn-of/file-edit-of/index.ts",
+    "turns/turn-of/preview-chars/index.ts",
+    "turns/types/index.ts"
+  ],
+  "turns/types/index.ts": [
+    "turns/types/index.ts",
+    "turns/types/turn-diff.ts",
+    "turns/types/turn-file/index.ts"
+  ],
+  "turns/types/turn-diff.ts": [
+    "turns/types/turn-file/index.ts"
+  ],
+  "turns/types/turn-file/index.ts": [
+    "turns/types/turn-file/index.ts",
+    "turns/types/turn-file/turn-file.ts"
+  ],
+  "turns/types/turn-file/turn-file.ts": [
+    "git/index.ts"
+  ],
+  "views/body/body-scrolled-by.ts": [
+    "limits/index.ts",
+    "pane-state/index.ts",
+    "views/body/plan/index.ts"
+  ],
+  "views/body/draw-window.tsx": [
+    "limits/index.ts",
+    "views/body/plan/index.ts",
+    "views/body/types/index.ts",
+    "views/detail/index.ts",
+    "views/kit/index.ts",
+    "views/layout/index.ts",
+    "views/sections/index.ts"
+  ],
+  "views/body/index.ts": [
+    "views/body/body-scrolled-by.ts",
+    "views/body/draw-window.tsx",
+    "views/body/index.ts",
+    "views/body/is-wheel-over-list.ts",
+    "views/body/list-block-of.tsx",
+    "views/body/list-scrolled-by.ts",
+    "views/body/place-at-file.ts",
+    "views/body/plan/index.ts",
+    "views/body/types/index.ts"
+  ],
+  "views/body/is-wheel-over-list.ts": [
+    "limits/index.ts",
+    "pane-state/index.ts",
+    "views/body/plan/index.ts"
+  ],
+  "views/body/list-block-of.tsx": [
+    "kept-of/index.ts",
+    "names/index.ts",
+    "pane-state/index.ts",
+    "views/body/plan/index.ts",
+    "views/body/types/index.ts",
+    "views/entries/index.ts",
+    "views/kit/index.ts",
+    "views/layout/index.ts",
+    "views/sections/index.ts"
+  ],
+  "views/body/list-scrolled-by.ts": [
+    "limits/index.ts",
+    "pane-state/index.ts",
+    "views/body/plan/index.ts"
+  ],
+  "views/body/place-at-file.ts": [
+    "pane-state/index.ts",
+    "views/body/plan/index.ts"
+  ],
+  "views/body/plan/body-layout-of.ts": [
+    "pane-state/index.ts",
+    "views/body/plan/segments/index.ts",
+    "views/body/types/index.ts"
+  ],
+  "views/body/plan/dock-plan-of.ts": [
+    "pane-state/index.ts",
+    "views/body/types/index.ts",
+    "views/dialog-pane/index.ts",
+    "views/entries/index.ts",
+    "views/layout/index.ts"
+  ],
+  "views/body/plan/hunk-window-of.ts": [
+    "git/index.ts",
+    "views/body/types/index.ts"
+  ],
+  "views/body/plan/index.ts": [
+    "views/body/plan/body-layout-of.ts",
+    "views/body/plan/dock-plan-of.ts",
+    "views/body/plan/hunk-window-of.ts",
+    "views/body/plan/index.ts",
+    "views/body/plan/segments/index.ts"
+  ],
+  "views/body/plan/segments/index.ts": [
+    "views/body/plan/segments/index.ts",
+    "views/body/plan/segments/list-window-of.ts",
+    "views/body/plan/segments/segment-rows-of.ts",
+    "views/body/plan/segments/segments-of.ts"
+  ],
+  "views/body/plan/segments/list-window-of.ts": [
+    "limits/index.ts",
+    "pane-state/index.ts",
+    "views/body/types/index.ts"
+  ],
+  "views/body/plan/segments/segment-rows-of.ts": [
+    "views/body/types/index.ts"
+  ],
+  "views/body/plan/segments/segments-of.ts": [
+    "count-of/index.ts",
+    "git/index.ts",
+    "kept-of/index.ts",
+    "limits/index.ts",
+    "pane-state/index.ts",
+    "views/body/types/index.ts",
+    "views/detail/index.ts",
+    "views/entries/index.ts",
+    "views/layout/index.ts"
+  ],
+  "views/body/types/body-layout.ts": [
+    "views/body/types/segment/index.ts"
+  ],
+  "views/body/types/dock-plan.ts": [
+    "pane-state/index.ts",
+    "turns/index.ts",
+    "views/entries/index.ts"
+  ],
+  "views/body/types/index.ts": [
+    "views/body/types/body-layout.ts",
+    "views/body/types/dock-plan.ts",
+    "views/body/types/index.ts",
+    "views/body/types/list-window.ts",
+    "views/body/types/segment/index.ts",
+    "views/body/types/window-cut/index.ts"
+  ],
+  "views/body/types/list-window.ts": [
+    "views/entries/index.ts"
+  ],
+  "views/body/types/segment/hunk-segment/hunk-segment.ts": [
+    "git/index.ts"
+  ],
+  "views/body/types/segment/hunk-segment/index.ts": [
+    "views/body/types/segment/hunk-segment/hunk-segment.ts",
+    "views/body/types/segment/hunk-segment/index.ts"
+  ],
+  "views/body/types/segment/index.ts": [
+    "views/body/types/segment/hunk-segment/index.ts",
+    "views/body/types/segment/index.ts",
+    "views/body/types/segment/segment.ts"
+  ],
+  "views/body/types/segment/segment.ts": [
+    "views/body/types/segment/hunk-segment/index.ts",
+    "views/detail/index.ts",
+    "views/entries/index.ts"
+  ],
+  "views/body/types/window-cut/index.ts": [
+    "views/body/types/window-cut/index.ts",
+    "views/body/types/window-cut/window-cut.ts"
+  ],
+  "views/body/types/window-cut/window-cut.ts": [],
+  "views/detail/body-budget/body-budget.ts": [
+    "views/detail/max-body-chars/index.ts",
+    "views/detail/max-body-nodes/index.ts",
+    "views/detail/types/index.ts"
+  ],
+  "views/detail/body-budget/index.ts": [
+    "views/detail/body-budget/body-budget.ts",
+    "views/detail/body-budget/index.ts"
+  ],
+  "views/detail/code-blocks-of/code-blocks-of.ts": [
+    "git/index.ts",
+    "views/detail/code-blocks-of/drawn-line-of/index.ts",
+    "views/detail/hunk-source-of/index.ts",
+    "views/detail/leading-hunk-of/index.ts",
+    "views/detail/max-code-chars/index.ts",
+    "views/detail/sub-hunks-of/index.ts",
+    "views/detail/types/index.ts"
+  ],
+  "views/detail/code-blocks-of/drawn-line-of/drawn-line-of.ts": [
+    "views/layout/index.ts"
+  ],
+  "views/detail/code-blocks-of/drawn-line-of/index.ts": [
+    "views/detail/code-blocks-of/drawn-line-of/drawn-line-of.ts",
+    "views/detail/code-blocks-of/drawn-line-of/index.ts"
+  ],
+  "views/detail/code-blocks-of/index.ts": [
+    "views/detail/code-blocks-of/code-blocks-of.ts",
+    "views/detail/code-blocks-of/drawn-line-of/index.ts",
+    "views/detail/code-blocks-of/index.ts"
+  ],
+  "views/detail/detail-model/detail-model.ts": [
+    "backend/index.ts",
+    "git/index.ts"
+  ],
+  "views/detail/detail-model/index.ts": [
+    "views/detail/detail-model/detail-model.ts",
+    "views/detail/detail-model/index.ts"
+  ],
+  "views/detail/detail-view.tsx": [
+    "views/detail/code-blocks-of/index.ts",
+    "views/detail/detail-model/index.ts",
+    "views/detail/file-frame-nodes/index.ts",
+    "views/detail/max-code-chars/index.ts",
+    "views/detail/placeholder-of/index.ts",
+    "views/detail/types/index.ts",
+    "views/kit/index.ts",
+    "views/layout/index.ts",
+    "views/sections/index.ts"
+  ],
+  "views/detail/file-frame-nodes/file-frame-nodes.ts": [],
+  "views/detail/file-frame-nodes/index.ts": [
+    "views/detail/file-frame-nodes/file-frame-nodes.ts",
+    "views/detail/file-frame-nodes/index.ts"
+  ],
+  "views/detail/hunk-header-of/hunk-header-of.ts": [
+    "count-of/index.ts",
+    "git/index.ts"
+  ],
+  "views/detail/hunk-header-of/index.ts": [
+    "views/detail/hunk-header-of/hunk-header-of.ts",
+    "views/detail/hunk-header-of/index.ts"
+  ],
+  "views/detail/hunk-source-of/hunk-source-of.ts": [
+    "git/index.ts",
+    "views/detail/hunk-header-of/index.ts"
+  ],
+  "views/detail/hunk-source-of/index.ts": [
+    "views/detail/hunk-source-of/hunk-source-of.ts",
+    "views/detail/hunk-source-of/index.ts"
+  ],
+  "views/detail/index.ts": [
+    "views/detail/body-budget/index.ts",
+    "views/detail/code-blocks-of/index.ts",
+    "views/detail/detail-model/index.ts",
+    "views/detail/detail-view.tsx",
+    "views/detail/file-frame-nodes/index.ts",
+    "views/detail/hunk-header-of/index.ts",
+    "views/detail/hunk-source-of/index.ts",
+    "views/detail/index.ts",
+    "views/detail/leading-hunk-of/index.ts",
+    "views/detail/max-body-chars/index.ts",
+    "views/detail/max-body-nodes/index.ts",
+    "views/detail/max-code-chars/index.ts",
+    "views/detail/placeholder-of/index.ts",
+    "views/detail/sub-hunks-of/index.ts",
+    "views/detail/types/index.ts"
+  ],
+  "views/detail/leading-hunk-of/index.ts": [
+    "views/detail/leading-hunk-of/index.ts",
+    "views/detail/leading-hunk-of/leading-hunk-of.ts"
+  ],
+  "views/detail/leading-hunk-of/leading-hunk-of.ts": [
+    "git/index.ts",
+    "views/detail/hunk-header-of/index.ts"
+  ],
+  "views/detail/max-body-chars/index.ts": [
+    "views/detail/max-body-chars/index.ts",
+    "views/detail/max-body-chars/max-body-chars.ts"
+  ],
+  "views/detail/max-body-chars/max-body-chars.ts": [],
+  "views/detail/max-body-nodes/index.ts": [
+    "views/detail/max-body-nodes/index.ts",
+    "views/detail/max-body-nodes/max-body-nodes.ts"
+  ],
+  "views/detail/max-body-nodes/max-body-nodes.ts": [],
+  "views/detail/max-code-chars/index.ts": [
+    "views/detail/max-code-chars/index.ts",
+    "views/detail/max-code-chars/max-code-chars.ts"
+  ],
+  "views/detail/max-code-chars/max-code-chars.ts": [],
+  "views/detail/placeholder-of/index.ts": [
+    "views/detail/placeholder-of/index.ts",
+    "views/detail/placeholder-of/placeholder-of.ts",
+    "views/detail/placeholder-of/safe-pathspec-pattern/index.ts"
+  ],
+  "views/detail/placeholder-of/placeholder-of.ts": [
+    "views/detail/detail-model/index.ts",
+    "views/detail/placeholder-of/safe-pathspec-pattern/index.ts"
+  ],
+  "views/detail/placeholder-of/safe-pathspec-pattern/index.ts": [
+    "views/detail/placeholder-of/safe-pathspec-pattern/index.ts",
+    "views/detail/placeholder-of/safe-pathspec-pattern/safe-pathspec-pattern.ts"
+  ],
+  "views/detail/placeholder-of/safe-pathspec-pattern/safe-pathspec-pattern.ts": [],
+  "views/detail/sub-hunks-of/first-line-cut/first-line-cut.ts": [
+    "git/index.ts",
+    "views/detail/hunk-header-of/index.ts"
+  ],
+  "views/detail/sub-hunks-of/first-line-cut/index.ts": [
+    "views/detail/sub-hunks-of/first-line-cut/first-line-cut.ts",
+    "views/detail/sub-hunks-of/first-line-cut/index.ts"
+  ],
+  "views/detail/sub-hunks-of/index.ts": [
+    "views/detail/sub-hunks-of/first-line-cut/index.ts",
+    "views/detail/sub-hunks-of/index.ts",
+    "views/detail/sub-hunks-of/sub-hunks-of.ts"
+  ],
+  "views/detail/sub-hunks-of/sub-hunks-of.ts": [
+    "git/index.ts",
+    "views/detail/leading-hunk-of/index.ts",
+    "views/detail/sub-hunks-of/first-line-cut/index.ts"
+  ],
+  "views/detail/types/body-room/body-room.ts": [],
+  "views/detail/types/body-room/index.ts": [
+    "views/detail/types/body-room/body-room.ts",
+    "views/detail/types/body-room/index.ts"
+  ],
+  "views/detail/types/code-body/code-body.ts": [
+    "views/detail/types/body-room/index.ts"
+  ],
+  "views/detail/types/code-body/index.ts": [
+    "views/detail/types/code-body/code-body.ts",
+    "views/detail/types/code-body/index.ts"
+  ],
+  "views/detail/types/drawn-detail/drawn-detail.ts": [
+    "views/detail/types/body-room/index.ts"
+  ],
+  "views/detail/types/drawn-detail/index.ts": [
+    "views/detail/types/drawn-detail/drawn-detail.ts",
+    "views/detail/types/drawn-detail/index.ts"
+  ],
+  "views/detail/types/index.ts": [
+    "views/detail/types/body-room/index.ts",
+    "views/detail/types/code-body/index.ts",
+    "views/detail/types/drawn-detail/index.ts",
+    "views/detail/types/index.ts",
+    "views/detail/types/named-detail/index.ts"
+  ],
+  "views/detail/types/named-detail/index.ts": [
+    "views/detail/types/named-detail/index.ts",
+    "views/detail/types/named-detail/named-detail.ts"
+  ],
+  "views/detail/types/named-detail/named-detail.ts": [
+    "views/detail/detail-model/index.ts"
+  ],
+  "views/dialog-pane/dialog-entries-of/dialog-entries-of.ts": [
+    "git/index.ts",
+    "pane-state/index.ts",
+    "views/entries/index.ts"
+  ],
+  "views/dialog-pane/dialog-entries-of/index.ts": [
+    "views/dialog-pane/dialog-entries-of/dialog-entries-of.ts",
+    "views/dialog-pane/dialog-entries-of/index.ts"
+  ],
+  "views/dialog-pane/dialog-focus-of.ts": [
+    "limits/index.ts",
+    "pane-state/index.ts",
+    "views/dialog-pane/dialog-entries-of/index.ts",
+    "views/dialog-pane/dialog-window-of/index.ts",
+    "views/sections/index.ts"
+  ],
+  "views/dialog-pane/dialog-pane.tsx": [
+    "limits/index.ts",
+    "pane-state/index.ts",
+    "views/detail/index.ts",
+    "views/dialog-pane/dialog-entries-of/index.ts",
+    "views/dialog-pane/dialog-window-of/index.ts",
+    "views/entries/index.ts",
+    "views/kit/index.ts",
+    "views/layout/index.ts",
+    "views/prelude-of/index.ts",
+    "views/sections/index.ts"
+  ],
+  "views/dialog-pane/dialog-rows-of.ts": [
+    "limits/index.ts",
+    "pane-state/index.ts",
+    "views/dialog-pane/dialog-entries-of/index.ts",
+    "views/dialog-pane/dialog-window-of/index.ts"
+  ],
+  "views/dialog-pane/dialog-window-of/dialog-window-of.ts": [
+    "limits/index.ts",
+    "pane-state/index.ts"
+  ],
+  "views/dialog-pane/dialog-window-of/index.ts": [
+    "views/dialog-pane/dialog-window-of/dialog-window-of.ts",
+    "views/dialog-pane/dialog-window-of/index.ts"
+  ],
+  "views/dialog-pane/index.ts": [
+    "views/dialog-pane/dialog-entries-of/index.ts",
+    "views/dialog-pane/dialog-focus-of.ts",
+    "views/dialog-pane/dialog-pane.tsx",
+    "views/dialog-pane/dialog-rows-of.ts",
+    "views/dialog-pane/dialog-window-of/index.ts",
+    "views/dialog-pane/index.ts",
+    "views/dialog-pane/list-body-of/index.ts",
+    "views/dialog-pane/message-pane-of/index.ts"
+  ],
+  "views/dialog-pane/list-body-of/index.ts": [
+    "views/dialog-pane/list-body-of/index.ts",
+    "views/dialog-pane/list-body-of/list-body-of.ts",
+    "views/dialog-pane/list-body-of/list-place/index.ts"
+  ],
+  "views/dialog-pane/list-body-of/list-body-of.ts": [
+    "git/index.ts",
+    "views/dialog-pane/list-body-of/list-place/index.ts"
+  ],
+  "views/dialog-pane/list-body-of/list-place/index.ts": [
+    "views/dialog-pane/list-body-of/list-place/index.ts",
+    "views/dialog-pane/list-body-of/list-place/list-place.ts"
+  ],
+  "views/dialog-pane/list-body-of/list-place/list-place.ts": [
+    "git/index.ts",
+    "pane-state/index.ts"
+  ],
+  "views/dialog-pane/message-pane-of/foot-rows/foot-rows.ts": [],
+  "views/dialog-pane/message-pane-of/foot-rows/index.ts": [
+    "views/dialog-pane/message-pane-of/foot-rows/foot-rows.ts",
+    "views/dialog-pane/message-pane-of/foot-rows/index.ts"
+  ],
+  "views/dialog-pane/message-pane-of/index.ts": [
+    "views/dialog-pane/message-pane-of/foot-rows/index.ts",
+    "views/dialog-pane/message-pane-of/index.ts",
+    "views/dialog-pane/message-pane-of/message-pane-of.tsx",
+    "views/dialog-pane/message-pane-of/message-pane/index.ts"
+  ],
+  "views/dialog-pane/message-pane-of/message-pane-of.tsx": [
+    "views/dialog-pane/message-pane-of/foot-rows/index.ts",
+    "views/dialog-pane/message-pane-of/message-pane/index.ts",
+    "views/kit/index.ts",
+    "views/layout/index.ts"
+  ],
+  "views/dialog-pane/message-pane-of/message-pane/index.ts": [
+    "views/dialog-pane/message-pane-of/message-pane/index.ts",
+    "views/dialog-pane/message-pane-of/message-pane/message-pane.ts"
+  ],
+  "views/dialog-pane/message-pane-of/message-pane/message-pane.ts": [],
+  "views/entries/body-entry-of/body-entry-of.ts": [
+    "git/index.ts",
+    "pane-state/index.ts",
+    "views/entries/body-entry/index.ts"
+  ],
+  "views/entries/body-entry-of/index.ts": [
+    "views/entries/body-entry-of/body-entry-of.ts",
+    "views/entries/body-entry-of/index.ts"
+  ],
+  "views/entries/body-entry/body-entry.ts": [
+    "git/index.ts"
+  ],
+  "views/entries/body-entry/index.ts": [
+    "views/entries/body-entry/body-entry.ts",
+    "views/entries/body-entry/index.ts"
+  ],
+  "views/entries/detail-model-of/detail-model-of.ts": [
+    "pane-state/index.ts",
+    "views/detail/index.ts",
+    "views/entries/body-entry/index.ts"
+  ],
+  "views/entries/detail-model-of/index.ts": [
+    "views/entries/detail-model-of/detail-model-of.ts",
+    "views/entries/detail-model-of/index.ts"
+  ],
+  "views/entries/index.ts": [
+    "views/entries/body-entry-of/index.ts",
+    "views/entries/body-entry/index.ts",
+    "views/entries/detail-model-of/index.ts",
+    "views/entries/index.ts",
+    "views/entries/turn-entry-of/index.ts"
+  ],
+  "views/entries/turn-entry-of/index.ts": [
+    "views/entries/turn-entry-of/index.ts",
+    "views/entries/turn-entry-of/turn-entry-of.ts"
+  ],
+  "views/entries/turn-entry-of/turn-entry-of.ts": [
+    "turns/index.ts",
+    "views/entries/body-entry/index.ts"
+  ],
+  "views/index.ts": [
+    "views/body/index.ts",
+    "views/detail/index.ts",
+    "views/dialog-pane/index.ts",
+    "views/entries/index.ts",
+    "views/index.ts",
+    "views/inset-of/index.ts",
+    "views/kit/index.ts",
+    "views/layout/index.ts",
+    "views/pane-actions/index.ts",
+    "views/pane-seat/index.ts",
+    "views/pane-view.tsx",
+    "views/prelude-of/index.ts",
+    "views/sections/index.ts",
+    "views/sidebar-pane/index.ts"
+  ],
+  "views/inset-of/index.ts": [
+    "views/inset-of/index.ts",
+    "views/inset-of/inset-of.ts"
+  ],
+  "views/inset-of/inset-of.ts": [
+    "limits/index.ts",
+    "views/kit/index.ts"
+  ],
+  "views/kit/index.ts": [
+    "views/kit/index.ts",
+    "views/kit/kit.ts",
+    "views/kit/ui/index.ts"
+  ],
+  "views/kit/kit.ts": [
+    "views/kit/ui/index.ts",
+    "views/pane-actions/index.ts"
+  ],
+  "views/kit/ui/index.ts": [
+    "views/kit/ui/index.ts",
+    "views/kit/ui/ui.ts"
+  ],
+  "views/kit/ui/ui.ts": [],
+  "views/layout/cell-width/cell-width.ts": [
+    "views/layout/cell-width/first-wide-point/index.ts",
+    "views/layout/cell-width/wide-ranges/index.ts",
+    "views/layout/cell-width/zero-width-ranges/index.ts"
+  ],
+  "views/layout/cell-width/first-wide-point/first-wide-point.ts": [],
+  "views/layout/cell-width/first-wide-point/index.ts": [
+    "views/layout/cell-width/first-wide-point/first-wide-point.ts",
+    "views/layout/cell-width/first-wide-point/index.ts"
+  ],
+  "views/layout/cell-width/index.ts": [
+    "views/layout/cell-width/cell-width.ts",
+    "views/layout/cell-width/first-wide-point/index.ts",
+    "views/layout/cell-width/index.ts",
+    "views/layout/cell-width/wide-ranges/index.ts",
+    "views/layout/cell-width/zero-width-ranges/index.ts"
+  ],
+  "views/layout/cell-width/wide-ranges/index.ts": [
+    "views/layout/cell-width/wide-ranges/index.ts",
+    "views/layout/cell-width/wide-ranges/wide-ranges.ts"
+  ],
+  "views/layout/cell-width/wide-ranges/wide-ranges.ts": [],
+  "views/layout/cell-width/zero-width-ranges/index.ts": [
+    "views/layout/cell-width/zero-width-ranges/index.ts",
+    "views/layout/cell-width/zero-width-ranges/zero-width-ranges.ts"
+  ],
+  "views/layout/cell-width/zero-width-ranges/zero-width-ranges.ts": [],
+  "views/layout/charged-width/charged-width.ts": [
+    "views/layout/cell-width/index.ts"
+  ],
+  "views/layout/charged-width/index.ts": [
+    "views/layout/charged-width/charged-width.ts",
+    "views/layout/charged-width/index.ts"
+  ],
+  "views/layout/index.ts": [
+    "views/layout/cell-width/index.ts",
+    "views/layout/charged-width/index.ts",
+    "views/layout/index.ts",
+    "views/layout/pad-end/index.ts",
+    "views/layout/plural/index.ts",
+    "views/layout/sanitize-line/index.ts",
+    "views/layout/sanitize-name/index.ts",
+    "views/layout/tab-width/index.ts",
+    "views/layout/truncate-start/index.ts",
+    "views/layout/wrapped-lines/index.ts"
+  ],
+  "views/layout/pad-end/index.ts": [
+    "views/layout/pad-end/index.ts",
+    "views/layout/pad-end/pad-end.ts"
+  ],
+  "views/layout/pad-end/pad-end.ts": [
+    "views/layout/charged-width/index.ts"
+  ],
+  "views/layout/plural/index.ts": [
+    "views/layout/plural/index.ts",
+    "views/layout/plural/plural.ts"
+  ],
+  "views/layout/plural/plural.ts": [],
+  "views/layout/sanitize-line/index.ts": [
+    "views/layout/sanitize-line/index.ts",
+    "views/layout/sanitize-line/sanitize-line.ts"
+  ],
+  "views/layout/sanitize-line/sanitize-line.ts": [
+    "views/layout/tab-width/index.ts"
+  ],
+  "views/layout/sanitize-name/index.ts": [
+    "views/layout/sanitize-name/index.ts",
+    "views/layout/sanitize-name/sanitize-name.ts"
+  ],
+  "views/layout/sanitize-name/sanitize-name.ts": [
+    "views/layout/sanitize-line/index.ts"
+  ],
+  "views/layout/tab-width/index.ts": [
+    "views/layout/tab-width/index.ts",
+    "views/layout/tab-width/tab-width.ts"
+  ],
+  "views/layout/tab-width/tab-width.ts": [],
+  "views/layout/truncate-start/index.ts": [
+    "views/layout/truncate-start/index.ts",
+    "views/layout/truncate-start/truncate-start.ts"
+  ],
+  "views/layout/truncate-start/truncate-start.ts": [
+    "views/layout/charged-width/index.ts"
+  ],
+  "views/layout/wrapped-lines/index.ts": [
+    "views/layout/wrapped-lines/index.ts",
+    "views/layout/wrapped-lines/wrapped-lines.ts"
+  ],
+  "views/layout/wrapped-lines/wrapped-lines.ts": [
+    "views/layout/cell-width/index.ts"
+  ],
+  "views/pane-actions/index.ts": [
+    "views/pane-actions/index.ts",
+    "views/pane-actions/pane-actions.ts"
+  ],
+  "views/pane-actions/pane-actions.ts": [],
+  "views/pane-seat/index.ts": [
+    "views/pane-seat/index.ts",
+    "views/pane-seat/pane-seat.ts"
+  ],
+  "views/pane-seat/pane-seat.ts": [],
+  "views/pane-view.tsx": [
+    "limits/index.ts",
+    "names/index.ts",
+    "pane-state/index.ts",
+    "views/dialog-pane/index.ts",
+    "views/inset-of/index.ts",
+    "views/kit/index.ts",
+    "views/pane-seat/index.ts",
+    "views/sections/index.ts",
+    "views/sidebar-pane/index.ts"
+  ],
+  "views/prelude-of/index.ts": [
+    "views/prelude-of/index.ts",
+    "views/prelude-of/prelude-of.tsx"
+  ],
+  "views/prelude-of/prelude-of.tsx": [
+    "names/index.ts",
+    "pane-state/index.ts",
+    "views/dialog-pane/index.ts",
+    "views/kit/index.ts",
+    "views/sections/index.ts"
+  ],
+  "views/sections/ask-key-of/ask-key-of.ts": [
+    "views/layout/index.ts"
+  ],
+  "views/sections/ask-key-of/index.ts": [
+    "views/sections/ask-key-of/ask-key-of.ts",
+    "views/sections/ask-key-of/index.ts"
+  ],
+  "views/sections/dialog-file-row/dialog-file-row.tsx": [
+    "limits/index.ts",
+    "views/kit/index.ts",
+    "views/layout/index.ts",
+    "views/sections/diff-stat/index.ts",
+    "views/sections/file-row-model/index.ts",
+    "views/sections/list-row/index.ts",
+    "views/sections/pointer/index.ts"
+  ],
+  "views/sections/dialog-file-row/index.ts": [
+    "views/sections/dialog-file-row/dialog-file-row.tsx",
+    "views/sections/dialog-file-row/index.ts"
+  ],
+  "views/sections/diff-stat/diff-stat.tsx": [
+    "views/kit/index.ts"
+  ],
+  "views/sections/diff-stat/index.ts": [
+    "views/sections/diff-stat/diff-stat.tsx",
+    "views/sections/diff-stat/index.ts"
+  ],
+  "views/sections/dim-note/dim-note.tsx": [
+    "views/kit/index.ts"
+  ],
+  "views/sections/dim-note/index.ts": [
+    "views/sections/dim-note/dim-note.tsx",
+    "views/sections/dim-note/index.ts"
+  ],
+  "views/sections/divider.tsx": [
+    "views/kit/index.ts"
+  ],
+  "views/sections/file-key-of/file-key-of.ts": [
+    "views/entries/index.ts",
+    "views/layout/index.ts"
+  ],
+  "views/sections/file-key-of/index.ts": [
+    "views/sections/file-key-of/file-key-of.ts",
+    "views/sections/file-key-of/index.ts"
+  ],
+  "views/sections/file-row-model/file-row-model.ts": [],
+  "views/sections/file-row-model/index.ts": [
+    "views/sections/file-row-model/file-row-model.ts",
+    "views/sections/file-row-model/index.ts"
+  ],
+  "views/sections/file-row/file-row.ts": [
+    "limits/index.ts",
+    "views/kit/index.ts",
+    "views/layout/index.ts",
+    "views/sections/diff-stat/index.ts",
+    "views/sections/file-row-model/index.ts",
+    "views/sections/list-row/index.ts",
+    "views/sections/stat-text-of/index.ts"
+  ],
+  "views/sections/file-row/index.ts": [
+    "views/sections/file-row/file-row.ts",
+    "views/sections/file-row/index.ts"
+  ],
+  "views/sections/header-view.tsx": [
+    "pane-state/index.ts",
+    "views/kit/index.ts",
+    "views/layout/index.ts",
+    "views/sections/diff-stat/index.ts",
+    "views/sections/present/index.ts"
+  ],
+  "views/sections/index.ts": [
+    "views/sections/ask-key-of/index.ts",
+    "views/sections/dialog-file-row/index.ts",
+    "views/sections/diff-stat/index.ts",
+    "views/sections/dim-note/index.ts",
+    "views/sections/divider.tsx",
+    "views/sections/file-key-of/index.ts",
+    "views/sections/file-row-model/index.ts",
+    "views/sections/file-row/index.ts",
+    "views/sections/header-view.tsx",
+    "views/sections/index.ts",
+    "views/sections/keyed-pressable/index.ts",
+    "views/sections/legend-row.tsx",
+    "views/sections/list-edge-button/index.ts",
+    "views/sections/list-row/index.ts",
+    "views/sections/name-row/index.ts",
+    "views/sections/pointer/index.ts",
+    "views/sections/present/index.ts",
+    "views/sections/pressable/index.ts",
+    "views/sections/source-picker.tsx",
+    "views/sections/stat-text-of/index.ts",
+    "views/sections/title-row.tsx",
+    "views/sections/todo-bar.tsx",
+    "views/sections/toggle-row.tsx"
+  ],
+  "views/sections/keyed-pressable/index.ts": [
+    "views/sections/keyed-pressable/index.ts",
+    "views/sections/keyed-pressable/keyed-pressable.ts"
+  ],
+  "views/sections/keyed-pressable/keyed-pressable.ts": [
+    "views/sections/pressable/index.ts"
+  ],
+  "views/sections/legend-row.tsx": [
+    "limits/index.ts",
+    "views/entries/index.ts",
+    "views/kit/index.ts",
+    "views/layout/index.ts",
+    "views/sections/diff-stat/index.ts"
+  ],
+  "views/sections/list-edge-button/index.ts": [
+    "views/sections/list-edge-button/index.ts",
+    "views/sections/list-edge-button/list-edge-button.tsx"
+  ],
+  "views/sections/list-edge-button/list-edge-button.tsx": [
+    "views/kit/index.ts"
+  ],
+  "views/sections/list-row/index.ts": [
+    "views/sections/list-row/index.ts",
+    "views/sections/list-row/list-row.tsx"
+  ],
+  "views/sections/list-row/list-row.tsx": [
+    "views/kit/index.ts",
+    "views/sections/keyed-pressable/index.ts"
+  ],
+  "views/sections/name-row/index.ts": [
+    "views/sections/name-row/index.ts",
+    "views/sections/name-row/name-row.tsx"
+  ],
+  "views/sections/name-row/name-row.tsx": [
+    "views/detail/index.ts",
+    "views/kit/index.ts",
+    "views/layout/index.ts",
+    "views/sections/ask-key-of/index.ts"
+  ],
+  "views/sections/pointer/index.ts": [
+    "views/sections/pointer/index.ts",
+    "views/sections/pointer/pointer.ts"
+  ],
+  "views/sections/pointer/pointer.ts": [],
+  "views/sections/present/index.ts": [
+    "views/sections/present/index.ts",
+    "views/sections/present/present.ts"
+  ],
+  "views/sections/present/present.ts": [
+    "kept-of/index.ts"
+  ],
+  "views/sections/pressable/index.ts": [
+    "views/sections/pressable/index.ts",
+    "views/sections/pressable/pressable.ts"
+  ],
+  "views/sections/pressable/pressable.ts": [],
+  "views/sections/source-picker.tsx": [
+    "pane-state/index.ts",
+    "views/kit/index.ts"
+  ],
+  "views/sections/stat-text-of/index.ts": [
+    "views/sections/stat-text-of/index.ts",
+    "views/sections/stat-text-of/stat-text-of.ts"
+  ],
+  "views/sections/stat-text-of/stat-text-of.ts": [
+    "kept-of/index.ts"
+  ],
+  "views/sections/title-row.tsx": [
+    "pane-state/index.ts",
+    "views/kit/index.ts",
+    "views/layout/index.ts"
+  ],
+  "views/sections/todo-bar.tsx": [
+    "limits/index.ts",
+    "pane-state/index.ts",
+    "views/kit/index.ts"
+  ],
+  "views/sections/toggle-row.tsx": [
+    "views/kit/index.ts",
+    "views/sections/pressable/index.ts"
+  ],
+  "views/sidebar-pane/index.ts": [
+    "views/sidebar-pane/index.ts",
+    "views/sidebar-pane/sidebar-pane.tsx"
+  ],
+  "views/sidebar-pane/sidebar-pane.tsx": [
+    "kept-of/index.ts",
+    "pane-state/index.ts",
+    "views/body/index.ts",
+    "views/dialog-pane/index.ts",
+    "views/kit/index.ts",
+    "views/prelude-of/index.ts",
+    "views/sections/index.ts"
+  ]
+}

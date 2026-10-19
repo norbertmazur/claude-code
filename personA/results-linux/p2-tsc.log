@@ -1,0 +1,6 @@
+$ tsc --strict --noEmit --target es2022 --module nodenext --allowImportingTsExtensions scripts/auto-close-duplicates.ts   (first attempt; nodenext treats the file as CommonJS)
+scripts/auto-close-duplicates.ts(244,5): error TS1470: The 'import.meta' meta-property is not allowed in files which will build into CommonJS output.
+tsc exit=2
+$ tsc --strict --noEmit --target es2022 --module esnext --moduleResolution bundler --allowImportingTsExtensions --lib es2022,dom scripts/auto-close-duplicates.ts   (also run on the original file; test file not type-checked: needs @types/node)
+tsc (refactored) exit=0
+tsc (original, same flags) exit=0

@@ -1,0 +1,26 @@
+== diff: files=594 edges=1141 mean_fanout=1.92 median_fanout=1.0 multi-file cycles=4 packages=28
+  top fan-out files: [('git/probes/index.ts', 29), ('index.ts', 26), ('git/types/index.ts', 25), ('pane-state/index.ts', 23), ('views/sections/index.ts', 22)]
+  top fan-in files: [('git/types/index.ts', 54), ('git/index.ts', 35), ('limits/index.ts', 34), ('pane-state/index.ts', 29), ('views/kit/index.ts', 24)]
+  pkg fan-out: [('index', 26), ('register', 21), ('views', 8), ('pane-state', 6), ('drawn-files-of', 4), ('todos', 4)]
+  pkg fan-in: [('git', 9), ('limits', 8), ('host', 6), ('names', 5), ('pane-state', 5), ('count-of', 5)]
+  pkgs with fan-out 0: 11 / 28
+  cycles: [['backend/backend-of.ts', 'backend/index.ts', 'backend/installed-backend-probes.ts', 'backend/types/backend-host/backend-host.ts'], ['names/index.ts', 'names/texts/index.ts', 'names/texts/untracked-withheld-text-of.ts', 'pane-state/empty-state-of.ts'], ['views/detail/detail-view.tsx', 'views/detail/index.ts', 'views/entries/detail-model-of/detail-model-of.ts', 'views/entries/detail-model-of/index.ts'], ['views/dialog-pane/dialog-pane.tsx', 'views/dialog-pane/index.ts', 'views/prelude-of/index.ts', 'views/prelude-of/prelude-of.tsx']]
+== sec-default: files=83 edges=130 mean_fanout=1.57 median_fanout=1 multi-file cycles=0 packages=10
+  top fan-out files: [('policy/index.ts', 16), ('index.ts', 9), ('register.ts', 8), ('policy/managed-tools-restored/is-org-tool/index.ts', 7), ('policy/managed-tools-restored/is-org-tool/is-org-tool.ts', 6)]
+  top fan-in files: [('held-verdict/verdicts/is-same-verdict.ts', 3), ('held-verdict/verdicts/ranking/index.ts', 3), ('policy/index.ts', 3), ('policy/own-option/index.ts', 3), ('policy/managed-tools-restored/is-org-tool/is-server-file-unreadable/index.ts', 3)]
+  pkg fan-out: [('index', 9), ('register', 8), ('tool-register-refusal', 1), ('admission-failure', 0), ('held-verdict', 0), ('managed-mods-only-refusal', 0)]
+  pkg fan-in: [('policy', 3), ('held-verdict', 2), ('admission-failure', 2), ('tool-register-refusal', 2), ('past-users', 2), ('managed-mods-only-refusal', 2)]
+  pkgs with fan-out 0: 7 / 10
+== telemetry: files=210 edges=365 mean_fanout=1.74 median_fanout=1.0 multi-file cycles=1 packages=17
+  top fan-out files: [('entries/index.ts', 27), ('context/index.ts', 19), ('index.ts', 15), ('context/environment-fields-of/environment-fields-of.ts', 9), ('context/probe-of/probe-of.ts', 8)]
+  top fan-in files: [('facts/index.ts', 8), ('batching/index.ts', 6), ('entries/fields/index.ts', 6), ('entries/is-record/index.ts', 6), ('entries/index.ts', 5)]
+  pkg fan-out: [('index', 15), ('telemetry-of', 8), ('context', 7), ('register', 6), ('telemetry-deps', 5), ('entries', 3)]
+  pkg fan-in: [('entries', 5), ('batching', 4), ('is-analytics-off', 4), ('context', 4), ('environment', 4), ('config-location', 3)]
+  pkgs with fan-out 0: 7 / 17
+  cycles: [['batching/index.ts', 'batching/pending-row/index.ts', 'batching/pending-row/pending-row.ts', 'context/context-of.ts']]
+== agents-md: files=56 edges=103 mean_fanout=1.84 median_fanout=1.0 multi-file cycles=0 packages=8
+  top fan-out files: [('telemetry/index.ts', 13), ('files/index.ts', 10), ('index.ts', 7), ('frames/index.ts', 6), ('register.ts', 6)]
+  top fan-in files: [('telemetry/types/index.ts', 7), ('frames/index.ts', 6), ('modes/index.ts', 6), ('modes/types/index.ts', 5), ('files/is-project-own.ts', 4)]
+  pkg fan-out: [('index', 7), ('register', 6), ('files', 2), ('telemetry', 1), ('frames', 0), ('modes', 0)]
+  pkg fan-in: [('names', 3), ('frames', 3), ('modes', 3), ('switches', 2), ('telemetry', 2), ('files', 2)]
+  pkgs with fan-out 0: 4 / 8

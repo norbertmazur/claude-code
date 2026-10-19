@@ -1,0 +1,4 @@
+agents-md exit=0  5 pass  0 fail  timeouts=0
+sec-default exit=0  162 pass  0 fail  timeouts=0
+telemetry exit=0  34 pass  0 fail  timeouts=0
+diff exit=0  217 pass  0 fail  timeouts=0
